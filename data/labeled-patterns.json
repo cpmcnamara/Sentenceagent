@@ -1093,6 +1093,19 @@
       "why_won": "Causal inversion (product←process) + second sentence reinforces with concrete contrast (genius vs repetition)",
       "losers": ["reverse-engineer version (didn't make sense)", "inspiration/accumulation (too abstract)"],
       "principle_confirmed": "causal-inversion-needs-concrete-follow-through"
+    },
+    {
+      "test_id": 9,
+      "pattern": "One-shot validation",
+      "topic": "multiple domains",
+      "winners": [
+        "You do not keep friends through your availability. You keep them through your attention.",
+        "But the culture is the child of the incentives, not the father. And the process of shaping how people behave has never been a matter of slogans so much as one of bonuses."
+      ],
+      "why_won": "Applied learned principles correctly: counterintuitive-flip (availability vs attention), single-word-contrasts (slogans vs bonuses)",
+      "losers": ["performance review tribunal (escalation didn't match reality—Sunday evenings don't apply)", "values posters vs what gets rewarded (phrase too clunky)"],
+      "principles_validated": ["counterintuitive-flip", "single-word-contrasts"],
+      "principles_added": ["understand-target-mechanics"]
     }
   ],
   "generationPrinciples": [
@@ -1154,6 +1167,23 @@
       "bad_example": "You do not have ideas at the level of your intelligence. You have ideas at the level of your inputs.",
       "good_example": "You do not create at the level of your imagination. You create at the level of your constraints.",
       "why_good": "Constraints enabling creativity is counterintuitive; inputs determining outputs is obvious"
+    },
+    {
+      "name": "understand-target-mechanics",
+      "description": "Before applying a pattern, understand how the target actually works in reality—don't just slot words into structure",
+      "learned_from": "One-shot validation: 'Sunday evenings' failed for performance reviews because reviews don't actually invade Sundays",
+      "bad_example": "And we've invited this audit into our offices, our inboxes, our Sunday evenings.",
+      "why_bad": "Performance reviews don't happen on Sunday evenings—mechanically applied pattern without understanding context",
+      "good_example": "And we've let this summons colonize our mornings, our lunches, our last free hours before dinner.",
+      "why_good": "Calendar invites actually do invade these times—pattern matches reality"
+    },
+    {
+      "name": "single-word-contrasts",
+      "description": "In causal inversion and chiasmus patterns, use single concrete words for contrasts, not phrases",
+      "learned_from": "One-shot validation: 'slogans vs bonuses' worked, 'values posters vs what gets rewarded' was clunky",
+      "bad_example": "never been a matter of values posters so much as one of what gets rewarded",
+      "good_example": "never been a matter of slogans so much as one of bonuses",
+      "why_good": "Single words land harder and are easier to remember"
     }
   ]
 }
