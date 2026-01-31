@@ -6,7 +6,25 @@
       "source": "Stratechery",
       "passage": "The iPhone is the most successful product of all time. It is the most profitable product of all time. It is the most important product of all time.",
       "feedback": "Great parallel use of three sentences, good rhythm, decent punchy emotional impact",
-      "patterns": ["parallel structure", "tripled repetition", "punchy landing"]
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [10, 10, 10],
+        "cadence": "uniform-parallel",
+        "beat": "10-10-10 (identical rhythm, escalating adjective)"
+      },
+      "structure": {
+        "template": "[Subject] is the most [adjective1] [noun] of all time. It is the most [adjective2] [noun] of all time. It is the most [adjective3] [noun] of all time.",
+        "slots": ["subject", "adjective1", "adjective2", "adjective3", "noun"],
+        "technique": "Tripled parallel with escalating significance (successful → profitable → important)"
+      },
+      "emotionalWeight": {
+        "dryVersion": "The iPhone has been commercially successful and culturally significant.",
+        "technique": "Repetition creates gravity; parallel structure creates inevitability"
+      },
+      "usage": {
+        "position": "opening or thesis statement",
+        "bestFor": "Making bold claims feel earned through rhythmic weight"
+      }
     },
     {
       "id": 3,
@@ -14,7 +32,25 @@
       "source": "Essay",
       "passage": "The way to get startup ideas is not to try to think of startup ideas. It's to look for problems, preferably problems you have yourself.",
       "feedback": "Great repetition, good ideas, good insight. Solid sentence. Use of contrast is great. Clear flow through thesis.",
-      "patterns": ["repetition", "contrast", "thesis flow", "contrarian pivot"]
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [14, 11],
+        "cadence": "long-medium",
+        "beat": "Negation then pivot, second sentence lands cleaner"
+      },
+      "structure": {
+        "template": "The way to [goal] is not to [obvious approach]. It's to [counterintuitive approach], preferably [specific version].",
+        "slots": ["goal", "obvious approach", "counterintuitive approach", "specific version"],
+        "technique": "Contrarian pivot: 'not X, it's Y' with repetition of key term"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Don't brainstorm startup ideas; instead identify problems you personally experience.",
+        "technique": "Repetition of 'startup ideas' creates echo; contrast creates insight moment"
+      },
+      "usage": {
+        "position": "thesis or key insight",
+        "bestFor": "Subverting conventional wisdom"
+      }
     },
     {
       "id": 4,
@@ -22,7 +58,25 @@
       "source": "The White Album",
       "passage": "We tell ourselves stories in order to live. The princess is caged in the consulate. The man with the candy will lead the children into the sea.",
       "feedback": "First part brilliant, strong ideas. Trimmed AI-contaminated portion.",
-      "patterns": ["short declarative thesis", "parallel imagery"]
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [8, 7, 12],
+        "cadence": "short-short-medium",
+        "beat": "Thesis punch, then two mysterious images"
+      },
+      "structure": {
+        "template": "[Universal statement about human nature]. [Mysterious image 1]. [Mysterious image 2].",
+        "slots": ["universal statement", "image 1", "image 2"],
+        "technique": "Abstract thesis followed by concrete but unexplained images"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Humans use narrative to make sense of existence.",
+        "technique": "Juxtaposition of abstract claim with fairy-tale imagery creates unease"
+      },
+      "usage": {
+        "position": "opening",
+        "bestFor": "Creating atmosphere, inviting reader into mystery"
+      }
     },
     {
       "id": 5,
@@ -30,7 +84,25 @@
       "source": "Politics and the English Language",
       "passage": "The great enemy of clear language is insincerity. When there is a gap between one's real and one's declared aims, one turns as it were instinctively to long words and exhausted idioms, like a cuttlefish spurting out ink.",
       "feedback": "Amazing passage. The metaphor at the end is very strong and original.",
-      "patterns": ["declaration → elaboration → image punch", "strong original metaphor"]
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [8, 34],
+        "cadence": "short-long",
+        "beat": "Punchy thesis (8 words), then long elaboration ending in vivid simile"
+      },
+      "structure": {
+        "template": "[Short declarative thesis]. [Elaboration with subordinate clauses], like [unexpected vivid metaphor].",
+        "slots": ["thesis", "elaboration", "metaphor"],
+        "technique": "Declaration → Elaboration → Image punch"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Dishonest people use complex language to obscure their meaning.",
+        "technique": "Animal metaphor (cuttlefish ink) makes abstract concept visceral and memorable"
+      },
+      "usage": {
+        "position": "anywhere, especially for key arguments",
+        "bestFor": "Making abstract concepts concrete through unexpected metaphor"
+      }
     },
     {
       "id": 7,
@@ -38,8 +110,26 @@
       "source": "Total Eclipse",
       "passage": "The sky snapped over the sun like a lens cover. The grass was white. The sun was going, and the world was wrong.",
       "feedback": "Love the imagery, would be flowery if overdone, needs to be used cautiously to not be flowery in tech essays.",
-      "patterns": ["vivid imagery", "short punchy sentences"],
-      "caution": "Use sparingly in tech context"
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [10, 4, 10],
+        "cadence": "medium-short-medium",
+        "beat": "Image, stark fact, ominous conclusion"
+      },
+      "structure": {
+        "template": "[Vivid simile of event]. [Stark short observation]. [Event] was [verb]ing, and [larger context] was [adjective].",
+        "slots": ["simile", "stark observation", "event", "context", "adjective"],
+        "technique": "Simile → stark fact → expanded consequence"
+      },
+      "emotionalWeight": {
+        "dryVersion": "The eclipse began and the light changed dramatically.",
+        "technique": "Sensory details + short declarative creates visceral experience"
+      },
+      "usage": {
+        "position": "descriptive moments",
+        "bestFor": "Creating atmosphere"
+      },
+      "caution": "Use sparingly in tech context - becomes flowery if overdone"
     },
     {
       "id": 8,
@@ -47,7 +137,25 @@
       "source": "Between the World and Me",
       "passage": "But race is the child of racism, not the father. And the process of naming 'the people' has never been a matter of genealogy and physiognomy so much as one of hierarchy.",
       "feedback": "Great repetition and ideas.",
-      "patterns": ["inversion", "repetition", "strong ideas"]
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [10, 23],
+        "cadence": "short-long",
+        "beat": "Inverted claim, then scholarly elaboration"
+      },
+      "structure": {
+        "template": "But [A] is the [relation] of [B], not the [inverse relation]. And [process] has never been a matter of [assumed cause] so much as one of [real cause].",
+        "slots": ["A", "B", "relation", "inverse relation", "process", "assumed cause", "real cause"],
+        "technique": "Causal inversion followed by reframing"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Racism created the concept of race, not the other way around.",
+        "technique": "Inversion of expected causality creates 'aha' moment"
+      },
+      "usage": {
+        "position": "argument/thesis",
+        "bestFor": "Challenging assumptions, reframing causality"
+      }
     },
     {
       "id": 9,
@@ -55,7 +163,25 @@
       "source": "A Room of One's Own",
       "passage": "Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.",
       "feedback": "Wonderful repetition 'no gate no lock no bolt that you can set upon' - great.",
-      "patterns": ["tripled negation", "defiant rhythm"]
+      "rhythm": {
+        "sentenceCount": 1,
+        "wordCounts": [24],
+        "cadence": "compound-with-tripled-negation",
+        "beat": "Concession (8 words) + triple negation building to climax"
+      },
+      "structure": {
+        "template": "[Concession to opponent]; but there is no [barrier1], no [barrier2], no [barrier3] that you can [action] upon [what you're defending].",
+        "slots": ["concession", "barrier1", "barrier2", "barrier3", "action", "defended thing"],
+        "technique": "Concession + tripled negation + defiant claim"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Physical restrictions cannot limit intellectual freedom.",
+        "technique": "Triple negation creates crescendo; 'freedom of my mind' lands as triumph"
+      },
+      "usage": {
+        "position": "conclusion or defiant statement",
+        "bestFor": "Declarations of independence, defiance, resilience"
+      }
     },
     {
       "id": 10,
@@ -63,7 +189,25 @@
       "source": "Letters to a Young Contrarian",
       "passage": "The essence of the independent mind lies not in what it thinks, but in how it thinks.",
       "feedback": "Good sentence that introduces a strong contrarian idea.",
-      "patterns": ["not X but Y structure", "contrarian pivot"]
+      "rhythm": {
+        "sentenceCount": 1,
+        "wordCounts": [16],
+        "cadence": "balanced-antithesis",
+        "beat": "Setup → 'not X, but Y' pivot"
+      },
+      "structure": {
+        "template": "The essence of [subject] lies not in [surface quality], but in [deeper quality].",
+        "slots": ["subject", "surface quality", "deeper quality"],
+        "technique": "Antithetical pivot: 'not X, but Y'"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Independent thinking is about process, not conclusions.",
+        "technique": "Balanced structure with pivot creates sense of revelation"
+      },
+      "usage": {
+        "position": "thesis or aphorism",
+        "bestFor": "Redefining concepts, shifting focus from surface to depth"
+      }
     },
     {
       "id": 11,
@@ -71,8 +215,26 @@
       "source": "Fail Better",
       "passage": "The very reason you write is so that you might not sleepwalk through your entire life.",
       "feedback": "Love this idea but be careful that it's not the structure but the idea itself that makes this work.",
-      "patterns": ["idea-driven"],
-      "caution": "Idea carries it, not structure"
+      "rhythm": {
+        "sentenceCount": 1,
+        "wordCounts": [16],
+        "cadence": "single-building-clause",
+        "beat": "Setup → purpose → vivid verb (sleepwalk)"
+      },
+      "structure": {
+        "template": "The very reason you [activity] is so that you might not [vivid negative verb] through [scope].",
+        "slots": ["activity", "negative verb", "scope"],
+        "technique": "Purpose statement with unexpected vivid verb"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Writing helps you live more consciously.",
+        "technique": "The verb 'sleepwalk' does all the work—concrete, physical, slightly haunting"
+      },
+      "usage": {
+        "position": "anywhere",
+        "bestFor": "Statements of purpose"
+      },
+      "caution": "Idea carries it, not structure—the verb choice is everything"
     },
     {
       "id": 13,
@@ -80,7 +242,25 @@
       "source": "Execution in the Kingdom of Nouns",
       "passage": "Java is the Kingdom of Nouns. In the Kingdom of Nouns, you see, nouns are everywhere. Nouns own everything. Nouns run the show. Verbs are their slaves—humble, loyal, hardworking servants who must be attached to a noun at all times or face certain death.",
       "feedback": "Amazing. Amazing use of metaphor to teach something. Amazing emotional weight to a dry idea. Amazing repetition.",
-      "patterns": ["extended metaphor", "emotional weight on dry concept", "repetition", "worldbuilding"]
+      "rhythm": {
+        "sentenceCount": 5,
+        "wordCounts": [6, 9, 3, 4, 22],
+        "cadence": "short-short-short-short-LONG",
+        "beat": "Four punchy setup sentences, then one elaborate payoff"
+      },
+      "structure": {
+        "template": "[Technical thing] is the [Metaphorical World]. In the [Metaphorical World], [metaphor elements] are everywhere. [Elements] own everything. [Elements] run the show. [Counter-elements] are their slaves—[elaboration].",
+        "slots": ["technical thing", "metaphorical world", "dominant elements", "subordinate elements", "elaboration"],
+        "technique": "Extended metaphor with worldbuilding + repetition + dramatic escalation"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Java's object-oriented design requires wrapping all functionality in classes.",
+        "technique": "Political/feudal metaphor makes technical design feel oppressive and absurd"
+      },
+      "usage": {
+        "position": "opening or key argument",
+        "bestFor": "Technical criticism through sustained metaphor"
+      }
     },
     {
       "id": 14,
@@ -88,7 +268,25 @@
       "source": "Hackers and Painters",
       "passage": "When I finished grad school in computer science I went to art school to study painting. A lot of people seemed surprised that someone interested in computers would also be interested in painting. They seemed to think that hacking and painting were very different kinds of work—that hacking was cold, precise, and methodical, and that painting was the frenzied expression of some primal urge. Both of these images are wrong.",
       "feedback": "Great way to introduce a thesis or idea through a small story.",
-      "patterns": ["personal story → thesis pivot", "setup → subversion"]
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [14, 16, 32, 7],
+        "cadence": "medium-medium-LONG-short",
+        "beat": "Personal fact → others' reaction → their assumption (detailed) → terse rebuttal"
+      },
+      "structure": {
+        "template": "[Personal anecdote about unexpected combination]. [Others' surprised reaction]. They seemed to think [assumption A] and [assumption B]. [Terse rebuttal].",
+        "slots": ["anecdote", "reaction", "assumption A", "assumption B", "rebuttal"],
+        "technique": "Personal story → common assumption → short devastating pivot"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Programming and art have more in common than people think.",
+        "technique": "Building up the conventional wisdom at length, then knocking it down in 7 words"
+      },
+      "usage": {
+        "position": "essay opening",
+        "bestFor": "Subverting expectations, establishing contrarian credibility"
+      }
     },
     {
       "id": 15,
@@ -96,8 +294,25 @@
       "source": "Aggregation Theory",
       "passage": "The value chain for any given consumer market is divided into three parts: suppliers, distributors, and consumers. The best way to make outsize profits in any of these markets is to either gain a horizontal monopoly in one of the three parts or to integrate two of the parts such that you have a competitive advantage in delivering a vertical solution.",
       "feedback": "Clear solid prose, likely in middle parts of the essay.",
-      "patterns": ["clear explanatory prose", "framework building"],
-      "usage": "mid-essay"
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [17, 43],
+        "cadence": "medium-LONG",
+        "beat": "Framework setup, then detailed elaboration"
+      },
+      "structure": {
+        "template": "[Domain] is divided into [N] parts: [list]. The best way to [goal] is to either [strategy A] or [strategy B].",
+        "slots": ["domain", "N", "list", "goal", "strategy A", "strategy B"],
+        "technique": "Framework declaration + strategic options"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Markets have suppliers, distributors, and consumers. Profits come from monopoly or vertical integration.",
+        "technique": "Minimal—this is explanatory prose. Clarity is the goal, not emotion."
+      },
+      "usage": {
+        "position": "mid-essay explanation",
+        "bestFor": "Framework building, analytical explanation"
+      }
     },
     {
       "id": 16,
@@ -105,8 +320,26 @@
       "source": "The Gervais Principle",
       "passage": "The Gervais Principle is this: Sociopaths, in their own best interests, knowingly promote over-performing losers into middle-management, groom under-performing losers into sociopaths, and game the system to retain the most capable losers by manipulating their motivation.",
       "feedback": "Brilliant use of wordplay on the idea of 'losers'. Will require advanced thought to bring this idea to life, good repetition.",
-      "patterns": ["wordplay redefinition", "repetition", "framework naming"],
-      "caution": "Requires advanced execution"
+      "rhythm": {
+        "sentenceCount": 1,
+        "wordCounts": [46],
+        "cadence": "declaration-then-tripled-clause",
+        "beat": "Naming + colon + three parallel actions with 'losers' repeated"
+      },
+      "structure": {
+        "template": "The [Framework Name] is this: [Agent], in their own best interests, [action1 with repeated term], [action2 with repeated term], and [action3 with repeated term].",
+        "slots": ["framework name", "agent", "action1", "action2", "action3", "repeated term"],
+        "technique": "Framework naming + tripled parallel structure with word repetition"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Organizations have three tiers with different incentives and mobility patterns.",
+        "technique": "Redefining 'loser' across different contexts creates cognitive dissonance and insight"
+      },
+      "usage": {
+        "position": "thesis or framework introduction",
+        "bestFor": "Provocative reframing, creating new vocabulary"
+      },
+      "caution": "Requires advanced execution—the redefinition must be earned"
     },
     {
       "id": 18,
@@ -114,7 +347,25 @@
       "source": "The Internet With A Human Face",
       "passage": "We have a word for this kind of organism. We call it a parasite. A parasite that spies on you, learns your habits, and uses that information to manipulate your behavior. And we've invited this parasite into our homes, our bedrooms, our pockets.",
       "feedback": "Wonderful sentence. The varied rhythm paired with an emotional idea, that everyone carries their phone and it is not a parasite.",
-      "patterns": ["varied rhythm", "emotional metaphor", "universal resonance", "escalating list"]
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [8, 5, 17, 14],
+        "cadence": "short-shorter-LONG-medium",
+        "beat": "Setup → naming → elaboration → universal application (escalating intimacy: homes → bedrooms → pockets)"
+      },
+      "structure": {
+        "template": "We have a word for [thing]. We call it a [loaded metaphor]. A [metaphor] that [action1], [action2], and [action3]. And we've invited this [metaphor] into [place1], [place2], [place3].",
+        "slots": ["thing", "metaphor", "action1", "action2", "action3", "place1", "place2", "place3"],
+        "technique": "Metaphor naming → elaboration → escalating intimacy"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Tech companies collect personal data from devices we keep with us constantly.",
+        "technique": "Parasitic metaphor + escalating intimacy (homes→bedrooms→pockets) creates visceral unease"
+      },
+      "usage": {
+        "position": "argument or polemic",
+        "bestFor": "Making abstract harms feel personal and invasive"
+      }
     },
     {
       "id": 21,
@@ -122,65 +373,182 @@
       "source": "Why Books Don't Work",
       "passage": "Books don't work for the same reason that lectures don't work: our minds are not designed to absorb information passively. We learn by doing, by struggling, by failing, by connecting new ideas to old ones. A book asks nothing of you. It just sits there, waiting.",
       "feedback": "Love the idea and the repetition and the contrarian concept. Love the way that he brings a book to life 'it just sits there, waiting' - wonderful.",
-      "patterns": ["contrarian concept", "repetition", "personification punch"]
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [17, 15, 6, 6],
+        "cadence": "long-medium-SHORT-SHORT",
+        "beat": "Argument → evidence (quadrupled 'by') → personification setup → haunting close"
+      },
+      "structure": {
+        "template": "[Medium A] doesn't work for the same reason [Medium B] doesn't work: [reason]. We [learn/achieve] by [method1], by [method2], by [method3], by [method4]. [Medium A] asks nothing of you. It just [anthropomorphic action].",
+        "slots": ["medium A", "medium B", "reason", "methods 1-4", "anthropomorphic action"],
+        "technique": "Parallel comparison → quadrupled 'by' repetition → personification punch"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Passive learning is ineffective; active engagement is required.",
+        "technique": "Personifying the book ('It just sits there, waiting') creates eerie accusation"
+      },
+      "usage": {
+        "position": "thesis or argument",
+        "bestFor": "Contrarian claims, making inanimate things feel alive and implicated"
+      }
     }
   ],
   "rejected": [
     {
       "id": 1,
       "author": "Kevin Kelly",
-      "reason": "Lots of buzz words, not a lot of substance"
+      "passage": "[not recorded]",
+      "reason": "Lots of buzz words, not a lot of substance",
+      "antiPattern": "buzzword-soup"
     },
     {
       "id": 6,
       "author": "James Baldwin",
-      "reason": "Strong sentence but could only masterfully work because of Baldwin's great style - style-dependent, not transferable"
+      "passage": "I had discovered the weight of white people in the world. I could not have known what this was but I knew that whatever was going on in my life, I knew that whatever was happening to me had something to do with what they wanted to do.",
+      "reason": "Strong sentence but could only masterfully work because of Baldwin's great style - style-dependent, not transferable",
+      "antiPattern": "author-voice-dependent"
     },
     {
       "id": 12,
       "author": "Joel Spolsky",
-      "reason": "Seems too common of standard AI prose these days"
+      "passage": "All non-trivial abstractions, to some degree, are leaky. Abstractions fail. Sometimes a little, sometimes a lot. There's leakage. Things go wrong. It happens all over the place when you have abstractions.",
+      "reason": "Seems too common of standard AI prose these days",
+      "antiPattern": "ai-staccato-pattern"
     },
     {
       "id": 17,
       "author": "Bret Victor",
-      "reason": "Staccato 'A way of X. A way of Y. A way of Z.' pattern reads too AI"
+      "passage": "Here's something I've come to believe: Every creator should have an immediate connection to what they're creating. That's my principle. And this is not about tools. This is about a way of thinking. A way of seeing. A way of creating.",
+      "reason": "Staccato 'A way of X. A way of Y. A way of Z.' pattern reads too AI",
+      "antiPattern": "ai-tripled-fragment"
     },
     {
       "id": 19,
       "author": "Nadia Eghbal",
-      "reason": "Ok but not as strong as others"
+      "passage": "Open source developers are not volunteers in the traditional sense. They are not building houses for the poor or serving food at a soup kitchen. They are more like street performers, or buskers: artists who perform in public, for the love of their craft, and who are frequently ignored by the people who benefit from their work.",
+      "reason": "Ok but not as strong as others",
+      "antiPattern": "weak-impact"
     },
     {
       "id": 20,
       "author": "Patrick McKenzie",
-      "reason": "Not favorite"
+      "passage": "Negotiation is not a battle. It is not a war. It is a conversation where you attempt to understand what the other side values, communicate what you value, and find a way to make both sides better off than they were before the conversation started.",
+      "reason": "Not favorite",
+      "antiPattern": "weak-impact"
     },
     {
       "id": 22,
       "author": "Eugene Wei",
-      "reason": "Don't like cliches like 'it's a feature, not a bug'"
+      "passage": "What all of social media has in common is that it involves humans competing for status. All social networks have this in common, and it's a feature, not a bug. Humans are status-seeking monkeys. We always have been.",
+      "reason": "Don't like cliches like 'it's a feature, not a bug'",
+      "antiPattern": "tech-cliche"
     }
   ],
   "avoidRules": [
-    "Buzzwords without substance",
-    "Clichés ('feature, not a bug', etc.)",
-    "Staccato 'A way of X. A way of Y. A way of Z.' patterns - reads AI",
-    "Short punchy sentence chains - reads AI now",
-    "Style-dependent prose that only works for one specific author",
-    "Em-dash kitschy patterns",
-    "Flowery imagery overdone in tech context"
+    {
+      "name": "buzzword-soup",
+      "description": "Passages filled with trendy terms but lacking substance",
+      "example": "Synergizing our core competencies to leverage disruptive innovation",
+      "detection": "High ratio of abstract nouns to concrete claims"
+    },
+    {
+      "name": "tech-cliche",
+      "description": "Overused tech/startup phrases",
+      "examples": ["it's a feature, not a bug", "move fast and break things", "10x engineer", "paradigm shift"],
+      "detection": "Presence of stock phrases"
+    },
+    {
+      "name": "ai-staccato-pattern",
+      "description": "Series of very short punchy sentences—now associated with AI prose",
+      "example": "Things break. Systems fail. Abstractions leak. It happens.",
+      "detection": "4+ consecutive sentences under 5 words"
+    },
+    {
+      "name": "ai-tripled-fragment",
+      "description": "'A way of X. A way of Y. A way of Z.' parallel fragments",
+      "example": "This is about a way of thinking. A way of seeing. A way of creating.",
+      "detection": "Repeated 'A [noun] of [gerund]' pattern"
+    },
+    {
+      "name": "author-voice-dependent",
+      "description": "Prose that only works because of a specific author's established voice",
+      "example": "Baldwin's rhythms require his full context",
+      "detection": "Relies on cumulative authorial ethos, not transferable pattern"
+    },
+    {
+      "name": "em-dash-kitschy",
+      "description": "Overuse of em-dashes for dramatic pause, especially in short sentences",
+      "example": "The answer—as always—was simple.",
+      "detection": "Em-dash used for effect rather than parenthetical"
+    },
+    {
+      "name": "flowery-overdone",
+      "description": "Too much imagery/poetic language for tech context",
+      "example": "The code danced across the screen like autumn leaves",
+      "detection": "Metaphor density inappropriate for technical subject"
+    }
   ],
   "emulateRules": [
-    "Strong original metaphors (Orwell's cuttlefish, Yegge's Kingdom of Nouns)",
-    "Tripled repetition with variation (Woolf's 'no gate, no lock, no bolt')",
-    "Personal story → thesis pivot (Paul Graham)",
-    "Emotional weight on dry/technical concepts (Yegge)",
-    "Contrarian 'not X, but Y' structure (Hitchens)",
-    "Personification for punch (Matuschak's book 'just sits there, waiting')",
-    "Wordplay redefinition (Rao's 'losers')",
-    "Varied rhythm - NOT staccato",
-    "Universal resonance through specific detail",
-    "Framework naming with clear explanation"
+    {
+      "name": "original-metaphor-punch",
+      "description": "End elaboration with unexpected, vivid metaphor",
+      "example": "like a cuttlefish spurting out ink",
+      "technique": "Save concrete image for end of abstract discussion"
+    },
+    {
+      "name": "tripled-negation",
+      "description": "Three parallel negatives building to defiant claim",
+      "example": "no gate, no lock, no bolt that you can set upon",
+      "technique": "Concession + triple negation + climactic claim"
+    },
+    {
+      "name": "personal-story-pivot",
+      "description": "Personal anecdote → others' assumption → terse rebuttal",
+      "example": "Paul Graham's art school story ending with 'Both of these images are wrong.'",
+      "technique": "Build up conventional wisdom at length, demolish in few words"
+    },
+    {
+      "name": "dry-concept-worldbuilding",
+      "description": "Turn technical concept into political/social metaphor with characters",
+      "example": "Yegge's Kingdom of Nouns where verbs are slaves",
+      "technique": "Sustained metaphor with power dynamics"
+    },
+    {
+      "name": "not-X-but-Y",
+      "description": "Antithetical structure pivoting from surface to depth",
+      "example": "lies not in what it thinks, but in how it thinks",
+      "technique": "Balanced clause with contrasting focus"
+    },
+    {
+      "name": "personification-punch",
+      "description": "Give inanimate thing human behavior for closing impact",
+      "example": "It just sits there, waiting",
+      "technique": "Short sentence, anthropomorphic verb, slight menace"
+    },
+    {
+      "name": "wordplay-redefinition",
+      "description": "Use same word with shifting meaning across contexts",
+      "example": "Rao's 'losers' meaning different things in different positions",
+      "technique": "Repeat term while recontextualizing it"
+    },
+    {
+      "name": "escalating-intimacy",
+      "description": "List that moves from public to private spaces",
+      "example": "homes, bedrooms, pockets",
+      "technique": "Each item more personal than the last"
+    },
+    {
+      "name": "quadrupled-by",
+      "description": "Four parallel 'by [gerund]' phrases for emphasis",
+      "example": "by doing, by struggling, by failing, by connecting",
+      "technique": "Rhythm through repeated preposition"
+    },
+    {
+      "name": "uniform-parallel-escalation",
+      "description": "Same sentence structure repeated with escalating significance",
+      "example": "most successful... most profitable... most important",
+      "technique": "Identical rhythm, increasing weight of adjective"
+    }
   ]
 }
