@@ -1110,10 +1110,13 @@
     {
       "test_id": 10,
       "pattern": "Woolf #9 (tripled negation defiance)",
-      "topic": "employment / skills",
-      "winner": "Fire me if you like; but there is no severance, no non-compete, no reference you can withhold that will undo what I learned while I was here.",
-      "why_won": "Connected pair: job (source) → skills (inalienable thing derived from source). You can remove me from the source, but can't take what I got from it.",
-      "losers": ["AI governance versions (no logical connection between policy and what it supposedly can't control)", "creative rejection versions (rejection doesn't try to undo writing)"],
+      "topic": "employment, AI philosophy",
+      "winners": [
+        "Fire me if you like; but there is no exit interview, no badge collection, no escorted walk to the lobby that can take back what I now know how to do.",
+        "Pause the research if you like; but there is no moratorium, no safety board, no international accord that can un-imagine what we now know is possible."
+      ],
+      "why_won": "Connected pairs: job→skills (you can end access but can't take what I learned), research→imagination (you can pause progress but can't unknow what's possible)",
+      "losers": ["AI governance versions (policy trying to govern what it's designed to govern - no defiance)", "creative rejection (rejection doesn't try to undo writing)", "model shutdown (no human inalienable)"],
       "principle_confirmed": "connected-pairs-for-defiance"
     }
   ],
