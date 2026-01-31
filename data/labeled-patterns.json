@@ -1,0 +1,186 @@
+{
+  "accepted": [
+    {
+      "id": 2,
+      "author": "Ben Thompson",
+      "source": "Stratechery",
+      "passage": "The iPhone is the most successful product of all time. It is the most profitable product of all time. It is the most important product of all time.",
+      "feedback": "Great parallel use of three sentences, good rhythm, decent punchy emotional impact",
+      "patterns": ["parallel structure", "tripled repetition", "punchy landing"]
+    },
+    {
+      "id": 3,
+      "author": "Paul Graham",
+      "source": "Essay",
+      "passage": "The way to get startup ideas is not to try to think of startup ideas. It's to look for problems, preferably problems you have yourself.",
+      "feedback": "Great repetition, good ideas, good insight. Solid sentence. Use of contrast is great. Clear flow through thesis.",
+      "patterns": ["repetition", "contrast", "thesis flow", "contrarian pivot"]
+    },
+    {
+      "id": 4,
+      "author": "Joan Didion",
+      "source": "The White Album",
+      "passage": "We tell ourselves stories in order to live. The princess is caged in the consulate. The man with the candy will lead the children into the sea.",
+      "feedback": "First part brilliant, strong ideas. Trimmed AI-contaminated portion.",
+      "patterns": ["short declarative thesis", "parallel imagery"]
+    },
+    {
+      "id": 5,
+      "author": "George Orwell",
+      "source": "Politics and the English Language",
+      "passage": "The great enemy of clear language is insincerity. When there is a gap between one's real and one's declared aims, one turns as it were instinctively to long words and exhausted idioms, like a cuttlefish spurting out ink.",
+      "feedback": "Amazing passage. The metaphor at the end is very strong and original.",
+      "patterns": ["declaration → elaboration → image punch", "strong original metaphor"]
+    },
+    {
+      "id": 7,
+      "author": "Annie Dillard",
+      "source": "Total Eclipse",
+      "passage": "The sky snapped over the sun like a lens cover. The grass was white. The sun was going, and the world was wrong.",
+      "feedback": "Love the imagery, would be flowery if overdone, needs to be used cautiously to not be flowery in tech essays.",
+      "patterns": ["vivid imagery", "short punchy sentences"],
+      "caution": "Use sparingly in tech context"
+    },
+    {
+      "id": 8,
+      "author": "Ta-Nehisi Coates",
+      "source": "Between the World and Me",
+      "passage": "But race is the child of racism, not the father. And the process of naming 'the people' has never been a matter of genealogy and physiognomy so much as one of hierarchy.",
+      "feedback": "Great repetition and ideas.",
+      "patterns": ["inversion", "repetition", "strong ideas"]
+    },
+    {
+      "id": 9,
+      "author": "Virginia Woolf",
+      "source": "A Room of One's Own",
+      "passage": "Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.",
+      "feedback": "Wonderful repetition 'no gate no lock no bolt that you can set upon' - great.",
+      "patterns": ["tripled negation", "defiant rhythm"]
+    },
+    {
+      "id": 10,
+      "author": "Christopher Hitchens",
+      "source": "Letters to a Young Contrarian",
+      "passage": "The essence of the independent mind lies not in what it thinks, but in how it thinks.",
+      "feedback": "Good sentence that introduces a strong contrarian idea.",
+      "patterns": ["not X but Y structure", "contrarian pivot"]
+    },
+    {
+      "id": 11,
+      "author": "Zadie Smith",
+      "source": "Fail Better",
+      "passage": "The very reason you write is so that you might not sleepwalk through your entire life.",
+      "feedback": "Love this idea but be careful that it's not the structure but the idea itself that makes this work.",
+      "patterns": ["idea-driven"],
+      "caution": "Idea carries it, not structure"
+    },
+    {
+      "id": 13,
+      "author": "Steve Yegge",
+      "source": "Execution in the Kingdom of Nouns",
+      "passage": "Java is the Kingdom of Nouns. In the Kingdom of Nouns, you see, nouns are everywhere. Nouns own everything. Nouns run the show. Verbs are their slaves—humble, loyal, hardworking servants who must be attached to a noun at all times or face certain death.",
+      "feedback": "Amazing. Amazing use of metaphor to teach something. Amazing emotional weight to a dry idea. Amazing repetition.",
+      "patterns": ["extended metaphor", "emotional weight on dry concept", "repetition", "worldbuilding"]
+    },
+    {
+      "id": 14,
+      "author": "Paul Graham",
+      "source": "Hackers and Painters",
+      "passage": "When I finished grad school in computer science I went to art school to study painting. A lot of people seemed surprised that someone interested in computers would also be interested in painting. They seemed to think that hacking and painting were very different kinds of work—that hacking was cold, precise, and methodical, and that painting was the frenzied expression of some primal urge. Both of these images are wrong.",
+      "feedback": "Great way to introduce a thesis or idea through a small story.",
+      "patterns": ["personal story → thesis pivot", "setup → subversion"]
+    },
+    {
+      "id": 15,
+      "author": "Ben Thompson",
+      "source": "Aggregation Theory",
+      "passage": "The value chain for any given consumer market is divided into three parts: suppliers, distributors, and consumers. The best way to make outsize profits in any of these markets is to either gain a horizontal monopoly in one of the three parts or to integrate two of the parts such that you have a competitive advantage in delivering a vertical solution.",
+      "feedback": "Clear solid prose, likely in middle parts of the essay.",
+      "patterns": ["clear explanatory prose", "framework building"],
+      "usage": "mid-essay"
+    },
+    {
+      "id": 16,
+      "author": "Venkatesh Rao",
+      "source": "The Gervais Principle",
+      "passage": "The Gervais Principle is this: Sociopaths, in their own best interests, knowingly promote over-performing losers into middle-management, groom under-performing losers into sociopaths, and game the system to retain the most capable losers by manipulating their motivation.",
+      "feedback": "Brilliant use of wordplay on the idea of 'losers'. Will require advanced thought to bring this idea to life, good repetition.",
+      "patterns": ["wordplay redefinition", "repetition", "framework naming"],
+      "caution": "Requires advanced execution"
+    },
+    {
+      "id": 18,
+      "author": "Maciej Cegłowski",
+      "source": "The Internet With A Human Face",
+      "passage": "We have a word for this kind of organism. We call it a parasite. A parasite that spies on you, learns your habits, and uses that information to manipulate your behavior. And we've invited this parasite into our homes, our bedrooms, our pockets.",
+      "feedback": "Wonderful sentence. The varied rhythm paired with an emotional idea, that everyone carries their phone and it is not a parasite.",
+      "patterns": ["varied rhythm", "emotional metaphor", "universal resonance", "escalating list"]
+    },
+    {
+      "id": 21,
+      "author": "Andy Matuschak",
+      "source": "Why Books Don't Work",
+      "passage": "Books don't work for the same reason that lectures don't work: our minds are not designed to absorb information passively. We learn by doing, by struggling, by failing, by connecting new ideas to old ones. A book asks nothing of you. It just sits there, waiting.",
+      "feedback": "Love the idea and the repetition and the contrarian concept. Love the way that he brings a book to life 'it just sits there, waiting' - wonderful.",
+      "patterns": ["contrarian concept", "repetition", "personification punch"]
+    }
+  ],
+  "rejected": [
+    {
+      "id": 1,
+      "author": "Kevin Kelly",
+      "reason": "Lots of buzz words, not a lot of substance"
+    },
+    {
+      "id": 6,
+      "author": "James Baldwin",
+      "reason": "Strong sentence but could only masterfully work because of Baldwin's great style - style-dependent, not transferable"
+    },
+    {
+      "id": 12,
+      "author": "Joel Spolsky",
+      "reason": "Seems too common of standard AI prose these days"
+    },
+    {
+      "id": 17,
+      "author": "Bret Victor",
+      "reason": "Staccato 'A way of X. A way of Y. A way of Z.' pattern reads too AI"
+    },
+    {
+      "id": 19,
+      "author": "Nadia Eghbal",
+      "reason": "Ok but not as strong as others"
+    },
+    {
+      "id": 20,
+      "author": "Patrick McKenzie",
+      "reason": "Not favorite"
+    },
+    {
+      "id": 22,
+      "author": "Eugene Wei",
+      "reason": "Don't like cliches like 'it's a feature, not a bug'"
+    }
+  ],
+  "avoidRules": [
+    "Buzzwords without substance",
+    "Clichés ('feature, not a bug', etc.)",
+    "Staccato 'A way of X. A way of Y. A way of Z.' patterns - reads AI",
+    "Short punchy sentence chains - reads AI now",
+    "Style-dependent prose that only works for one specific author",
+    "Em-dash kitschy patterns",
+    "Flowery imagery overdone in tech context"
+  ],
+  "emulateRules": [
+    "Strong original metaphors (Orwell's cuttlefish, Yegge's Kingdom of Nouns)",
+    "Tripled repetition with variation (Woolf's 'no gate, no lock, no bolt')",
+    "Personal story → thesis pivot (Paul Graham)",
+    "Emotional weight on dry/technical concepts (Yegge)",
+    "Contrarian 'not X, but Y' structure (Hitchens)",
+    "Personification for punch (Matuschak's book 'just sits there, waiting')",
+    "Wordplay redefinition (Rao's 'losers')",
+    "Varied rhythm - NOT staccato",
+    "Universal resonance through specific detail",
+    "Framework naming with clear explanation"
+  ]
+}
