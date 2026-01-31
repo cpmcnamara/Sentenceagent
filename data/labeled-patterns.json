@@ -1071,6 +1071,19 @@
       "why_won": "Unexpected domain metaphors (legal: summons, lien), target not already over-criticized",
       "losers": ["notifications-as-addiction (too common a critique)", "notifications-as-jealous-partner (too literal)"],
       "principle_confirmed": "unexpected-domain-metaphors + choose non-obvious targets"
+    },
+    {
+      "test_id": 7,
+      "pattern": "Clear #28 (JFK-style chiasmus)",
+      "topic": "creativity, persuasion",
+      "winners": [
+        "You do not create at the level of your imagination. You create at the level of your constraints.",
+        "You do not persuade through your arguments. You persuade through your questions.",
+        "You do not convince people by being right. You convince them by making them feel heard."
+      ],
+      "why_won": "Counterintuitive insight where second term surprisingly wins (constraints > imagination, questions > arguments)",
+      "losers": ["cooking versions (no clear point)", "parenting/habits (too close to original)", "inputs/outputs (truism, not surprising)"],
+      "principle_confirmed": "counterintuitive-flip"
     }
   ],
   "generationPrinciples": [
@@ -1124,6 +1137,14 @@
       "bad_example": "Notifications are an addiction",
       "good_example": "Calendar invites are a summons",
       "why_good": "Reader hasn't heard this critique before—pattern reveals something new"
+    },
+    {
+      "name": "counterintuitive-flip",
+      "description": "Chiasmus/antithesis patterns need the second term to be a surprising winner over the expected first term",
+      "learned_from": "Test 7: constraints > imagination worked, inputs > intelligence didn't (truism)",
+      "bad_example": "You do not have ideas at the level of your intelligence. You have ideas at the level of your inputs.",
+      "good_example": "You do not create at the level of your imagination. You create at the level of your constraints.",
+      "why_good": "Constraints enabling creativity is counterintuitive; inputs determining outputs is obvious"
     }
   ]
 }
