@@ -1106,6 +1106,15 @@
       "losers": ["performance review tribunal (escalation didn't match reality—Sunday evenings don't apply)", "values posters vs what gets rewarded (phrase too clunky)"],
       "principles_validated": ["counterintuitive-flip", "single-word-contrasts"],
       "principles_added": ["understand-target-mechanics"]
+    },
+    {
+      "test_id": 10,
+      "pattern": "Woolf #9 (tripled negation defiance)",
+      "topic": "employment / skills",
+      "winner": "Fire me if you like; but there is no severance, no non-compete, no reference you can withhold that will undo what I learned while I was here.",
+      "why_won": "Connected pair: job (source) → skills (inalienable thing derived from source). You can remove me from the source, but can't take what I got from it.",
+      "losers": ["AI governance versions (no logical connection between policy and what it supposedly can't control)", "creative rejection versions (rejection doesn't try to undo writing)"],
+      "principle_confirmed": "connected-pairs-for-defiance"
     }
   ],
   "generationPrinciples": [
@@ -1184,6 +1193,15 @@
       "bad_example": "never been a matter of values posters so much as one of what gets rewarded",
       "good_example": "never been a matter of slogans so much as one of bonuses",
       "why_good": "Single words land harder and are easier to remember"
+    },
+    {
+      "name": "connected-pairs-for-defiance",
+      "description": "Tripled-negation defiance patterns need connected pairs: the external/controllable thing (source) and the internal/inalienable thing derived from it",
+      "learned_from": "Test 10: AI governance versions failed (no logical connection), job/skills version worked (job is source, skills are inalienable derivative)",
+      "bad_example": "Write your AI policy if you like; but there is no clause that can govern what employees paste into ChatGPT",
+      "why_bad": "Policy IS designed to govern usage—no defiance logic, just pessimism",
+      "good_example": "Fire me if you like; but there is no severance, no non-compete, no reference you can withhold that will undo what I learned while I was here",
+      "why_good": "Job = source of learning, firing = removing from source, skills = inalienable thing gained. You can end my access but can't take what I got."
     }
   ]
 }
