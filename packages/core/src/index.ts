@@ -12,6 +12,8 @@ export * from './types/emotional-v2.js'; // Research-aligned emotion taxonomy
 
 // Analysis
 export * from './analysis/rhythm.js';
+export * from './analysis/stylometrics.js';     // Burrows Delta, vocabulary richness
+export * from './analysis/emotional-arc.js';    // Narrative emotional trajectories
 
 // Scoring
 export * from './scoring/index.js';
