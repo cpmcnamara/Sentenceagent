@@ -1,0 +1,71 @@
+{
+  "id": "spu_example1",
+  "type": "SPU",
+  "tier": "active",
+  "createdAt": "2024-01-15T00:00:00Z",
+  "updatedAt": "2024-01-15T00:00:00Z",
+  "version": 1,
+  "template": "The [X] isn't [Y]—it's [Z].",
+  "constraints": [
+    "X should be a noun (concept, thing, situation)",
+    "Y should be the common/expected interpretation",
+    "Z should be the reframed/true interpretation",
+    "Em-dash creates the pivot point"
+  ],
+  "exampleSnippet": "The problem isn't resources—it's coordination.",
+  "family": "negation_pivot",
+  "paragraphRoles": ["definition", "pivot", "reframe"],
+  "intentTags": ["reframe", "crystallization"],
+  "cadenceArchetype": null,
+  "audienceSuitability": ["exec", "essay"],
+  "metaphorLevel": "low",
+  "compressionLevel": "high",
+  "heatLevel": "warm",
+  "rhythmProfile": {
+    "wordCount": 5,
+    "charCount": 42,
+    "syllableEstimate": 9,
+    "clauseCount": 2,
+    "sentenceCount": 1,
+    "avgWordsPerSentence": 5,
+    "punctuationProfile": {
+      "periods": 1,
+      "commas": 0,
+      "semicolons": 0,
+      "colons": 0,
+      "emDashes": 1,
+      "questionMarks": 0,
+      "exclamationMarks": 0,
+      "parentheses": 0,
+      "ellipses": 0
+    },
+    "lengthCategory": "short",
+    "stressPattern": "S"
+  },
+  "evidenceCount": 5,
+  "testsPassed": 3,
+  "overuseCap": 2,
+  "hardBans": ["opening paragraph of a piece"],
+  "whyItWorks": "Clean negation-redefinition structure forces reader to update mental model. The em-dash creates a sharp pivot that lands the true point with emphasis.",
+  "whyItMightFail": "Overused pattern; can feel formulaic. Weak if the negation isn't genuinely surprising or if Z is obvious.",
+  "notes": "Works best when the reframe is genuinely insightful. The Y → Z shift should feel like a revelation.",
+  "fingerprint": "negation-emdash-pivot-5words",
+  "featureVector": [0.2, 0.8, 0.1, 0.9, 0.3],
+  "sourceUrl": null,
+  "sourceType": "manual",
+  "emotionalProfile": {
+    "primaryEffect": "revelation",
+    "secondaryEffects": ["clarity", "certainty"],
+    "intensity": "moderate",
+    "delivery": "contrasted",
+    "exitState": "clarity",
+    "risks": [
+      {
+        "risk": "Feels formulaic",
+        "whenLikely": "When used more than once per piece",
+        "mitigation": "Vary the pivot mechanism in subsequent uses"
+      }
+    ],
+    "confidence": 0.85
+  }
+}

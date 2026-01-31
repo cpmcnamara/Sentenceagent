@@ -1,0 +1,10 @@
+{
+  "id": "rej_example2",
+  "originalText": "Let's dive into the intricacies of this multifaceted problem. It's worth noting that there are several key takeaways here. First and foremost, we need to unpack the nuances.",
+  "template": "Let's [action verb] into the [pompous adjective] of this [pompous adjective] [noun]. It's worth noting that [statement]. First and foremost, we need to [action verb] the [pompous noun].",
+  "fingerprint": "lets-dive-worth-noting-firstforemost",
+  "rejectionReason": "sounds_like_ai",
+  "rejectionNotes": "Classic AI-generated text markers: 'Let's dive into', 'intricacies', 'multifaceted', 'It's worth noting', 'key takeaways', 'First and foremost', 'unpack', 'nuances'. Every phrase is a tell. No human writer would stack this many filler constructions. The cadence is also flat - three sentences of similar length with no rhythm variation.",
+  "rejectedAt": "2024-01-10T00:00:00Z",
+  "sourceUrl": null
+}

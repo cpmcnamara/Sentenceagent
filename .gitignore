@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.js
+*.d.ts
+*.js.map
+!vitest.config.ts
+
+# Database
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Keep structure but ignore generated patterns
+# (Patterns are generated per-user)
+library/patterns/spu/*.json
+library/patterns/cpu/*.json
+library/rejected/*.json
+!library/patterns/spu/spu_example1.json
+!library/patterns/cpu/cpu_example1.json
+!library/rejected/rej_example1.json
+!library/rejected/rej_example2.json
+index/*.db

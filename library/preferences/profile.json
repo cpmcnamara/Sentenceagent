@@ -1,0 +1,161 @@
+{
+  "$schema": "../taxonomy/schema.json",
+  "name": "User Preferences Profile",
+  "version": "1.0.0",
+  "description": "Evolving preference profile that influences candidate scoring and ranking",
+
+  "defaults": {
+    "audience": ["essay", "exec"],
+    "metaphorTolerance": "medium",
+    "compression": "medium"
+  },
+
+  "sentenceLength": {
+    "preferredRange": [8, 25],
+    "idealTarget": 15,
+    "shortThreshold": 7,
+    "longThreshold": 30,
+    "notes": "Learned from accept/reject patterns over time"
+  },
+
+  "paragraphLength": {
+    "preferredSentenceRange": [2, 6],
+    "idealTarget": 4,
+    "notes": "For CPU patterns specifically"
+  },
+
+  "cadencePreferences": {
+    "favored": [
+      "crescendo_snap",
+      "punch_punch_land",
+      "staccato"
+    ],
+    "neutral": [
+      "wave",
+      "drumline",
+      "ladder",
+      "heartbeat"
+    ],
+    "disliked": [],
+    "notes": "Updated based on accept/reject patterns for CPU patterns"
+  },
+
+  "stylePreferences": {
+    "metaphorTolerance": "medium",
+    "compressionPreference": "medium",
+    "heatPreference": "warm",
+    "notes": "medium = comfortable with occasional metaphor, balanced sentences"
+  },
+
+  "bannedPhrases": [
+    "at the end of the day",
+    "it goes without saying",
+    "needless to say",
+    "in today's world",
+    "in this day and age",
+    "when all is said and done",
+    "the fact of the matter is",
+    "it is what it is",
+    "think outside the box",
+    "move the needle",
+    "low-hanging fruit",
+    "synergy",
+    "leverage (as verb)",
+    "circle back",
+    "take this offline",
+    "deep dive",
+    "double-click on that",
+    "unpack this"
+  ],
+
+  "dislikedTells": [
+    "Let's explore",
+    "Let's dive into",
+    "It's important to note",
+    "It's worth mentioning",
+    "Interestingly,",
+    "Importantly,",
+    "Notably,",
+    "In conclusion,",
+    "To summarize,",
+    "First and foremost",
+    "Last but not least",
+    "At its core",
+    "In essence",
+    "Ultimately,",
+    "The reality is",
+    "The truth is",
+    "Here's the thing:",
+    "Here's the deal:",
+    "Look,",
+    "So,",
+    "Now,",
+    "Well,"
+  ],
+
+  "familyPreferences": {
+    "favored": [
+      "negation_pivot",
+      "colon_reveal",
+      "fragment_punch",
+      "contrast_pair"
+    ],
+    "neutral": [
+      "em_dash_insert",
+      "conditional_snap",
+      "reversal_but",
+      "list_resolve"
+    ],
+    "disliked": [],
+    "notes": "Updated based on which families are accepted vs rejected"
+  },
+
+  "failureModeRanking": [
+    "sounds_like_ai",
+    "too_cute",
+    "too_vague",
+    "cadence_flat",
+    "too_abstract",
+    "meaning_unclear",
+    "too_long",
+    "too_academic",
+    "cadence_manic"
+  ],
+
+  "scoringWeights": {
+    "intentMatch": 0.25,
+    "novelty": 0.20,
+    "preferenceMatch": 0.20,
+    "reusability": 0.15,
+    "antiCliche": 0.10,
+    "rhythmQuality": 0.10,
+    "notes": "Weights for candidate scoring, sum to 1.0"
+  },
+
+  "stats": {
+    "totalAccepted": 0,
+    "totalRejected": 0,
+    "rejectionReasons": {
+      "too_vague": 0,
+      "too_cute": 0,
+      "too_long": 0,
+      "too_abstract": 0,
+      "too_academic": 0,
+      "cadence_flat": 0,
+      "cadence_manic": 0,
+      "meaning_unclear": 0,
+      "sounds_like_ai": 0,
+      "other": 0
+    },
+    "acceptedByFamily": {},
+    "rejectedByFamily": {},
+    "acceptedByCadence": {},
+    "rejectedByCadence": {}
+  },
+
+  "meta": {
+    "createdAt": "2024-01-01T00:00:00Z",
+    "lastUpdated": "2024-01-01T00:00:00Z",
+    "profileVersion": 1
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "$schema": "./schema.json",
+  "name": "Intent Tags",
+  "version": "1.0.0",
+  "description": "The functional intent behind a pattern - what job it's meant to do",
+  "intents": {
+    "hook": {
+      "name": "Hook",
+      "description": "Grab attention and create immediate curiosity",
+      "question": "Does this stop the reader and make them want more?",
+      "signalWords": ["suddenly", "but", "here's the thing", "what if"],
+      "bestPairedWith": ["opening", "pivot"],
+      "failureModes": [
+        "Clickbait: promises more than it delivers",
+        "Gimmick: clever but empty",
+        "Disconnect: hook doesn't relate to content"
+      ],
+      "qualityTests": [
+        "Would you keep reading after this sentence?",
+        "Does it create genuine curiosity or just confusion?",
+        "Is the hook earned by what follows?"
+      ]
+    },
+    "frame": {
+      "name": "Frame",
+      "description": "Establish the lens/context for interpreting what follows",
+      "question": "Does this tell the reader how to think about what's coming?",
+      "signalWords": ["the real question is", "what we're actually talking about", "think of it as"],
+      "bestPairedWith": ["opening", "frame", "definition"],
+      "failureModes": [
+        "Invisible: framing is too subtle to register",
+        "Heavy-handed: tells reader exactly what to think",
+        "Wrong frame: sets up expectations that aren't met"
+      ],
+      "qualityTests": [
+        "Does the reader know what game we're playing?",
+        "Is the framing honest to what follows?",
+        "Does it make the argument land harder?"
+      ]
+    },
+    "reframe": {
+      "name": "Reframe",
+      "description": "Shift the reader's perspective on something they thought they understood",
+      "question": "Does this make the reader see something familiar in a new way?",
+      "signalWords": ["actually", "but what if", "isn't X, it's Y", "the real"],
+      "bestPairedWith": ["pivot", "definition", "hook"],
+      "failureModes": [
+        "Obvious: reframe everyone already sees",
+        "Forced: reframe doesn't actually fit",
+        "Unmotivated: why are we reframing this?"
+      ],
+      "qualityTests": [
+        "Is there genuine insight in the new frame?",
+        "Would the reader's behavior change based on this?",
+        "Does the reframe hold up under scrutiny?"
+      ]
+    },
+    "crystallization": {
+      "name": "Crystallization",
+      "description": "Compress a complex idea into a clear, memorable formulation",
+      "question": "Could the reader remember and repeat this?",
+      "signalWords": ["in other words", "simply put", "the rule is"],
+      "bestPairedWith": ["definition", "close", "argument"],
+      "failureModes": [
+        "Oversimplification: loses essential nuance",
+        "Cliché: crystallizes into something already known",
+        "Abstraction: crystallizes into something vaguer"
+      ],
+      "qualityTests": [
+        "Can someone repeat this after one reading?",
+        "Does it survive contact with complex reality?",
+        "Is it genuinely simpler or just shorter?"
+      ]
+    },
+    "pivot": {
+      "name": "Pivot",
+      "description": "Execute a turn in the argument's direction",
+      "question": "Does this signal and execute a clear change?",
+      "signalWords": ["but", "however", "and yet", "then something changed"],
+      "bestPairedWith": ["pivot", "transition"],
+      "failureModes": [
+        "Unearned: pivot happens too suddenly",
+        "Weak: direction change is barely perceptible",
+        "Lost: reader doesn't know where we're going now"
+      ],
+      "qualityTests": [
+        "Is the turn clearly signaled?",
+        "Is the new direction clear?",
+        "Does it feel like progress, not backtracking?"
+      ]
+    },
+    "reversal": {
+      "name": "Reversal",
+      "description": "Flip expectations or contradict what reader assumed",
+      "question": "Did this surprise the reader by contradicting their assumption?",
+      "signalWords": ["actually", "in fact", "the opposite", "not X but Y"],
+      "bestPairedWith": ["pivot", "counterpunch", "hook"],
+      "failureModes": [
+        "Obvious: reversal everyone expected",
+        "Cheap: reversal is just contrarianism",
+        "Unsubstantiated: reversal isn't supported"
+      ],
+      "qualityTests": [
+        "Is the reader genuinely surprised?",
+        "Does the reversal hold up logically?",
+        "Is there substance behind the surprise?"
+      ]
+    },
+    "concede_counterpunch": {
+      "name": "Concede-Counterpunch",
+      "description": "Acknowledge opposing view then respond with force",
+      "question": "Does this show fairness then reclaim momentum?",
+      "signalWords": ["yes, but", "granted, however", "while true, X"],
+      "bestPairedWith": ["concession", "counterpunch", "argument"],
+      "failureModes": [
+        "Weak counter: counterpunch doesn't land",
+        "Strawman: concession isn't real position",
+        "Undermined: concession is stronger than counter"
+      ],
+      "qualityTests": [
+        "Would an opponent recognize their position in the concession?",
+        "Does the counterpunch actually address the concession?",
+        "Does the sequence build or lose credibility?"
+      ]
+    },
+    "build_momentum": {
+      "name": "Build Momentum",
+      "description": "Increase intensity, urgency, or conviction",
+      "question": "Does this make the reader feel growing force?",
+      "signalWords": ["and then", "even more", "beyond that"],
+      "bestPairedWith": ["argument", "evidence", "elaboration"],
+      "failureModes": [
+        "Hollow: intensity without substance",
+        "Repetitive: just repeating louder",
+        "Exhausting: too much too fast"
+      ],
+      "qualityTests": [
+        "Is each beat genuinely adding force?",
+        "Can the reader sustain this energy?",
+        "Is there a payoff coming for this buildup?"
+      ]
+    },
+    "slow_down": {
+      "name": "Slow Down",
+      "description": "Reduce pace for emphasis, reflection, or precision",
+      "question": "Does this create productive pause in the flow?",
+      "signalWords": ["let's pause", "consider", "notice that"],
+      "bestPairedWith": ["concession", "elaboration", "definition"],
+      "failureModes": [
+        "Drag: slows without purpose",
+        "Momentum killer: breaks flow that was working",
+        "Padding: slow-down is just filler"
+      ],
+      "qualityTests": [
+        "Does the pause add meaning?",
+        "Does the reader need to catch breath here?",
+        "Is there sufficient energy to resume after?"
+      ]
+    },
+    "summarize": {
+      "name": "Summarize",
+      "description": "Condense preceding content into takeaway",
+      "question": "Does this capture what matters without losing it?",
+      "signalWords": ["in short", "the point is", "to summarize"],
+      "bestPairedWith": ["transition", "close"],
+      "failureModes": [
+        "Redundant: just repeats without adding",
+        "Reductive: loses important nuance",
+        "Mechanical: feels like obligation"
+      ],
+      "qualityTests": [
+        "Could someone skip the detail and just read this?",
+        "Does it capture the most important elements?",
+        "Does it add compression or just remove content?"
+      ]
+    },
+    "foreshadow": {
+      "name": "Foreshadow",
+      "description": "Hint at what's coming without fully revealing",
+      "question": "Does this create anticipation for something ahead?",
+      "signalWords": ["soon", "as we'll see", "but first"],
+      "bestPairedWith": ["opening", "transition"],
+      "failureModes": [
+        "Telegraphed: gives away the punchline",
+        "Forgotten: foreshadowing never pays off",
+        "Manipulative: creates false expectations"
+      ],
+      "qualityTests": [
+        "Does the reader feel anticipation without frustration?",
+        "Is the payoff worth the setup?",
+        "Is the foreshadowing subtle enough?"
+      ]
+    },
+    "callback": {
+      "name": "Callback",
+      "description": "Reference earlier content to create closure or emphasis",
+      "question": "Does this reward the reader for paying attention?",
+      "signalWords": ["remember when", "as we said", "back to"],
+      "bestPairedWith": ["close", "pivot"],
+      "failureModes": [
+        "Forced: callback feels shoehorned",
+        "Unclear: reader doesn't remember what's being referenced",
+        "Hollow: callback doesn't add meaning"
+      ],
+      "qualityTests": [
+        "Does the reader remember the original?",
+        "Does the callback add new meaning?",
+        "Does it create satisfying closure?"
+      ]
+    }
+  },
+  "namingConventions": {
+    "format": "snake_case",
+    "prefix": "None required",
+    "examples": ["hook", "reframe", "concede_counterpunch"]
+  }
+}

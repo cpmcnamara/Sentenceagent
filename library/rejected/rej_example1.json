@@ -1,0 +1,10 @@
+{
+  "id": "rej_example1",
+  "originalText": "In today's fast-paced world, it's more important than ever to think outside the box and leverage synergies to move the needle.",
+  "template": "In today's [adjective] [noun], it's more important than ever to [cliché 1] and [cliché 2] to [cliché 3].",
+  "fingerprint": "todays-world-important-cliche-chain",
+  "rejectionReason": "sounds_like_ai",
+  "rejectionNotes": "Multiple stacked clichés. 'In today's fast-paced world' is throat-clearing. 'Think outside the box', 'leverage synergies', 'move the needle' are all banned phrases. This pattern produces writing that sounds generic, corporate, and AI-generated.",
+  "rejectedAt": "2024-01-10T00:00:00Z",
+  "sourceUrl": null
+}

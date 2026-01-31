@@ -1,0 +1,169 @@
+{
+  "$schema": "./schema.json",
+  "name": "Paragraph Roles",
+  "version": "1.0.0",
+  "description": "Structural positions and functions a paragraph can serve in an argument",
+  "roles": {
+    "opening": {
+      "name": "Opening",
+      "description": "First paragraph that establishes context and draws reader in",
+      "position": "first",
+      "primaryJob": "Capture attention and establish territory",
+      "compatibleIntents": ["hook", "frame", "foreshadow"],
+      "typicalCadences": ["crescendo_snap", "staccato", "long_short_snap"],
+      "failureModes": [
+        "Too slow to hook",
+        "Overpromises what follows",
+        "Generic throat-clearing"
+      ]
+    },
+    "hook": {
+      "name": "Hook",
+      "description": "Attention-grabbing element (can be opening or internal)",
+      "position": "flexible",
+      "primaryJob": "Stop the reader and create curiosity",
+      "compatibleIntents": ["hook", "reframe"],
+      "typicalCadences": ["staccato", "long_short_snap", "punch_punch_land"],
+      "failureModes": [
+        "Too clever/cute",
+        "Disconnected from main argument",
+        "Clickbait energy"
+      ]
+    },
+    "frame": {
+      "name": "Frame",
+      "description": "Establishes the lens through which to see what follows",
+      "position": "early",
+      "primaryJob": "Set the interpretive context",
+      "compatibleIntents": ["frame", "crystallization"],
+      "typicalCadences": ["drumline", "slow_build"],
+      "failureModes": [
+        "Too abstract",
+        "Tells rather than shows",
+        "Obvious framing"
+      ]
+    },
+    "argument": {
+      "name": "Argument",
+      "description": "Core paragraph making a claim with support",
+      "position": "middle",
+      "primaryJob": "Advance the central thesis",
+      "compatibleIntents": ["crystallization", "build_momentum"],
+      "typicalCadences": ["ladder", "slow_build", "parallel_march"],
+      "failureModes": [
+        "Assertion without evidence",
+        "Tangential to main point",
+        "Too many points at once"
+      ]
+    },
+    "evidence": {
+      "name": "Evidence",
+      "description": "Provides support for a claim made elsewhere",
+      "position": "middle",
+      "primaryJob": "Substantiate and ground claims",
+      "compatibleIntents": ["build_momentum"],
+      "typicalCadences": ["drumline", "cascade", "wave"],
+      "failureModes": [
+        "Cherry-picked data",
+        "Evidence doesn't actually support claim",
+        "Too much detail"
+      ]
+    },
+    "pivot": {
+      "name": "Pivot",
+      "description": "Marks a turn in the argument's direction",
+      "position": "middle",
+      "primaryJob": "Signal and execute a change in direction",
+      "compatibleIntents": ["pivot", "reversal", "reframe"],
+      "typicalCadences": ["long_short_snap", "punch_punch_land", "wave"],
+      "failureModes": [
+        "Pivot isn't earned",
+        "Direction change is unclear",
+        "Too abrupt without setup"
+      ]
+    },
+    "transition": {
+      "name": "Transition",
+      "description": "Bridges between sections or ideas",
+      "position": "between_sections",
+      "primaryJob": "Maintain flow while signaling movement",
+      "compatibleIntents": ["summarize", "foreshadow"],
+      "typicalCadences": ["heartbeat", "wave"],
+      "failureModes": [
+        "Just restates without adding",
+        "Breaks momentum",
+        "Mechanical signposting"
+      ]
+    },
+    "concession": {
+      "name": "Concession",
+      "description": "Acknowledges counter-arguments or limitations",
+      "position": "middle",
+      "primaryJob": "Build credibility through fair acknowledgment",
+      "compatibleIntents": ["concede_counterpunch", "slow_down"],
+      "typicalCadences": ["wave", "slow_build"],
+      "failureModes": [
+        "Concedes too much",
+        "Feels like hedge/weakness",
+        "Undermines own argument"
+      ]
+    },
+    "counterpunch": {
+      "name": "Counterpunch",
+      "description": "Responds to concession with strong counter",
+      "position": "after_concession",
+      "primaryJob": "Reclaim momentum after acknowledging opposition",
+      "compatibleIntents": ["concede_counterpunch", "reversal"],
+      "typicalCadences": ["crescendo_snap", "punch_punch_land", "staccato"],
+      "failureModes": [
+        "Doesn't actually address the concession",
+        "Too aggressive/dismissive",
+        "Logic doesn't hold"
+      ]
+    },
+    "definition": {
+      "name": "Definition",
+      "description": "Crystallizes meaning of a key term or concept",
+      "position": "flexible",
+      "primaryJob": "Lock in shared understanding",
+      "compatibleIntents": ["crystallization", "frame"],
+      "typicalCadences": ["drumline", "bookend", "spiral"],
+      "failureModes": [
+        "Definition is circular",
+        "Too obvious to need defining",
+        "Feels like dictionary entry"
+      ]
+    },
+    "elaboration": {
+      "name": "Elaboration",
+      "description": "Expands on a previous point with depth or nuance",
+      "position": "after_claim",
+      "primaryJob": "Add richness and detail to skeleton arguments",
+      "compatibleIntents": ["build_momentum", "slow_down"],
+      "typicalCadences": ["slow_build", "wave", "spiral"],
+      "failureModes": [
+        "Padding without substance",
+        "Loses connection to original point",
+        "Too much for the point's importance"
+      ]
+    },
+    "close": {
+      "name": "Close",
+      "description": "Final paragraph that lands the argument",
+      "position": "last",
+      "primaryJob": "Create resolution and lasting impression",
+      "compatibleIntents": ["crystallization", "callback", "summarize"],
+      "typicalCadences": ["crescendo_snap", "bookend", "parallel_march"],
+      "failureModes": [
+        "Just summarizes without adding",
+        "New information (should have been earlier)",
+        "Limp ending"
+      ]
+    }
+  },
+  "namingConventions": {
+    "format": "snake_case",
+    "prefix": "None required",
+    "examples": ["opening", "pivot", "counterpunch"]
+  }
+}

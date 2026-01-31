@@ -1,0 +1,115 @@
+{
+  "id": "cpu_example1",
+  "type": "CPU",
+  "tier": "active",
+  "createdAt": "2024-01-15T00:00:00Z",
+  "updatedAt": "2024-01-15T00:00:00Z",
+  "version": 1,
+  "template": "[Short setup]. [Building context]. [Longer elaboration with multiple clauses]. [Sharp short landing].",
+  "constraints": [
+    "4 sentences following crescendo-snap rhythm",
+    "Sentence lengths should progressively increase until final snap",
+    "Final sentence must be punchy (≤8 words)",
+    "Content should build logically toward the landing"
+  ],
+  "exampleSnippet": "The data was clear. The team had aligned. After months of debate and countless stakeholder meetings, everyone finally understood what needed to happen. Ship it.",
+  "family": null,
+  "paragraphRoles": ["argument", "close"],
+  "intentTags": ["build_momentum", "crystallization"],
+  "cadenceArchetype": "crescendo_snap",
+  "audienceSuitability": ["exec", "essay"],
+  "metaphorLevel": "low",
+  "compressionLevel": "medium",
+  "heatLevel": "warm",
+  "rhythmProfile": {
+    "wordCount": 27,
+    "charCount": 140,
+    "syllableEstimate": 38,
+    "clauseCount": 6,
+    "sentenceCount": 4,
+    "avgWordsPerSentence": 6.75,
+    "punctuationProfile": {
+      "periods": 4,
+      "commas": 2,
+      "semicolons": 0,
+      "colons": 0,
+      "emDashes": 0,
+      "questionMarks": 0,
+      "exclamationMarks": 0,
+      "parentheses": 0,
+      "ellipses": 0
+    },
+    "lengthCategory": "short",
+    "stressPattern": "S-S-L-S"
+  },
+  "cadenceContour": {
+    "sentenceRhythms": [
+      {
+        "position": 0,
+        "text": "The data was clear.",
+        "wordCount": 4,
+        "clauseEstimate": 1,
+        "punctuation": {"periods": 1, "commas": 0, "semicolons": 0, "colons": 0, "emDashes": 0, "questionMarks": 0, "exclamationMarks": 0, "parentheses": 0, "ellipses": 0},
+        "role": "setup"
+      },
+      {
+        "position": 1,
+        "text": "The team had aligned.",
+        "wordCount": 4,
+        "clauseEstimate": 1,
+        "punctuation": {"periods": 1, "commas": 0, "semicolons": 0, "colons": 0, "emDashes": 0, "questionMarks": 0, "exclamationMarks": 0, "parentheses": 0, "ellipses": 0},
+        "role": "build"
+      },
+      {
+        "position": 2,
+        "text": "After months of debate and countless stakeholder meetings, everyone finally understood what needed to happen.",
+        "wordCount": 15,
+        "clauseEstimate": 2,
+        "punctuation": {"periods": 1, "commas": 1, "semicolons": 0, "colons": 0, "emDashes": 0, "questionMarks": 0, "exclamationMarks": 0, "parentheses": 0, "ellipses": 0},
+        "role": "pivot"
+      },
+      {
+        "position": 3,
+        "text": "Ship it.",
+        "wordCount": 2,
+        "clauseEstimate": 1,
+        "punctuation": {"periods": 1, "commas": 0, "semicolons": 0, "colons": 0, "emDashes": 0, "questionMarks": 0, "exclamationMarks": 0, "parentheses": 0, "ellipses": 0},
+        "role": "land"
+      }
+    ],
+    "lengthContour": [4, 4, 15, 2],
+    "archetype": "crescendo_snap",
+    "archetypeConfidence": 0.85,
+    "hingeSentenceIndex": 2,
+    "totalSentences": 4
+  },
+  "hingeSentenceTemplate": "[Time-based qualifier], [subject] finally [verb] [object].",
+  "essentialElements": ["crescendo", "snap"],
+  "evidenceCount": 3,
+  "testsPassed": 2,
+  "overuseCap": 1,
+  "hardBans": [],
+  "whyItWorks": "The crescendo builds anticipation and weight; the snap releases it with satisfying brevity. Creates a 'mic drop' effect that makes the conclusion memorable.",
+  "whyItMightFail": "Falls flat if the final snap isn't genuinely punchy or if the buildup doesn't earn the conclusion. Can feel manipulative if overused.",
+  "notes": "The third sentence should be the longest and contain the pivot/realization. The final snap should be an imperative or ultra-short declaration.",
+  "fingerprint": "crescendo-snap-4sent-shortfinal",
+  "featureVector": [0.3, 0.7, 0.5, 0.8, 0.6],
+  "sourceUrl": null,
+  "sourceType": "manual",
+  "emotionalProfile": {
+    "primaryEffect": "release",
+    "secondaryEffects": ["momentum", "certainty"],
+    "intensity": "strong",
+    "delivery": "rhythmic",
+    "entryState": "anticipation",
+    "exitState": "resolve",
+    "risks": [
+      {
+        "risk": "Feels like a TED talk cliché",
+        "whenLikely": "When the snap is too generic (e.g., 'Do it.')",
+        "mitigation": "Make the final snap specific to the content"
+      }
+    ],
+    "confidence": 0.8
+  }
+}

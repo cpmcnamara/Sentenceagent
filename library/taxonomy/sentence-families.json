@@ -1,0 +1,267 @@
+{
+  "$schema": "./schema.json",
+  "name": "Sentence Families",
+  "version": "1.0.0",
+  "description": "Core structural patterns that define how a sentence delivers its payload",
+  "families": {
+    "negation_pivot": {
+      "name": "Negation Pivot",
+      "template": "The [X] isn't [Y]—it's [Z].",
+      "description": "Negates an assumption then pivots to the real point",
+      "markers": ["isn't", "not about", "doesn't", "won't"],
+      "rhythm": "setup-negate-land",
+      "bestFor": ["reframes", "definitions", "corrections"],
+      "failureModes": [
+        "Overused; can feel formulaic",
+        "Weak if the negation isn't surprising"
+      ],
+      "examples": [
+        "The problem isn't resources—it's coordination.",
+        "Leadership isn't about control—it's about clarity."
+      ]
+    },
+    "colon_reveal": {
+      "name": "Colon Reveal",
+      "template": "[Setup]: [Reveal].",
+      "description": "Builds anticipation then delivers via colon",
+      "markers": [":"],
+      "rhythm": "setup-pause-punch",
+      "bestFor": ["definitions", "conclusions", "summaries"],
+      "failureModes": [
+        "Flat if setup is too short",
+        "Academic if overused"
+      ],
+      "examples": [
+        "Here's what nobody tells you: the hardest part is starting.",
+        "The answer was simple: stop optimizing."
+      ]
+    },
+    "em_dash_insert": {
+      "name": "Em-Dash Insert",
+      "template": "[Main clause]—[interrupt/aside]—[continuation].",
+      "description": "Interrupts main flow with a sharp aside",
+      "markers": ["—"],
+      "rhythm": "flow-interrupt-resume",
+      "bestFor": ["emphasis", "asides", "corrections mid-thought"],
+      "failureModes": [
+        "Choppy if insert is too long",
+        "Confusing if main clause is already complex"
+      ],
+      "examples": [
+        "The team—and this is critical—hadn't been consulted.",
+        "She knew—everyone knew—that it wouldn't work."
+      ]
+    },
+    "question_answer": {
+      "name": "Question-Answer",
+      "template": "[Question]? [Answer].",
+      "description": "Poses then immediately answers a question",
+      "markers": ["?"],
+      "rhythm": "ask-answer",
+      "bestFor": ["hooks", "transitions", "anticipating objections"],
+      "failureModes": [
+        "Can feel rhetorical/cheap if question is obvious",
+        "Sounds like AI if overused"
+      ],
+      "examples": [
+        "Why did it fail? Because nobody owned it.",
+        "What changed? Everything."
+      ]
+    },
+    "list_resolve": {
+      "name": "List Resolve",
+      "template": "[Item], [item], and [item]: [resolution].",
+      "description": "Enumerates then resolves with a point",
+      "markers": [",", "and", ":"],
+      "rhythm": "list-list-list-land",
+      "bestFor": ["summaries", "building momentum", "showing scope"],
+      "failureModes": [
+        "Tedious if items aren't carefully chosen",
+        "Weak if resolution doesn't earn the buildup"
+      ],
+      "examples": [
+        "Meetings, emails, and status updates: the trifecta of wasted time.",
+        "Speed, simplicity, and focus: that's the whole strategy."
+      ]
+    },
+    "contrast_pair": {
+      "name": "Contrast Pair",
+      "template": "[X] does [A]; [Y] does [B].",
+      "description": "Juxtaposes two things to highlight difference",
+      "markers": [";", "but", "while", "whereas"],
+      "rhythm": "thesis-antithesis",
+      "bestFor": ["comparisons", "arguments", "showing stakes"],
+      "failureModes": [
+        "Can feel didactic",
+        "Weak if contrast isn't sharp"
+      ],
+      "examples": [
+        "Amateurs focus on tactics; professionals focus on systems.",
+        "The old way was safe; the new way is necessary."
+      ]
+    },
+    "conditional_snap": {
+      "name": "Conditional Snap",
+      "template": "If [condition], [short consequence].",
+      "description": "Sets up a condition then delivers a punchy result",
+      "markers": ["if", "when", "once", "unless"],
+      "rhythm": "setup-snap",
+      "bestFor": ["warnings", "promises", "stakes"],
+      "failureModes": [
+        "Can sound preachy",
+        "Weak if consequence is too soft"
+      ],
+      "examples": [
+        "If you can't explain it simply, you don't understand it.",
+        "When the metrics become the goal, they cease to be good metrics."
+      ]
+    },
+    "definition_is": {
+      "name": "Definition-Is",
+      "template": "[X] is [definition].",
+      "description": "Direct definitional statement",
+      "markers": ["is", "means", "represents"],
+      "rhythm": "subject-is-object",
+      "bestFor": ["crystallizations", "opening frames", "closing stakes"],
+      "failureModes": [
+        "Can feel obvious or flat",
+        "Overused in thought leadership"
+      ],
+      "examples": [
+        "Strategy is saying no.",
+        "Trust is the ultimate efficiency."
+      ]
+    },
+    "analogy_bridge": {
+      "name": "Analogy Bridge",
+      "template": "[X] is like [Y]: [explanation].",
+      "description": "Uses analogy to bridge abstract to concrete",
+      "markers": ["like", "as if", "imagine", "think of"],
+      "rhythm": "abstract-bridge-concrete",
+      "bestFor": ["explanations", "making abstract tangible", "teaching"],
+      "failureModes": [
+        "Can feel cheesy if analogy is strained",
+        "Loses executives if too whimsical"
+      ],
+      "examples": [
+        "Writing code is like writing prose: clarity beats cleverness.",
+        "Think of culture like an operating system: invisible but runs everything."
+      ]
+    },
+    "parallel_triple": {
+      "name": "Parallel Triple",
+      "template": "[Phrase A]. [Phrase B]. [Phrase C].",
+      "description": "Three parallel phrases building to emphasis",
+      "markers": ["three short sentences", "anaphora"],
+      "rhythm": "build-build-land",
+      "bestFor": ["emphasis", "memorable conclusions", "rallying"],
+      "failureModes": [
+        "Can feel speechy",
+        "Loses power if phrases aren't truly parallel"
+      ],
+      "examples": [
+        "Show up. Do the work. Ship it.",
+        "We came. We saw. We shipped."
+      ]
+    },
+    "reversal_but": {
+      "name": "Reversal But",
+      "template": "[Expected thing], but [surprise].",
+      "description": "Sets up expectation then reverses with 'but'",
+      "markers": ["but", "yet", "however"],
+      "rhythm": "setup-pivot",
+      "bestFor": ["surprises", "counterarguments", "pivots"],
+      "failureModes": [
+        "Predictable if overused",
+        "Weak if reversal isn't actually surprising"
+      ],
+      "examples": [
+        "I thought we needed more data, but we needed less.",
+        "Everyone expected failure, but something else happened."
+      ]
+    },
+    "accumulation": {
+      "name": "Accumulation",
+      "template": "[Long sentence building through multiple clauses to a point].",
+      "description": "Builds pressure through accumulated clauses",
+      "markers": ["multiple commas", "and", "building length"],
+      "rhythm": "accumulate-accumulate-release",
+      "bestFor": ["building momentum", "showing complexity", "climaxes"],
+      "failureModes": [
+        "Can lose reader if too long",
+        "Exhausting if used frequently"
+      ],
+      "examples": [
+        "The meetings piled up, the deadlines slipped, the stakeholders grew restless, and still nobody made a decision."
+      ]
+    },
+    "understatement": {
+      "name": "Understatement",
+      "template": "[Massive thing described mildly].",
+      "description": "Deliberately understates for emphasis",
+      "markers": ["somewhat", "a bit", "not entirely", "slightly"],
+      "rhythm": "deadpan",
+      "bestFor": ["humor", "sophisticated tone", "letting reader fill gap"],
+      "failureModes": [
+        "Can seem passive-aggressive",
+        "Misses if reader doesn't catch it"
+      ],
+      "examples": [
+        "The results were not entirely what we'd hoped.",
+        "That approach has some challenges."
+      ]
+    },
+    "direct_command": {
+      "name": "Direct Command",
+      "template": "[Verb] [object].",
+      "description": "Direct imperative with no softening",
+      "markers": ["imperative verb"],
+      "rhythm": "command",
+      "bestFor": ["calls to action", "urgency", "closing moves"],
+      "failureModes": [
+        "Can feel bossy",
+        "Loses nuance"
+      ],
+      "examples": [
+        "Ship it.",
+        "Stop optimizing. Start executing."
+      ]
+    },
+    "fragment_punch": {
+      "name": "Fragment Punch",
+      "template": "[Full sentence]. [Fragment].",
+      "description": "Follows a full sentence with a punchy fragment",
+      "markers": ["period followed by short fragment"],
+      "rhythm": "setup-punch",
+      "bestFor": ["emphasis", "landing points", "breaking rhythm"],
+      "failureModes": [
+        "Feels gimmicky if overused",
+        "Can seem incomplete"
+      ],
+      "examples": [
+        "We tried everything. Nothing worked.",
+        "They said it couldn't be done. It could."
+      ]
+    },
+    "extended_qualifier": {
+      "name": "Extended Qualifier",
+      "template": "[Point], [qualifier], [qualifier], [land].",
+      "description": "Wraps the main point in multiple qualifications",
+      "markers": ["although", "while", "despite", "even though"],
+      "rhythm": "qualify-qualify-land",
+      "bestFor": ["nuanced arguments", "concessions", "academic contexts"],
+      "failureModes": [
+        "Can bury the point",
+        "Feels hedging if overdone"
+      ],
+      "examples": [
+        "While the evidence is mixed, and reasonable people disagree, the core insight holds."
+      ]
+    }
+  },
+  "namingConventions": {
+    "format": "snake_case",
+    "prefix": "None required",
+    "examples": ["negation_pivot", "colon_reveal"]
+  }
+}

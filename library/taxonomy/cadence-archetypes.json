@@ -1,0 +1,233 @@
+{
+  "$schema": "./schema.json",
+  "name": "Cadence Archetypes",
+  "version": "1.0.0",
+  "description": "Multi-sentence rhythm patterns that create momentum, tension, and resolution",
+  "archetypes": {
+    "crescendo_snap": {
+      "name": "Crescendo Snap",
+      "description": "Sentences grow longer, building pressure, then snap to a short punchy closer",
+      "contourPattern": "S-M-L-S",
+      "sentenceCount": [3, 5],
+      "signature": "build-build-build-snap",
+      "essential": ["escalating length", "final short sentence"],
+      "bestFor": ["argument climaxes", "landing key points", "persuasion"],
+      "failureModes": [
+        "Falls flat if final snap isn't sharp enough",
+        "Loses power if build is too gradual"
+      ],
+      "example": {
+        "text": "The data was clear. The team had aligned. The stakeholders had finally stopped fighting about scope. Ship it.",
+        "contour": [4, 5, 10, 2]
+      }
+    },
+    "staccato": {
+      "name": "Staccato",
+      "description": "Rapid-fire short sentences creating urgency and momentum",
+      "contourPattern": "S-S-S-S",
+      "sentenceCount": [3, 6],
+      "signature": "punch-punch-punch",
+      "essential": ["consistent short length", "parallel structure"],
+      "bestFor": ["urgency", "action sequences", "emphasis"],
+      "failureModes": [
+        "Exhausting if too long",
+        "Can feel choppy without purpose"
+      ],
+      "example": {
+        "text": "We shipped. It broke. We fixed it. We shipped again.",
+        "contour": [2, 2, 3, 3]
+      }
+    },
+    "wave": {
+      "name": "Wave",
+      "description": "Alternating long and short sentences creating rhythmic flow",
+      "contourPattern": "L-S-L-S",
+      "sentenceCount": [4, 8],
+      "signature": "expand-contract-expand-contract",
+      "essential": ["alternating length", "consistent rhythm"],
+      "bestFor": ["explanations", "narratives", "maintaining interest"],
+      "failureModes": [
+        "Can feel mechanical if too regular",
+        "Loses impact if lengths aren't distinct enough"
+      ],
+      "example": {
+        "text": "The project started with ambitious goals and a team eager to prove themselves. It struggled. After months of iteration and countless difficult conversations with stakeholders, the path forward became clear. We simplified.",
+        "contour": [15, 2, 14, 2]
+      }
+    },
+    "drumline": {
+      "name": "Drumline",
+      "description": "Regular, medium-length sentences with consistent beat",
+      "contourPattern": "M-M-M-M",
+      "sentenceCount": [3, 6],
+      "signature": "march-march-march",
+      "essential": ["consistent length", "steady rhythm"],
+      "bestFor": ["establishing authority", "factual sequences", "building foundation"],
+      "failureModes": [
+        "Can feel monotonous",
+        "Lacks dynamic interest"
+      ],
+      "example": {
+        "text": "The first quarter exceeded expectations. The second quarter matched our targets. The third quarter surprised everyone. The trend was clear.",
+        "contour": [6, 6, 5, 4]
+      }
+    },
+    "slow_build": {
+      "name": "Slow Build",
+      "description": "Sentences progressively lengthen, building weight and complexity",
+      "contourPattern": "S-M-L-XL",
+      "sentenceCount": [3, 5],
+      "signature": "start-small-grow",
+      "essential": ["progressive lengthening", "increasing complexity"],
+      "bestFor": ["developing arguments", "showing complexity", "building to revelation"],
+      "failureModes": [
+        "Can lose reader if final sentence is too unwieldy",
+        "Needs strong payoff"
+      ],
+      "example": {
+        "text": "It started simply. The requirements seemed straightforward at first glance. But as we dug deeper, consulting with stakeholders and mapping dependencies, we discovered a web of interconnected systems that nobody had fully documented.",
+        "contour": [3, 8, 22]
+      }
+    },
+    "punch_punch_land": {
+      "name": "Punch-Punch-Land",
+      "description": "Two short setup punches followed by a satisfying landing",
+      "contourPattern": "S-S-M/L",
+      "sentenceCount": [3, 4],
+      "signature": "jab-jab-hook",
+      "essential": ["two short openers", "longer resolution"],
+      "bestFor": ["reveals", "conclusions", "making points stick"],
+      "failureModes": [
+        "Feels formulaic if pattern is obvious",
+        "Landing must justify the setup"
+      ],
+      "example": {
+        "text": "We had the data. We had the team. What we didn't have was the courage to act on what both were telling us.",
+        "contour": [4, 4, 17]
+      }
+    },
+    "long_short_snap": {
+      "name": "Long-Short Snap",
+      "description": "Extended sentence followed by abrupt short one for contrast",
+      "contourPattern": "L/XL-S",
+      "sentenceCount": [2, 3],
+      "signature": "expand-snap",
+      "essential": ["dramatic length contrast", "pointed short sentence"],
+      "bestFor": ["emphasis through contrast", "punchlines", "course corrections"],
+      "failureModes": [
+        "Loses impact if contrast isn't dramatic enough"
+      ],
+      "example": {
+        "text": "After months of planning, countless meetings, three strategy offsites, and a complete reorg of the product team. We pivoted.",
+        "contour": [18, 2]
+      }
+    },
+    "parallel_march": {
+      "name": "Parallel March",
+      "description": "Sentences with parallel structure creating marching rhythm",
+      "contourPattern": "M-M-M (parallel)",
+      "sentenceCount": [3, 5],
+      "signature": "same-same-same",
+      "essential": ["parallel grammatical structure", "consistent openings"],
+      "bestFor": ["emphasis", "memorable sequences", "building conviction"],
+      "failureModes": [
+        "Can feel speechy or preachy",
+        "Loses power without genuine parallelism"
+      ],
+      "example": {
+        "text": "We measure what matters. We cut what doesn't. We ship what works.",
+        "contour": [4, 4, 4]
+      }
+    },
+    "spiral": {
+      "name": "Spiral",
+      "description": "Each sentence circles back while advancing, creating deepening effect",
+      "contourPattern": "Variable",
+      "sentenceCount": [3, 6],
+      "signature": "return-and-advance",
+      "essential": ["callbacks to earlier phrases", "progressive revelation"],
+      "bestFor": ["building themes", "philosophical arguments", "closing sections"],
+      "failureModes": [
+        "Can feel repetitive if callbacks aren't adding new insight",
+        "Requires careful construction"
+      ],
+      "example": {
+        "text": "The goal was clarity. Clarity in our message. Clarity in our priorities. And with that clarity came something unexpected: speed.",
+        "contour": [5, 4, 4, 9]
+      }
+    },
+    "bookend": {
+      "name": "Bookend",
+      "description": "Opens and closes with similar structure, framing the middle",
+      "contourPattern": "S-[variable]-S",
+      "sentenceCount": [3, 7],
+      "signature": "frame-develop-frame",
+      "essential": ["mirrored opening and closing", "distinct middle section"],
+      "bestFor": ["complete arguments", "memorable sections", "closure"],
+      "failureModes": [
+        "Can feel gimmicky if echo is too obvious",
+        "Middle must justify the frame"
+      ],
+      "example": {
+        "text": "Start simple. Add complexity only when the simple version fails, when users demand more, when the market forces your hand. But always, always return to simple.",
+        "contour": [2, 18, 6]
+      }
+    },
+    "ladder": {
+      "name": "Ladder",
+      "description": "Each sentence builds directly on the previous, creating logical climb",
+      "contourPattern": "Variable",
+      "sentenceCount": [3, 5],
+      "signature": "step-step-step",
+      "essential": ["clear logical progression", "each sentence picks up from previous"],
+      "bestFor": ["logical arguments", "explanations", "building to conclusions"],
+      "failureModes": [
+        "Can feel pedantic if steps are too small",
+        "Loses readers if a step is unclear"
+      ],
+      "example": {
+        "text": "The team was aligned. Alignment meant faster decisions. Faster decisions meant we could ship weekly. And shipping weekly changed everything.",
+        "contour": [5, 5, 7, 5]
+      }
+    },
+    "heartbeat": {
+      "name": "Heartbeat",
+      "description": "Pairs of sentences with consistent internal rhythm",
+      "contourPattern": "S-M, S-M, S-M",
+      "sentenceCount": [4, 6],
+      "signature": "beat-rest-beat-rest",
+      "essential": ["paired sentence structure", "consistent pairing rhythm"],
+      "bestFor": ["balanced arguments", "comparisons", "steady development"],
+      "failureModes": [
+        "Can feel mechanical",
+        "Requires genuine pairing logic"
+      ],
+      "example": {
+        "text": "Move fast. But don't break things that matter. Experiment freely. But measure what you're learning. Ship often. But ship quality.",
+        "contour": [2, 7, 2, 6, 2, 3]
+      }
+    },
+    "cascade": {
+      "name": "Cascade",
+      "description": "Ideas flow and tumble, each triggering the next in quick succession",
+      "contourPattern": "S-S-S-M",
+      "sentenceCount": [4, 7],
+      "signature": "trigger-trigger-trigger-collect",
+      "essential": ["rapid succession", "logical chain", "collecting summary"],
+      "bestFor": ["showing consequences", "cause-effect chains", "dynamic explanations"],
+      "failureModes": [
+        "Can feel breathless",
+        "Chain must be genuinely logical"
+      ],
+      "example": {
+        "text": "The deadline slipped. The budget grew. Trust eroded. And suddenly a routine project became a career-defining crisis.",
+        "contour": [4, 4, 3, 10]
+      }
+    }
+  },
+  "namingConventions": {
+    "format": "snake_case",
+    "prefix": "None required",
+    "examples": ["crescendo_snap", "parallel_march"]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@rhythm-miner/firecrawl",
+  "version": "1.0.0",
+  "description": "Firecrawl integration for URL fetching and text extraction",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mendable/firecrawl-js": "^0.0.28"
+  }
+}

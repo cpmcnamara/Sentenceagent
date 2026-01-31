@@ -1,0 +1,28 @@
+{
+  "name": "rhythm-pattern-miner",
+  "version": "1.0.0",
+  "description": "A rhythm-aware pattern mining agent for building sentence and cadence-paragraph pattern libraries",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @rhythm-miner/cli",
+    "build": "npm run build -w @rhythm-miner/core && npm run build -w @rhythm-miner/firecrawl && npm run build -w @rhythm-miner/cli",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "mine": "npm run mine -w @rhythm-miner/cli",
+    "search": "npm run search -w @rhythm-miner/cli",
+    "sources": "npm run sources -w @rhythm-miner/cli"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
