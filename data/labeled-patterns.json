@@ -392,6 +392,112 @@
         "position": "thesis or argument",
         "bestFor": "Contrarian claims, making inanimate things feel alive and implicated"
       }
+    },
+    {
+      "id": 24,
+      "author": "Stewart Brand",
+      "source": "How Buildings Learn",
+      "passage": "A building is not something you finish. A building is something you start. The word 'building' contains the double reality. It means both 'the action of the verb build' and 'that which is built'—both verb and noun, both the action and the result.",
+      "feedback": "A bit complicated but the depth of idea and metaphor are great.",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [7, 7, 7, 29],
+        "cadence": "short-short-short-LONG",
+        "beat": "Three parallel punches (7-7-7), then elaborate unpacking"
+      },
+      "structure": {
+        "template": "A [thing] is not something you [expected verb]. A [thing] is something you [reframing verb]. The word '[thing]' contains [insight]. It means both '[meaning A]' and '[meaning B]'—both [category A] and [category B].",
+        "slots": ["thing", "expected verb", "reframing verb", "insight", "meaning A", "meaning B", "category A", "category B"],
+        "technique": "Negation-affirmation pair + etymological/linguistic unpacking"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Buildings are ongoing processes, not finished products.",
+        "technique": "Wordplay on 'building' as verb/noun creates insight through language itself"
+      },
+      "usage": {
+        "position": "thesis or opening",
+        "bestFor": "Reframing static things as processes, linguistic insights"
+      },
+      "caution": "Slightly complex—requires reader patience"
+    },
+    {
+      "id": 27,
+      "author": "David Foster Wallace",
+      "source": "This Is Water",
+      "passage": "There are these two young fish swimming along and they happen to meet an older fish swimming the other way, who nods at them and says 'Morning, boys. How's the water?' And the two young fish swim on for a bit, and then eventually one of them looks over at the other and goes 'What the hell is water?'",
+      "feedback": "Cool little story that illustrates a point. Could be great in lots of types of essays.",
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [31, 28],
+        "cadence": "LONG-LONG (narrative)",
+        "beat": "Setup story → punchline question"
+      },
+      "structure": {
+        "template": "There are these [characters] doing [activity] and they [encounter] [wiser character], who [action] and says '[wisdom/question about invisible thing].' And [characters continue], and then [character] goes '[reveals they don't see the invisible thing].'",
+        "slots": ["characters", "activity", "encounter", "wiser character", "wisdom question", "revelation of blindness"],
+        "technique": "Parable structure: setup → wise question → revealing punchline"
+      },
+      "emotionalWeight": {
+        "dryVersion": "We often don't notice the most fundamental aspects of our environment.",
+        "technique": "Story creates identification; punchline creates 'aha' about reader's own blindness"
+      },
+      "usage": {
+        "position": "opening or to illustrate key point",
+        "bestFor": "Making abstract concepts tangible through parable, versatile across essay types"
+      }
+    },
+    {
+      "id": 28,
+      "author": "James Clear",
+      "source": "Atomic Habits",
+      "passage": "You do not rise to the level of your goals. You fall to the level of your systems.",
+      "feedback": "Requires iterating on a strong idea - very JFK-like as a model.",
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [9, 9],
+        "cadence": "balanced-antithesis",
+        "beat": "Negation (9 words) → Affirmation (9 words), perfect mirror"
+      },
+      "structure": {
+        "template": "You do not [positive verb] to the level of your [aspirational noun]. You [negative verb] to the level of your [practical noun].",
+        "slots": ["positive verb", "aspirational noun", "negative verb", "practical noun"],
+        "technique": "JFK-style chiasmus: rise/fall, goals/systems"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Systems matter more than goals.",
+        "technique": "Antithetical structure with rise/fall creates visceral deflation of aspiration"
+      },
+      "usage": {
+        "position": "thesis or aphorism",
+        "bestFor": "Contrarian reframing, memorable one-liners"
+      },
+      "caution": "Requires strong underlying idea—structure alone won't save weak content"
+    },
+    {
+      "id": 29,
+      "author": "Kevin Simler & Robin Hanson",
+      "source": "The Elephant in the Brain",
+      "passage": "We're suggesting that key human behaviors are often driven by multiple motives—but often one of the motives is a hidden one. The conscious mind is not the oval office. It's the press office.",
+      "feedback": "Love the use of metaphor here.",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [18, 8, 4],
+        "cadence": "LONG-short-shorter",
+        "beat": "Setup explanation → metaphor negation → metaphor affirmation (punchy)"
+      },
+      "structure": {
+        "template": "[Thesis about hidden motives]. The [subject] is not the [powerful metaphor]. It's the [deflating metaphor].",
+        "slots": ["thesis", "subject", "powerful metaphor", "deflating metaphor"],
+        "technique": "Explanation → 'not X, it's Y' with institutional metaphor"
+      },
+      "emotionalWeight": {
+        "dryVersion": "The conscious mind rationalizes rather than decides.",
+        "technique": "Oval office vs press office creates instant understanding through political metaphor"
+      },
+      "usage": {
+        "position": "thesis or key argument",
+        "bestFor": "Deflating pretensions, reframing agency/power"
+      }
     }
   ],
   "rejected": [
@@ -443,6 +549,27 @@
       "passage": "What all of social media has in common is that it involves humans competing for status. All social networks have this in common, and it's a feature, not a bug. Humans are status-seeking monkeys. We always have been.",
       "reason": "Don't like cliches like 'it's a feature, not a bug'",
       "antiPattern": "tech-cliche"
+    },
+    {
+      "id": 23,
+      "author": "Derek Sivers",
+      "passage": "If you're not saying 'Hell yeah!' about something, say no. It's an easier decision. It keeps your life uncluttered and focused on what really matters.",
+      "reason": "Too tech bro",
+      "antiPattern": "tech-bro-tone"
+    },
+    {
+      "id": 25,
+      "author": "Jia Tolentino",
+      "passage": "The internet is also making us less capable of experiencing friction—of being bored or annoyed without immediately reaching for a device that will smooth everything away. It's a big machine that shows you what you want to see; when it isn't what you want, you can leave.",
+      "reason": "Good idea but not the best sentence structure",
+      "antiPattern": "weak-structure"
+    },
+    {
+      "id": 26,
+      "author": "Robin Sloan",
+      "passage": "Flow is the feed. It's the posts and the tweets. It's the stream of daily and sub-daily updates that reminds people you exist. Stock is the durable stuff. It's the content you produce that's as interesting in two months (or two years) as it is today.",
+      "reason": "Reads similar to AI sentences",
+      "antiPattern": "ai-staccato-pattern"
     }
   ],
   "avoidRules": [
@@ -487,6 +614,18 @@
       "description": "Too much imagery/poetic language for tech context",
       "example": "The code danced across the screen like autumn leaves",
       "detection": "Metaphor density inappropriate for technical subject"
+    },
+    {
+      "name": "tech-bro-tone",
+      "description": "Performative enthusiasm, hustle culture language, faux-casual bravado",
+      "examples": ["Hell yeah!", "crushing it", "level up", "optimize your life", "uncluttered and focused"],
+      "detection": "Self-help meets startup energy, forced casualness"
+    },
+    {
+      "name": "weak-structure",
+      "description": "Good idea carried by weak sentence construction",
+      "example": "Interesting insight buried in meandering prose",
+      "detection": "Idea quality exceeds execution quality"
     }
   ],
   "emulateRules": [
