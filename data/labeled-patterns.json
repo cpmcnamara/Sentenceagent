@@ -1059,6 +1059,71 @@
       "winner": "The most productive thing you can do is stop trying to be productive. Nobody measures a surgeon by incisions per hour, or a lawyer by objections per trial. Yet we measure knowledge workers by output per day, as if thinking were assembly.",
       "why_won": "Unexpected domain metaphor (surgeon/lawyer), doubled examples build pattern, 'as if thinking were assembly' punchy ending",
       "losers": ["flow state versions (cliché)", "caring about outcome (too abstract)", "single surgeon example (weaker than doubled)"]
+    },
+    {
+      "test_id": 6,
+      "pattern": "Cegłowski #18 (parasite metaphor with escalating intimacy)",
+      "topic": "calendar invites / scheduling culture",
+      "winners": [
+        "We have a word for this kind of claim on your time. We call it a summons. A summons that appears without warning, assumes your compliance, and treats your refusal as an offense. And we've let this summons colonize our mornings, our lunches, our last free hours before dinner.",
+        "We have a word for this kind of claim on your time. We call it a lien. A lien filed against your future, accruing interest in the form of 'quick syncs' and 'touchbases,' compounding until your calendar belongs to everyone but you."
+      ],
+      "why_won": "Unexpected domain metaphors (legal: summons, lien), target not already over-criticized",
+      "losers": ["notifications-as-addiction (too common a critique)", "notifications-as-jealous-partner (too literal)"],
+      "principle_confirmed": "unexpected-domain-metaphors + choose non-obvious targets"
+    }
+  ],
+  "generationPrinciples": [
+    {
+      "name": "insight-must-be-true",
+      "description": "The core insight must be genuinely true and verifiable, not just structurally clever",
+      "learned_from": "Test 2: 'bad writing is just bad thinking made visible' won because it's actually true",
+      "bad_example": "The way to become a better writer is not to write every day. It's to delete every day.",
+      "why_bad": "Sounds clever but isn't actually true—deleting isn't the secret to good writing"
+    },
+    {
+      "name": "avoid-domain-cliches",
+      "description": "Avoid overused concepts in the topic domain (flow states for productivity, disruption for tech)",
+      "learned_from": "Test 3: flow state language rejected as cliché",
+      "bad_example": "Flow states don't arrive on schedule—they sneak in when you stop watching the clock",
+      "why_bad": "Flow state language is overused in productivity writing"
+    },
+    {
+      "name": "unexpected-domain-metaphors",
+      "description": "Metaphors from unrelated domains illuminate better than within-domain comparisons",
+      "learned_from": "Test 3: surgeon metaphor worked for productivity topic",
+      "good_example": "Nobody measures a surgeon by incisions per hour",
+      "why_good": "Surgery is unexpected domain for productivity—makes the absurdity of output metrics vivid"
+    },
+    {
+      "name": "double-examples-before-pivot",
+      "description": "Two parallel examples build credibility before the 'yet we...' pivot",
+      "learned_from": "Test 3 final: surgeon + lawyer doubled examples won over single example",
+      "good_example": "Nobody measures a surgeon by incisions per hour, or a lawyer by objections per trial. Yet we measure...",
+      "why_good": "Doubling builds pattern recognition; reader sees the principle before the pivot"
+    },
+    {
+      "name": "end-with-punchy-comparison",
+      "description": "Final clause should be short and land a concrete comparison",
+      "learned_from": "Test 3 final: 'as if thinking were assembly' ending",
+      "good_example": "as if thinking were assembly",
+      "why_good": "Short, concrete, reveals the category error"
+    },
+    {
+      "name": "specificity-over-abstraction",
+      "description": "Concrete specifics beat abstract generalizations",
+      "learned_from": "Multiple tests: vague passages consistently rejected",
+      "bad_example": "something you've learned the hard way",
+      "good_example": "incisions per hour",
+      "why_good": "Reader can picture incisions; can't picture 'the hard way'"
+    },
+    {
+      "name": "choose-non-obvious-targets",
+      "description": "Apply critical patterns to targets that aren't already over-criticized",
+      "learned_from": "Test 6: notifications-as-addiction rejected (common take), calendar-as-summons worked (fresh target)",
+      "bad_example": "Notifications are an addiction",
+      "good_example": "Calendar invites are a summons",
+      "why_good": "Reader hasn't heard this critique before—pattern reveals something new"
     }
   ]
 }
