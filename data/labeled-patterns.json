@@ -670,6 +670,142 @@
         "slots": ["judgment", "explanation", "their context"],
         "technique": "Bold opener + universal explanation + empathy pivot"
       }
+    },
+    {
+      "id": 41,
+      "author": "Nassim Taleb",
+      "source": "Antifragile",
+      "passage": "Some things benefit from shocks; they thrive and grow when exposed to volatility, randomness, disorder, and stressors and love adventure, risk, and uncertainty. Yet, in spite of the ubiquity of the phenomenon, there is no word for the exact opposite of fragile. Let us call it antifragile.",
+      "feedback": "Great metaphor paired with contrasting ideas. 'You want to use them, not hide from them' - good whole passage.",
+      "essaySection": "THESIS",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [24, 21, 6],
+        "cadence": "LONG-LONG-short",
+        "beat": "Elaborate setup → observation of gap → coined term punch"
+      },
+      "structure": {
+        "template": "[Description of phenomenon with accumulated traits]. Yet, in spite of [paradox about naming], there is no word for [concept]. Let us call it [new term].",
+        "slots": ["phenomenon description", "paradox", "concept", "new term"],
+        "technique": "Elaborate phenomenon → naming gap → term coinage"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Some systems improve under stress. There's no existing word for this, so I'll create one.",
+        "technique": "Building anticipation with 'there is no word' creates space for the coinage to land with weight"
+      },
+      "usage": {
+        "position": "thesis or concept introduction",
+        "bestFor": "Introducing new frameworks or terminology"
+      }
+    },
+    {
+      "id": 42,
+      "author": "Toni Morrison",
+      "source": "Portland State Address",
+      "passage": "The function, the very serious function of racism is distraction. It keeps you from doing your work. It keeps you explaining, over and over again, your reason for being. Somebody says you have no language and you spend twenty years proving that you do. Somebody says your head isn't shaped properly so you have scientists working on the fact that it is. Somebody says you have no art, so you dredge that up. Somebody says you have no kingdoms, so you dredge that up. None of this is necessary. There will always be one more thing.",
+      "feedback": "Reads very human which I like, but needs to be used sparingly. 'The function, the very serious function of…' is good way to draw contrast to the idea. The 'somebody' repetition is strong. The shift in sentence length is strong.",
+      "essaySection": "ARGUMENT",
+      "rhythm": {
+        "sentenceCount": 10,
+        "wordCounts": [9, 7, 12, 16, 19, 11, 11, 5, 6],
+        "cadence": "varied-with-repetition",
+        "beat": "Thesis → kept-you pattern → somebody anaphora (4x) → terse conclusion → warning"
+      },
+      "structure": {
+        "template": "The function, the very serious function of [thing] is [reframe]. It keeps you [consequence 1]. It keeps you [consequence 2]. Somebody says [accusation 1] and you [response 1]. Somebody says [accusation 2] so you [response 2]. [Repeat pattern]. None of this is necessary. There will always be one more thing.",
+        "slots": ["thing", "reframe", "consequences", "accusation-response pairs"],
+        "technique": "Intensifier repetition ('the very serious') + anaphora ('Somebody says') + devastating conclusion"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Racism wastes the time of its targets by forcing them to constantly prove their worth.",
+        "technique": "Repetition of 'Somebody' creates exhaustion in the reader, mirroring the exhaustion of the experience. Short final sentences land as truth."
+      },
+      "usage": {
+        "position": "core argument",
+        "bestFor": "Building emotional weight through repetition, making systemic issues feel personal"
+      },
+      "caution": "Use sparingly—technique works because it mirrors exhaustion; overuse would dilute impact"
+    },
+    {
+      "id": 43,
+      "author": "Steven Pinker",
+      "source": "The Sense of Style",
+      "passage": "The curse of knowledge is the single best explanation I know of why good people write bad prose. It simply doesn't occur to the writer that her readers don't know what she knows—that they haven't mastered the jargon, can't divine the acronyms, can't visualize the scenes, haven't been told the back story.",
+      "feedback": "Good evidence integration. 'The curse of knowledge' as naming, then explaining why it matters with accumulated examples.",
+      "essaySection": "EVIDENCE",
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [18, 32],
+        "cadence": "medium-LONG",
+        "beat": "Bold claim → elaboration with quadrupled 'haven't/can't'"
+      },
+      "structure": {
+        "template": "The [concept] is the [superlative] explanation I know of [phenomenon]. It simply doesn't occur to [actor] that [audience] doesn't [know 1]—that they [lack 1], [lack 2], [lack 3], [lack 4].",
+        "slots": ["concept", "superlative", "phenomenon", "actor", "audience", "lacks 1-4"],
+        "technique": "Named concept → personal endorsement → quadrupled elaboration of gaps"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Writers forget readers don't share their knowledge.",
+        "technique": "Accumulation of specific lacks (jargon, acronyms, scenes, back story) makes abstract concept concrete"
+      },
+      "usage": {
+        "position": "evidence/explanation",
+        "bestFor": "Explaining concepts by naming then unpacking with specific examples"
+      }
+    },
+    {
+      "id": 44,
+      "author": "Rebecca Solnit",
+      "source": "Men Explain Things to Me",
+      "passage": "And then there's the man who told me he had something to say to me—an idea, but it could wait until after dinner. It could not wait until after dinner. When it arrived, it was a piece of information every woman already knew, not as new knowledge, but as life itself.",
+      "feedback": "Good transition into evidence. Builds anticipation with 'it could wait' / 'it could not wait' then delivers the contrast.",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [20, 7, 23],
+        "cadence": "LONG-short-LONG",
+        "beat": "Setup with suspension → short reversal → revelation with reframe"
+      },
+      "structure": {
+        "template": "And then there's [the person] who [setup with delay]. [Reversal of delay]. When [moment arrived], it was [subverted expectation].",
+        "slots": ["person", "delay setup", "reversal", "subverted expectation"],
+        "technique": "Anecdote with built-in reversal + knowing revelation"
+      },
+      "emotionalWeight": {
+        "dryVersion": "A man shared information I already knew.",
+        "technique": "The 'could wait / could not wait' reversal creates momentum; 'not as new knowledge, but as life itself' elevates"
+      },
+      "usage": {
+        "position": "transition into specific example",
+        "bestFor": "Moving from general to specific with embedded irony"
+      }
+    },
+    {
+      "id": 45,
+      "author": "Ben Thompson",
+      "source": "Stratechery",
+      "passage": "This brings me back to where I started: not because I want to be clever, but because that is where the answer lies. The reason Apple succeeded where everyone else failed isn't because Apple was better at making hardware. It's because Apple understood that the most important hardware decision was the one most hardware companies would never make: to ignore hardware completely in favor of the experience.",
+      "feedback": "Good transition that loops back. 'Not because I want to be clever, but because' shows awareness. Then delivers with 'not X but Y' structure.",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [20, 14, 33],
+        "cadence": "medium-medium-LONG",
+        "beat": "Meta-loop back → setup for insight → elaborate payoff with paradox"
+      },
+      "structure": {
+        "template": "This brings me back to [reference]: not because [defensive reason], but because [real reason]. The reason [actor] succeeded where [others] failed isn't [obvious answer]. It's because [deeper answer with paradox].",
+        "slots": ["reference", "defensive reason", "real reason", "actor", "obvious answer", "deeper paradox"],
+        "technique": "Loop-back transition + defensive acknowledgment + paradoxical insight"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Apple succeeded by prioritizing experience over hardware specs.",
+        "technique": "Acknowledging the reader's potential 'you're just being clever' objection, then delivering genuine insight"
+      },
+      "usage": {
+        "position": "transition/callback",
+        "bestFor": "Returning to thesis with new insight, addressing reader skepticism"
+      }
     }
   ],
   "rejected": [
