@@ -997,5 +997,68 @@
       "example": "most successful... most profitable... most important",
       "technique": "Identical rhythm, increasing weight of adjective"
     }
+  ],
+  "generationPrinciples": [
+    {
+      "name": "insight-must-be-true",
+      "description": "The core insight must be genuinely true and verifiable, not just structurally clever",
+      "learned_from": "Test 2: 'bad writing is just bad thinking made visible' won because it's actually true",
+      "bad_example": "The way to become a better writer is not to write every day. It's to delete every day.",
+      "why_bad": "Sounds clever but isn't actually true—deleting isn't the secret to good writing"
+    },
+    {
+      "name": "avoid-domain-cliches",
+      "description": "Avoid overused concepts in the topic domain (flow states for productivity, disruption for tech)",
+      "learned_from": "Test 3: flow state language rejected as cliché",
+      "bad_example": "Flow states don't arrive on schedule—they sneak in when you stop watching the clock",
+      "why_bad": "Flow state language is overused in productivity writing"
+    },
+    {
+      "name": "unexpected-domain-metaphors",
+      "description": "Metaphors from unrelated domains illuminate better than within-domain comparisons",
+      "learned_from": "Test 3: surgeon metaphor worked for productivity topic",
+      "good_example": "Nobody measures a surgeon by incisions per hour",
+      "why_good": "Surgery is unexpected domain for productivity—makes the absurdity of output metrics vivid"
+    },
+    {
+      "name": "double-examples-before-pivot",
+      "description": "Two parallel examples build credibility before the 'yet we...' pivot",
+      "learned_from": "Test 3 final: surgeon + lawyer doubled examples won over single example",
+      "good_example": "Nobody measures a surgeon by incisions per hour, or a lawyer by objections per trial. Yet we measure...",
+      "why_good": "Doubling builds pattern recognition; reader sees the principle before the pivot"
+    },
+    {
+      "name": "end-with-punchy-comparison",
+      "description": "Final clause should be short and land a concrete comparison",
+      "learned_from": "Test 3 final: 'as if thinking were assembly' ending",
+      "good_example": "as if thinking were assembly",
+      "why_good": "Short, concrete, reveals the category error"
+    },
+    {
+      "name": "specificity-over-abstraction",
+      "description": "Concrete specifics beat abstract generalizations",
+      "learned_from": "Multiple tests: vague passages consistently rejected",
+      "bad_example": "something you've learned the hard way",
+      "good_example": "incisions per hour",
+      "why_good": "Reader can picture incisions; can't picture 'the hard way'"
+    }
+  ],
+  "testResults": [
+    {
+      "test_id": 2,
+      "pattern": "Graham #3 (not-X-it's-Y)",
+      "topic": "becoming a better writer",
+      "winner": "The way to become a better writer is not to write every day. It's to think every day—because most bad writing is just bad thinking made visible.",
+      "why_won": "Insight is TRUE (bad writing = bad thinking), contrast is sharp (write vs think), 'because' explanation adds genuine insight",
+      "losers": ["grammar version (too simple)", "delete version (not true)", "voice version (too abstract)"]
+    },
+    {
+      "test_id": 3,
+      "pattern": "Odell #66 (paradoxical wordplay)",
+      "topic": "productivity",
+      "winner": "The most productive thing you can do is stop trying to be productive. Nobody measures a surgeon by incisions per hour, or a lawyer by objections per trial. Yet we measure knowledge workers by output per day, as if thinking were assembly.",
+      "why_won": "Unexpected domain metaphor (surgeon/lawyer), doubled examples build pattern, 'as if thinking were assembly' punchy ending",
+      "losers": ["flow state versions (cliché)", "caring about outcome (too abstract)", "single surgeon example (weaker than doubled)"]
+    }
   ]
 }
