@@ -8,6 +8,7 @@
 export * from './types/index.js';
 export * from './types/extended.js';
 export * from './types/emotional.js';
+export * from './types/emotional-v2.js'; // Research-aligned emotion taxonomy
 
 // Analysis
 export * from './analysis/rhythm.js';
