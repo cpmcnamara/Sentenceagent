@@ -498,6 +498,178 @@
         "position": "thesis or key argument",
         "bestFor": "Deflating pretensions, reframing agency/power"
       }
+    },
+    {
+      "id": 30,
+      "author": "Adam Gopnik",
+      "source": "The New Yorker",
+      "passage": "And yet. And yet the truth is more complicated than that simple story suggests. What we gain in one dimension, we lose in another.",
+      "feedback": "Good transition pivot, needs context to work well.",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [2, 12, 10],
+        "cadence": "fragment-medium-medium",
+        "beat": "Dramatic pause fragment → complication → balanced trade-off"
+      },
+      "structure": {
+        "template": "And yet. And yet [complication]. What we [gain] in [dimension A], we [lose] in [dimension B].",
+        "slots": ["complication", "gain", "dimension A", "lose", "dimension B"],
+        "technique": "Fragment pivot + trade-off balance"
+      }
+    },
+    {
+      "id": 31,
+      "author": "Paul Graham",
+      "source": "How to Write Usefully",
+      "passage": "I'm not saying that the only function of an essay should be to convince. One can also explore ideas, as I'm doing here. But convincing is the default function, and the one most people are worst at.",
+      "feedback": "Clear and great idea.",
+      "essaySection": "CONCESSION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [14, 10, 15],
+        "cadence": "medium-short-medium",
+        "beat": "Concession → alternative → but-pivot back to main point"
+      },
+      "structure": {
+        "template": "I'm not saying [extreme claim]. One can also [alternative]. But [main point] is [why it matters].",
+        "slots": ["extreme claim", "alternative", "main point", "why it matters"],
+        "technique": "Concede → acknowledge alternative → pivot back stronger"
+      }
+    },
+    {
+      "id": 32,
+      "author": "Malcolm Gladwell",
+      "source": "Outliers",
+      "passage": "The striking thing about Ericsson's study is that he and his colleagues couldn't find any 'naturals,' musicians who floated effortlessly to the top while practicing a fraction of the time their peers did. Nor could they find any 'grinds,' people who worked harder than everyone else, yet just didn't have what it takes to break into the top ranks. Their research suggests that once a musician has enough ability to get into a top music school, the thing that distinguishes one performer from another is how hard he or she works.",
+      "feedback": "Good middle sentence. 'The striking thing' draws attention to a point.",
+      "essaySection": "EVIDENCE",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [29, 28, 35],
+        "cadence": "LONG-LONG-LONG",
+        "beat": "Finding A (negative) → Finding B (negative) → Conclusion"
+      },
+      "structure": {
+        "template": "The striking thing about [study/source] is that [finding A - what wasn't found]. Nor could they find [finding B - opposite wasn't found either]. [What this suggests].",
+        "slots": ["study", "finding A", "finding B", "conclusion"],
+        "technique": "Attention phrase + negative findings + synthesis"
+      }
+    },
+    {
+      "id": 35,
+      "author": "George Saunders",
+      "source": "A Swim in a Pond in the Rain",
+      "passage": "So what have we learned? We've learned that a story is a series of events that escalates. But we've also learned something harder to articulate: that the escalation must feel inevitable in retrospect, even as it surprises us in the moment.",
+      "feedback": "Great sentence. Repetition that builds energy. Ends with emotional feeling.",
+      "essaySection": "SYNTHESIS",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [5, 11, 24],
+        "cadence": "short-medium-LONG",
+        "beat": "Question → simple answer → deeper answer with paradox"
+      },
+      "structure": {
+        "template": "So what have we learned? We've learned that [simple insight]. But we've also learned something harder to articulate: that [deeper paradoxical insight].",
+        "slots": ["simple insight", "deeper insight"],
+        "technique": "Rhetorical question → simple answer → 'but also' deeper layer"
+      }
+    },
+    {
+      "id": 36,
+      "author": "Nora Ephron",
+      "source": "I Feel Bad About My Neck",
+      "passage": "Oh, how I regret not having worn a bikini for the entire year I was twenty-six. If anyone young is reading this, go, right this minute, put on a bikini, and don't take it off until you're thirty-four.",
+      "feedback": "Humor - context, imagery, and detail are most important.",
+      "essaySection": "HUMOR",
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [14, 22],
+        "cadence": "medium-LONG",
+        "beat": "Regret statement → absurd imperative"
+      },
+      "structure": {
+        "template": "Oh, how I regret [specific missed opportunity]. If anyone [audience] is reading this, [absurd imperative advice].",
+        "slots": ["missed opportunity", "audience", "absurd advice"],
+        "technique": "Specific regret + direct address + comedic escalation"
+      },
+      "caution": "Humor is context/detail dependent"
+    },
+    {
+      "id": 37,
+      "author": "Tim Urban",
+      "source": "Wait But Why",
+      "passage": "But here's what I don't get: If we're so aware that life is short, why do we spend so much of it doing things we don't actually want to do?",
+      "feedback": "Simple but effective.",
+      "essaySection": "QUESTION",
+      "rhythm": {
+        "sentenceCount": 1,
+        "wordCounts": [27],
+        "cadence": "single-compound-question",
+        "beat": "Setup clause → paradox question"
+      },
+      "structure": {
+        "template": "But here's what I don't get: If we're so [aware of X], why do we [do opposite of X]?",
+        "slots": ["awareness", "contradictory behavior"],
+        "technique": "Casual intro + if/why paradox"
+      }
+    },
+    {
+      "id": 38,
+      "author": "Mary Karr",
+      "source": "The Art of Memoir",
+      "passage": "A memoir is not an act of history but an act of memory, which is a different thing. It's a story about the self told to the self.",
+      "feedback": "Good repetitive ideas paired with a strong thesis.",
+      "essaySection": "CONCLUSION",
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [15, 11],
+        "cadence": "medium-short",
+        "beat": "Reframe distinction → crystallizing definition"
+      },
+      "structure": {
+        "template": "A [thing] is not an act of [surface category] but an act of [deeper category], which is a different thing. It's [crystallizing redefinition].",
+        "slots": ["thing", "surface category", "deeper category", "redefinition"],
+        "technique": "Not-X-but-Y + 'which is different' + final distillation"
+      }
+    },
+    {
+      "id": 39,
+      "author": "Lewis Thomas",
+      "source": "The Lives of a Cell",
+      "passage": "We are, perhaps, uniquely among the earth's creatures, the worrying animal. We worry away our lives, afraid of the future, discontent with the present, unable to take in the idea of dying, unable to sit still.",
+      "feedback": "Good rhythm. Good idea.",
+      "essaySection": "CALLBACK",
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [11, 25],
+        "cadence": "short-LONG",
+        "beat": "Naming → elaboration with quadrupled 'unable/afraid/discontent'"
+      },
+      "structure": {
+        "template": "We are, perhaps, [unique claim]. We [verb] away our lives, [state 1], [state 2], [state 3], [state 4].",
+        "slots": ["unique claim", "verb", "state 1-4"],
+        "technique": "Qualifying claim + accumulated parallel states"
+      }
+    },
+    {
+      "id": 40,
+      "author": "Morgan Housel",
+      "source": "The Psychology of Money",
+      "passage": "No one is crazy. Everyone makes financial decisions based on their own unique experience of the world. What looks irrational to you might make perfect sense to them, given what they've been through.",
+      "feedback": "Good sentence for its purpose.",
+      "essaySection": "CONTEXT",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [4, 12, 17],
+        "cadence": "SHORT-medium-medium",
+        "beat": "Bold claim → explanation → perspective shift"
+      },
+      "structure": {
+        "template": "No one is [negative judgment]. Everyone [explanation of behavior]. What looks [judgment] to you might make perfect sense to them, given [their context].",
+        "slots": ["judgment", "explanation", "their context"],
+        "technique": "Bold opener + universal explanation + empathy pivot"
+      }
     }
   ],
   "rejected": [
