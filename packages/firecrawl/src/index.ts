@@ -37,9 +37,14 @@ export class FirecrawlClient {
     try {
       const result = await this.client.scrapeUrl(url, {
         formats: ['markdown'],
-      });
+      }) as any; // Type assertion due to SDK type inconsistencies
 
-      if (!result.success || !result.markdown) {
+      // Handle both old and new SDK response structures
+      const data = result.data || result;
+      const markdown = data.markdown || '';
+      const metadata = data.metadata || {};
+
+      if (!result.success || !markdown) {
         return {
           url,
           title: '',
@@ -48,12 +53,11 @@ export class FirecrawlClient {
           sentences: [],
           fetchedAt: new Date().toISOString(),
           success: false,
-          error: 'Failed to extract content from URL',
+          error: result.error || 'Failed to extract content from URL',
         };
       }
 
-      const markdown = result.markdown;
-      const title = result.metadata?.title || '';
+      const title = metadata.title || '';
       const paragraphs = this.extractParagraphs(markdown);
       const sentences = this.extractSentences(paragraphs);
 

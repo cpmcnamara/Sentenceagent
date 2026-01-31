@@ -282,9 +282,13 @@ describe('Candidate Generation', () => {
       query: { intent: 'reframe' as const },
       preferences: {
         defaultAudience: ['essay'] as const,
+        defaultMetaphorTolerance: 'medium' as const,
+        defaultCompression: 'medium' as const,
         preferredSentenceLengthRange: [8, 25] as [number, number],
+        preferredParagraphLengthRange: [2, 6] as [number, number],
         preferredCadenceArchetypes: [],
         dislikedCadenceArchetypes: [],
+        metaphorTolerance: 'medium' as const,
         favoredFamilies: [],
         dislikedFamilies: [],
         bannedPhrases: [],

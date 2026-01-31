@@ -308,6 +308,16 @@ export interface UserPreferences {
   totalRejected: number;
   rejectionReasonCounts: Record<RejectionReason, number>;
   lastUpdated: string;
+
+  // Scoring weights (optional, with defaults)
+  scoringWeights?: {
+    intentMatch: number;
+    novelty: number;
+    preferenceMatch: number;
+    reusability: number;
+    antiCliche: number;
+    rhythmQuality: number;
+  };
 }
 
 // =============================================================================

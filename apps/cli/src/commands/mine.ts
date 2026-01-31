@@ -110,7 +110,7 @@ export async function mine(options: MineOptions): Promise<void> {
   if (options.source) query.sourceUrl = options.source;
 
   const preferences = storage.loadPreferences();
-  const sessionId = storage.createSession(query);
+  const sessionId = storage.createSession(query as unknown as Record<string, unknown>);
 
   // Get text to mine from
   let textToMine: string[] = [];

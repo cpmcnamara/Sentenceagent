@@ -30,11 +30,13 @@ export type EmotionalEffect =
   | 'recognition'        // "That's exactly how I feel"
   | 'empathy'            // Feeling with/for
   | 'belonging'          // Part of something larger
+  | 'connection'         // Feeling of bond/relation
 
   // Energy emotions
   | 'urgency'            // Need to act now
   | 'momentum'           // Building energy/excitement
   | 'release'            // Cathartic letting go
+  | 'overwhelm'          // Intensity that floods
 
   // Trust emotions
   | 'credibility'        // Belief in the speaker
@@ -139,7 +141,7 @@ export interface EmotionalContour {
   /**
    * Overall emotional arc
    */
-  arc: EmotionalArc;
+  arc: EmotionalArcType;
 
   /**
    * Dominant emotion of the piece
@@ -167,7 +169,7 @@ export type EmotionalTransition =
   | 'contrast'    // Juxtaposition
   | 'callback';   // Return to earlier emotion
 
-export type EmotionalArc =
+export type EmotionalArcType =
   | 'flat'               // Consistent emotional tone
   | 'build'              // Increasing intensity
   | 'release'            // Decreasing intensity
@@ -394,6 +396,20 @@ export const EMOTION_SIGNALS: Record<EmotionalEffect, RegExp[]> = {
     /\bgoing to\b/i,
     /\bcommit\b/i,
     /\bdecided\b/i,
+  ],
+  connection: [
+    /\btogether\b/i,
+    /\bshared\b/i,
+    /\bbond\b/i,
+    /\brelate\b/i,
+    /\bunderstand\b/i,
+  ],
+  overwhelm: [
+    /\bflood\b/i,
+    /\bcrush\b/i,
+    /\boverwhelm\b/i,
+    /\bintense\b/i,
+    /\bconsum\b/i,
   ],
 };
 

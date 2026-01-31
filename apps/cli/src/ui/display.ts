@@ -36,6 +36,7 @@ const colors = {
   accent: chalk.magenta,
   muted: chalk.dim,
   highlight: chalk.bold.white,
+  blue: chalk.blue,
 };
 
 // =============================================================================
