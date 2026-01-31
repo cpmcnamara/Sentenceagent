@@ -1084,6 +1084,15 @@
       "why_won": "Counterintuitive insight where second term surprisingly wins (constraints > imagination, questions > arguments)",
       "losers": ["cooking versions (no clear point)", "parenting/habits (too close to original)", "inputs/outputs (truism, not surprising)"],
       "principle_confirmed": "counterintuitive-flip"
+    },
+    {
+      "test_id": 8,
+      "pattern": "Coates #8 (causal inversion)",
+      "topic": "product development",
+      "winner": "But the product is the child of the process, not the father. And the process of making things people love has never been a matter of genius so much as one of repetition.",
+      "why_won": "Causal inversion (product←process) + second sentence reinforces with concrete contrast (genius vs repetition)",
+      "losers": ["reverse-engineer version (didn't make sense)", "inspiration/accumulation (too abstract)"],
+      "principle_confirmed": "causal-inversion-needs-concrete-follow-through"
     }
   ],
   "generationPrinciples": [
