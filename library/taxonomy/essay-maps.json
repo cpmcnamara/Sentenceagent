@@ -3692,6 +3692,286 @@
         "Key insight explicitly named",
         "Open questions acknowledged at end"
       ]
+    },
+
+    "section_scoring_rubric": {
+      "description": "Quantified scoring system for evaluating section quality. Use this to identify weak sections and track improvement across versions.",
+      "philosophy": "Scoring should be rigorous enough to catch problems, but not so granular that it creates false precision. Each dimension should capture something meaningfully different.",
+
+      "dimensions": [
+        {
+          "name": "purpose_achievement",
+          "weight": 0.25,
+          "question": "Does this section accomplish what the architecture says it should?",
+          "scoring": {
+            "1": "Section doesn't serve stated purpose at all",
+            "2": "Section attempts purpose but misses significantly",
+            "3": "Section partially achieves purpose with gaps",
+            "4": "Section achieves purpose with minor weaknesses",
+            "5": "Section fully achieves purpose with craft"
+          },
+          "evaluation_method": "Compare section content against architecture's 'purpose' and 'requirement' fields"
+        },
+        {
+          "name": "substance_density",
+          "weight": 0.20,
+          "question": "Does the section have appropriate depth for its substance_level?",
+          "scoring": {
+            "1": "Empty or padded—claims without support",
+            "2": "Thin—gestures at substance without delivering",
+            "3": "Adequate—has substance but could go deeper",
+            "4": "Rich—concrete examples, mechanism, specificity",
+            "5": "Dense—every sentence carries weight, nothing wasted"
+          },
+          "by_substance_level": {
+            "light": "Score 3+ is acceptable. Dense would be inappropriate.",
+            "medium": "Score 3 is minimum. Should have at least one concrete example.",
+            "heavy": "Score 4 is minimum. Must have mechanism + examples.",
+            "heaviest": "Score 5 expected. Maximum density required."
+          }
+        },
+        {
+          "name": "transition_quality",
+          "weight": 0.15,
+          "question": "Does the section connect smoothly to what came before and after?",
+          "scoring": {
+            "1": "Jarring—reader confused why we're here",
+            "2": "Abrupt—gap is noticeable",
+            "3": "Functional—transition exists but mechanical",
+            "4": "Smooth—natural flow, reader follows easily",
+            "5": "Invisible—transition feels inevitable, not constructed"
+          },
+          "check_points": ["Does opening connect to previous section's close?", "Does close create momentum for next section?"]
+        },
+        {
+          "name": "voice_consistency",
+          "weight": 0.15,
+          "question": "Does the section maintain the architecture's voice?",
+          "scoring": {
+            "1": "Wrong voice entirely—sounds like different author",
+            "2": "Voice breaks—inconsistent with surrounding sections",
+            "3": "Voice present but flat—technically correct, lacks life",
+            "4": "Voice consistent—matches architecture expectations",
+            "5": "Voice distinctive—captures the source's specific quality"
+          },
+          "architecture_voice_markers": {
+            "pg_advice_to_youth": "Conversational, treats reader as equal, concrete examples, direct address",
+            "pg_historical_economic": "Analytical, pattern-naming, historical specificity, prediction at end",
+            "pg_practical_guide": "Prescriptive, numbered/bulleted, warning signs, recipes",
+            "pg_technical_argument": "Credentialed, controversial, conceptual-tool-naming, evidence-stacking",
+            "pg_meta_essay": "Etymology-grounded, historical, manifesto-closing"
+          }
+        },
+        {
+          "name": "craft_execution",
+          "weight": 0.15,
+          "question": "Does the section use the craft techniques the pattern specifies?",
+          "scoring": {
+            "1": "No craft techniques present",
+            "2": "Craft attempted but failed",
+            "3": "Basic craft—follows outline but lacks technique",
+            "4": "Good craft—techniques present and working",
+            "5": "Excellent craft—techniques elevated, memorable"
+          },
+          "what_to_check": "Review pattern's craft_notes, signals, key_move fields. Verify each appears in section."
+        },
+        {
+          "name": "reader_advancement",
+          "weight": 0.10,
+          "question": "Does the reader understand more after this section than before?",
+          "scoring": {
+            "1": "Reader confused or bored",
+            "2": "Reader unchanged—section adds nothing",
+            "3": "Reader informed—learns something",
+            "4": "Reader persuaded—believes something new",
+            "5": "Reader transformed—sees differently"
+          },
+          "test": "Could a reader skip this section without losing the argument? If yes, score 2 or below."
+        }
+      ],
+
+      "scoring_procedure": {
+        "step_1": "Read section without scoring. Understand what it's trying to do.",
+        "step_2": "Score each dimension independently (1-5).",
+        "step_3": "Calculate weighted average.",
+        "step_4": "Identify lowest-scoring dimensions as improvement targets.",
+        "step_5": "Record scores for version comparison."
+      },
+
+      "thresholds": {
+        "weak_section": "Weighted average < 3.5 OR any dimension < 3",
+        "acceptable_section": "Weighted average >= 3.5 AND all dimensions >= 3",
+        "strong_section": "Weighted average >= 4.0 AND all dimensions >= 3.5",
+        "excellent_section": "Weighted average >= 4.5 AND no dimension < 4"
+      },
+
+      "version_comparison_rules": {
+        "improvement_required": "New version must score higher on weighted average to replace current",
+        "no_regression": "No dimension can drop more than 0.5 points",
+        "tie_goes_to_original": "If scores are within 0.1, keep original (stability preference)",
+        "log_all_comparisons": "Record old scores, new scores, decision, and rationale"
+      },
+
+      "iteration_guidance": {
+        "when_score_below_3": {
+          "purpose_achievement": "Section may need rewriting. Check if it's targeting wrong purpose.",
+          "substance_density": "Add concrete examples, mechanism explanation, or specifics.",
+          "transition_quality": "Add bridging sentence. Use previous section's closing keyword.",
+          "voice_consistency": "Review architecture voice markers. Adjust register.",
+          "craft_execution": "Review pattern craft_notes. Add missing techniques.",
+          "reader_advancement": "Ask: what does reader gain? If nothing, consider cutting."
+        },
+        "when_score_3_to_4": {
+          "general": "Section is acceptable but has room for improvement.",
+          "approach": "Look at lowest-scoring dimension. Apply targeted repair.",
+          "priority": "Focus on highest-weight dimensions first (purpose, substance)."
+        },
+        "when_score_above_4": {
+          "general": "Section is strong. Light polish only.",
+          "caution": "Don't over-edit. Strong sections can be weakened by excessive revision."
+        }
+      }
+    },
+
+    "version_generation": {
+      "description": "System for generating, comparing, and selecting between essay versions. Native architecture only—no cross-architecture patterns until this system is proven.",
+      "philosophy": "Every version must be scored. Every change must be justified. Every comparison must be logged. Stability over novelty.",
+
+      "version_types": {
+        "v0_draft": {
+          "description": "Initial draft following architecture structure",
+          "purpose": "Get structure right. Don't worry about polish.",
+          "scoring_expectation": "Accept scores of 3+ across dimensions"
+        },
+        "v1_structure_pass": {
+          "description": "After structure iteration (backward/forward connections)",
+          "focus": "Transitions, section order, overall flow",
+          "scoring_expectation": "Transition quality should improve. Purpose achievement stable."
+        },
+        "v2_substance_pass": {
+          "description": "After substance iteration (development depth, evidence)",
+          "focus": "Add concrete examples, mechanism explanations, specificity",
+          "scoring_expectation": "Substance density should improve. Heavy sections score 4+."
+        },
+        "v3_craft_pass": {
+          "description": "After craft iteration (voice, technique, rhythm)",
+          "focus": "Voice consistency, craft execution, reader advancement",
+          "scoring_expectation": "Craft dimensions should improve. Voice score 4+."
+        },
+        "v_final": {
+          "description": "Final version after all passes",
+          "requirement": "All sections must score acceptable or above",
+          "rejection_criteria": "Any section with weighted average < 3.5 blocks finalization"
+        }
+      },
+
+      "version_file_structure": {
+        "location": "essays/{topic}/{architecture}/",
+        "naming": "{version}_{essay_name}.md",
+        "example_structure": [
+          "essays/frankenstein/pg_advice_to_youth/v0_draft_frankenstein.md",
+          "essays/frankenstein/pg_advice_to_youth/v1_structure_frankenstein.md",
+          "essays/frankenstein/pg_advice_to_youth/v2_substance_frankenstein.md",
+          "essays/frankenstein/pg_advice_to_youth/v3_craft_frankenstein.md",
+          "essays/frankenstein/pg_advice_to_youth/v_final_frankenstein.md",
+          "essays/frankenstein/pg_advice_to_youth/scores.json"
+        ]
+      },
+
+      "scores_file_format": {
+        "description": "JSON file tracking all version scores for comparison",
+        "schema": {
+          "essay_name": "string",
+          "architecture": "string",
+          "versions": [
+            {
+              "version_id": "v0_draft",
+              "timestamp": "ISO date",
+              "sections": {
+                "SECTION_NAME": {
+                  "purpose_achievement": 4,
+                  "substance_density": 3,
+                  "transition_quality": 3,
+                  "voice_consistency": 4,
+                  "craft_execution": 3,
+                  "reader_advancement": 4,
+                  "weighted_average": 3.55,
+                  "threshold_status": "acceptable",
+                  "improvement_notes": "Needs more concrete examples in mechanism"
+                }
+              },
+              "essay_average": 3.6,
+              "weak_sections": ["MECHANISM_REVEALED"],
+              "decision": "proceed_to_v1"
+            }
+          ],
+          "comparisons": [
+            {
+              "from_version": "v0_draft",
+              "to_version": "v1_structure",
+              "improved_sections": ["MECHANISM_REVEALED"],
+              "regressed_sections": [],
+              "decision": "accept_v1",
+              "rationale": "Substance density improved, no regressions"
+            }
+          ]
+        }
+      },
+
+      "iteration_loop": {
+        "step_1_generate": {
+          "action": "Generate essay following architecture structure",
+          "output": "v0_draft"
+        },
+        "step_2_score": {
+          "action": "Score every section using section_scoring_rubric",
+          "output": "scores.json with v0 scores"
+        },
+        "step_3_identify_weak": {
+          "action": "Find sections with weighted_average < 3.5 OR any dimension < 3",
+          "output": "List of weak sections with lowest-scoring dimensions"
+        },
+        "step_4_revise": {
+          "action": "Revise weak sections using iteration_guidance",
+          "constraint": "Only revise weak sections. Lock strong sections.",
+          "output": "Next version draft"
+        },
+        "step_5_rescore": {
+          "action": "Score revised version",
+          "output": "Updated scores.json"
+        },
+        "step_6_compare": {
+          "action": "Compare new version to previous using version_comparison_rules",
+          "accept_if": "New version scores higher AND no dimension regresses > 0.5",
+          "reject_if": "New version scores lower OR significant regression",
+          "output": "Comparison logged, decision made"
+        },
+        "step_7_decide": {
+          "if_accepted": "New version becomes current. Repeat from step_3.",
+          "if_rejected": "Keep previous version. Try different revision approach.",
+          "if_all_acceptable": "Move to next pass (structure → substance → craft)",
+          "termination": "When v_final meets all thresholds, stop."
+        }
+      },
+
+      "safety_rules": {
+        "lock_strong_sections": "Sections scoring 4.0+ should not be revised unless absolutely necessary",
+        "limit_iterations": "Maximum 3 revisions per section per pass. If still weak, flag for manual review.",
+        "preserve_voice": "If voice_consistency drops during any revision, reject that revision immediately",
+        "no_scope_creep": "Revisions should fix identified weaknesses, not add new content",
+        "log_everything": "Every score, every comparison, every decision must be recorded"
+      },
+
+      "manual_review_triggers": {
+        "description": "Conditions that require human evaluation rather than automated iteration",
+        "triggers": [
+          "Section fails to improve after 3 revision attempts",
+          "Revision improves one dimension but regresses another significantly",
+          "Essay average drops after a revision pass",
+          "Voice consistency score drops below 3 at any point",
+          "Conflicting improvement directions (e.g., adding substance hurts transitions)"
+        ]
+      }
     }
   },
   "cross_pattern_guidance": {
