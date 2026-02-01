@@ -12,72 +12,275 @@
         {
           "name": "QUESTION",
           "purpose": "Open with genuine curiosity, not thesis",
-          "signals": ["I wondered why...", "What would it mean to...", "Despite its title..."],
-          "requirement": "Must be a real question you don't know the answer to yet"
+          "signals": ["My goal here is to figure out...", "Despite its title...", "What would it mean to..."],
+          "requirement": "Must be a real question you don't know the answer to yet",
+          "substance_level": "light",
+          "substance_type": "framing only - no evidence needed yet",
+          "transition_to_next": "End with the question clearly stated; next section answers it directly",
+          "recommended_patterns": {
+            "sentence_families": ["question_answer", "definition_is"],
+            "cadence_archetypes": ["short-medium - setup then question"]
+          },
+          "length": "1-3 paragraphs"
         },
         {
           "name": "FIRST_ATTEMPT",
           "purpose": "The obvious answer, explored honestly",
-          "signals": ["The obvious answer is...", "You might think...", "It seems like..."],
-          "requirement": "Take the obvious answer seriously before rejecting it"
+          "signals": ["The obvious answer is...", "You might think...", "It seems like...", "X, but you can Y about any Z. What makes it special is..."],
+          "requirement": "Take the obvious answer seriously before rejecting it",
+          "substance_level": "light-medium",
+          "substance_type": "Brief exploration, dismiss what's not interesting to find what is",
+          "transition_to_next": "State first conclusion in one simple sentence, then: 'That may sound obvious, but it has unexpected consequences'",
+          "recommended_patterns": {
+            "sentence_families": ["contrast_pair", "negation_pivot"],
+            "cadence_archetypes": ["drumline - steady march through obvious options"]
+          },
+          "length": "2-4 paragraphs"
         },
         {
           "name": "UNEXPECTED_CONSEQUENCE",
           "purpose": "Following the obvious answer reveals something strange",
-          "signals": ["But that leads to...", "That may sound obvious, but it has unexpected consequences...", "One is that..."],
-          "requirement": "The strangeness must be genuinely surprising, not manufactured"
+          "signals": ["That may sound obvious, but it has some unexpected consequences.", "One is that...", "Another unexpected consequence:"],
+          "requirement": "The strangeness must be genuinely surprising, not manufactured",
+          "substance_level": "heavy",
+          "substance_type": ["historical_example - proves point happened in real world", "concrete_number - specific beats vague", "rhetorical_question_as_test - 'Talk about an important topic...'"],
+          "transition_to_next": "'If [conclusion], then [implication]' OR 'I imagined X... But in fact the opposite seems true'",
+          "recommended_patterns": {
+            "sentence_families": ["colon_reveal", "list_resolve"],
+            "cadence_archetypes": ["crescendo_snap - build examples then land insight", "ladder - each sentence builds on previous"]
+          },
+          "length": "3-5 paragraphs",
+          "key_move": "Use 'One is that... Another is...' to create list momentum"
         },
         {
           "name": "WRONG_TURN_ACKNOWLEDGED",
           "purpose": "Admit you were on the wrong track",
           "signals": ["I imagined when I started... But in fact the opposite seems true", "If that's true, then I started with the wrong question", "That can't be right because..."],
-          "requirement": "Genuine intellectual honesty - you changed your mind"
+          "requirement": "Genuine intellectual honesty - you changed your mind",
+          "substance_level": "medium",
+          "substance_type": ["personal_admission - 'I thought... but...'", "logical_reasoning - show why old view can't hold"],
+          "transition_to_next": "'Perhaps what this shows is...' OR 'Instead of asking X, I should have asked Y'",
+          "recommended_patterns": {
+            "sentence_families": ["reversal_but", "negation_pivot"],
+            "cadence_archetypes": ["long_short_snap - extended wrong view, then short correction"]
+          },
+          "length": "1-2 paragraphs"
         },
         {
           "name": "BETTER_QUESTION",
           "purpose": "Reframe to the real question",
-          "signals": ["Perhaps what this shows is...", "Instead of asking X, I should have asked Y", "The real question is..."],
-          "requirement": "New question must be earned by the previous exploration"
+          "signals": ["Perhaps what this shows is...", "Instead of asking X, I should have asked Y", "There is, and on the face of it, it seems almost identical..."],
+          "requirement": "New question must be earned by the previous exploration",
+          "substance_level": "medium",
+          "substance_type": "distinction_explained - show how new question differs from old",
+          "transition_to_next": "State the new question, then: 'How do you do that?' OR ask reader's next question for them",
+          "recommended_patterns": {
+            "sentence_families": ["question_answer", "contrast_pair"],
+            "cadence_archetypes": ["punch_punch_land - setup setup new-question"]
+          },
+          "length": "1-3 paragraphs"
         },
         {
           "name": "MECHANISM",
           "purpose": "Explain WHY - the machinery underneath",
-          "signals": ["Here's why...", "The way this works is...", "What happens is..."],
-          "requirement": "Not just what, but how and why it works that way"
+          "signals": ["Here's why...", "The way this works is...", "What happens is...", "An essay should ordinarily..."],
+          "requirement": "Not just what, but how and why it works that way",
+          "substance_level": "heaviest",
+          "substance_type": [
+            "process_description - step by step how it works",
+            "personal_admission - 'I don't consciously... I just...'",
+            "concrete_number - 'I've already cut a 17-paragraph subtree'",
+            "direct_instruction - 'You have to be very strict when...'",
+            "mechanism_explained - the gears underneath"
+          ],
+          "transition_to_next": "Ask the next natural question: 'Once you've got X, then what?' OR 'The most surprising question being thrown off at this point is...'",
+          "recommended_patterns": {
+            "sentence_families": ["conditional_snap", "colon_reveal", "definition_is"],
+            "cadence_archetypes": ["wave - long explanation, short summary, long explanation", "drumline - steady instructional march"],
+            "paragraph_roles": ["definition", "elaboration", "evidence"]
+          },
+          "length": "5-10 paragraphs - this is the heart of the essay"
         },
         {
           "name": "IMPLICATIONS_FOLLOWED",
           "purpose": "If this is true, what else must be true?",
-          "signals": ["If that's true, then...", "This suggests...", "Another consequence..."],
-          "requirement": "Follow at least one surprising implication to its end"
+          "signals": ["If that's true, then...", "This suggests...", "Another consequence...", "This seems surprising enough to be worth investigating further"],
+          "requirement": "Follow at least one surprising implication to its end",
+          "substance_level": "heavy",
+          "substance_type": [
+            "mini_theories - subcategorize to show depth",
+            "examples_for_each - prove each sub-point",
+            "surprising_connections - link to unexpected domains"
+          ],
+          "transition_to_next": "Can chain multiple implications with 'Another...' OR pivot to objection with 'It would be a mistake to let this...'",
+          "recommended_patterns": {
+            "sentence_families": ["list_resolve", "conditional_snap"],
+            "cadence_archetypes": ["cascade - ideas trigger ideas", "parallel_march - similar structures for each implication"]
+          },
+          "length": "3-8 paragraphs depending on how many threads"
         },
         {
           "name": "OBJECTION_ADDRESSED",
           "purpose": "Steelman and answer the best counterargument",
-          "signals": ["You might think...", "It would be a mistake to...", "This doesn't mean..."],
-          "requirement": "Real objection, not strawman"
+          "signals": ["You might think...", "It would be a mistake to...", "This doesn't mean...", "Perhaps the answer is..."],
+          "requirement": "Real objection, not strawman",
+          "substance_level": "medium",
+          "substance_type": ["steelman_objection - state it fairly", "concede_partial - 'That's partly true'", "but_distinction - 'But the key difference is...'"],
+          "transition_to_next": "Resolve the objection, then return to main thread OR move to close",
+          "recommended_patterns": {
+            "sentence_families": ["concede_counterpunch", "reversal_but"],
+            "paragraph_roles": ["concession", "counterpunch"]
+          },
+          "length": "2-4 paragraphs"
         },
         {
           "name": "CLOSE",
           "purpose": "Return to start with new understanding",
-          "signals": ["So the answer to the original question...", "This essay has been a kind of...", "I understand better now..."],
-          "requirement": "Must connect back to opening, showing what was learned"
+          "signals": ["So the answer to the original question...", "This essay has been a kind of...", "I understand better now where..."],
+          "requirement": "Must connect back to opening, showing what was learned",
+          "substance_level": "medium",
+          "substance_type": ["synthesis - pull threads together", "callback_to_opening - reference the original question", "new_understanding_stated - what you know now"],
+          "transition_to_next": null,
+          "recommended_patterns": {
+            "sentence_families": ["bookend", "colon_reveal"],
+            "cadence_archetypes": ["crescendo_snap - build to final insight", "bookend - echo opening structure"]
+          },
+          "length": "2-4 paragraphs"
         }
       ],
+      "transition_patterns": {
+        "description": "PG doesn't use transition words (Furthermore, However). He uses logical necessity.",
+        "types": [
+          {
+            "name": "logical_implication",
+            "pattern": "If [conclusion from previous], then [what it means]",
+            "example": "If the question reduces to making discoveries, then I started with the wrong question"
+          },
+          {
+            "name": "reader_next_question",
+            "pattern": "Ask what the reader is now thinking",
+            "example": "Once you've got a question, then what?"
+          },
+          {
+            "name": "list_momentum",
+            "pattern": "'One is that... Another is...' creates expectation",
+            "example": "One is that science enters... Another unexpected consequence:"
+          },
+          {
+            "name": "surprising_pivot",
+            "pattern": "'That may sound obvious, but...'",
+            "example": "That may sound obvious, but it has some unexpected consequences"
+          },
+          {
+            "name": "admission_pivot",
+            "pattern": "'I imagined X... But in fact Y'",
+            "example": "I imagined when I started... But in fact the opposite seems to be true"
+          },
+          {
+            "name": "answer_follows_question",
+            "pattern": "Previous paragraph poses question, next answers it",
+            "example": "P1 asks goal, P2 starts answering"
+          }
+        ],
+        "anti_patterns": [
+          "Furthermore / Moreover / Additionally",
+          "However (at start of paragraph)",
+          "In conclusion / To summarize",
+          "Firstly / Secondly / Thirdly (except in genuine lists)"
+        ]
+      },
+      "substance_types": {
+        "description": "How to add depth and evidence at each point",
+        "types": [
+          {
+            "name": "historical_example",
+            "description": "Proves the point happened in the real world",
+            "example": "Darwin first described natural selection in an essay written in 1844",
+            "when_to_use": "UNEXPECTED_CONSEQUENCE, IMPLICATIONS"
+          },
+          {
+            "name": "personal_admission",
+            "description": "'I don't... I just...' creates trust and specificity",
+            "example": "I don't consciously rank branches this way; I just follow whichever seems most exciting",
+            "when_to_use": "MECHANISM, WRONG_TURN"
+          },
+          {
+            "name": "concrete_number",
+            "description": "Specific beats vague",
+            "example": "In this essay I've already cut a 17-paragraph subtree",
+            "when_to_use": "MECHANISM, IMPLICATIONS"
+          },
+          {
+            "name": "mechanism_explained",
+            "description": "HOW something works, not just that it does",
+            "example": "Writing converts your ideas from vague to bad. But that's a step forward, because once you can see the brokenness, you can fix it.",
+            "when_to_use": "MECHANISM - this is the heart"
+          },
+          {
+            "name": "mini_theory",
+            "description": "Subcategorize to show depth of thinking",
+            "example": "There are several ways to do that: [list of 4-5 approaches, each explained]",
+            "when_to_use": "IMPLICATIONS, MECHANISM"
+          },
+          {
+            "name": "direct_instruction",
+            "description": "'You have to...' / 'The way to...'",
+            "example": "You have to be very strict when rereading",
+            "when_to_use": "MECHANISM"
+          },
+          {
+            "name": "rhetorical_question_as_test",
+            "description": "Question that proves the point by being unanswerable or obvious",
+            "example": "Talk about an important topic you could tell people something surprising about",
+            "when_to_use": "UNEXPECTED_CONSEQUENCE"
+          }
+        ]
+      },
+      "pattern_library_integration": {
+        "description": "How to pull in sentence/paragraph patterns at each section",
+        "by_section": {
+          "QUESTION": {
+            "sentence_families": ["question_answer - for direct questions", "definition_is - for framing"],
+            "avoid": ["fragment_punch - too punchy for opening"]
+          },
+          "FIRST_ATTEMPT": {
+            "sentence_families": ["contrast_pair - X but not Y", "negation_pivot - it's not A, it's B"],
+            "avoid": ["accumulation - too dramatic for exploration"]
+          },
+          "UNEXPECTED_CONSEQUENCE": {
+            "sentence_families": ["colon_reveal - for the surprise", "list_resolve - for multiple consequences"],
+            "use_heavily": "This is where concrete examples land"
+          },
+          "MECHANISM": {
+            "sentence_families": ["conditional_snap - if X then Y", "definition_is - what something means", "colon_reveal - here's how"],
+            "paragraph_roles": ["definition", "elaboration", "evidence"],
+            "cadence": "wave - long explanation, short summary, long explanation"
+          },
+          "CLOSE": {
+            "sentence_families": ["bookend - echo opening"],
+            "cadence_archetypes": ["crescendo_snap - build to final point"]
+          }
+        }
+      },
       "key_principles": [
         "Show thinking, not thoughts - the reader watches you figure it out",
         "Be willing to discover you were wrong",
         "Each section earns the next - transitions are logical necessity, not bridges",
         "Concrete examples at key moments as proof, not decoration",
         "Follow surprising threads rather than staying on track",
-        "Meta-awareness without being annoying - you can reference the essay itself"
+        "Meta-awareness without being annoying - you can reference the essay itself",
+        "MECHANISM section is the heart - spend the most time here",
+        "Substance comes from historical examples, personal admissions, concrete numbers, and mechanism explanations"
       ],
       "failure_modes": [
         "Starting with conclusion disguised as question",
         "Fake wrong turns (you knew the answer all along)",
         "Sections that could be rearranged (not earned)",
         "Assertions without mechanism",
-        "Ignoring the real objection"
+        "Ignoring the real objection",
+        "Using transition words instead of logical necessity",
+        "Light on MECHANISM section - that's where trust is built",
+        "No concrete examples - stays abstract"
       ],
       "example_essays": [
         "The Best Essay (March 2024)",
