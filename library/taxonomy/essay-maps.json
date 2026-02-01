@@ -2626,6 +2626,29 @@
           }
         ],
         "usage": "Name every key distinction. If you can't name it memorably, you don't have an essay."
+      },
+      "cascading_qa_chain": {
+        "description": "Build by logical necessity: each paragraph answers the question raised by the previous one",
+        "core_insight": "The reader never feels lectured because each piece arrives exactly when they need it. The chain creates its own momentum — each answer surfaces the next natural question.",
+        "example": {
+          "passage_summary": "'Decide what to work on' → 'How?' → 'Find aptitude + interest' → 'That's difficult' → 'How to figure it out?' → 'By working' → 'Work on what?' → 'Your own projects' → 'What projects?' → 'Whatever seems excitingly ambitious'",
+          "source": "How to Do Great Work",
+          "length": "~6 paragraphs of cascading Q&A",
+          "technique": "Each step is the natural next question the reader would ask"
+        },
+        "when_to_stop": {
+          "principle": "Stop at TRACTION, not at BEDROCK. The chain ends when the reader has enough to act, not when all questions are answered.",
+          "example": "'Whatever seems excitingly ambitious' is actionable — you can start there. You don't need a definition of 'ambitious.'",
+          "feel_based": "The right length is art, not science. The example shows 'about right' — more could be too much. Trust the feel of completeness.",
+          "warning": "The chain could continue indefinitely ('What's ambitious?' → 'How do I know if I'm ambitious enough?' → etc.). Resist. Stop when the reader can begin."
+        },
+        "failure_modes": [
+          "Stopping too early (reader still has obvious unanswered questions)",
+          "Going too long (answering questions the reader didn't ask)",
+          "Breaking the chain (paragraph that doesn't follow from previous)",
+          "Forcing questions (asking things the reader wouldn't naturally wonder)"
+        ],
+        "usage": "For prescriptive or explanatory essays where you need to lead the reader step by step without lecturing"
       }
     },
     "colloquial_peaks": {
