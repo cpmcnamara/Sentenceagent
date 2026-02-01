@@ -1006,6 +1006,221 @@
         ],
         "adaptation": "Works for any extended comparison where you need reader buy-in before sustaining the metaphor across paragraphs"
       }
+    },
+    {
+      "id": 53,
+      "author": "Eric S. Raymond",
+      "source": "The Cathedral and the Bazaar",
+      "passage": "Linus was treating his users as co-developers in the most effective possible way:\n\n7. Release early. Release often. And listen to your customers.\n\nLinus's innovation wasn't so much in doing quick-turnaround releases incorporating lots of user feedback (something like this had been Unix-world tradition for a long time), but in scaling it up to a level of intensity that matched the complexity of what he was developing. In those early times (around 1991) it wasn't unknown for him to release a new kernel more than once a day!",
+      "feedback": "Lesson-extraction pivot - narrative crystallizes into numbered principle, then differentiates from precedent",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [12, 8, 42, 23],
+        "cadence": "short-SHORT-LONG-medium",
+        "beat": "Setup claim → crystallized principle → nuanced differentiation → concrete evidence"
+      },
+      "structure": {
+        "template": "[Subject] was doing [practice] in the most [qualifier] way:\n\n[N]. [Imperative principle.]\n\n[Subject]'s innovation wasn't so much in [obvious interpretation] (something like this had been [precedent] for a long time), but in [overlooked differentiator]. In [specific context], [concrete evidence]!",
+        "slots": ["subject", "practice", "qualifier", "N", "principle", "obvious interpretation", "precedent", "overlooked differentiator", "specific context", "concrete evidence"],
+        "technique": "Narrative → numbered principle → precedent acknowledgment → differentiation"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Linus released software frequently and incorporated user feedback at unprecedented scale.",
+        "technique": "The numbered principle creates quotability; the 'wasn't so much...but in' structure shows sophisticated thinking"
+      },
+      "usage": {
+        "position": "transition from case study to generalizable insight",
+        "bestFor": "Extracting principles from examples while showing what made THIS case special"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "End narrative with colon leading to principle",
+          "State principle as numbered imperative",
+          "Acknowledge the obvious precedent in parenthetical",
+          "Pivot with 'but in' to the overlooked differentiator",
+          "End with concrete, surprising evidence"
+        ],
+        "adaptation": "Essential for consulting - transforms case studies into actionable principles while differentiating from 'we already knew that'"
+      }
+    },
+    {
+      "id": 54,
+      "author": "Eric S. Raymond",
+      "source": "The Cathedral and the Bazaar",
+      "passage": "Given a large enough beta-tester and co-developer base, almost every problem will be characterized quickly and the fix obvious to someone. Or, less formally, 'Given enough eyeballs, all bugs are shallow.' I dub this: 'Linus's Law'.",
+      "feedback": "Named-law formalization - states principle formally, restates informally, then names it for permanence",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [24, 10, 6],
+        "cadence": "LONG-short-SHORT",
+        "beat": "Formal statement → memorable restatement → naming ceremony"
+      },
+      "structure": {
+        "template": "Given [formal conditions], [formal outcome]. Or, less formally, '[pithy restatement].' I dub this: '[Name]'s Law'.",
+        "slots": ["formal conditions", "formal outcome", "pithy restatement", "Name"],
+        "technique": "Formal → informal → named. Triple-lock on memorability."
+      },
+      "emotionalWeight": {
+        "dryVersion": "Many reviewers find bugs faster than few reviewers.",
+        "technique": "The 'I dub this' is performative - reader witnesses the birth of a concept"
+      },
+      "usage": {
+        "position": "crystallizing a key insight for permanence",
+        "bestFor": "Making your core insight quotable and attributable"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "State the principle in formal/academic register",
+          "Restate with 'Or, less formally' in plain language",
+          "Name it with 'I dub this' or similar performative"
+        ],
+        "adaptation": "Use when you want readers to remember AND attribute a principle. The naming makes it spreadable."
+      }
+    },
+    {
+      "id": 55,
+      "author": "Neal Stephenson",
+      "source": "In the Beginning was the Command Line",
+      "passage": "During the Eighties, word processing was transformed by the rise of WYSIWYG. It's easy to forget what a conceptual revolution this was. Previously, word processors had been mechanical devices that put ink on paper in a literal way. But WYSIWYG meant that the document on the screen looked the same as the printed page—which sounds obvious now but was actually quite radical.",
+      "feedback": "Historical parallel bridge - uses past technological shift to frame current one",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [12, 10, 15, 28],
+        "cadence": "short-short-medium-LONG",
+        "beat": "Historical marker → 'easy to forget' prompt → past state → present-obvious-but-was-radical"
+      },
+      "structure": {
+        "template": "During the [era], [domain] was transformed by [change]. It's easy to forget what a conceptual revolution this was. Previously, [past approach]. But [new approach]—which sounds obvious now but was actually quite radical.",
+        "slots": ["era", "domain", "change", "past approach", "new approach"],
+        "technique": "Historical anchor + 'easy to forget' + past/present contrast + 'obvious now but radical then'"
+      },
+      "emotionalWeight": {
+        "dryVersion": "WYSIWYG word processing was a significant change from previous approaches.",
+        "technique": "'Easy to forget' recruits reader humility; 'sounds obvious now but was radical' creates temporal perspective"
+      },
+      "usage": {
+        "position": "transitioning to discuss a current paradigm shift",
+        "bestFor": "Setting up a current change by showing a past parallel the reader has already accepted"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Anchor in a specific past era",
+          "Use 'easy to forget' to prompt reflection",
+          "Describe the pre-change state briefly",
+          "End with 'sounds obvious now but was actually quite radical'"
+        ],
+        "adaptation": "Perfect for framing AI/tech transitions - readers accept past shifts, so you borrow that acceptance for current ones"
+      }
+    },
+    {
+      "id": 56,
+      "author": "Paul Graham",
+      "source": "Hackers and Painters",
+      "passage": "What hackers and painters have in common is that they're both makers. Along with composers, architects, and writers, what hackers and painters are trying to do is make good things. They're not doing research per se, though if in the course of trying to make good things they discover some new technique, so much the better.",
+      "feedback": "Coalition-building pivot - groups your subject with higher-status peers to elevate it",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [14, 20, 25],
+        "cadence": "short-medium-LONG",
+        "beat": "Coalition claim → expanded roster with goal → differentiation from adjacent category"
+      },
+      "structure": {
+        "template": "What [your subject] and [high-status peer] have in common is that they're both [unifying category]. Along with [additional high-status peers], what [subjects] are trying to do is [noble goal]. They're not doing [adjacent lesser category] per se, though if in the course of [noble goal] they [bonus outcome], so much the better.",
+        "slots": ["your subject", "high-status peer", "unifying category", "additional peers", "noble goal", "adjacent lesser category", "bonus outcome"],
+        "technique": "Coalition claim → roster expansion → 'not X per se' differentiation"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Hackers and painters are both makers who create things.",
+        "technique": "The 'not doing research per se' elevates making above theorizing; the coalition borrows status from painters/architects"
+      },
+      "usage": {
+        "position": "reframing an undervalued activity by coalition",
+        "bestFor": "Elevating a practice by grouping it with already-respected peers"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Name your subject alongside a higher-status peer",
+          "Identify the unifying category they share",
+          "Expand the coalition with more respected peers",
+          "Differentiate from an adjacent category with 'not X per se'"
+        ],
+        "adaptation": "Use for positioning - 'What data scientists and physicists have in common...' borrows credibility through coalition"
+      }
+    },
+    {
+      "id": 57,
+      "author": "Stephen Wolfram",
+      "source": "What Is ChatGPT Doing... and Why Does It Work?",
+      "passage": "The basic concept of ChatGPT is at some level rather simple. Start from a huge sample of human-created text from the web, books, etc. Then train a neural network to generate text that's 'like this.' And in particular, make it able to start from a 'prompt' and then continue with text that's 'like what it was trained on.'",
+      "feedback": "Conceptual stacking - builds understanding in layers, each sentence adding one concept",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [10, 15, 17, 22],
+        "cadence": "short-medium-medium-LONG",
+        "beat": "Simplicity promise → first layer (data) → second layer (training) → third layer (prompting)"
+      },
+      "structure": {
+        "template": "The basic concept of [complex thing] is at some level rather simple. Start from [input layer]. Then [process layer] to [output goal]. And in particular, make it able to [specific capability].",
+        "slots": ["complex thing", "input layer", "process layer", "output goal", "specific capability"],
+        "technique": "Simplicity promise + layered build-up + 'in particular' zoom"
+      },
+      "emotionalWeight": {
+        "dryVersion": "ChatGPT is trained on text to generate similar text from prompts.",
+        "technique": "'At some level rather simple' gives reader permission to understand; layering prevents overwhelm"
+      },
+      "usage": {
+        "position": "introducing a complex technical concept",
+        "bestFor": "Making complex systems accessible by building understanding in digestible layers"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Promise simplicity upfront ('at some level rather simple')",
+          "Start with the input/data layer",
+          "Add the process/transformation layer with 'Then'",
+          "Zoom to specific capability with 'And in particular'"
+        ],
+        "adaptation": "Essential for technical explainers - prevents the 'wall of complexity' that loses readers"
+      }
+    },
+    {
+      "id": 58,
+      "author": "Eric S. Raymond",
+      "source": "The Cathedral and the Bazaar",
+      "passage": "I think the cutting edge of open-source software will belong to people who start from individual vision and brilliance, then amplify it through the effective construction of voluntary communities of interest. Perhaps this is not only the future of open-source software. Perhaps it is the future of software in general.",
+      "feedback": "Scope-expansion close - states claim for narrow domain, then expands scope in final beat",
+      "essaySection": "TRANSITION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [31, 9, 10],
+        "cadence": "LONG-short-short",
+        "beat": "Detailed claim → 'perhaps not only' → expanded scope"
+      },
+      "structure": {
+        "template": "I think the [specific domain outcome] will belong to [actors] who [approach], then [amplification method]. Perhaps this is not only the future of [narrow domain]. Perhaps it is the future of [broader domain] in general.",
+        "slots": ["specific domain outcome", "actors", "approach", "amplification method", "narrow domain", "broader domain"],
+        "technique": "Specific claim → 'perhaps not only' hedge → scope expansion"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Open-source methods may define all software development.",
+        "technique": "The double 'Perhaps' creates escalating ambition while maintaining intellectual humility"
+      },
+      "usage": {
+        "position": "transitioning from specific insight to broader implication",
+        "bestFor": "Expanding the stakes of your argument without overreaching"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Make detailed claim about narrow domain",
+          "Use 'Perhaps this is not only' to signal expansion",
+          "Expand to broader domain with 'in general'"
+        ],
+        "adaptation": "Classic consulting move - 'This worked for our pilot. Perhaps it's not only the future of this team. Perhaps it's the future of the organization.'"
+      }
     }
   ],
   "rejected": [
