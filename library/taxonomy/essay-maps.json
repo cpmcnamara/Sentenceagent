@@ -287,7 +287,23 @@
         "How to Think for Yourself",
         "How to Do Great Work",
         "The Submarine"
-      ]
+      ],
+      "when_to_use": [
+        "Genuinely exploring a question you don't know the answer to",
+        "Topics where the obvious answer is wrong or incomplete",
+        "Personal intellectual journey that others can learn from",
+        "When discovery IS the point - not just arriving at conclusion",
+        "Building trust through visible thinking process",
+        "When you want readers to change their minds alongside you"
+      ],
+      "contrast_with_amodei_systematic": {
+        "thesis": "PG discovers thesis through writing; Amodei states thesis upfront",
+        "structure": "PG follows implications organically; Amodei pre-plans categorical structure",
+        "reader_experience": "PG: 'watch me figure it out'; Amodei: 'let me systematically convince you'",
+        "evidence": "PG uses examples to illustrate; Amodei uses evidence to prove",
+        "tone": "PG is intimate/personal; Amodei is authoritative/comprehensive",
+        "best_for": "PG for intellectual exploration; Amodei for policy advocacy"
+      }
     },
     "amodei_systematic_analysis": {
       "name": "Amodei Systematic Analysis",
