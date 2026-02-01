@@ -12,30 +12,34 @@
         {
           "name": "QUESTION",
           "purpose": "Open with genuine curiosity, not thesis",
-          "signals": ["My goal here is to figure out...", "Despite its title...", "What would it mean to..."],
+          "signals": ["My goal here is to figure out...", "Despite its title...", "What would it mean to...", "I keep coming back to the question of...", "What I want to understand is..."],
           "requirement": "Must be a real question you don't know the answer to yet",
           "substance_level": "light",
           "substance_type": "framing only - no evidence needed yet",
           "transition_to_next": "End with the question clearly stated; next section answers it directly",
+          "transition_sentence_template": "The final sentence MUST state the question directly. Example: 'The question is: why does X?' or 'What I want to figure out is Y.'",
           "recommended_patterns": {
             "sentence_families": ["question_answer", "definition_is"],
             "cadence_archetypes": ["short-medium - setup then question"]
           },
-          "length": "1-3 paragraphs"
+          "length": "1-3 paragraphs",
+          "grand_theme_service": "This section establishes what the essay is trying to discover. The question posed here should echo in the CLOSE."
         },
         {
           "name": "FIRST_ATTEMPT",
           "purpose": "The obvious answer, explored honestly",
-          "signals": ["The obvious answer is...", "You might think...", "It seems like...", "X, but you can Y about any Z. What makes it special is..."],
+          "signals": ["The obvious answer is...", "You might think...", "It seems like...", "X, but you can Y about any Z. What makes it special is...", "The obvious interpretation is...", "At first glance...", "The standard reading is..."],
           "requirement": "Take the obvious answer seriously before rejecting it",
           "substance_level": "light-medium",
           "substance_type": "Brief exploration, dismiss what's not interesting to find what is",
           "transition_to_next": "State first conclusion in one simple sentence, then: 'That may sound obvious, but it has unexpected consequences'",
+          "transition_sentence_template": "'That may sound obvious, but it has some unexpected consequences.' or 'But this can't be the whole story, because...'",
           "recommended_patterns": {
             "sentence_families": ["contrast_pair", "negation_pivot"],
             "cadence_archetypes": ["drumline - steady march through obvious options"]
           },
-          "length": "2-4 paragraphs"
+          "length": "2-4 paragraphs",
+          "grand_theme_service": "This section sets up what the essay will overturn. The obvious answer should be genuinely tempting—not a strawman."
         },
         {
           "name": "UNEXPECTED_CONSEQUENCE",
@@ -83,7 +87,7 @@
         {
           "name": "MECHANISM",
           "purpose": "Explain WHY - the machinery underneath",
-          "signals": ["Here's why...", "The way this works is...", "What happens is...", "An essay should ordinarily..."],
+          "signals": ["Here's why...", "The way this works is...", "What happens is...", "An essay should ordinarily...", "Here's how it works.", "The mechanism is..."],
           "requirement": "Not just what, but how and why it works that way",
           "substance_level": "heaviest",
           "substance_type": [
@@ -93,13 +97,21 @@
             "direct_instruction - 'You have to be very strict when...'",
             "mechanism_explained - the gears underneath"
           ],
+          "substance_checklist": [
+            "At least 2 concrete examples showing the mechanism in action",
+            "At least 1 personal admission (I don't/I just/I find myself)",
+            "At least 1 mechanism explanation (why it works, not just what happens)"
+          ],
           "transition_to_next": "Ask the next natural question: 'Once you've got X, then what?' OR 'The most surprising question being thrown off at this point is...'",
+          "transition_sentence_template": "CRITICAL: End MECHANISM with a question that leads to IMPLICATIONS. Use: 'If this is true, what follows?' or 'What are the consequences of this mechanism?' or 'Once you've understood X, the question becomes...'",
           "recommended_patterns": {
             "sentence_families": ["conditional_snap", "colon_reveal", "definition_is"],
             "cadence_archetypes": ["wave - long explanation, short summary, long explanation", "drumline - steady instructional march"],
             "paragraph_roles": ["definition", "elaboration", "evidence"]
           },
-          "length": "5-10 paragraphs - this is the heart of the essay"
+          "length": "5-10 paragraphs - this is the heart of the essay",
+          "length_note": "This section can exceed 10 paragraphs if the mechanism is genuinely complex. Quality > length, but this section should never feel rushed.",
+          "grand_theme_service": "This is where the essay earns trust. The mechanism must be concrete enough that readers could apply it themselves."
         },
         {
           "name": "IMPLICATIONS_FOLLOWED",
@@ -622,16 +634,19 @@
         {
           "name": "SURPRISING_PAIRING",
           "purpose": "Establish that you've moved between two worlds others see as unrelated",
-          "signals": ["When I finished X, I went to Y...", "A lot of people seemed surprised that...", "They seemed to think X and Y were very different..."],
+          "signals": ["When I finished X, I went to Y...", "A lot of people seemed surprised that...", "They seemed to think X and Y were very different...", "When I finished reading X, I kept thinking about Y..."],
           "requirement": "Personal credibility in both domains; the pairing must seem genuinely unexpected",
+          "credential_requirement": "You MUST establish specific credibility in both domains. Not just 'I know about X and Y' but concrete evidence: projects completed, time spent, specific experiences. Without credentials, the analogy feels imposed rather than discovered.",
           "substance_level": "light",
           "substance_type": "personal_credential - establish you know both worlds",
           "transition_to_next": "State that conventional view is wrong: 'Both of these images are wrong.'",
+          "transition_sentence_template": "'Both of these images are wrong.' or 'The common view of both is mistaken.' or 'But the similarity isn't superficial.'",
           "recommended_patterns": {
             "sentence_families": ["contrast_pair", "reversal_but"],
             "cadence_archetypes": ["setup_punch - convention then surprise"]
           },
-          "length": "2-4 paragraphs"
+          "length": "2-4 paragraphs",
+          "grand_theme_service": "This section hooks the reader with an unexpected connection. The surprise should feel genuine, not manufactured."
         },
         {
           "name": "CORE_SIMILARITY",
@@ -689,6 +704,7 @@
           "purpose": "Show how institutions get the domains wrong",
           "signals": ["If universities and research labs...", "Unfortunately, most companies won't...", "I only discovered this myself..."],
           "requirement": "Must identify specific institutional forces that create the problem",
+          "personal_story_requirement": "This section requires at least one specific personal story—not just general observation. Example: 'I once watched a startup fail because...' or 'In my third year of graduate school, I saw...'. Institutional critique without personal stake feels preachy.",
           "substance_level": "heavy",
           "substance_type": [
             "institutional_critique - who's failing and why",
@@ -696,11 +712,13 @@
             "structural_analysis - why the failure is systematic"
           ],
           "transition_to_next": "Move to solution or opportunity: 'So one way to...' OR 'The place to...'",
+          "transition_sentence_template": "'So one way to think about X is...' or 'The place to look for counterexamples is...' or 'This is what Y is really about.'",
           "recommended_patterns": {
             "sentence_families": ["conditional_snap", "reversal_but"],
             "cadence_archetypes": ["crescendo_snap - build to institutional critique"]
           },
-          "length": "3-5 paragraphs"
+          "length": "3-5 paragraphs",
+          "grand_theme_service": "This section gives the essay stakes—why this matters beyond intellectual interest. Institutions make the problem structural, not individual."
         },
         {
           "name": "WAY_FORWARD",
@@ -845,16 +863,18 @@
         {
           "name": "PERSONAL_CREDENTIAL",
           "purpose": "Establish why you're qualified to analyze this",
-          "signals": ["I had already been involved in X for Y years...", "I was one of the first...", "I thought I knew how it was done."],
+          "signals": ["I had already been involved in X for Y years...", "I was one of the first...", "I thought I knew how it was done.", "I came to X as someone who...", "My background in Y led me to...", "By the time X reached me, I had already..."],
           "requirement": "Must show both expertise AND that you were surprised",
           "substance_level": "medium",
           "substance_type": ["resume_points - what you'd done", "prior_beliefs - what you thought you knew"],
           "transition_to_next": "Name what overturned your assumptions: 'X overturned much of what I thought I knew.'",
+          "transition_sentence_template": "'X overturned much of what I thought I knew.' or 'Then Y happened, and I had to reconsider everything.'",
           "recommended_patterns": {
             "sentence_families": ["list_resolve", "reversal_but"],
             "cadence_archetypes": ["drumline - list credentials"]
           },
-          "length": "2-3 paragraphs"
+          "length": "2-3 paragraphs",
+          "grand_theme_service": "Credentials earn the right to extract lessons. The surprise shows humility and sets up the learning arc."
         },
         {
           "name": "CENTRAL_METAPHOR",
@@ -875,6 +895,7 @@
           "purpose": "Tell the story of your project with embedded lessons",
           "signals": ["This is the story of that project.", "The mail must get through.", "I'll use it to propose some aphorisms..."],
           "requirement": "Story must be specific enough to be credible, general enough to yield principles",
+          "story_lesson_ratio": "The narrative should have clear BEATS (story events) interleaved with LESSONS (extracted principles). Ideal ratio: 2-3 story paragraphs per lesson. Never more than 4 paragraphs of story without extracting a lesson.",
           "substance_level": "heaviest",
           "substance_type": [
             "chronological_narrative - what happened when",
@@ -895,12 +916,20 @@
               "requirement": "Principle must be memorable and reusable"
             }
           ],
+          "lesson_quality_checklist": [
+            "Memorable - could be quoted on its own",
+            "Generalizable - applies beyond this specific case",
+            "Non-obvious - not something reader already knew",
+            "Actionable - reader could apply it to their own work"
+          ],
           "transition_to_next": "Story naturally leads to theory: 'By mid-1996 I thought I was beginning to understand.'",
+          "transition_sentence_template": "'By [time marker] I thought I was beginning to understand.' or 'The pattern was becoming clear.' or 'This suggested a deeper point...'",
           "recommended_patterns": {
             "sentence_families": ["narrative_thread", "colon_reveal"],
             "cadence_archetypes": ["wave - story beat, lesson, story beat, lesson"]
           },
-          "length": "15-30 paragraphs - bulk of essay"
+          "length": "15-30 paragraphs - bulk of essay",
+          "grand_theme_service": "This section proves the theory through lived experience. The lessons should feel earned by the story, not imposed on it."
         },
         {
           "name": "THEORETICAL_FRAMEWORK",
@@ -1045,6 +1074,7 @@
           "purpose": "Dig through layers of cultural meaning",
           "signals": ["What the hell is going on here?", "This is not such a bad thing in...", "The metaphor shear was especially brutal..."],
           "requirement": "Must uncover assumptions people don't know they're making",
+          "digression_management": "Every digression must: (a) be explicitly acknowledged as digression, (b) return to main thread within 3 paragraphs, (c) illuminate rather than merely entertain. Digressions that never return are the primary failure mode.",
           "substance_level": "heaviest",
           "substance_type": [
             "hidden_assumption_exposed - what everyone takes for granted",
@@ -1057,13 +1087,17 @@
             "sentence_families": ["reversal_but", "concede_counterpunch"],
             "cadence_archetypes": ["wave - excavation, insight, excavation, insight"]
           },
-          "length": "20-40 paragraphs - this is where the essay lives"
+          "length": "20-40 paragraphs - this is where the essay lives",
+          "length_note": "20-40 paragraphs is aspirational. The section can be shorter if digression would be forced. Better a tight 15 paragraphs than a padded 25. Quality of excavation > quantity of paragraphs.",
+          "grand_theme_service": "This section does the work the essay title promises. The excavation should reveal something the reader didn't know they didn't know."
         },
         {
           "name": "PHILOSOPHICAL_DIGRESSION",
           "purpose": "Step back to larger questions about meaning and society",
           "signals": ["The word, in the end, is the only system of encoding thoughts...", "We want things to be easier...", "This is precisely the same as..."],
           "requirement": "Must connect specific phenomenon to universal human concerns",
+          "etymology_note": "Etymology is a powerful tool for this section. Origin of words often reveals hidden assumptions. Consider: what does the key term originally mean? How has it changed? What was lost or distorted?",
+          "self_implication_requirement": "The author MUST be implicated in the cultural phenomenon being critiqued. Without self-implication, the essay becomes preachy. The move should be: 'I too participated in this distortion, and here's how...'",
           "substance_level": "heavy",
           "substance_type": [
             "universal_claim - what this says about humans",
@@ -1075,13 +1109,15 @@
             "sentence_families": ["definition_is", "conditional_snap"],
             "cadence_archetypes": ["crescendo_snap - build to philosophical claim"]
           },
-          "length": "4-8 paragraphs"
+          "length": "4-8 paragraphs",
+          "grand_theme_service": "This section zooms out to show why the excavation matters beyond its immediate subject. The universal claim should feel earned by the specific archaeology."
         },
         {
           "name": "RESOLUTION_OR_IMPASSE",
           "purpose": "Where does this leave us?",
           "signals": ["The only real question is...", "In the end, there's just a fundamental tension...", "What would the engineer say?"],
           "requirement": "Must be honest about what remains unresolved",
+          "honesty_requirement": "This section should acknowledge what remains unresolved. Stephenson essays don't tie bows. Preferred endings: 'There's a fundamental tension that can't be resolved' or 'The only certainty is...' not 'And so the answer is...'",
           "substance_level": "medium",
           "substance_type": [
             "tension_named - what can't be resolved",
@@ -1093,7 +1129,8 @@
             "sentence_families": ["conditional_snap", "fragment_punch"],
             "cadence_archetypes": ["long_short_snap - extended reflection, punchy close"]
           },
-          "length": "2-4 paragraphs"
+          "length": "2-4 paragraphs",
+          "grand_theme_service": "This section resolves the essay without false certainty. The reader should leave with clearer seeing, not a tidy answer."
         }
       ],
       "transition_patterns": {
@@ -1209,6 +1246,7 @@
           "purpose": "Explain the basic mechanism in its simplest form",
           "signals": ["At some level it's quite simple...", "The basic idea is...", "What X is always fundamentally trying to do is..."],
           "requirement": "Must be genuinely simple - the foundation for everything else",
+          "accessibility_requirement": "The simplest version should be understandable by someone with no background. If you find yourself using jargon, you're not at the simplest version yet. Ask: could a smart 14-year-old follow this?",
           "substance_level": "medium",
           "substance_type": [
             "mechanism_stated - what it actually does",
@@ -1216,17 +1254,20 @@
             "accessible_analogy - relate to familiar"
           ],
           "transition_to_next": "Complicate with specifics: 'But, OK, at each step...'",
+          "transition_sentence_template": "'But, OK, at each step...' or 'But how does that actually work?' or 'This sounds simple, but...'",
           "recommended_patterns": {
             "sentence_families": ["definition_is", "colon_reveal"],
             "cadence_archetypes": ["drumline - steady explanation"]
           },
-          "length": "3-5 paragraphs"
+          "length": "3-5 paragraphs",
+          "grand_theme_service": "This section builds the foundation. Everything else builds on this simple understanding."
         },
         {
           "name": "WORKED_EXAMPLE",
           "purpose": "Show the mechanism in action with specific case",
-          "signals": ["Let's say we've got...", "Here's what happens if...", "So, for example..."],
+          "signals": ["Let's say we've got...", "Here's what happens if...", "So, for example...", "Let's trace this through..."],
           "requirement": "Example must be concrete enough to follow, simple enough to understand",
+          "visual_note": "Ideally this section includes visual examples—diagrams, screenshots, computed outputs. For text-only contexts, use: numbered steps, clear before/after comparisons, or structural diagrams in ASCII if necessary.",
           "substance_level": "heavy",
           "substance_type": [
             "step_by_step - walk through what happens",
@@ -1234,17 +1275,20 @@
             "variations - what happens if you change things"
           ],
           "transition_to_next": "Ask the next question: 'So where do the X come from?'",
+          "transition_sentence_template": "'So where do the X come from?' or 'OK, so that's how it works on the surface. But what's underneath?'",
           "recommended_patterns": {
             "sentence_families": ["conditional_snap", "list_resolve"],
             "cadence_archetypes": ["ladder - build through steps"]
           },
-          "length": "4-8 paragraphs, heavily illustrated"
+          "length": "4-8 paragraphs, heavily illustrated",
+          "grand_theme_service": "This section proves the explanation works by showing it in action. If readers can't follow the example, they won't trust the underlying mechanism."
         },
         {
           "name": "UNDERLYING_MECHANISM",
           "purpose": "Go one level deeper - what's underneath the surface?",
-          "signals": ["OK, so where do the X come from?", "Let's start with a simpler problem...", "The key is the notion of..."],
+          "signals": ["OK, so where do the X come from?", "Let's start with a simpler problem...", "The key is the notion of...", "But this is where a key structural idea comes in..."],
           "requirement": "Must connect surface behavior to deeper structure",
+          "depth_requirement": "This section should introduce at least one concept that wasn't in SIMPLEST_VERSION. If you're just restating the simple version in more words, you haven't gone deep enough. Ask: what's underneath the surface?",
           "substance_level": "heaviest",
           "substance_type": [
             "simplified_model - easier version of the problem",
@@ -1253,11 +1297,14 @@
             "visual_explanation - show the structure"
           ],
           "transition_to_next": "Add the next layer: 'But this is where a key idea comes in...'",
+          "transition_sentence_template": "'But this is where a key idea comes in...' or 'The crucial insight is...' or 'And this is where things get interesting...'",
           "recommended_patterns": {
             "sentence_families": ["definition_is", "conditional_snap"],
             "cadence_archetypes": ["wave - explanation, example, explanation, example"]
           },
-          "length": "10-20 paragraphs - bulk of essay"
+          "length": "10-20 paragraphs - bulk of essay",
+          "length_note": "This section can be shorter if the mechanism is simpler, but should never feel rushed. Minimum: introduce at least one new concept not present in SIMPLEST_VERSION.",
+          "grand_theme_service": "This section goes deeper than readers could have gone themselves. It should reveal the machinery, not just describe the behavior."
         },
         {
           "name": "KEY_INSIGHT",
@@ -1300,6 +1347,8 @@
           "purpose": "What have we learned and why does it matter?",
           "signals": ["So what is X really doing?", "What we've seen is that...", "And the remarkable thing is that..."],
           "requirement": "Must connect back to opening question and go beyond",
+          "open_questions_requirement": "The final paragraphs should include at least one open question—something the explanation doesn't resolve. Wolfram essays are honest about the limits of understanding. Never end with false certainty.",
+          "question_answer_spine": "The essay's skeleton should be visible as a chain of questions: 'How does X work?' → 'What's the mechanism?' → 'What's underneath that?' → 'What are the complications?' This is explicit, not hidden.",
           "substance_level": "medium",
           "substance_type": [
             "answer_synthesized - what we now understand",
@@ -1311,7 +1360,8 @@
             "sentence_families": ["bookend", "conditional_snap"],
             "cadence_archetypes": ["crescendo_snap - end on significance"]
           },
-          "length": "3-5 paragraphs"
+          "length": "3-5 paragraphs",
+          "grand_theme_service": "This section answers the original question with the understanding built through the essay. The answer should feel earned by the explanation, and should gesture toward what remains unknown."
         }
       ],
       "transition_patterns": {
@@ -1683,6 +1733,54 @@
           "description": "Each section adds to a picture that only completes at the end",
           "example": "Reader couldn't guess the ending from the opening, but ending feels inevitable"
         }
+      ]
+    }
+  },
+  "cross_pattern_guidance": {
+    "description": "Improvements that apply across all essay map patterns, derived from testing patterns against actual essays.",
+    "transition_explicitness": {
+      "principle": "All patterns should have a transition_sentence_template for each section that gives exact phrasing to bridge to the next section. Not just 'transition to X' but 'Use this sentence: [template]'.",
+      "implementation": "Each section should include a transition_sentence_template field with 2-3 specific options."
+    },
+    "substance_verification": {
+      "principle": "Each pattern should include a substance_checklist for heavy sections.",
+      "example_checklist": [
+        "At least 2 concrete examples showing the mechanism in action",
+        "At least 1 personal admission (I don't/I just/I find myself)",
+        "At least 1 mechanism explanation (why it works, not just what happens)"
+      ]
+    },
+    "length_flexibility": {
+      "principle": "Patterns should distinguish between 'minimum length for substance' and 'maximum before bloat.'",
+      "implementation": "Add length_note field clarifying when to expand vs. compress"
+    },
+    "signal_phrase_variants": {
+      "principle": "All patterns should have 3-5 variants for each signal phrase, not just one canonical version.",
+      "reason": "Writers naturally vary phrasing. Single canonical signals can feel forced."
+    },
+    "coherence_agent_integration": {
+      "principle": "Patterns should explicitly reference coherence_agent checks at each section.",
+      "implementation": "Add to section definitions: 'coherence_checks: [list of relevant checks from coherence_agent]'"
+    },
+    "grand_theme_service": {
+      "principle": "Each section description should include: 'How this section serves the grand theme.'",
+      "purpose": "Prevents sections that are interesting but disconnected from the essay's purpose."
+    },
+    "testing_protocol": {
+      "description": "How to test and improve patterns",
+      "steps": [
+        "Generate an essay using the pattern on a specific topic",
+        "Compare each section against pattern requirements",
+        "Identify gaps: where did the essay deviate?",
+        "Determine whether deviation was pattern failure or essay failure",
+        "Update pattern with improvements"
+      ],
+      "questions_per_section": [
+        "Did the essay use the recommended signals?",
+        "Did the essay hit the required substance level?",
+        "Did the transition to the next section work?",
+        "Does the section serve the grand theme?",
+        "Is the length appropriate?"
       ]
     }
   }
