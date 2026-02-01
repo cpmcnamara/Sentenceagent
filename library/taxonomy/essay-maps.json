@@ -44,17 +44,20 @@
         {
           "name": "UNEXPECTED_CONSEQUENCE",
           "purpose": "Following the obvious answer reveals something strange",
-          "signals": ["That may sound obvious, but it has some unexpected consequences.", "One is that...", "Another unexpected consequence:"],
+          "signals": ["That may sound obvious, but it has some unexpected consequences.", "One is that...", "Another unexpected consequence:", "Something strange happens when you..."],
           "requirement": "The strangeness must be genuinely surprising, not manufactured",
           "substance_level": "heavy",
-          "substance_type": ["historical_example - proves point happened in real world", "concrete_number - specific beats vague", "rhetorical_question_as_test - 'Talk about an important topic...'"],
+          "substance_type": ["historical_example - proves point happened in real world", "concrete_number - specific beats vague", "rhetorical_question_as_test - 'Talk about an important topic...'", "direct_quote - from source material as evidence"],
+          "direct_quote_note": "Heavy sections benefit from direct quotes from source material. For literary analysis, quote the text. For empirical analysis, quote data or expert sources.",
           "transition_to_next": "'If [conclusion], then [implication]' OR 'I imagined X... But in fact the opposite seems true'",
+          "transition_sentence_template": "'I imagined when I started... But in fact the opposite seems to be true.' or 'If this is right, then I started with the wrong question.'",
           "recommended_patterns": {
             "sentence_families": ["colon_reveal", "list_resolve"],
             "cadence_archetypes": ["crescendo_snap - build examples then land insight", "ladder - each sentence builds on previous"]
           },
           "length": "3-5 paragraphs",
-          "key_move": "Use 'One is that... Another is...' to create list momentum"
+          "key_move": "Use 'One is that... Another is...' to create list momentum",
+          "grand_theme_service": "This section delivers the first real surprise. If the consequences don't feel genuinely unexpected, the essay loses momentum."
         },
         {
           "name": "WRONG_TURN_ACKNOWLEDGED",
@@ -148,16 +151,23 @@
         {
           "name": "CLOSE",
           "purpose": "Return to start with new understanding",
-          "signals": ["So the answer to the original question...", "This essay has been a kind of...", "I understand better now where..."],
+          "signals": ["So the answer to the original question...", "This essay has been a kind of...", "I understand better now where...", "So the answer to why X is not..."],
           "requirement": "Must connect back to opening, showing what was learned",
           "substance_level": "medium",
           "substance_type": ["synthesis - pull threads together", "callback_to_opening - reference the original question", "new_understanding_stated - what you know now"],
+          "closing_move": "The final sentence should land with weight. Short declarative sentences work best. Avoid ending on a question unless deliberately leaving something unresolved.",
+          "final_sentence_patterns": [
+            "The X doesn't answer that question. It makes us feel it.",
+            "That's what X is. And that's why Y.",
+            "Which of them is really the Z?"
+          ],
           "transition_to_next": null,
           "recommended_patterns": {
-            "sentence_families": ["bookend", "colon_reveal"],
-            "cadence_archetypes": ["crescendo_snap - build to final insight", "bookend - echo opening structure"]
+            "sentence_families": ["bookend", "colon_reveal", "fragment_punch"],
+            "cadence_archetypes": ["crescendo_snap - build to final insight", "bookend - echo opening structure", "long_short_snap - reflection then punch"]
           },
-          "length": "2-4 paragraphs"
+          "length": "2-4 paragraphs",
+          "grand_theme_service": "This section completes the discovery arc. The reader should feel the distance traveled from QUESTION to CLOSE."
         }
       ],
       "transition_patterns": {
@@ -369,17 +379,23 @@
           "name": "CATEGORY_SECTION",
           "purpose": "Deep dive into one category with consistent internal structure",
           "repeatable": true,
+          "formatting_conventions": {
+            "separator": "Use '---' horizontal rule between categories for visual separation",
+            "numbering": "Number categories explicitly: '## 1. Category Name' or '## Category Name (\"quote subtitle\")'",
+            "quote_subtitles": "Quotes from source material make excellent category subtitles",
+            "subsection_headers": "Use ### for internal structure (Problem Statement, Detailed Analysis, Defenses)"
+          },
           "internal_structure": [
             {
               "name": "CATEGORY_HEADER",
               "purpose": "Named section with evocative title",
-              "signals": ["1. Autonomy risks (\"I'm sorry, Dave\")", "Section title plus subtitle or quote"],
-              "requirement": "Title should be memorable - mix technical and cultural reference"
+              "signals": ["1. Autonomy risks (\"I'm sorry, Dave\")", "Section title plus subtitle or quote", "N. Title (\"Quote from source\")"],
+              "requirement": "Title should be memorable - mix technical and cultural reference. Direct quotes from the source material work well as subtitles."
             },
             {
               "name": "PROBLEM_STATEMENT",
               "purpose": "State what the risk/concern actually is",
-              "signals": ["The core concern is...", "This risk manifests as...", "What we're worried about is..."],
+              "signals": ["The core concern is...", "This risk manifests as...", "What we're worried about is...", "The core failure that..."],
               "substance_level": "heavy",
               "substance_type": [
                 "concrete_scenario - specific example of risk manifesting",
@@ -390,19 +406,21 @@
             {
               "name": "DETAILED_ANALYSIS",
               "purpose": "Work through nuances, sub-cases, real-world implications",
-              "signals": ["There are several variants...", "The subtler version is...", "Even more concerning..."],
+              "signals": ["There are several variants...", "The subtler version is...", "Even more concerning...", "What makes this particularly damaging is..."],
               "substance_level": "heaviest",
               "substance_type": [
                 "sub_categorization - break down into types",
                 "historical_precedent - has this happened before?",
                 "probability_assessment - how likely is each variant?",
-                "footnoted_evidence - citations, data, sources"
-              ]
+                "footnoted_evidence - citations, data, sources",
+                "bulleted_list - for enumerating specific examples"
+              ],
+              "list_note": "Bulleted lists work well here for enumerating specific instances, evidence, or sub-categories. Don't overuse, but don't avoid either."
             },
             {
               "name": "DEFENSES",
               "purpose": "What can be done to mitigate this category of risk",
-              "signals": ["Defenses:", "What can be done?", "Several factors work in our favor..."],
+              "signals": ["Defenses:", "What can be done?", "Several factors work in our favor...", "What could X have done differently?"],
               "requirement": "Must be concrete and actionable, not hand-wavy",
               "substance_level": "heavy",
               "substance_type": [
@@ -410,34 +428,40 @@
                 "technical_solutions - what technology can help",
                 "institutional_mechanisms - what structures help",
                 "honest_limitations - where defenses are weak"
-              ]
+              ],
+              "honest_limitation_signal": "The honest limitation is that... - use this phrase to acknowledge where defenses fall short"
             }
           ],
           "transition_to_next": "Can be minimal - section headers do heavy lifting. Or: 'Moving to the next category...'",
+          "inter_category_note": "Categories should implicitly reference previous categories where relevant. Accumulation is preferred over isolation.",
           "recommended_patterns": {
             "sentence_families": ["conditional_snap", "concede_counterpunch", "list_resolve"],
             "cadence_archetypes": ["wave - alternate explanation and evidence", "ladder - build logical chain"],
             "paragraph_roles": ["definition", "elaboration", "evidence", "counterpunch"]
           },
-          "length": "10-30 paragraphs per category depending on complexity"
+          "length": "10-30 paragraphs per category depending on complexity",
+          "consistency_note": "Structure should be consistent across categories, but length can vary. Consistency of structure > consistency of length."
         },
         {
           "name": "SYNTHESIS",
           "purpose": "What do the categories together reveal?",
-          "signals": ["Looking across these categories...", "What ties these together is...", "The common thread is..."],
-          "requirement": "Must add insight beyond sum of parts",
+          "signals": ["Looking across these categories...", "What ties these together is...", "The common thread is...", "Looking across these N categories, what ties them together is a pattern of..."],
+          "requirement": "Must add insight beyond sum of parts. MUST name the cross-category pattern explicitly (e.g., 'escalating foreclosure', 'compounding failure').",
+          "named_pattern_requirement": "The synthesis MUST name a single unifying pattern that emerges from the categories. This pattern should not be obvious from the CATEGORICAL_OVERVIEW—it should emerge from the detailed analysis. Use a memorable phrase (2-3 words) that captures the dynamic.",
           "substance_level": "medium",
           "substance_type": [
-            "pattern_identified - what recurs across categories",
+            "pattern_identified - what recurs across categories (MUST NAME IT)",
             "tension_named - where categories conflict",
-            "priority_argued - which matters most and why"
+            "priority_argued - which matters most and why",
+            "numbered_summary - enumerate key insights from across categories"
           ],
           "transition_to_next": "Pivot to action: 'Given all this, what should we do?' OR return to opening frame",
           "recommended_patterns": {
             "sentence_families": ["colon_reveal", "definition_is"],
             "cadence_archetypes": ["crescendo_snap - build to synthesis insight"]
           },
-          "length": "2-5 paragraphs"
+          "length": "2-5 paragraphs",
+          "grand_theme_service": "This section proves the categories were worth separating—something emerges from their combination that wasn't visible in any single category."
         },
         {
           "name": "RETURN_TO_FRAME",
@@ -912,10 +936,30 @@
             {
               "name": "LESSON_EXTRACTION",
               "purpose": "Pull out a numbered principle from the beat",
-              "signals": ["Lesson N:", "This suggests:", "Here's the aphorism:"],
+              "signals": ["Lesson N:", "This suggests:", "Here's the aphorism:", "**Lesson N: [statement]**"],
               "requirement": "Principle must be memorable and reusable"
             }
           ],
+          "stage_naming_convention": {
+            "description": "Narrative can be divided into named stages for clarity",
+            "format_options": [
+              "### Stage 1: [Name]",
+              "### [Time Period]: [Event]",
+              "### The [Phase Name]"
+            ],
+            "example_stages": [
+              "Stage 1: Awakening Without Orientation",
+              "Stage 2: Self-Education in Isolation",
+              "Stage 3: The Attempt at Integration",
+              "Stage 4: The Turn to Rage"
+            ],
+            "recommendation": "5-7 stages is typical. Each stage should contain 1-2 lessons. Stages provide visual structure and make the narrative arc explicit."
+          },
+          "lesson_formatting": {
+            "bold_format": "**Lesson N: [Statement in present tense].**",
+            "example": "**Lesson 3: Surface appearance can override demonstrated behavior.**",
+            "placement": "Lesson should come AFTER the story beat that demonstrates it, not before."
+          },
           "lesson_quality_checklist": [
             "Memorable - could be quoted on its own",
             "Generalizable - applies beyond this specific case",
@@ -1036,20 +1080,28 @@
         {
           "name": "HISTORICAL_FRAMING",
           "purpose": "Ground the topic in specific historical moment",
-          "signals": ["About twenty years ago...", "The business took off...", "Around the same time..."],
+          "signals": ["About twenty years ago...", "The business took off...", "Around the same time...", "About two hundred years ago, in the summer of 1816..."],
           "requirement": "Must establish specific actors, dates, and context",
+          "specificity_requirement": "Specificity is crucial, not just mentioning that history happened. Include: (1) specific dates (year at minimum, month if possible), (2) named people (full names, roles), (3) named places (not 'a city in Europe' but 'Villa Diodati on Lake Geneva'), (4) atmospheric detail (weather, political context, cultural moment).",
+          "specificity_examples": [
+            "Lord Byron had rented the Villa Diodati. Percy Bysshe Shelley and his future wife Mary were staying nearby.",
+            "It was the Year Without a Summer—volcanic ash from Mount Tambora had dimmed the sun across the northern hemisphere.",
+            "Byron proposed a contest: everyone would write a ghost story."
+          ],
           "substance_level": "heavy",
           "substance_type": [
-            "named_actors - specific people who made decisions",
-            "origin_story - how we got here",
-            "weird_detail - thing that now seems strange"
+            "named_actors - specific people with full names and roles",
+            "origin_story - how we got here (with dates)",
+            "weird_detail - thing that now seems strange",
+            "place_names - specific locations, not generic"
           ],
-          "transition_to_next": "Pivot to present implications: 'A person who went into a coma before... and woke up now...'",
+          "transition_to_next": "Pivot to present implications: 'A person who went into a coma before... and woke up now...' OR 'What happened to X along the way is as interesting as X itself.'",
           "recommended_patterns": {
             "sentence_families": ["narrative_thread", "contrast_pair"],
             "cadence_archetypes": ["slow_build - immerse in era"]
           },
-          "length": "3-6 paragraphs"
+          "length": "3-6 paragraphs",
+          "grand_theme_service": "This section grounds the excavation in reality. Without specific historical detail, the essay feels like speculation rather than archaeology."
         },
         {
           "name": "EXTENDED_METAPHOR_SETUP",
@@ -1265,17 +1317,27 @@
         {
           "name": "WORKED_EXAMPLE",
           "purpose": "Show the mechanism in action with specific case",
-          "signals": ["Let's say we've got...", "Here's what happens if...", "So, for example...", "Let's trace this through..."],
+          "signals": ["Let's say we've got...", "Here's what happens if...", "So, for example...", "Let's trace this through...", "Let's trace this mechanism through a specific sequence..."],
           "requirement": "Example must be concrete enough to follow, simple enough to understand",
           "visual_note": "Ideally this section includes visual examples—diagrams, screenshots, computed outputs. For text-only contexts, use: numbered steps, clear before/after comparisons, or structural diagrams in ASCII if necessary.",
+          "numbered_steps_recommendation": "STRONGLY RECOMMENDED: Use numbered steps (1., 2., 3., ...) for the walkthrough. Each step should be bold-titled (**Step 1: Name**) or bullet-formatted. This makes the mechanism visually tractable.",
+          "step_formatting": {
+            "format_options": [
+              "1. **Step Name**: Description...",
+              "**Step 1: Name**\\n\\nDescription...",
+              "1. [Single sentence summary]. [Elaboration...]"
+            ],
+            "step_count_guidance": "5-10 steps is typical. Fewer than 5 may be too compressed; more than 10 may lose the reader."
+          },
           "substance_level": "heavy",
           "substance_type": [
-            "step_by_step - walk through what happens",
+            "step_by_step - walk through what happens (USE NUMBERED STEPS)",
             "visual_evidence - show the output",
-            "variations - what happens if you change things"
+            "variations - what happens if you change things",
+            "direct_quote - from source material to ground each step"
           ],
           "transition_to_next": "Ask the next question: 'So where do the X come from?'",
-          "transition_sentence_template": "'So where do the X come from?' or 'OK, so that's how it works on the surface. But what's underneath?'",
+          "transition_sentence_template": "'So where do the X come from?' or 'OK, so that's how it works on the surface. But what's underneath?' or 'Each step builds systematically toward X. The mechanism is: Y.'",
           "recommended_patterns": {
             "sentence_families": ["conditional_snap", "list_resolve"],
             "cadence_archetypes": ["ladder - build through steps"]
@@ -1309,20 +1371,34 @@
         {
           "name": "KEY_INSIGHT",
           "purpose": "Name the crucial conceptual leap",
-          "signals": ["The key is...", "The crucial point is that...", "And a key idea is..."],
-          "requirement": "Must be a genuine insight, not just restating the mechanism",
+          "signals": ["The key is...", "The crucial point is that...", "And a key idea is...", "The key insight is that the X is built as a *Y*..."],
+          "requirement": "Must be a genuine insight, not just restating the mechanism. MUST explicitly name the insight.",
+          "naming_requirement": "The insight MUST be given an explicit name, formatted distinctively (bold, italics, or quoted). Examples: 'sympathy trap', 'progressive recontextualization', 'epistemic engine'. This name should be memorable and quotable.",
+          "insight_formatting": {
+            "format_options": [
+              "The key insight is that the novel is built as a *sympathy trap*.",
+              "The mechanism is **progressive recontextualization**.",
+              "I call this the 'epistemic engine' of the narrative."
+            ],
+            "naming_criteria": [
+              "2-3 words maximum",
+              "Captures the dynamic, not just the thing",
+              "Could be used in other contexts"
+            ]
+          },
           "substance_level": "heavy",
           "substance_type": [
-            "concept_named - give the insight a name",
+            "concept_named - give the insight a name (REQUIRED)",
             "why_it_matters - what it explains",
             "surprising_implication - what follows"
           ],
-          "transition_to_next": "Apply insight or address complications",
+          "transition_to_next": "Apply insight or address complications: 'Here's how it works:' followed by numbered steps",
           "recommended_patterns": {
             "sentence_families": ["colon_reveal", "definition_is"],
             "cadence_archetypes": ["crescendo_snap - build to insight"]
           },
-          "length": "3-6 paragraphs"
+          "length": "3-6 paragraphs",
+          "grand_theme_service": "This section names what the reader has learned. Without a named insight, the essay may feel like it explained something without teaching anything."
         },
         {
           "name": "COMPLICATIONS",
