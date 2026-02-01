@@ -2481,6 +2481,19 @@
         "Cutting 'You can' repetition - loses the building rhythm before the pivot"
       ],
       "principle_learned": "repetition-builds-before-pivot"
+    },
+    {
+      "test_id": 21,
+      "pattern": "New: Embodiment-as-meaning",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "The model has no body. No childhood. No memory of being hurt by someone it trusted. It processes words, but it has never felt the weight of them. That weight is what meaning is made of.",
+      "why_won": "Builds from physical (body) to temporal (childhood) to emotional (being hurt). 'Weight' metaphor connects processing to feeling. Final sentence lands the thesis.",
+      "losers": [
+        "'Never waited for a text... edge cases / whole case' - ending tries too hard, sounds forced",
+        "'can't fine-tune your way to heartbreak' - too clever, loses the gravitas"
+      ],
+      "principle_learned": "gravitas-over-cleverness-for-emotional-points"
     }
   ],
   "generationPrinciples": [
