@@ -1703,6 +1703,299 @@
         "Maker's Schedule, Manager's Schedule (2009)",
         "Cities and Ambition (2008)"
       ]
+    },
+    "orwell_diagnostic_prescriptive": {
+      "name": "Orwell Diagnostic-Prescriptive",
+      "description": "Essay that diagnoses a cultural/linguistic/political problem through systematic categorization, demonstrates the problem with specimens, and concludes with concrete rules. Combines analysis with actionable prescription.",
+      "source": "George Orwell essays (Politics and the English Language)",
+      "pre_flight_checks": {
+        "do_you_have": [
+          "A problem you can demonstrate, not just assert",
+          "Multiple real specimens/examples of the problem",
+          "Categories that organize the specimens (not just a list)",
+          "A mechanism explanation (why does this happen?)",
+          "Concrete rules or prescriptions that follow from the diagnosis"
+        ],
+        "warning": "If you only have opinions about what's wrong without specimens, you have a rant, not a diagnostic essay."
+      },
+      "sections": [
+        {
+          "name": "PROBLEM_WITH_DEFEATIST_REBUTTAL",
+          "purpose": "State the problem and immediately address the 'why bother' objection",
+          "signals": ["Most people would admit that... but it is generally assumed...", "The standard view is... but this assumes..."],
+          "requirement": "Must acknowledge the defeatist position AND rebut it. Reader needs to believe change is possible before reading further.",
+          "key_move": "The rebuttal often involves showing that the problem is reversible — that conscious action can work.",
+          "substance_level": "medium",
+          "length": "2-4 paragraphs",
+          "example": "Orwell acknowledges 'language is in a bad way' but immediately attacks the assumption that 'we cannot by conscious action do anything about it.'"
+        },
+        {
+          "name": "REVERSIBILITY_THESIS",
+          "purpose": "Establish that the problem can be fixed — effect can become cause, process is reversible",
+          "signals": ["But an effect can become a cause...", "The point is that the process is reversible.", "If one gets rid of these habits..."],
+          "requirement": "This is the argumentative hinge. Without it, the essay is just complaint.",
+          "substance_level": "medium",
+          "length": "1-2 paragraphs",
+          "key_insight": "Orwell's genius move: 'A man may take to drink because he feels himself to be a failure, and then fail all the more completely because he drinks.' This analogy makes the abstract concrete."
+        },
+        {
+          "name": "SPECIMEN_EXHIBITION",
+          "purpose": "Present numbered examples of the problem that can be referenced later",
+          "signals": ["Here are five specimens...", "I number them so that I can refer back...", "These passages illustrate..."],
+          "requirement": "Specimens must be REAL, not invented. Number them for later reference. Include source attribution.",
+          "numbering_note": "Numbering is essential. Later you'll say 'Exhibit 3' or 'Professor Laski (1)' — this creates systematic feel.",
+          "substance_level": "heavy",
+          "length": "Variable — depends on specimens. Orwell uses 5 substantial quotes.",
+          "selection_criteria": "Choose specimens that are 'fairly representative' not 'especially bad.' Avoid strawmen."
+        },
+        {
+          "name": "DIAGNOSTIC_CATEGORIES",
+          "purpose": "Organize the problems into named categories with examples",
+          "signals": ["I list below, with notes and examples...", "There are several types...", "The first category is..."],
+          "requirement": "Categories must be distinct and memorable. Each gets a NAME, DEFINITION, EXAMPLES, and FAILURE MECHANISM.",
+          "category_structure": {
+            "name": "Memorable label (e.g., 'Dying metaphors', 'Operators, or verbal false limbs')",
+            "definition": "What this category of failure is",
+            "examples": "Multiple specimens, not just one",
+            "mechanism": "Why writers fall into this trap"
+          },
+          "substance_level": "heaviest",
+          "length": "3-8 paragraphs per category depending on complexity",
+          "example_categories": ["Dying metaphors", "Operators (verbal false limbs)", "Pretentious diction", "Meaningless words"]
+        },
+        {
+          "name": "PARODY_DEMONSTRATION",
+          "purpose": "Translate good prose into bad to show the mechanism in action",
+          "signals": ["I am going to translate...", "Let me demonstrate by...", "Here is a well-known passage... Here it is in modern English..."],
+          "requirement": "The parody must be FAIR — not a strawman, but a realistic version of what bad writing does.",
+          "key_technique": "Use a respected source (Orwell uses Ecclesiastes). Translate it into the bad style. Analyze the differences.",
+          "substance_level": "heavy",
+          "length": "2-4 paragraphs",
+          "why_it_works": "Parody proves what description cannot. The reader SEES the problem rather than being told about it."
+        },
+        {
+          "name": "MECHANISM_ANALYSIS",
+          "purpose": "Explain WHY writers fall into these traps",
+          "signals": ["The attraction of this way of writing is that...", "It is easier to...", "When you are composing in a hurry..."],
+          "requirement": "Must be sympathetic to the failure mode. The mechanism should make the reader think 'I do this too.'",
+          "substance_level": "heavy",
+          "length": "2-4 paragraphs",
+          "key_insight": "Orwell: 'It is easier — even quicker, once you have the habit — to say In my opinion it is not an unjustifiable assumption that than to say I think.'"
+        },
+        {
+          "name": "POLITICAL_CONNECTION",
+          "purpose": "Show why this matters beyond the immediate domain — connect to larger stakes",
+          "signals": ["In our time...", "The special connection between X and Y becomes clear...", "This is not merely a matter of..."],
+          "requirement": "The stakes must be REAL, not inflated. Connect to consequences that matter.",
+          "substance_level": "heavy",
+          "length": "3-6 paragraphs",
+          "example": "Orwell connects bad language to 'the defence of the indefensible' — political euphemism that enables atrocity."
+        },
+        {
+          "name": "SELF_IMPLICATION",
+          "purpose": "Admit your own failures before prescribing to others",
+          "signals": ["Look back through this essay, and you will find...", "I have myself committed...", "I am not exempt from..."],
+          "requirement": "Must be genuine, not false modesty. Point to specific failures in your own text if possible.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "why_it_works": "Prevents preachiness. Establishes that the rules are hard, not just for others.",
+          "anti_slop_note": "This is NOT 'I'm not perfect but...' throat-clearing. It's specific admission of specific failures."
+        },
+        {
+          "name": "RULES",
+          "purpose": "Concrete prescriptions that follow from the diagnosis",
+          "signals": ["I think the following rules will cover most cases...", "The principles are...", "If you follow these guidelines..."],
+          "requirement": "Rules must be ACTIONABLE and MEMORABLE. Short enough to remember.",
+          "escape_clause_required": "Include a final rule that permits breaking the others: 'Break any of these rules sooner than say anything outright barbarous.'",
+          "substance_level": "medium",
+          "length": "1-2 paragraphs for rules, possibly numbered",
+          "example_rules": [
+            "Never use a metaphor you are used to seeing in print.",
+            "Never use a long word where a short one will do.",
+            "If it is possible to cut a word out, always cut it out.",
+            "Never use the passive where you can use the active.",
+            "Break any of these rules sooner than say anything barbarous."
+          ]
+        },
+        {
+          "name": "CLOSE",
+          "purpose": "Return to stakes, end with concrete image or action",
+          "signals": ["One cannot change this all in a moment, but...", "If you simplify your X, you are freed from...", "send some worn-out phrase into the dustbin where it belongs"],
+          "requirement": "Must return to the political/stakes level, not just the technical. End with IMAGE, not abstraction.",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "closing_technique": "Orwell ends with 'dustbin where it belongs' — concrete, physical, memorable."
+        }
+      ],
+      "key_principles": [
+        "Diagnose with specimens, not assertions",
+        "Number specimens for later reference",
+        "Categories must be named and memorable",
+        "Parody proves what description cannot",
+        "Explain the mechanism sympathetically — readers should recognize themselves",
+        "Self-implicate before prescribing",
+        "Rules need an escape clause",
+        "Close with image, not abstraction"
+      ],
+      "failure_modes": [
+        "Complaining without specimens (rant)",
+        "Categories that overlap or aren't distinct",
+        "Parody that's a strawman rather than fair",
+        "Rules that are too vague to follow",
+        "No escape clause (becomes dogmatic)",
+        "No self-implication (becomes preachy)",
+        "Closing with abstraction instead of image"
+      ],
+      "slop_failure_mode": "If you have no real specimens — only vague sense that 'things are bad' — the essay will be hollow assertion. This pattern REQUIRES evidence.",
+      "when_to_use": [
+        "You've observed a pattern of failure you can document with specimens",
+        "The failure has a mechanism you can explain",
+        "You can offer concrete rules that follow from the diagnosis",
+        "The problem matters beyond its immediate domain"
+      ],
+      "example_essays": [
+        "Politics and the English Language (1946)"
+      ]
+    },
+    "orwell_narrative_insight": {
+      "name": "Orwell Narrative-Insight",
+      "description": "Essay that uses a single personal incident to illuminate a larger political/social truth. The insight emerges FROM the narrative, not imposed on it. Story first, meaning second.",
+      "source": "George Orwell essays (Shooting an Elephant, A Hanging, Such, Such Were the Joys)",
+      "pre_flight_checks": {
+        "do_you_have": [
+          "A specific incident you witnessed or participated in",
+          "A larger truth that the incident reveals (not just illustrates)",
+          "Internal conflict or ambivalence about your role",
+          "Willingness to implicate yourself in the system you're critiquing"
+        ],
+        "warning": "If the 'insight' could be stated without the story, you don't have a narrative-insight essay — you have an argument with decoration."
+      },
+      "sections": [
+        {
+          "name": "SITUATIONAL_CONTEXT",
+          "purpose": "Establish where, when, who you were, and the ambient conflict",
+          "signals": ["In [place], in [region], I was...", "At that time I had already...", "The situation was..."],
+          "requirement": "Must establish your POSITION in the system. Not just observer — participant with role and stakes.",
+          "substance_level": "medium",
+          "length": "1-2 paragraphs",
+          "example": "Orwell: 'In Moulmein, in lower Burma, I was hated by large numbers of people — the only time in my life that I have been important enough for this to happen to me.'"
+        },
+        {
+          "name": "INTERNAL_CONFLICT_STATED",
+          "purpose": "Establish your ambivalence before the incident",
+          "signals": ["I had already made up my mind that...", "Theoretically — and secretly, of course — I was...", "With one part of my mind... with another part..."],
+          "requirement": "Must show GENUINE ambivalence. Not 'I knew imperialism was wrong.' Instead: 'I hated the empire I served AND the people I was supposed to be helping.'",
+          "key_technique": "The 'with one part of my mind... with another part' structure shows genuine psychological division.",
+          "substance_level": "heavy",
+          "length": "1-2 paragraphs",
+          "why_it_matters": "Without stated ambivalence, the insight feels too clean. Reader needs to see your complicity."
+        },
+        {
+          "name": "INCIDENT_ANNOUNCED",
+          "purpose": "Signal that a small event will illuminate something large",
+          "signals": ["One day something happened which in a roundabout way was enlightening.", "It was a tiny incident in itself, but it gave me a better glimpse than I had had before of..."],
+          "requirement": "Must frame the incident as SMALL but REVEALING. Scale inversion is the key move.",
+          "substance_level": "light",
+          "length": "1 paragraph or less",
+          "key_move": "The phrase 'in a roundabout way' signals that the insight will emerge, not be imposed."
+        },
+        {
+          "name": "RISING_ACTION",
+          "purpose": "Narrate the events leading to the key moment",
+          "signals": ["[Narrative prose]"],
+          "requirement": "Vivid physical detail. Names, places, sensory information. NOT abstraction.",
+          "pacing": "Can be extended. Build slowly. Include irrelevant-seeming details that create reality.",
+          "substance_level": "heavy",
+          "length": "3-6 paragraphs",
+          "physical_detail_requirement": "Include at least one moment of visceral physical description. Orwell: the dead coolie, 'his face had scored a trench a foot deep.'"
+        },
+        {
+          "name": "EXTERNAL_PRESSURE",
+          "purpose": "Show forces pushing you toward action you don't want to take",
+          "signals": ["The crowd...", "They were watching me...", "I could feel their wills pressing me forward..."],
+          "requirement": "The pressure must be SPECIFIC and VISIBLE. Not just 'I felt obligated.' Show the crowd, the eyes, the expectation.",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "example": "Orwell: 'It was an immense crowd, two thousand at the least and growing every minute... I could feel their two thousand wills pressing me forward, irresistibly.'"
+        },
+        {
+          "name": "THE_REALIZATION",
+          "purpose": "The insight emerges from the situation — the political/social truth you now grasp",
+          "signals": ["And it was at this moment that I first grasped...", "I perceived in this moment that...", "Here was I... and suddenly I understood..."],
+          "requirement": "Insight must EMERGE from narrative pressure, not be announced then illustrated. The reader should feel the insight arrive.",
+          "placement": "Usually comes AFTER external pressure is established but BEFORE the action is taken.",
+          "substance_level": "heavy",
+          "length": "1-2 paragraphs",
+          "key_sentence_example": "'I perceived in this moment that when the white man turns tyrant it is his own freedom that he destroys.'"
+        },
+        {
+          "name": "INTERNAL_RESISTANCE",
+          "purpose": "Show you didn't want to do what you're about to do",
+          "signals": ["But I did not want to...", "It seemed to me that it would be wrong to...", "I knew what I ought to do..."],
+          "requirement": "Must be genuine resistance, not token. Reader should believe you really didn't want this.",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs"
+        },
+        {
+          "name": "THE_ACTION",
+          "purpose": "Extended, visceral description of the action taken",
+          "signals": ["[Detailed narrative]"],
+          "requirement": "Do NOT rush this. The action should take PARAGRAPHS, not sentences. Physical detail creates moral weight.",
+          "pacing": "Slow down here. More detail than feels comfortable.",
+          "substance_level": "heaviest",
+          "length": "3-6 paragraphs",
+          "example": "Orwell's shooting sequence takes multiple paragraphs. Each shot. The elephant's slow collapse. The trunk 'reaching skyward like a tree.'"
+        },
+        {
+          "name": "CONSEQUENCE_WITNESSED",
+          "purpose": "Show the aftermath, often prolonged suffering or reaction",
+          "signals": ["[Continued narrative]", "He was dying, very slowly...", "I waited a long time..."],
+          "requirement": "Don't cut away. Make the reader witness what you witnessed.",
+          "substance_level": "heavy",
+          "length": "2-4 paragraphs",
+          "key_insight": "The elephant takes half an hour to die. Orwell stays. This witnessing IS the moral position."
+        },
+        {
+          "name": "AFTERMATH_AND_FINAL_ADMISSION",
+          "purpose": "Others' reactions, then your real motive revealed",
+          "signals": ["Afterwards, of course, there were endless discussions...", "The owner was furious...", "I often wondered whether any of the others grasped that..."],
+          "requirement": "End with ADMISSION, not lesson. The final line should reveal YOUR motive, stripped of justification.",
+          "final_line_technique": "Devastating honesty about your real reason. Orwell: 'I had done it solely to avoid looking a fool.'",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "anti_slop_note": "Do NOT end with a generalized lesson ('And that's why imperialism is bad'). End with specific, personal, uncomfortable admission."
+        }
+      ],
+      "key_principles": [
+        "Story first, meaning second — insight emerges, not imposed",
+        "Stated ambivalence before the incident — show your complicity",
+        "Small incident, large truth — scale inversion",
+        "Physical detail creates moral weight — don't abstract",
+        "Slow down the action — more detail than comfortable",
+        "Witness the consequences — don't cut away",
+        "End with admission, not lesson — devastating honesty about motive"
+      ],
+      "failure_modes": [
+        "Insight announced then illustrated (backwards)",
+        "No genuine ambivalence (too clean)",
+        "Rushing the action (too little detail)",
+        "Cutting away from consequences",
+        "Ending with lesson instead of admission",
+        "Physical detail only at peak (need it throughout)",
+        "Self-righteousness (no complicity acknowledged)"
+      ],
+      "slop_failure_mode": "If the 'insight' is something you already believed and the story just decorates it, the essay will feel like propaganda with anecdote. The insight must genuinely EMERGE from the narrative pressure.",
+      "when_to_use": [
+        "You have a specific incident that changed your understanding",
+        "The insight is political/social, not just personal",
+        "You were complicit in the system the incident reveals",
+        "You're willing to admit uncomfortable truths about your motives"
+      ],
+      "example_essays": [
+        "Shooting an Elephant (1936)",
+        "A Hanging (1931)",
+        "Such, Such Were the Joys (1952)"
+      ]
     }
   },
   "coherence_agent": {
