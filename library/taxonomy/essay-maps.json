@@ -2595,6 +2595,21 @@
         ],
         "usage": "End essays in reader's head, not on page"
       },
+      "emotional_thread_callback": {
+        "description": "Close by returning to the thread that carries the emotional weight, not just any thread from the essay",
+        "core_insight": "Essays often have multiple threads — imagery, metaphor, ideas, emotional relationships. The closing must return to the EMOTIONAL thread specifically, not just echo any earlier element.",
+        "example": {
+          "context": "Essay about a 'Someday' folder of unfinished projects. Multiple threads: the folder itself, ideas getting quieter, becoming a stranger to your past self.",
+          "weak_closes": [
+            "'The folder isn't waiting for me' — returns to folder (imagery), not the emotional core",
+            "'The ideas got quieter' — returns to quietness (metaphor), still abstract"
+          ],
+          "strong_close": "'The person who was going to write them — he doesn't knock anymore.'",
+          "why_it_works": "Returns to the relationship with lost self — that's where the emotional weight lives. The folder and quietness are vehicles; the estrangement from yourself is the feeling."
+        },
+        "test": "Ask: which thread in this essay carries the FEELING? Close on that thread, not the imagery or ideas.",
+        "usage": "When closing any essay with multiple metaphors or threads — find the one that hurts"
+      },
       "embodied_emotional_detail": {
         "description": "Emotional details that don't just illustrate the idea but embody it — the detail IS the argument made concrete",
         "core_insight": "The most powerful emotional details do double duty: they create feeling AND prove the thesis simultaneously. The detail should be the idea in miniature.",
