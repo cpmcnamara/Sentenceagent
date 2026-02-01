@@ -1959,6 +1959,15 @@
           "examples": ["The math is brutal.", "The truth is harsh.", "The reality is stark.", "The implications are staggering."],
           "why_it_fails": "Tells the reader how to feel instead of letting the content create the feeling. Drama must be earned by what precedes it, not asserted.",
           "repair": "Delete the dramatic frame. Let the substance land on its own. If it doesn't hit without the frame, the substance is weak."
+        },
+        {
+          "pattern": "insight_restating",
+          "examples": [
+            "Saying 'burned weeks polishing' then 'too invested to change' then 'pain of cutting what you love' — same insight three ways",
+            "Explaining sunk cost through time, then emotion, then metaphor, then economics"
+          ],
+          "why_it_fails": "Feels like emphasis but actually dilutes. Reader got it the first time. Repetition signals you don't trust your own point — or them.",
+          "repair": "Find the sharpest version of the insight. Use it once. Move on. Trust that it landed."
         }
       ],
       "permitted_exceptions": [
