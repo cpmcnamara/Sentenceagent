@@ -2468,6 +2468,19 @@
         "'Start with sarcasm' version - good but less universal than context"
       ],
       "principle_learned": "end-contrast-should-be-asymmetric"
+    },
+    {
+      "test_id": 20,
+      "pattern": "New: Technical-list-to-human-pivot",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "You can expand the context window. You can add retrieval. You can fine-tune on millions of conversations. And you'll get closer. But you won't close the gap, because the gap isn't technical. It's experiential.",
+      "why_won": "'You can' repetition builds momentum before pivot. Lands on human term ('experiential') not technical. Second person keeps reader in frame.",
+      "losers": [
+        "'I tried to fix this... added more data' - too AI-oriented, gets lost in technical weeds",
+        "Cutting 'You can' repetition - loses the building rhythm before the pivot"
+      ],
+      "principle_learned": "repetition-builds-before-pivot"
     }
   ],
   "generationPrinciples": [
