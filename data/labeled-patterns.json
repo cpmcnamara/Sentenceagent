@@ -806,6 +806,88 @@
         "position": "transition/callback",
         "bestFor": "Returning to thesis with new insight, addressing reader skepticism"
       }
+    },
+    {
+      "id": 46,
+      "author": "Zadie Smith",
+      "source": "Joy",
+      "passage": "The thing no one ever tells you about joy is that it has very little real pleasure in it.",
+      "feedback": "Counterintuitive opener that redefines a concept by negating its assumed ingredient",
+      "essaySection": "OPENING",
+      "rhythm": {
+        "sentenceCount": 1,
+        "wordCounts": [18],
+        "cadence": "single-punch",
+        "beat": "Long windup ('The thing no one ever tells you about X') → surprising landing"
+      },
+      "structure": {
+        "template": "The thing no one ever tells you about [concept] is that it has very little [assumed-ingredient] in it.",
+        "slots": ["concept", "assumed-ingredient"],
+        "technique": "Counterintuitive definition - subtracts what seems essential"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Joy and pleasure are different things.",
+        "technique": "The 'no one ever tells you' creates intimacy and revelation"
+      },
+      "usage": {
+        "position": "opening or thesis",
+        "bestFor": "Redefining a familiar concept by negating its assumed core"
+      }
+    },
+    {
+      "id": 47,
+      "author": "E.B. White",
+      "source": "Once More to the Lake",
+      "passage": "I looked at the boy, who was silently watching his fly, and it was my hands that held his rod, my eyes watching. I felt dizzy and didn't know which rod I was at the end of.",
+      "feedback": "Identity confusion through physical possession reversal - body parts transferred across time/identity",
+      "essaySection": "BODY",
+      "rhythm": {
+        "sentenceCount": 2,
+        "wordCounts": [21, 14],
+        "cadence": "long-medium",
+        "beat": "Observation → possession reversal → disorientation confession"
+      },
+      "structure": {
+        "template": "I [observed] the [other person], and it was my [body part] that [their action], my [sense] [their experience]. I felt [disorientation] and didn't know which [object] I was at the end of.",
+        "slots": ["observed", "other person", "body part", "their action", "sense", "disorientation", "object"],
+        "technique": "Body transposition - identity blurs through physical possession claims"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Watching my son fish reminded me of when I was his age.",
+        "technique": "Claiming ownership of another's body parts creates uncanny vertigo"
+      },
+      "usage": {
+        "position": "reflection or memory passage",
+        "bestFor": "Expressing identity confusion across time, generations, or roles"
+      }
+    },
+    {
+      "id": 48,
+      "author": "Venkatesh Rao",
+      "source": "Premium Mediocre",
+      "passage": "Premium mediocre is the finest bottle of wine at Olive Garden. Premium mediocre is cupcakes and froyo. Premium mediocre is food that Instagrams better than it tastes. Premium mediocre is cruise ships, artisan pizza, Game of Thrones, and The Bellagio.",
+      "feedback": "Rapid-fire definition-by-example with repeated stem. Each 'X is' adds to gestalt. Needs careful context selection.",
+      "essaySection": "DEFINITION",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [12, 7, 10, 14],
+        "cadence": "medium-short-medium-long",
+        "beat": "Repeated stem 'X is' with accumulating examples, final sentence longest with list"
+      },
+      "structure": {
+        "template": "[Term] is [example1]. [Term] is [example2]. [Term] is [example3 with twist]. [Term] is [list of examples].",
+        "slots": ["term", "example1", "example2", "example3 with twist", "list"],
+        "technique": "Accumulative definition - meaning emerges from gestalt of examples"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Premium mediocre describes things that seem upscale but are actually average.",
+        "technique": "Repetition builds recognition; reader starts predicting and applying concept themselves"
+      },
+      "usage": {
+        "position": "definition or explanation",
+        "bestFor": "Defining abstract concepts through concrete example accumulation",
+        "caution": "Requires examples that genuinely share the quality being defined - context-dependent"
+      }
     }
   ],
   "rejected": [
