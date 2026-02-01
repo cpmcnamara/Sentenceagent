@@ -2520,6 +2520,19 @@
         "'real conversation' - less specific than 'difficult conversation'"
       ],
       "principle_learned": "one-sustained-thought-beats-multiple-clever-lines"
+    },
+    {
+      "test_id": 24,
+      "pattern": "New: Resolution-with-callback-close",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "I still build AI systems. I'm better at it now—partly because I stopped expecting them to be human. They're tools, extraordinary ones, and they'll keep getting better. But they taught me something no benchmark will ever measure: how remarkable it is to be the thing they're trying to imitate.",
+      "why_won": "Resolves the narrative (still building, but wiser). 'No benchmark will ever measure' ties back to technical world. 'The thing they're trying to imitate' callbacks to Frankenstein theme. 'Human' and 'imitate' are precise.",
+      "losers": [
+        "'gaps are outlines' - too abstract for a close, doesn't resolve",
+        "'us' / 'become' - too casual, implies AI agency that doesn't fit"
+      ],
+      "principle_learned": "close-must-resolve-and-callback"
     }
   ],
   "generationPrinciples": [
