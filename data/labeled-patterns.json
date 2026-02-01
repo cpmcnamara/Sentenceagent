@@ -2380,6 +2380,174 @@
       "why_won": "Surface observation (culture fit doesn't predict) + deeper uncomfortable why (we use it as a kindness shield). The 'harder to admit' digs beneath the surface.",
       "losers": ["AI pilot versions (repeated topic, surface insight not deep enough)", "diet deadline version (metaphor didn't land)", "governance frameworks (too abstract)"],
       "principle_learned": "harder-to-admit-reveals-motive"
+    },
+    {
+      "test_id": 13,
+      "pattern": "Raymond #70 (Worldview-shattered opener)",
+      "topic": "AI implementation",
+      "status": "pending",
+      "candidates": [
+        {
+          "label": "A",
+          "text": "Working with large language models overturned much of what I thought I knew. I had been preaching the gospel of structured data, clean taxonomies, and explicit rules for years. But I also believed there was a certain critical complexity above which hand-crafted logic was required."
+        },
+        {
+          "label": "B",
+          "text": "Deploying GPT-4 to our customer service team overturned much of what I thought I knew. I had been building chatbots with decision trees and intent classifiers for years. But I also believed there was a certain threshold of nuance above which only human judgment would suffice."
+        },
+        {
+          "label": "C",
+          "text": "Our first AI pilot overturned much of what I thought I knew. I had been advocating for careful, staged rollouts with extensive testing for years. But I also believed there was a certain level of risk above which you simply couldn't move fast."
+        }
+      ],
+      "test_question": "Which opener best creates anticipation for a transformative insight?"
+    },
+    {
+      "test_id": 14,
+      "pattern": "Graham #72 (Concession-then-distinction)",
+      "topic": "AI governance",
+      "status": "pending",
+      "candidates": [
+        {
+          "label": "A",
+          "text": "Of course, it's not just that companies lack AI policies. Most have extensive AI guidelines by now. But this is not the same thing as having AI governance. AI guidelines are documents that tell people what not to do. AI governance is the process of deciding what you should do."
+        },
+        {
+          "label": "B",
+          "text": "Of course, it's not just that boards ignore AI. Many boards now have AI on every agenda. But this is not the same thing as understanding AI risk. Having AI on the agenda means asking 'what are we doing?' Understanding AI risk means knowing which questions you're not asking."
+        },
+        {
+          "label": "C",
+          "text": "Of course, it's not just that executives don't care about AI safety. Most executives talk about responsible AI constantly. But this is not the same thing as building safe systems. Responsible AI is a communications function. Safe systems are an engineering function."
+        }
+      ],
+      "test_question": "Which concession-distinction best reframes a common misunderstanding?"
+    },
+    {
+      "test_id": 15,
+      "pattern": "Wolfram #77 (Abstract-to-physical analogy)",
+      "topic": "machine learning concepts",
+      "status": "pending",
+      "candidates": [
+        {
+          "label": "A",
+          "text": "And it turns out that there's a general procedure for this, called regularization. Imagine a student who memorizes every answer to past exams. They'll ace those exams perfectly but fail any new question. Regularization works the same way as a teacher who changes the exam every year—it forces the model to learn concepts, not answers."
+        },
+        {
+          "label": "B",
+          "text": "And it turns out that there's a general procedure for this, called backpropagation. Imagine a chef tasting a dish and working backward through each step—too salty means less salt earlier, overcooked means lower heat. Backpropagation works the same way, except instead of taste, the 'signal' is how wrong the prediction was."
+        },
+        {
+          "label": "C",
+          "text": "And it turns out that there's a general procedure for this, called fine-tuning. Imagine a pianist trained in classical music who wants to play jazz. They don't start from scratch—they adjust their existing skills. Fine-tuning works the same way, except the 'adjustment' is changing which patterns the model pays attention to."
+        }
+      ],
+      "test_question": "Which physical analogy best makes the technical concept intuitive?"
+    },
+    {
+      "test_id": 16,
+      "pattern": "Graham #78 (Actionable close with insight)",
+      "topic": "AI strategy",
+      "status": "pending",
+      "candidates": [
+        {
+          "label": "A",
+          "text": "So if you want to build AI capabilities that last, remember this, because this is one of the reasons startups win. Big companies want to centralize AI in a platform team because they want to control quality. But when you centralize capability, you lose the use cases as well as the mistakes."
+        },
+        {
+          "label": "B",
+          "text": "So if you want to actually ship AI products, remember this, because this is one of the reasons scrappy teams win. Large organizations want to wait for perfect accuracy because they want to avoid embarrassment. But when you wait for perfect, you lose the learning as well as the risk."
+        },
+        {
+          "label": "C",
+          "text": "So if you want your AI investments to compound, remember this, because this is one of the reasons early movers win. Late adopters want to learn from others' mistakes because they want to skip the painful lessons. But when you skip the pain, you lose the intuition as well as the scars."
+        }
+      ],
+      "test_question": "Which actionable close best reveals a hidden tradeoff?"
+    },
+    {
+      "test_id": 17,
+      "pattern": "Raymond #80 (Self-deprecating virtue reveal)",
+      "topic": "consulting, simplification",
+      "status": "pending",
+      "candidates": [
+        {
+          "label": "A",
+          "text": "I'm a simplistic consultant. Which means that when I see a 50-slide strategy deck, I want to reduce it to 5 slides. This is not a vice but a virtue. The best strategy fits on a napkin."
+        },
+        {
+          "label": "B",
+          "text": "I'm an impatient advisor. Which means that when a client explains their process, I'm already sketching how to shortcut it. This is not a vice but a virtue. The best processes are the ones you can skip."
+        },
+        {
+          "label": "C",
+          "text": "I'm a forgetful strategist. Which means that when I leave a meeting, I only remember one thing. This is not a vice but a virtue. The best ideas are the ones you can't forget."
+        }
+      ],
+      "test_question": "Which self-deprecation best flips to a genuine virtue?"
+    },
+    {
+      "test_id": 18,
+      "pattern": "Raymond #53 (Lesson-extraction pivot)",
+      "topic": "organizational change",
+      "status": "pending",
+      "candidates": [
+        {
+          "label": "A",
+          "text": "The team was treating their users as co-designers in the most effective possible way:\n\n3. Ship broken things. Fix them publicly. Let users watch you learn.\n\nTheir innovation wasn't so much in getting user feedback (something like this had been design thinking orthodoxy for a decade), but in making the iteration visible. In those early months, it wasn't unknown for them to push three updates before lunch."
+        },
+        {
+          "label": "B",
+          "text": "The CEO was treating strategy as a conversation in the most effective possible way:\n\n4. Decide fast. Announce faster. Correct in public.\n\nHer innovation wasn't so much in being decisive (something like this had been leadership gospel forever), but in normalizing reversal. In that first year, it wasn't unknown for her to reverse a major decision within the week—and announce why."
+        },
+        {
+          "label": "C",
+          "text": "The startup was treating documentation as product in the most effective possible way:\n\n2. Write the manual first. Build what the manual describes.\n\nTheir innovation wasn't so much in documenting before building (something like this had been README-driven development for years), but in treating the docs as the spec. In those early sprints, it wasn't unknown for them to ship documentation updates before code."
+        }
+      ],
+      "test_question": "Which lesson-extraction best differentiates from conventional wisdom?"
+    },
+    {
+      "test_id": 19,
+      "pattern": "Stephenson #55 (Historical parallel bridge)",
+      "topic": "AI adoption",
+      "status": "pending",
+      "candidates": [
+        {
+          "label": "A",
+          "text": "During the Nineties, work communication was transformed by the rise of email. It's easy to forget what a conceptual revolution this was. Previously, written business communication had been formal and slow—memos, letters, documents that went through secretaries. But email meant anyone could write to anyone instantly—which sounds obvious now but was actually quite radical."
+        },
+        {
+          "label": "B",
+          "text": "During the Eighties, financial markets were transformed by the rise of electronic trading. It's easy to forget what a conceptual revolution this was. Previously, trades had required human intermediaries on physical floors. But electronic systems meant algorithms could execute instantly—which sounds obvious now but was actually quite radical."
+        },
+        {
+          "label": "C",
+          "text": "During the Two-thousands, knowledge work was transformed by the rise of search engines. It's easy to forget what a conceptual revolution this was. Previously, finding information meant knowing where to look—libraries, experts, reference books. But search meant asking a question and getting answers—which sounds obvious now but was actually quite radical."
+        }
+      ],
+      "test_question": "Which historical parallel best frames current AI adoption?"
+    },
+    {
+      "test_id": 20,
+      "pattern": "Raymond #65 (Authority revision)",
+      "topic": "AI scaling",
+      "status": "pending",
+      "candidates": [
+        {
+          "label": "A",
+          "text": "After the first few months of this I went back to reread The Innovator's Dilemma. It struck me that Christensen's framework—that incumbents fail because they listen to customers too well—was only part of the story. Christensen missed something. It's possible that there's a threshold of capability above which disruption theory inverts and incumbents actually win."
+        },
+        {
+          "label": "B",
+          "text": "After the first few projects I went back to reread Crossing the Chasm. It struck me that Moore's model—that you need to focus on one beachhead market—was only part of the story. Moore missed something. It's possible that with AI, the chasm doesn't exist, because the technology adapts to the market rather than the reverse."
+        },
+        {
+          "label": "C",
+          "text": "After the first few pilots I went back to reread The Lean Startup. It struck me that Ries's approach—build-measure-learn with minimum viable products—was only part of the story. Ries missed something. It's possible that with foundation models, the 'build' step shrinks so much that the loop becomes measure-learn-prompt."
+        }
+      ],
+      "test_question": "Which authority revision best extends (not attacks) the original insight?"
     }
   ],
   "generationPrinciples": [
