@@ -1810,6 +1810,247 @@
           "example": "Reader couldn't guess the ending from the opening, but ending feels inevitable"
         }
       ]
+    },
+
+    "thesis_alignment": {
+      "description": "System for ensuring every element serves the central thesis",
+      "step_1_extract_thesis": {
+        "instruction": "Before checking coherence, explicitly state the essay's thesis in ONE sentence.",
+        "format": "This essay argues that [X] because [Y].",
+        "examples": [
+          "This essay argues that Frankenstein is about abandonment, not creation, because every failure in the novel stems from refusal to nurture.",
+          "This essay argues that founders should be understood as parents to their creations because the failure modes map directly onto parenting failures."
+        ],
+        "warning": "If you cannot state the thesis in one sentence, the essay may be trying to do too much."
+      },
+      "step_2_section_alignment": {
+        "instruction": "For each section, write ONE sentence explaining how it serves the thesis.",
+        "format": "[Section name] serves the thesis by [specific contribution].",
+        "failure_pattern": "If you cannot write this sentence, the section may be expendable.",
+        "example": {
+          "essay": "The Wrong Monster (pg_discovery)",
+          "thesis": "Frankenstein is about abandonment, not creation.",
+          "section_alignments": [
+            "QUESTION serves the thesis by establishing that the conventional reading (creation as danger) may be wrong.",
+            "FIRST_ATTEMPT serves the thesis by taking the conventional reading seriously before rejecting it.",
+            "UNEXPECTED_CONSEQUENCE serves the thesis by revealing that the creature, not Victor, is the moral center.",
+            "WRONG_TURN_ACKNOWLEDGED serves the thesis by admitting the creation frame was a distraction.",
+            "BETTER_QUESTION serves the thesis by reframing around abandonment (why does everyone fail the creature?).",
+            "MECHANISM serves the thesis by showing HOW Shelley constructed the creature to be sympathetic inside, monstrous outside.",
+            "IMPLICATIONS_FOLLOWED serves the thesis by drawing out what follows if abandonment is the key.",
+            "OBJECTION_ADDRESSED serves the thesis by defending against the 'over-reading' objection.",
+            "CLOSE serves the thesis by answering the original question through the abandonment lens."
+          ]
+        }
+      },
+      "step_3_paragraph_audit": {
+        "instruction": "For every paragraph in heavy sections, identify its role.",
+        "roles": {
+          "load_bearing": "Removing this paragraph breaks the argument. Essential.",
+          "evidential": "Provides concrete example/evidence for a load-bearing claim. Important.",
+          "transitional": "Bridges between sections or ideas. Necessary but should be brief.",
+          "elaborative": "Extends or deepens a point. Valuable if section needs weight.",
+          "expendable": "Could be cut without loss. Candidate for deletion."
+        },
+        "target_distribution": {
+          "heavy_section": "60% load-bearing/evidential, 20% elaborative, 15% transitional, <5% expendable",
+          "light_section": "80% load-bearing, 20% transitional, 0% expendable"
+        },
+        "red_flag": "If >20% of paragraphs in a heavy section are expendable, the section is bloated."
+      }
+    },
+
+    "paragraph_strength_tests": {
+      "description": "Concrete tests to assess whether a paragraph earns its place",
+      "tests": [
+        {
+          "name": "so_what_test",
+          "question": "After reading this paragraph, does the reader know why it matters?",
+          "pass_criteria": "The paragraph either (a) makes its significance explicit, or (b) is so clearly connected to previous content that significance is obvious.",
+          "fail_example": "A paragraph describing Shelley's biography without connecting it to the argument.",
+          "repair": "Add a sentence that makes the 'so what' explicit: 'This matters because...' or show the connection."
+        },
+        {
+          "name": "mechanism_test",
+          "question": "Does this paragraph explain HOW something works, not just THAT it works?",
+          "applies_to": "Heavy sections (MECHANISM, DETAILED_ANALYSIS, UNDERLYING_MECHANISM)",
+          "pass_criteria": "Reader could explain the mechanism to someone else after reading.",
+          "fail_example": "'The novel creates sympathy for the creature.' (THAT, not HOW)",
+          "pass_example": "'The novel creates sympathy by giving the creature the most interior access—we hear its thoughts for chapters while Victor's remain opaque.' (HOW)",
+          "repair": "Add the mechanism. If you can't explain how, you may not understand it well enough."
+        },
+        {
+          "name": "example_test",
+          "question": "Does every claim in this paragraph have at least one concrete example?",
+          "applies_to": "Heavy sections",
+          "pass_criteria": "Abstract claims are grounded in specific instances.",
+          "fail_example": "'Victor fails the creature repeatedly.' (claim without example)",
+          "pass_example": "'Victor fails the creature repeatedly: he flees at birth, ignores its requests, destroys its mate.' (claim with examples)",
+          "repair": "Add examples. If you can't find examples, the claim may be too vague."
+        },
+        {
+          "name": "quote_test",
+          "question": "In literary/textual analysis, is the claim grounded in actual text?",
+          "applies_to": "Essays analyzing a specific text",
+          "pass_criteria": "Major interpretive claims cite or quote the source material.",
+          "fail_example": "'The creature is eloquent.' (assertion without evidence)",
+          "pass_example": "'The creature is eloquent: \"I ought to be thy Adam, but I am rather the fallen angel.\"' (assertion with quote)",
+          "repair": "Add a quote. If the text doesn't support the claim, reconsider the claim."
+        },
+        {
+          "name": "originality_test",
+          "question": "Is this paragraph saying something the reader didn't already know or couldn't easily guess?",
+          "pass_criteria": "The paragraph adds information, insight, or perspective the reader lacked.",
+          "fail_example": "'Frankenstein is a novel written by Mary Shelley.' (obvious)",
+          "fail_example_2": "'The creature is sad.' (too vague to be useful)",
+          "repair": "Either make the point more specific/surprising or cut the paragraph."
+        },
+        {
+          "name": "compression_test",
+          "question": "Could this paragraph be said in half the words without losing meaning?",
+          "pass_criteria": "Every sentence adds something the previous sentence didn't say.",
+          "method": "Try to rewrite the paragraph in 50% fewer words. If you can, the original was bloated.",
+          "common_bloat_sources": [
+            "Saying the same thing twice in different words",
+            "Excessive setup before the point",
+            "Unnecessary qualifications",
+            "Weak verbs padded with adverbs"
+          ],
+          "repair": "Compress. Keep only what's essential."
+        }
+      ]
+    },
+
+    "pattern_specific_coherence": {
+      "description": "Coherence checks specific to each essay map pattern",
+      "pg_discovery": {
+        "arc_check": {
+          "question": "Does the essay follow the 'wrong question → better question → discovery' arc?",
+          "checkpoints": [
+            "FIRST_ATTEMPT presents a genuinely tempting answer (not strawman)",
+            "UNEXPECTED_CONSEQUENCE reveals something surprising (not just 'but there's more')",
+            "WRONG_TURN is an actual admission of error (not false modesty)",
+            "BETTER_QUESTION is genuinely better (reframes, not just refines)",
+            "CLOSE answers the better question (not the original)"
+          ],
+          "failure_pattern": "If the 'wrong turn' doesn't feel like a real mistake, the discovery feels manufactured."
+        },
+        "transition_check": {
+          "question": "Are transitions logical rather than verbal?",
+          "forbidden": ["Furthermore", "Moreover", "Additionally", "However (at sentence start)", "In conclusion"],
+          "required": "Each section should feel inevitable given the previous section."
+        }
+      },
+      "amodei_systematic_analysis": {
+        "category_independence": {
+          "question": "Are categories genuinely distinct, or do they overlap significantly?",
+          "check": "If two categories could be merged without loss, they should be."
+        },
+        "synthesis_emergence": {
+          "question": "Does the SYNTHESIS reveal something not visible in individual categories?",
+          "check": "The synthesis should name a pattern that only emerges from seeing all categories together.",
+          "failure_pattern": "If SYNTHESIS just summarizes categories, it's not doing its job."
+        },
+        "evidence_density": {
+          "question": "Does every category have concrete evidence?",
+          "check": "Each DETAILED_ANALYSIS should have at least 2 specific examples, quotes, or data points."
+        }
+      },
+      "stephenson_cultural_excavation": {
+        "digression_return": {
+          "question": "Does every digression return to the main thread?",
+          "check": "After any acknowledged digression, within 3 paragraphs you should be back on track.",
+          "failure_pattern": "Digressions that never return are the primary failure mode of this pattern."
+        },
+        "self_implication": {
+          "question": "Is the author implicated in the phenomenon being critiqued?",
+          "check": "There should be at least one moment where the author admits participating in the distortion they're excavating.",
+          "failure_pattern": "Without self-implication, the essay becomes preachy."
+        },
+        "specificity_grounding": {
+          "question": "Is historical framing specific, not vague?",
+          "check": "HISTORICAL_FRAMING should have names, dates, places—not just 'some years ago' or 'a certain person'."
+        }
+      },
+      "wolfram_explanatory_build": {
+        "progressive_depth": {
+          "question": "Does each section go deeper than the previous?",
+          "check": "UNDERLYING_MECHANISM must introduce concepts not in SIMPLEST_VERSION. KEY_INSIGHT must name something not in UNDERLYING_MECHANISM.",
+          "failure_pattern": "If you're restating the same thing at different lengths, you're not going deeper."
+        },
+        "named_insight": {
+          "question": "Is the key insight explicitly named?",
+          "check": "KEY_INSIGHT section must give the insight a memorable name (2-3 words, quotable).",
+          "examples": ["sympathy trap", "progressive recontextualization", "epistemic engine"]
+        }
+      },
+      "raymond_case_study": {
+        "lesson_quality": {
+          "question": "Are lessons quotable and actionable?",
+          "checks": [
+            "Each lesson can stand alone as a memorable statement",
+            "Each lesson applies beyond this specific case",
+            "Each lesson tells you something to DO or AVOID"
+          ],
+          "failure_pattern": "Lessons that are just observations ('X happened') rather than principles ('When X, do Y')."
+        },
+        "story_lesson_ratio": {
+          "question": "Is the ratio of story to lessons appropriate?",
+          "check": "2-3 paragraphs of story per lesson. Never more than 4 paragraphs without extracting a lesson."
+        }
+      },
+      "pg_analogy_exploration": {
+        "analogy_depth": {
+          "question": "Is the analogy structural, not superficial?",
+          "check": "The similarity should be about how things work (structure), not just what they look like (surface).",
+          "failure_pattern": "Analogies that are clever but don't actually illuminate either domain."
+        },
+        "cross_domain_evidence": {
+          "question": "Do lessons draw on both domains?",
+          "check": "Each lesson in LESSONS_FROM_ANALOGY should reference both the source and target domain.",
+          "failure_pattern": "Lessons that could be made without the analogy."
+        }
+      }
+    },
+
+    "best_practices_from_source_essays": {
+      "description": "Coherence patterns extracted from studying the source essayists",
+      "paul_graham": [
+        "No transition words—transitions happen through logical necessity",
+        "Personal admissions ('I don't consciously...') build trust",
+        "Concrete numbers beat vague gestures ('17 paragraphs' not 'many paragraphs')",
+        "Questions can end sections, but must be real questions",
+        "Surprise should feel earned, not manufactured"
+      ],
+      "dario_amodei": [
+        "Every claim has evidence (footnotes, citations, specific examples)",
+        "Honest limitations acknowledged explicitly ('The honest limitation is...')",
+        "Categories should be MECE (mutually exclusive, collectively exhaustive)",
+        "Call to action must feel earned by the analysis",
+        "Cultural/emotional opening, but rigorous analysis follows"
+      ],
+      "neal_stephenson": [
+        "Historical specificity—names, dates, places, not vague gestures",
+        "Extended metaphors mapped in loving detail",
+        "Digressions acknowledged and returned from",
+        "Etymology as a tool for excavation",
+        "Self-implication to avoid preachiness",
+        "Resolution can be impasse—not everything ties up"
+      ],
+      "eric_raymond": [
+        "Personal credential established before prescriptions",
+        "Case study narrative with explicit lessons extracted",
+        "Lessons are numbered and quotable",
+        "Named principles ('Linus's Law') create memes",
+        "Theory emerges from story, not imposed on it"
+      ],
+      "stephen_wolfram": [
+        "Question-answer chain as essay spine",
+        "Progressive depth—each section goes deeper",
+        "Worked examples with numbered steps",
+        "Key insight explicitly named",
+        "Open questions acknowledged at end"
+      ]
     }
   },
   "cross_pattern_guidance": {
