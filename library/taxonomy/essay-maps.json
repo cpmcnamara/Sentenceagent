@@ -1855,7 +1855,64 @@
       ],
       "example_essays": [
         "Politics and the English Language (1946)"
-      ]
+      ],
+      "craft_notes": {
+        "description": "Orwell's artistry goes beyond structure. These are the techniques that make the diagnostic-prescriptive form actually work.",
+        "self_exemplifying_prose": {
+          "principle": "The prose must demonstrate the rules before stating them",
+          "explanation": "Orwell writes clearly about writing clearly. His sentences about dead metaphors are themselves vivid. His attack on pretentious diction uses plain words. The essay IS its argument.",
+          "how_to_achieve": "Write your specimens in bad prose. Write your analysis in good prose. The contrast is the lesson.",
+          "failure_signal": "If your prose about clarity is itself unclear, the essay undermines its own thesis."
+        },
+        "parody_using_beloved_sources": {
+          "principle": "Translate a universally respected text into the bad style",
+          "explanation": "Orwell translates Ecclesiastes — beloved, canonical, ancient — into modern academic prose. This is devastating because the reader already loves the original. The comparison feels unfair (Ecclesiastes has millennia of polish) but that's the point: the modern style CAN'T achieve this quality.",
+          "the_ecclesiastes_move": {
+            "original": "'I returned and saw under the sun, that the race is not to the swift, nor the battle to the strong...'",
+            "parody": "'Objective considerations of contemporary phenomena compel the conclusion that success or failure in competitive activities exhibits no tendency to be commensurate with innate capacity...'",
+            "why_it_works": "The reader FEELS the loss. You don't explain it — they experience it."
+          },
+          "how_to_choose_source": "Pick something your audience reveres. Religious text, beloved poem, founding document. The translation will hurt more."
+        },
+        "specific_verifiable_self_implication": {
+          "principle": "Admit failures the reader can CHECK in your own text",
+          "explanation": "Orwell: 'Look back through this essay, and for certain you will find that I have again and again committed the very faults I am protesting against.' This is NOT false modesty. The reader can verify it. He's used 'not un-' formation, he's used passive voice.",
+          "anti_pattern": "'I'm not perfect either' is hollow. 'I've committed fault X in paragraph Y' is real.",
+          "why_it_matters": "Prevents the essay from becoming preachy. Establishes that the rules are genuinely hard, not just rules for others."
+        },
+        "physical_imagery_in_abstract_argument": {
+          "principle": "Make abstract linguistic points concrete through physical images",
+          "examples": [
+            "'prose consists less and less of words chosen for the sake of their meaning, and more and more of phrases tacked together like the sections of a prefabricated henhouse'",
+            "'the writer knows more or less what he wants to say, but an accumulation of stale phrases chokes him like tea leaves blocking a sink'",
+            "'like cavalry horses answering the bugle'",
+            "'has gone some distance toward turning himself into a machine'"
+          ],
+          "pattern": "Abstract concept + 'like' + degraded physical object. Henhouse, blocked sink, machine. The images are not elegant — they're industrial, broken, mechanical.",
+          "why_degraded_images": "The physical images must MATCH the degradation being described. Pretty imagery would contradict the point."
+        },
+        "category_naming_as_demonstration": {
+          "principle": "The names of your categories should demonstrate the principle",
+          "examples": {
+            "dying_metaphors": "The phrase 'dying metaphors' is itself a vivid metaphor — it demonstrates that metaphors CAN be alive.",
+            "verbal_false_limbs": "Physical, visceral — you can see the unnecessary appendage. The name does work the definition can't.",
+            "operators": "Technical, mechanical — matches the lifeless quality being described."
+          },
+          "how_to_name": "Don't settle for abstract category names. Find the physical, concrete version. 'Unnecessary phrases' → 'verbal false limbs'. 'Clichéd comparisons' → 'dying metaphors'."
+        },
+        "the_escape_clause": {
+          "principle": "Final rule must permit breaking all other rules",
+          "orwell_version": "'Break any of these rules sooner than say anything outright barbarous.'",
+          "why_essential": "Without escape clause, rules become dogma. The escape clause acknowledges that judgment trumps formula. It's also what separates the essay from a style guide.",
+          "anti_pattern": "Rules without escape clause invite the reader to find exceptions and dismiss the whole system."
+        },
+        "closing_with_physical_image": {
+          "principle": "End with concrete, physical image — not abstraction",
+          "orwell_close": "'One cannot change this all in a moment, but one can at least change one's own habits, and from time to time one can even, if one jeers loudly enough, send some worn-out and useless phrase — some jackboot, Achilles' heel, hotbed, melting pot, acid test, veritable inferno, or other lump of verbal refuse — into the dustbin where it belongs.'",
+          "analysis": "'Dustbin where it belongs' — physical, satisfying, decisive. The reader can SEE the action. Also: the list of dying metaphors being thrown away is itself a miniature parody.",
+          "anti_pattern": "Closing with 'Therefore, clarity in language is important' — abstract, forgettable, kills the essay's energy."
+        }
+      }
     },
     "orwell_narrative_insight": {
       "name": "Orwell Narrative-Insight",
@@ -1995,7 +2052,67 @@
         "Shooting an Elephant (1936)",
         "A Hanging (1931)",
         "Such, Such Were the Joys (1952)"
-      ]
+      ],
+      "craft_notes": {
+        "description": "The narrative-insight form depends on psychological honesty and physical specificity that most writers avoid. These are the techniques that make Orwell's version work.",
+        "ugly_honesty_about_feelings": {
+          "principle": "Admit feelings you're not supposed to have",
+          "explanation": "Orwell doesn't say 'I had mixed feelings about imperialism.' He says: 'I was stuck between my hatred of the empire I served and my rage against the evil-spirited little beasts who tried to make my job impossible.' He hates BOTH sides. Neither feeling is clean.",
+          "the_bayonet_admission": {
+            "quote": "'With one part of my mind I thought of the British Raj as an unbreakable tyranny... with another part I thought that the greatest joy in the world would be to drive a bayonet into a Buddhist priest's guts.'",
+            "why_it_works": "This is shocking. It's racist. It's violent. And it's HONEST. Orwell admits the feeling he's not supposed to have. This is what separates the essay from propaganda — propaganda admits only the sanctioned feelings."
+          },
+          "how_to_achieve": "Ask: what feeling did I have that I'm embarrassed to admit? What hatred or desire contradicts my stated position? Include that.",
+          "failure_signal": "If your narrator only has the feelings they're 'supposed' to have, the essay will feel sanitized."
+        },
+        "physical_detail_that_earns_insight": {
+          "principle": "Visceral physical detail is not decoration — it's evidence",
+          "the_coolie_detail": {
+            "quote": "'He was lying on his belly with arms crucified and head sharply twisted to one side. His face was coated with mud, the eyes wide open, the teeth bared and grinning with an expression of unendurable agony. (Never tell me, by the way, that the dead look peaceful.) The friction of the great beast's foot had stripped the skin from his back as neatly as one skins a rabbit.'",
+            "why_it_works": "This detail establishes STAKES. The elephant killed someone. Horribly. Now the decision to shoot matters. The parenthetical '(Never tell me, by the way, that the dead look peaceful)' breaks the narrative frame to insist on truth — death is ugly."
+          },
+          "pattern": "Include physical detail that makes the moral weight REAL. Not metaphor — actual consequence that someone suffered.",
+          "failure_signal": "If the incident has no physical stakes that are SHOWN, the insight will feel abstract."
+        },
+        "the_slow_death": {
+          "principle": "Don't rush the action — duration creates moral weight",
+          "explanation": "The elephant doesn't die quickly. Orwell takes PARAGRAPHS. Shot after shot. The trunk reaching skyward. The slow collapse. The half hour of dying. 'I sent my small rifle for it and poured shot after shot into his heart and down his throat.'",
+          "why_slowness_matters": "Quick death = forgettable. Extended death = the reader is TRAPPED with you. They can't look away. The duration is the moral experience.",
+          "anti_pattern": "'I shot the elephant. It died.' — This is action summary. Orwell makes you WATCH.",
+          "how_to_achieve": "Find the moment that feels uncomfortable to extend. Extend it further. If you want to rush past it, that's the moment that needs detail."
+        },
+        "crowd_as_visible_pressure": {
+          "principle": "Show the external pressure as COUNTABLE, SEEN, PHYSICAL",
+          "the_two_thousand_wills": {
+            "quote": "'It was an immense crowd, two thousand at the least and growing every minute... Here was I, the white man with his gun, standing in front of the unarmed native crowd — seemingly the leading actor of the piece; but in reality I was only an absurd puppet pushed to and fro by the will of those yellow faces behind. I perceived in this moment that when the white man turns tyrant it is his own freedom that he destroys.'",
+            "why_it_works": "'Two thousand at the least' — specific number. 'Yellow faces behind' — visible. 'Puppet pushed to and fro' — physical metaphor. The pressure is not abstract obligation. You can COUNT it."
+          },
+          "pattern": "External pressure must be SEEN and COUNTED. Not 'I felt obligated' but 'two thousand wills pressing me forward.'",
+          "failure_signal": "If the pressure is described abstractly ('I felt I had to'), the insight won't land."
+        },
+        "reductive_final_admission": {
+          "principle": "End by stripping all justification — reveal the humiliatingly simple motive",
+          "the_fool_admission": {
+            "quote": "'I often wondered whether any of the others grasped that I had done it solely to avoid looking a fool.'",
+            "why_it_works": "The word 'solely' is brutal. All the political analysis — imperialism, the crowd, the puppet metaphor — collapses into vanity. 'Looking a fool.' The essay earns this reduction by building up the political weight first."
+          },
+          "pattern": "The final admission must be LESS noble than the analysis suggested. After building political insight, reveal the petty personal motive.",
+          "anti_pattern": "'And that's when I understood the true nature of imperialism' — this is the insight stated as lesson. Orwell doesn't end with the lesson. He ends with the motive.",
+          "why_reduction_works": "The reduction doesn't undermine the political insight — it PROVES it. Imperialism works through petty personal fears, not grand evil. The humiliating motive IS the political truth."
+        },
+        "the_with_one_part_structure": {
+          "principle": "Use 'with one part of my mind... with another part' for genuine psychological division",
+          "how_it_works": "This grammatical structure forces acknowledgment of contradiction. You can't resolve it into a clean position. Both parts coexist.",
+          "example": "'With one part of my mind I thought of the British Raj as an unbreakable tyranny... with another part I thought that the greatest joy in the world would be to drive a bayonet into a Buddhist priest's guts.'",
+          "when_to_use": "When your position was genuinely divided — not when you're trying to seem balanced. The structure reveals division, not nuance."
+        },
+        "the_roundabout_way_signal": {
+          "principle": "Signal that insight will EMERGE, not be announced",
+          "orwell_version": "'One day something happened which in a roundabout way was enlightening.'",
+          "why_it_works": "'In a roundabout way' tells the reader: don't expect me to tell you the lesson then illustrate it. The insight will come THROUGH the story, not before it.",
+          "anti_pattern": "'This incident taught me that...' (announces lesson) vs. 'something happened which was enlightening' (promises emergence)"
+        }
+      }
     }
   },
   "coherence_agent": {
