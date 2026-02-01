@@ -2507,6 +2507,19 @@
         "'dark'/'amazed'/'without thinking' - less specific, less weight"
       ],
       "principle_learned": "specific-words-carry-more-weight"
+    },
+    {
+      "test_id": 23,
+      "pattern": "New: Sustained-unpack-to-revelation",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "Think about your last difficult conversation. You tracked tone, adjusted for history, weighed what wasn't said, predicted reactions, revised in real-time—all while appearing to just listen. We are miracles pretending to be mundane.",
+      "why_won": "One sustained thought, not multiple clever lines. 'Difficult' more evocative than 'real'. List builds to 'all while appearing to just listen' before landing the kicker.",
+      "losers": [
+        "'read between the lines / sat in silence / been the subtext' - three separate ideas, not cohesive",
+        "'real conversation' - less specific than 'difficult conversation'"
+      ],
+      "principle_learned": "one-sustained-thought-beats-multiple-clever-lines"
     }
   ],
   "generationPrinciples": [
