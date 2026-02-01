@@ -2404,6 +2404,19 @@
         "'I cancel meetings for a living' - doesn't sound natural"
       ],
       "principle_learned": "natural-flow-over-structural-transplant"
+    },
+    {
+      "test_id": 15,
+      "pattern": "Raymond #73 (Contradiction-dissolve)",
+      "topic": "AI adoption / enterprise strategy",
+      "status": "complete",
+      "winner": "This might seem to contradict the principle of starting small. But it doesn't, really, because what we're deploying isn't one big bet but twenty small ones. Complexity is managed by separation.",
+      "why_won": "Concrete reframe (one big bet vs twenty small ones) + abstract principle ending (complexity/separation) creates intrigue without over-explaining.",
+      "losers": [
+        "'learning velocity / faster you fail' - cliché",
+        "'If one fails, the others keep running' - too concrete, less interesting than abstract principle"
+      ],
+      "principle_learned": "abstract-ending-over-concrete-when-reframe-is-clear"
     }
   ],
   "generationPrinciples": [
