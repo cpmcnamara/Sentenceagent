@@ -888,6 +888,33 @@
         "bestFor": "Defining abstract concepts through concrete example accumulation",
         "caution": "Requires examples that genuinely share the quality being defined - context-dependent"
       }
+    },
+    {
+      "id": 49,
+      "author": "Tim Urban",
+      "source": "Taming the Mammoth (Wait But Why)",
+      "passage": "We're all here in 2014, accompanied by a large, hungry, and easily freaked-out woolly mammoth who still thinks it's 50,000BC. Your Great 2,000 Grandfather's Social Survival Mammoth was central to his ability to endure and thrive. It was simple—keep the mammoth well fed with social approval and pay close attention to its overwhelming fears of nonacceptance, and you'll be fine.",
+      "feedback": "Good energy - extended metaphor with temporal contrast makes abstract psychology concrete",
+      "essaySection": "BODY",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [22, 18, 32],
+        "cadence": "medium-medium-LONG",
+        "beat": "Setup (we+mammoth) → ancestor context → elaborated metaphor with rules"
+      },
+      "structure": {
+        "template": "We're all here in [current year], accompanied by a [vivid character description] who still thinks it's [ancient time]. Your [ancestor]'s [Character] was central to [past function]. It was simple—[rule using character logic].",
+        "slots": ["current year", "character description", "ancient time", "ancestor", "past function", "rule"],
+        "technique": "Temporal mismatch + personified psychology + ancestral framing"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Our social anxiety is an evolved trait that made sense in tribal times but is maladaptive now.",
+        "technique": "Making the abstract (social anxiety) a character with needs and fears creates engagement"
+      },
+      "usage": {
+        "position": "middle-essay explanation",
+        "bestFor": "Sustaining energy in explanatory sections by giving abstract concepts persistent character"
+      }
     }
   ],
   "rejected": [
