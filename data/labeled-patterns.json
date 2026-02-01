@@ -1127,6 +1127,15 @@
       "why_won": "Setup exposes dual purpose, then metaphor (architecture vs rendering) deflates with unexpected domain (real estate). Rendering = beautiful but unfunded.",
       "losers": ["alibi version (too cliché)", "press conference (expected)", "postcard (wrong timing—postcards are retrospective, roadmaps are prospective)"],
       "principle_confirmed": "metaphor-timing-must-match"
+    },
+    {
+      "test_id": 12,
+      "pattern": "Saunders #35 (synthesis with harder-to-admit)",
+      "topic": "hiring, diets",
+      "winner": "So what have we learned about hiring? We've learned that culture fit interviews predict nothing. But we've also learned something harder to admit: that we keep doing them because rejecting someone for 'fit' feels kinder than rejecting them for competence.",
+      "why_won": "Surface observation (culture fit doesn't predict) + deeper uncomfortable why (we use it as a kindness shield). The 'harder to admit' digs beneath the surface.",
+      "losers": ["AI pilot versions (repeated topic, surface insight not deep enough)", "diet deadline version (metaphor didn't land)", "governance frameworks (too abstract)"],
+      "principle_learned": "harder-to-admit-reveals-motive"
     }
   ],
   "generationPrinciples": [
@@ -1214,6 +1223,15 @@
       "why_bad": "Policy IS designed to govern usage—no defiance logic, just pessimism",
       "good_example": "Fire me if you like; but there is no severance, no non-compete, no reference you can withhold that will undo what I learned while I was here",
       "why_good": "Job = source of learning, firing = removing from source, skills = inalienable thing gained. You can end my access but can't take what I got."
+    },
+    {
+      "name": "harder-to-admit-reveals-motive",
+      "description": "In synthesis patterns, the 'harder to admit' must reveal the uncomfortable WHY beneath the surface observation—not just restate it",
+      "learned_from": "Test 12: 'culture fit feels kinder than competence' worked because it reveals hidden motive, not just surface behavior",
+      "bad_example": "We've learned that pilots succeed and rollouts fail. But we've also learned something harder to admit: that the pilot was designed to prove a point.",
+      "why_bad": "'Designed to prove a point' is vague—doesn't reveal uncomfortable motive",
+      "good_example": "We've learned that culture fit interviews predict nothing. But we've also learned something harder to admit: that we keep doing them because rejecting someone for 'fit' feels kinder than rejecting them for competence.",
+      "why_good": "Reveals the uncomfortable motive: we use 'fit' as a kindness shield to avoid saying 'not good enough'"
     }
   ]
 }
