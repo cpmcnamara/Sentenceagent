@@ -1,87 +1,87 @@
-# The Illegibility Problem
+# The Vocabulary Test
 
 ## CREDENTIALS_ESTABLISHED
 
-For three years I ran data governance initiatives. Nobody wanted to own them. In meeting after meeting, I watched executives perform elaborate dances to avoid accountability. "That's really IT's responsibility." "Operations should lead that." "We need to align with strategy first." Data quality was everyone's problem and nobody's job.
+I've read maybe two hundred AI strategy documents. Not skimmed—read, with a highlighter, looking for what companies actually say when they're trying to sound serious about AI. After a while you start to notice patterns. The same phrases appear in document after document, company after company, as if there's a template everyone copies from.
 
-Then I started building AI teams. Same company. Same executives. Completely different behavior. Suddenly everyone wanted in. The CTO scheduled a meeting to claim AI for technology. The Chief Strategy Officer sent a deck arguing AI was "fundamentally strategic." The COO insisted operations had to own anything touching process. I sat in one meeting where four VPs argued for ninety minutes about who should lead "the AI initiative." Nobody asked what the initiative actually was.
-
-Same organization. Same people. Opposite problem.
+There is. And what's in it tells you more about why AI projects fail than any technical post-mortem.
 
 ## CONTROVERSIAL_CLAIM
 
-Here's what I think is happening: AI is illegible to organizations.
+Here's my thesis: the language companies use to talk about AI predicts whether their projects will succeed. Not the strategy. Not the budget. Not the talent. The words.
 
-Not complex. Not difficult. Illegible—it doesn't map to any existing category. Technology teams can't own it because it's not just technology. Strategy teams can't own it because strategy without technical grounding is vapor. Operations can't own it because it creates new processes rather than optimizing existing ones.
+When a company writes "AI Center of Excellence," that project will fail. When they write "Data-Driven Transformation," that project will fail. When they write "Democratize AI Across the Organization," that project will fail. I can tell you the outcome from the vocabulary before a single line of code gets written.
 
-The ownership battle isn't about credit or politics. It's a symptom. The disease is that AI has no natural home.
-
-And the standard solutions—matrix management, cross-functional teams, "AI centers of excellence"—all fail for the same reason: they try to solve an illegibility problem with organizational charts. You can't file a zebra under "horse" just because it has four legs.
+This sounds like superstition. It's not. The vocabulary reveals how the company thinks, and how they think determines what they build.
 
 ## SKEPTIC_ANTICIPATED
 
-The obvious objection: surely smart companies figure this out. Surely at scale, with enough resources, the ownership problem gets solved.
+The obvious objection: surely the words don't matter. What matters is execution. A company could use buzzword-heavy language and still ship great AI systems, or use plain language and fail completely.
 
-It doesn't. If anything, it gets worse.
+In theory, yes. In practice, I've never seen it.
 
-I watched a client—a Fortune 100 company, unlimited budget, the best consultants money could buy—spend eighteen months on an "AI transformation." At the end they had: a 200-page strategy document, a governance committee that met monthly, a technology evaluation matrix, and zero deployed AI systems. Not one. The ownership question consumed all the oxygen. Everyone was so busy positioning for the future of AI that nobody built anything.
+The reason is that vocabulary isn't decoration—it's diagnosis. When someone writes "Center of Excellence," they're revealing that they think AI is a capability to be centralized, controlled, and dispensed. When someone writes "Democratize AI," they're revealing they think AI is a resource to be distributed, like office supplies. Both framings are wrong, and both lead to the same place: projects that look good in presentations and die in production.
 
-Meanwhile, a 40-person manufacturer I worked with shipped three AI systems in six months. They had one engineer who could code and one operations lead who understood the floor. No governance committee. No strategy document. No ownership debate—just two people who could see both the technology and the problem.
+Consider what "Center of Excellence" actually means. A center implies a periphery—people who aren't in the center, who must come to the center for AI. Excellence implies the center knows something others don't. The phrase encodes a model where AI expertise lives in one place and gets requested by other places. This model works for shared services like legal review or graphic design. It fails for AI because AI isn't a service you request. It's a capability that has to be embedded in the problem, shaped by the people who understand the problem, iterated based on what actually happens when you deploy.
 
-The 200-person team produced documents. The 2-person team produced AI.
+A "Center of Excellence" can't do this. It's too far from the problems. It doesn't know which edge cases matter. It builds generic solutions and hands them off, and the handoff is where things die.
+
+The vocabulary predicted this. Not because the words are magic, but because the words reveal the mental model, and the mental model determines the architecture, and the architecture determines the outcome.
 
 ## CONCEPTUAL_TOOL
 
-I call this the illegibility trap, and escaping it requires understanding why AI doesn't fit.
+I want to introduce a test I call the "vocabulary audit."
 
-Traditional technology is a tool. You evaluate it, buy it, deploy it, support it. IT owns it because IT owns tools. But AI isn't a tool—it's a capability that requires constant judgment. The model needs human decisions about what to optimize, what data is clean enough, when the output is trustworthy. You can't deploy it and walk away.
+Take any AI strategy document and circle every abstract noun and every passive construction. "Transformation," "enablement," "acceleration," "leverage." "AI will be deployed." "Value will be created." "Capabilities will be developed."
 
-Traditional strategy is direction. You analyze, decide, communicate. Strategy owns direction. But AI strategy without hands-on technical understanding produces fantasy. I've seen strategy teams recommend "deploying computer vision for quality control" without knowing that the factory floor had no cameras and no network infrastructure. The strategy was correct and useless.
+Then ask: who does what to whom?
 
-Traditional operations is execution. You define processes, measure, improve. Operations owns execution. But AI changes processes—it doesn't just execute them. An operations team optimizing around existing workflows will miss that AI makes entirely different workflows possible.
+In most strategy documents, you can't answer this question. The language is deliberately agentless. Things happen, but nobody does them. AI "transforms" the business—but who builds it? Who maintains it? Who decides if it's working? The passive voice isn't just bad writing. It's evasion. The authors don't know who will do the work, so they write sentences where nobody has to.
 
-AI sits at the intersection where technology enables new capabilities, strategy evaluates which capabilities matter, and operations determines whether they actually work. It's not in any one circle. It's in the overlap.
+Now compare to documents from projects that shipped. The language is concrete and active. "The inventory team will test the demand forecasting model with Q3 data." "Maria's group owns the data pipeline and will flag quality issues weekly." "We'll kill the project if accuracy is below 85% after eight weeks."
 
-This is why the ownership battle exists. Everyone has a legitimate claim. No one has the full picture.
+The vocabulary audit catches the difference immediately. Passive abstractions mean nobody owns anything. Active specifics mean someone will be embarrassed if it doesn't work.
 
 ## MECHANISM_EXPLAINED
 
-Why does illegibility kill AI projects? Two mechanisms.
+Why does vocabulary predict outcomes so reliably? Three mechanisms.
 
-First, organizational boundaries become information barriers. The technology team knows what's technically possible. The strategy team knows what's valuable. The operations team knows what constraints actually matter. But they don't share a language. The technologist says "we can achieve 94% accuracy" and the strategist hears "we can do it" while the operations person thinks "6% failure rate on ten thousand daily decisions."
+First, abstract language lets everyone agree while meaning different things. "AI Transformation" sounds like consensus. But the CFO hears cost reduction, the CTO hears infrastructure modernization, the CMO hears customer personalization, and the COO hears process automation. They all nod at the same phrase while expecting different outcomes. When the project starts, these differences surface as conflict. The vocabulary didn't cause the misalignment—it hid it.
 
-I watched a fraud detection project die this way. Technology built a model with 98% precision. Strategy declared victory. Operations ran the math: 2% false positive rate on a million daily transactions meant 20,000 wrongly flagged customers per day. They killed the project. Technology and strategy had never talked to operations. If they had, they'd have known the precision threshold from day one.
+Second, passive constructions let nobody be responsible. "Capabilities will be developed" doesn't specify who develops them, who pays for them, who gets blamed if they're late, who decides if they're good enough. The absence of agents in the language creates an absence of ownership in the organization. I've seen projects run for eighteen months with no clear owner because the strategy document never named one. The vacancy was built into the vocabulary.
 
-Second, ownership debates consume the people who should be building. The best AI practitioners I know hate organizational politics. They're there to solve problems, not to position themselves on org charts. The longer the ownership battle runs, the more likely you are to lose exactly the people who could actually ship something.
+Third, buzzwords signal that a document was written to impress rather than to guide. "Democratize AI" isn't a plan. It's a wish. "Leverage machine learning to drive value" isn't an instruction. It's a placeholder for an instruction someone hopes to write later. When a strategy document is full of these, it means nobody has figured out what to actually do. They've written a document that sounds like a strategy because writing an actual strategy was too hard.
 
-One team I worked with lost their best engineer this way. She spent three months building a working prototype—actual AI, actually deployed. Then the company began its "AI governance initiative." She got pulled into stakeholder meetings, steering committees, executive briefings about the prototype she'd already built. After six months of governance theater, she quit. She told me: "I came here to build things. They turned me into a PowerPoint."
-
-The prototype still ran. Nobody knew how to maintain it. It died three months after she left.
+The mechanism in each case is the same: the vocabulary reflects the thinking, and unclear thinking produces failed projects. You could try to fix the vocabulary while leaving the thinking unchanged—replace every buzzword with a plain word—but it wouldn't help. The vocabulary is a symptom. The disease is that nobody has done the hard work of deciding who does what.
 
 ## EVIDENCE_STACKED
 
-A pattern emerges when you look at AI projects that actually ship.
+I started keeping track of the correlation three years ago. Not scientifically—just a spreadsheet with project names, key vocabulary from their strategy documents, and outcomes.
 
-The 40-person manufacturer succeeded because their two-person team was illegible in the same way AI is. The engineer understood the technology. The operations lead understood the constraints. Neither "owned" AI—they just built it, together, with no organizational category to fit into. No budget line. No governance structure. Just two people in a room.
+The patterns are stark.
 
-Stripe is famous for this. When they were starting, they didn't wait for anyone to own payment integration. When someone agreed to try Stripe, the founders would say "Right then, give me your laptop" and set them up on the spot. They weren't technology or sales or customer success—they were whatever the problem needed. That illegibility was the advantage.
+Every project with "Center of Excellence" in its charter either failed outright or delivered something nobody used. Eight for eight. The phrase is a perfect predictor. The closest any came to success was an internal chatbot that technically worked but was abandoned after three months because the center didn't have capacity to maintain it for every team that wanted customizations.
 
-The pattern is: illegibility survives illegibility. People who don't fit boxes can work with things that don't fit boxes. Organizations that try to put AI in a box first—that spend months deciding who owns what—select for people who are good at organizational navigation. Those people are rarely the same ones who build.
+Projects with "Transformation" in the title did slightly better—about a third delivered something—but the ones that succeeded invariably dropped the word from their working documents within the first quarter. The teams that shipped started calling it things like "the inventory forecaster" or "the routing model." Concrete nouns replaced abstract ones. The vocabulary shift marked a shift from performing strategy to doing work.
+
+The best predictor of success wasn't any single word. It was the ratio of nouns to verbs. Documents heavy on nouns—"transformation," "excellence," "enablement," "capability"—failed. Documents heavy on verbs—"predict," "route," "flag," "alert"—succeeded. Verbs require actors and objects. They force you to say who does what. The grammar enforces clarity.
+
+One document I remember had seventeen instances of "leverage" in twelve pages. That project burned through two million dollars and produced a proof-of-concept that was never deployed. Another document used "leverage" zero times but specified in the second paragraph that the project would be killed if it couldn't predict demand within 8% accuracy by week ten. That project shipped in nine weeks.
 
 ## COMPETITIVE_FRAME
 
-Most AI consulting teams approach the ownership problem as something to solve. Get the governance right. Establish clear accountability. Define roles and responsibilities.
+Most consultants treat strategy documents as politics—necessary for buy-in, separate from real work. They write one version to get executives excited and another version to guide implementation. The assumption is that the fluffy language is harmless overhead.
 
-This is backwards. The ownership problem isn't a bug—it's a signal. It tells you that what you're building doesn't fit existing categories, and that's often exactly what makes it valuable.
+It's not harmless. It's diagnostic.
 
-The teams that win don't solve the ownership problem. They dissolve it. They hire people who can hold multiple frames simultaneously—who understand technology well enough to build, strategy well enough to evaluate, and operations well enough to ship. They don't create "AI departments." They create small teams of people who can see across boundaries.
+When I review a potential project now, I ask for their AI strategy document first. If it reads like a press release—lots of "leverage," "transform," "enable," no names, no deadlines, no kill criteria—I know the project is in trouble regardless of budget or talent. The thinking isn't there. The document proves it.
 
-Those teams build while everyone else argues.
+This gives you an edge: while others evaluate projects based on technology or team or timeline, you can evaluate based on vocabulary. Before the first meeting, before the first demo, you can read ten pages and know whether the project will ship. Not because words are magic, but because words reveal thinking, and thinking determines outcomes.
 
 ## CLOSE_PROVOCATIVE
 
-That Fortune 100 client is still arguing about ownership. They're on their third AI strategy refresh. Still no deployed systems.
+Pull up the last AI strategy document you wrote or received. Count the passive constructions. Count the abstract nouns. Look for "Center of Excellence," "Transformation," "Democratize."
 
-The manufacturer? They're on their seventh.
+Then ask: who does what to whom?
 
-The question isn't who should own AI. It's whether you're hiring people who can see across boxes, or people who are good at defending them.
+If you can't answer, the project was dead before it started. The vocabulary told you. You just didn't know to listen.
