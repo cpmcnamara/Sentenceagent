@@ -1704,6 +1704,573 @@
         "Cities and Ambition (2008)"
       ]
     },
+    "pg_advice_to_youth": {
+      "name": "PG Advice to Youth",
+      "description": "Essay addressing young people that rejects expected platitudes, reframes the premise, reveals hidden mechanisms, and offers genuine actionable wisdom. Characterized by treating the audience as equals and anticipating objections.",
+      "source": "Paul Graham essays (What You'll Wish You'd Known, 2005)",
+      "pre_flight_checks": {
+        "do_you_have": [
+          "A situation where conventional advice is given but rarely followed",
+          "Understanding of WHY the conventional advice fails",
+          "A reframing that changes what the advice-giver should actually say",
+          "Specific, actionable alternatives that feel honest rather than platitudinous",
+          "Anticipated objections from skeptics"
+        ],
+        "warning": "If you just have better advice, you have a lecture. The essay works by showing WHY the usual advice fails first."
+      },
+      "sections": [
+        {
+          "name": "SITUATION_SETUP",
+          "purpose": "Establish the occasion where advice would normally be given",
+          "signals": ["I'll tell you what I wish someone had told me...", "When I think back to what they told me...", "The occasion for advice is..."],
+          "requirement": "Ground the abstract situation in a concrete occasion. Reader needs to picture themselves there.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "example": "PG opens with 'I wanted to write a speech for a high school.' Concrete occasion, not abstract advice-giving."
+        },
+        {
+          "name": "EXPECTED_ADVICE_REJECTED",
+          "purpose": "Acknowledge what people usually say, then show why it's useless",
+          "signals": ["The standard advice is...", "Everyone says...", "This sounds true but...", "The problem with this advice is..."],
+          "requirement": "Don't strawman. Take the conventional wisdom seriously, THEN show its failure mode.",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "key_move": "Show that even true advice can be useless because it doesn't address the real problem. 'Be yourself' may be true but tells you nothing actionable.",
+          "transition_to_next": "Having dismissed the obvious advice, pivot to asking what would actually help."
+        },
+        {
+          "name": "REFRAMING_PREMISE",
+          "purpose": "Show that the question itself was wrong",
+          "signals": ["The real question isn't X but Y...", "Before asking what to do, we should ask...", "The premise of the usual advice is wrong because..."],
+          "requirement": "The reframe must feel earned, not clever. It should make reader think 'of course, why didn't I see that?'",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "example": "PG shifts from 'what career should you choose?' to 'you don't have to decide now—and here's why that changes everything.'"
+        },
+        {
+          "name": "MECHANISM_REVEALED",
+          "purpose": "Explain the hidden dynamic that makes the reframing true",
+          "signals": ["Here's why this works...", "The reason is...", "What's actually happening is..."],
+          "requirement": "Must give the reader a mental model they can use. Not just what, but why.",
+          "substance_level": "heavy",
+          "length": "3-5 paragraphs",
+          "substance_type": ["analogy from another domain", "historical example", "personal experience that illustrates"],
+          "key_move": "Use concrete examples from real life. PG uses sailing metaphor: 'keep your course close to the wind.'"
+        },
+        {
+          "name": "CONTRAST_SERIES",
+          "purpose": "Series of comparisons that reinforce the insight from different angles",
+          "signals": ["X vs Y...", "The difference between A and B is...", "In contrast..."],
+          "requirement": "Each contrast should add new information, not just repeat the insight in different words.",
+          "substance_level": "heavy",
+          "length": "4-6 paragraphs",
+          "key_move": "PG contrasts upwind vs downwind work, prestigious vs engaging work, external vs internal validation. Each contrast teaches something new about the same principle."
+        },
+        {
+          "name": "ACTIONABLE_ADVICE",
+          "purpose": "Specific things the reader can actually do",
+          "signals": ["Here's what you can do...", "In practice, this means...", "Start by..."],
+          "requirement": "Must be specific enough that the reader could start tomorrow. Vague advice fails.",
+          "substance_level": "medium-heavy",
+          "length": "3-4 paragraphs",
+          "test": "Could someone read this section and know exactly what to do Monday morning?"
+        },
+        {
+          "name": "OBJECTION_ANTICIPATED",
+          "purpose": "Address the skeptic's pushback before they raise it",
+          "signals": ["You might think...", "The obvious objection is...", "But what about..."],
+          "requirement": "Raise the strongest objection, not a strawman. Show you've thought about the hard cases.",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "key_move": "PG anticipates 'but some fields require early specialization' and addresses it directly."
+        },
+        {
+          "name": "CLOSE_WITH_GIFT",
+          "purpose": "Leave reader with something they can carry away—not a summary, but a parting insight",
+          "signals": ["The real prize is...", "What you'll discover is...", "If you do this..."],
+          "requirement": "Must feel generous, not preachy. Should make reader feel possibility, not obligation.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "example": "PG ends with the encouraging insight that curiosity and ability to work hard are all you really need."
+        }
+      ],
+      "key_principles": [
+        "Treat audience as equals, not inferiors",
+        "Reject platitudes by showing WHY they fail, not just dismissing them",
+        "Reframe the question before answering it",
+        "Use concrete examples from real life, not abstract principles",
+        "Anticipate objections from smart skeptics"
+      ],
+      "failure_modes": [
+        "Becoming preachy or condescending",
+        "Offering advice without showing why conventional advice fails",
+        "Abstract principles without concrete applications",
+        "Missing the strongest objections",
+        "Closing with summary instead of new insight"
+      ],
+      "when_to_use": [
+        "Addressing someone at a life transition",
+        "Conventional wisdom exists but doesn't actually help",
+        "You have experience that contradicts the usual advice",
+        "You can show the mechanism behind better alternatives"
+      ],
+      "example_essays": [
+        "What You'll Wish You'd Known (2005)",
+        "How to Do What You Love (2006)"
+      ]
+    },
+    "pg_historical_economic": {
+      "name": "PG Historical-Economic",
+      "description": "Essay that identifies a major historical/economic pattern, traces its causes through specific mechanisms, cascades evidence across multiple domains, and closes with prediction about where the pattern leads. Big-picture explanatory essay.",
+      "source": "Paul Graham essays (The Refragmentation, 2016)",
+      "pre_flight_checks": {
+        "do_you_have": [
+          "A pattern that spans decades or centuries",
+          "A clear causal mechanism (not just correlation)",
+          "Evidence from multiple independent domains",
+          "A memorable name for the pattern",
+          "A prediction or implication that follows from the analysis"
+        ],
+        "warning": "If you have correlation without mechanism, you have speculation. The causal mechanism is essential."
+      },
+      "sections": [
+        {
+          "name": "PATTERN_NAMED",
+          "purpose": "Open with the pattern's name and one-sentence definition",
+          "signals": ["The X is...", "I call this the...", "There's a pattern I've been noticing..."],
+          "requirement": "Name must be memorable and descriptive. If you can't name it, you haven't understood it.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "example": "PG opens with 'fragmentation' as the name and immediately defines it: 'a world of many small groups with different ideas.'"
+        },
+        {
+          "name": "HISTORICAL_SETUP",
+          "purpose": "Establish the before-state with specific historical detail",
+          "signals": ["Before X, the world was...", "In the Y era...", "For most of the Z century..."],
+          "requirement": "Concrete historical details, not vague generalizations. Specific dates, names, examples.",
+          "substance_level": "heavy",
+          "length": "3-5 paragraphs",
+          "substance_type": ["historical_example - named events and dates", "contrast_with_present - show how different it was", "concrete_number - statistics that surprise"],
+          "key_move": "Make the past vivid enough that readers can see the difference. PG describes the 'big company era' with specific decades and cultural details."
+        },
+        {
+          "name": "CAUSE_IDENTIFIED",
+          "purpose": "Pinpoint the specific factor that caused the change",
+          "signals": ["The cause was...", "What changed was...", "The trigger was..."],
+          "requirement": "Must be specific and non-obvious. Not 'technology changed things' but 'the specific technology of X changed things in this specific way.'",
+          "substance_level": "heavy",
+          "length": "3-4 paragraphs",
+          "key_move": "PG identifies WWII economic controls as creating the conditions for the big company era, and their gradual removal as enabling refragmentation.",
+          "test": "Is the cause specific enough that readers could argue about it? If it's too vague to argue about, it's too vague to be useful."
+        },
+        {
+          "name": "MECHANISM_TRACED",
+          "purpose": "Show step-by-step how the cause produced the effect",
+          "signals": ["Here's how it worked...", "The mechanism was...", "This led to X, which led to Y..."],
+          "requirement": "Each step in the chain must be plausible. No magic jumps from cause to effect.",
+          "substance_level": "heaviest",
+          "length": "5-8 paragraphs",
+          "substance_type": ["causal_chain - A caused B caused C", "feedback_loop - effects that amplified causes", "economic_logic - incentives that drove behavior"],
+          "key_move": "Show WHY each step followed from the previous. PG traces: big companies → standardization → mass culture → conformity → 'man in gray flannel suit' phenomenon."
+        },
+        {
+          "name": "EVIDENCE_CASCADED",
+          "purpose": "Stack examples from different domains that all fit the pattern",
+          "signals": ["The same pattern appears in...", "You see this in X, Y, and Z...", "This explains why..."],
+          "requirement": "Evidence must come from DIFFERENT domains, not just more examples from the same domain. Breadth proves the pattern is real.",
+          "substance_level": "heavy",
+          "length": "4-6 paragraphs",
+          "substance_type": ["cross_domain_examples - at least 3 different fields", "surprising_fits - examples reader wouldn't expect", "contemporary_evidence - shows pattern is still operating"],
+          "key_move": "PG shows refragmentation in media, politics, technology, culture, work styles. Each domain adds credibility."
+        },
+        {
+          "name": "IMPLICATIONS_DRAWN",
+          "purpose": "What follows from this analysis? What should we expect?",
+          "signals": ["If this is right, then...", "This suggests...", "The implication is..."],
+          "requirement": "Implications must follow logically from the mechanism. Not wishful thinking about what you'd like to be true.",
+          "substance_level": "medium",
+          "length": "2-4 paragraphs",
+          "key_move": "Connect the historical analysis to present and future. PG draws implications about startup culture, political polarization, etc."
+        },
+        {
+          "name": "CLOSE_WITH_PREDICTION",
+          "purpose": "End with a forward-looking statement that follows from the analysis",
+          "signals": ["I predict...", "Where this leads is...", "The future will be..."],
+          "requirement": "Prediction should be specific enough to be falsifiable. Vague predictions ('things will change') are worthless.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "test": "Could someone in 20 years check whether this prediction came true?"
+        }
+      ],
+      "key_principles": [
+        "Name the pattern memorably",
+        "Specific historical details, not generalizations",
+        "Causal mechanism, not just correlation",
+        "Evidence from multiple independent domains",
+        "Predictions that follow from the analysis"
+      ],
+      "failure_modes": [
+        "Vague pattern description that could mean anything",
+        "Claiming causation without showing mechanism",
+        "All examples from one domain (proves nothing)",
+        "Implications that don't follow from the analysis",
+        "Predictions too vague to be falsified"
+      ],
+      "when_to_use": [
+        "You've identified a multi-decade pattern",
+        "You can explain WHY the pattern exists, not just that it exists",
+        "You have evidence from multiple domains",
+        "The pattern has implications for the present/future"
+      ],
+      "example_essays": [
+        "The Refragmentation (2016)",
+        "Inequality and Risk (2005)"
+      ]
+    },
+    "pg_practical_guide": {
+      "name": "PG Practical Guide",
+      "description": "Essay that teaches a specific skill by first dispelling misconceptions, then providing a better model, then giving actionable recipes. Structured as 'don't do X, do Y instead, and here's how.'",
+      "source": "Paul Graham essays (How to Get Startup Ideas, 2012)",
+      "pre_flight_checks": {
+        "do_you_have": [
+          "A common approach that fails",
+          "A better model based on understanding WHY the common approach fails",
+          "Specific, actionable techniques",
+          "Warning signs that the reader is doing it wrong",
+          "Examples of the technique in action"
+        ],
+        "warning": "If you only have techniques without explaining why the usual approach fails, you're teaching tactics without strategy."
+      },
+      "sections": [
+        {
+          "name": "MISCONCEPTION_STATED",
+          "purpose": "Clearly articulate the wrong approach that most people take",
+          "signals": ["Most people think...", "The usual approach is...", "You might assume..."],
+          "requirement": "State the misconception fairly. It should be something intelligent people actually believe.",
+          "substance_level": "light-medium",
+          "length": "2-3 paragraphs",
+          "key_move": "PG opens with 'The way to get startup ideas is not to try to think of startup ideas.' The negation is the hook.",
+          "example": "Show why the misconception is tempting—it's not obviously wrong."
+        },
+        {
+          "name": "BETTER_MODEL",
+          "purpose": "Replace the misconception with a better mental model",
+          "signals": ["Instead, you should...", "The better approach is...", "Here's what actually works..."],
+          "requirement": "The model must explain WHY it works, not just assert that it does.",
+          "substance_level": "heavy",
+          "length": "3-5 paragraphs",
+          "substance_type": ["mechanism_explanation - why this works", "contrast_with_misconception - what's different", "principle_statement - the core insight"],
+          "key_move": "PG's model: 'The best ideas come from noticing problems you have, not from trying to think of startup ideas.' This explains WHY the common approach fails."
+        },
+        {
+          "name": "FILTER_CRITERIA",
+          "purpose": "Give reader tools to evaluate whether they're doing it right",
+          "signals": ["How do you know if...", "The test is...", "Good X has these properties..."],
+          "requirement": "Criteria must be specific enough to apply. 'Good ideas feel right' is useless.",
+          "substance_level": "medium-heavy",
+          "length": "3-4 paragraphs",
+          "key_move": "PG lists specific filters: Is it something you want? Something you could build? Something few realize is possible?"
+        },
+        {
+          "name": "HOW_TO_NOTICE",
+          "purpose": "Techniques for developing the skill of noticing",
+          "signals": ["To get better at this...", "The way to notice is...", "Train yourself to..."],
+          "requirement": "Must be practical. Reader should be able to start practicing today.",
+          "substance_level": "medium",
+          "length": "2-4 paragraphs",
+          "example": "PG teaches how to notice problems: 'Live in the future, then build what's missing.'"
+        },
+        {
+          "name": "WELLS_IDENTIFIED",
+          "purpose": "Specific places to look for opportunities",
+          "signals": ["Good places to look include...", "You'll often find X in...", "One fertile area is..."],
+          "requirement": "Must be specific domains or situations, not abstract categories.",
+          "substance_level": "heavy",
+          "length": "4-6 paragraphs",
+          "substance_type": ["domain_examples - specific fields to explore", "why_each_works - reasoning for each well", "example_from_each - concrete illustration"],
+          "key_move": "PG lists: things that seem like toys, things that feel like hacks, areas that just became possible."
+        },
+        {
+          "name": "RECIPES",
+          "purpose": "Step-by-step procedures the reader can follow",
+          "signals": ["Here's one approach...", "A good way to start is...", "Try this:"],
+          "requirement": "Each recipe should be complete enough to follow without additional research.",
+          "substance_level": "medium-heavy",
+          "length": "3-5 paragraphs",
+          "key_move": "Numbered or clearly delineated steps. PG provides recipes like 'pick a field you're genuinely interested in, work on the hardest problem you can, notice what's missing.'"
+        },
+        {
+          "name": "WARNING_SIGNS",
+          "purpose": "How to know when you're falling back into the misconception",
+          "signals": ["Watch out for...", "You're doing it wrong if...", "A bad sign is..."],
+          "requirement": "Warnings should be specific enough to recognize in the moment.",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "key_move": "PG warns against: ideas that could be described as 'like X but for Y', ideas you don't personally need, ideas that sound good in meetings."
+        },
+        {
+          "name": "CLOSE_PRACTICAL",
+          "purpose": "End with encouragement and the key takeaway",
+          "signals": ["The main thing is...", "Start by...", "If you remember nothing else..."],
+          "requirement": "Close should be actionable, not just inspirational.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "test": "Does the close tell the reader what to do first?"
+        }
+      ],
+      "key_principles": [
+        "Start by dispelling the misconception",
+        "Models before techniques",
+        "Specific enough to be actionable",
+        "Warning signs to prevent backsliding",
+        "Close with action, not inspiration"
+      ],
+      "failure_modes": [
+        "Techniques without underlying model",
+        "Abstract advice that can't be applied",
+        "No warning signs (reader won't know when they're failing)",
+        "Inspirational close without concrete action",
+        "Misconception stated unfairly as strawman"
+      ],
+      "when_to_use": [
+        "Teaching a skill where common approach fails",
+        "You understand WHY the common approach fails",
+        "You can provide specific, actionable techniques",
+        "You have warning signs for the reader"
+      ],
+      "example_essays": [
+        "How to Get Startup Ideas (2012)",
+        "Do Things that Don't Scale (2013)",
+        "How to Write Usefully (2020)"
+      ]
+    },
+    "pg_technical_argument": {
+      "name": "PG Technical Argument",
+      "description": "Essay that makes a controversial technical claim, anticipates skepticism, provides conceptual tools to understand the claim, then stacks evidence to prove it. Often framed as competitive advantage from an insight most people miss.",
+      "source": "Paul Graham essays (Beating the Averages, 2003)",
+      "pre_flight_checks": {
+        "do_you_have": [
+          "A technical claim that most people would initially reject",
+          "Personal experience or credentials that give you standing to make the claim",
+          "A conceptual tool that helps readers understand the insight",
+          "Multiple types of evidence (experience, logic, external validation)",
+          "A competitive or practical frame that makes the insight matter"
+        ],
+        "warning": "If your claim isn't controversial, you don't need this architecture. If you don't have evidence, you have an assertion, not an argument."
+      },
+      "sections": [
+        {
+          "name": "CREDENTIALS_ESTABLISHED",
+          "purpose": "Give reader reason to take the claim seriously",
+          "signals": ["In 1995, I...", "At Y Combinator...", "Based on X years of..."],
+          "requirement": "Credentials must be relevant to the specific claim. General prestige doesn't count.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "key_move": "PG opens with Viaweb story—he's not just theorizing about Lisp, he built a company with it.",
+          "example": "Brief but specific. 'I wrote a book about X' beats 'I've been thinking about X for years.'"
+        },
+        {
+          "name": "CONTROVERSIAL_CLAIM",
+          "purpose": "State the claim that most readers will initially reject",
+          "signals": ["My thesis is...", "I'm going to argue...", "Here's the claim:"],
+          "requirement": "Claim must be specific enough to be wrong. 'Technology matters' isn't controversial. 'Lisp made us 2-10x faster than competitors' is.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "key_move": "State the claim clearly before defending it. Don't hedge or qualify.",
+          "test": "Would a smart, informed person disagree? If not, you don't have a controversial claim."
+        },
+        {
+          "name": "SKEPTIC_ANTICIPATED",
+          "purpose": "Articulate the best objection before the reader thinks of it",
+          "signals": ["You might think...", "The obvious objection is...", "I can hear you saying..."],
+          "requirement": "State the strongest version of the objection. Don't strawman.",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "key_move": "PG articulates the 'Blub paradox'—why programmers can't see languages above them. This explains why skeptics are wrong without insulting them."
+        },
+        {
+          "name": "CONCEPTUAL_TOOL",
+          "purpose": "Give reader a framework for understanding your claim",
+          "signals": ["Let me introduce...", "Think of it like...", "Here's a useful concept:"],
+          "requirement": "The tool must be memorable and reusable. It should give the reader new eyes.",
+          "substance_level": "heavy",
+          "length": "3-5 paragraphs",
+          "substance_type": ["named_concept - give it a name", "analogy - make it concrete", "application - show how to use it"],
+          "key_move": "The 'Blub paradox' is PG's conceptual tool. It's memorable, reusable, and explains the phenomenon.",
+          "example": "Name the concept. 'The Blub paradox' is more memorable than 'the phenomenon where...'"
+        },
+        {
+          "name": "MECHANISM_EXPLAINED",
+          "purpose": "Show why the controversial claim is actually true",
+          "signals": ["Here's why this works...", "The mechanism is...", "What's actually happening is..."],
+          "requirement": "Must give the causal explanation, not just correlation.",
+          "substance_level": "heavy",
+          "length": "3-5 paragraphs",
+          "substance_type": ["technical_detail - specific features that matter", "causal_chain - why A leads to B", "concrete_example - show it working"],
+          "key_move": "PG explains what macros can do that other features can't. Technical specifics, not vague claims about 'power.'"
+        },
+        {
+          "name": "EVIDENCE_STACKED",
+          "purpose": "Pile up different types of evidence",
+          "signals": ["And that's not all...", "Another piece of evidence...", "This explains why..."],
+          "requirement": "Evidence should come from multiple sources: personal experience, logic, external validation, examples.",
+          "substance_level": "heavy",
+          "length": "4-6 paragraphs",
+          "substance_type": ["personal_evidence - your own experience", "external_validation - what others say", "logical_argument - why it must be true", "competitive_outcome - who won and why"],
+          "key_move": "Don't just give one type of evidence. Stack different types so skeptics can't dismiss all of them."
+        },
+        {
+          "name": "COMPETITIVE_FRAME",
+          "purpose": "Show the practical stakes—who wins because of this insight",
+          "signals": ["This is why...", "The companies that get this...", "While others were..."],
+          "requirement": "Must connect the technical claim to real-world outcomes.",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "key_move": "PG frames Lisp as 'secret weapon'—competitive advantage from an insight others miss."
+        },
+        {
+          "name": "CLOSE_PROVOCATIVE",
+          "purpose": "End with a challenge or prediction that follows from the argument",
+          "signals": ["If you're not doing this...", "The question is...", "I predict..."],
+          "requirement": "Close should leave reader with something to do or think about.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "test": "Does the close make the reader feel they should reconsider their assumptions?"
+        }
+      ],
+      "key_principles": [
+        "Lead with credentials relevant to the claim",
+        "State controversial claim clearly before defending",
+        "Anticipate the strongest objection",
+        "Create conceptual tools with memorable names",
+        "Stack different types of evidence",
+        "Frame as competitive advantage"
+      ],
+      "failure_modes": [
+        "Claim isn't actually controversial",
+        "Weak objections instead of steelmanned skeptic",
+        "Only one type of evidence",
+        "Conceptual tool is forgettable or unusable",
+        "No practical stakes—just abstract debate"
+      ],
+      "when_to_use": [
+        "You have a technical claim most people reject",
+        "You have experience that gives you standing",
+        "You can explain WHY you're right and skeptics are wrong",
+        "There are practical stakes to getting this right"
+      ],
+      "example_essays": [
+        "Beating the Averages (2003)",
+        "Great Hackers (2004)"
+      ]
+    },
+    "pg_meta_essay": {
+      "name": "PG Meta-Essay",
+      "description": "Essay about a form or practice (like essays themselves) that traces its history, diagnoses how it got corrupted, reveals what it was originally for, and ends with manifesto about how to recover the real thing.",
+      "source": "Paul Graham essays (The Age of the Essay, 2004)",
+      "pre_flight_checks": {
+        "do_you_have": [
+          "A form or practice that has a 'real' version most people have forgotten",
+          "Historical knowledge of how the form developed and got corrupted",
+          "A mechanism explanation for the corruption",
+          "Examples that show what the real thing looks like",
+          "A manifesto for recovering the authentic practice"
+        ],
+        "warning": "If you don't have historical depth, you have an opinion about the form, not an essay about it. Etymology and history are essential."
+      },
+      "sections": [
+        {
+          "name": "DEFINITIONAL_QUESTION",
+          "purpose": "Open by questioning what the thing really is",
+          "signals": ["What is an X, really?", "When we say X, what do we mean?", "The word X originally meant..."],
+          "requirement": "Question should suggest that the common understanding is wrong or incomplete.",
+          "substance_level": "light",
+          "length": "1-2 paragraphs",
+          "key_move": "PG opens with 'the essay is an attractive idea' but questions whether what schools call essays are really essays at all."
+        },
+        {
+          "name": "ETYMOLOGY_EXPLORED",
+          "purpose": "Trace the word back to its roots",
+          "signals": ["The word comes from...", "Originally X meant...", "Montaigne coined the term to mean..."],
+          "requirement": "Must give actual etymological information, not vague 'in olden times.'",
+          "substance_level": "medium",
+          "length": "2-3 paragraphs",
+          "substance_type": ["etymology - literal word origins", "original_practitioners - who started it and why", "original_purpose - what it was for"],
+          "key_move": "PG traces 'essay' to French 'essayer' = to try. This reveals that essays were meant to be attempts, not finished products."
+        },
+        {
+          "name": "HISTORICAL_CORRUPTION",
+          "purpose": "Show how the practice got corrupted over time",
+          "signals": ["But then...", "Somewhere along the way...", "The form got captured by..."],
+          "requirement": "Must explain WHY the corruption happened—institutional incentives, historical accidents, etc.",
+          "substance_level": "heavy",
+          "length": "4-6 paragraphs",
+          "substance_type": ["institutional_analysis - who benefited from corruption", "mechanism - how the corruption spread", "concrete_examples - what corrupted practice looks like"],
+          "key_move": "PG shows how schools turned essays into 'torture instruments' focused on structure instead of thinking."
+        },
+        {
+          "name": "REAL_THING_REVEALED",
+          "purpose": "Show what the authentic version of the practice looks like",
+          "signals": ["The real X is...", "What Montaigne actually did was...", "In its true form..."],
+          "requirement": "Must give concrete examples, not just abstract descriptions of the ideal.",
+          "substance_level": "heavy",
+          "length": "3-5 paragraphs",
+          "substance_type": ["exemplars - specific practitioners who got it right", "characteristics - what the real thing has that corrupted version lacks", "your_experience - personal encounter with the real thing"],
+          "key_move": "PG describes how Montaigne actually wrote—following his thoughts wherever they led, without predetermined structure."
+        },
+        {
+          "name": "MECHANISM_OF_THINKING",
+          "purpose": "Explain WHY the real version works—what cognitive function it serves",
+          "signals": ["The reason this matters is...", "Writing this way forces you to...", "The mechanism is..."],
+          "requirement": "Must connect the form to a cognitive or practical purpose.",
+          "substance_level": "medium-heavy",
+          "length": "3-4 paragraphs",
+          "key_move": "PG explains that writing is a way of thinking—the essay is not just a record of thought but the thinking itself."
+        },
+        {
+          "name": "CONTRAST_WITH_CORRUPTION",
+          "purpose": "Directly compare real and corrupted versions",
+          "signals": ["Compare this to...", "The difference is...", "Real X has... while corrupted X has..."],
+          "requirement": "Be specific. Show side-by-side differences.",
+          "substance_level": "medium",
+          "length": "2-4 paragraphs",
+          "key_move": "PG contrasts 'exploration' vs 'presentation'—essay as discovery vs essay as packaging of predetermined conclusions."
+        },
+        {
+          "name": "MANIFESTO_CLOSE",
+          "purpose": "End with a call to recover the authentic practice",
+          "signals": ["So here's what I propose...", "We should return to...", "The way forward is..."],
+          "requirement": "Must be actionable. Not just 'things should be different' but 'here's how to do it differently.'",
+          "substance_level": "light-medium",
+          "length": "2-3 paragraphs",
+          "key_move": "PG ends with a manifesto for what essays should be: the goal is 'to figure something out,' not 'to present what you already know.'"
+        }
+      ],
+      "key_principles": [
+        "Start with etymology—the word's origin reveals its purpose",
+        "Show the corruption historically, not just assert it",
+        "Explain WHY corruption happened (institutional incentives)",
+        "Give concrete examples of the real thing",
+        "End with actionable manifesto"
+      ],
+      "failure_modes": [
+        "No etymology or history—just assertion that current practice is wrong",
+        "Romanticizing the past without evidence",
+        "Vague manifesto without specific alternative",
+        "No mechanism for why corruption happened",
+        "No concrete examples of authentic practice"
+      ],
+      "when_to_use": [
+        "A form or practice has been corrupted by institutions",
+        "You know the history of how it got corrupted",
+        "You have experience with the authentic version",
+        "You can articulate what the form is really for"
+      ],
+      "example_essays": [
+        "The Age of the Essay (2004)",
+        "What You Can't Say (2004)"
+      ]
+    },
     "orwell_diagnostic_prescriptive": {
       "name": "Orwell Diagnostic-Prescriptive",
       "description": "Essay that diagnoses a cultural/linguistic/political problem through systematic categorization, demonstrates the problem with specimens, and concludes with concrete rules. Combines analysis with actionable prescription.",
