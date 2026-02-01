@@ -2396,13 +2396,14 @@
       "pattern": "Raymond #80 (Self-deprecating virtue reveal)",
       "topic": "meetings / organizational communication",
       "status": "complete",
-      "winner": "I'm a chronic canceller. Which means that when I see a recurring meeting on the calendar, I want to delete it. This is not a vice but a virtue. The best meetings are the ones that never happen.",
-      "why_won": "Perfect parallel to original ('best code is no code' → 'best meetings never happen'). 'Chronic canceller' sounds like genuine confession. The paradox (best = none) is both surprising and TRUE.",
+      "winner": "I'm a chronic canceller. If a recurring meeting can't justify itself in one sentence, I delete it. The best meetings are the ones that never happen.",
+      "why_won": "Natural flow without forced flip. Middle sentence adds concrete test (justify in one sentence). Ending lands the maximal paradox.",
       "losers": [
-        "B: 'I'm a terrible facilitator... end it early... best meeting is the shortest' - weaker because 'shortest' is less paradoxical than 'never happen'",
-        "C: 'I'm an impatient listener... skip the backstory' - 'skip the backstory' doesn't land as a principle"
+        "'Which means... this is not a vice but a virtue' - forced/awkward transplant of original structure",
+        "'I've learned to trust that instinct' - awkward and forced",
+        "'I cancel meetings for a living' - doesn't sound natural"
       ],
-      "principle_confirmed": "paradox-must-be-maximal"
+      "principle_learned": "natural-flow-over-structural-transplant"
     }
   ],
   "generationPrinciples": [
@@ -2501,13 +2502,13 @@
       "why_good": "Reveals the uncomfortable motive: we use 'fit' as a kindness shield to avoid saying 'not good enough'"
     },
     {
-      "name": "paradox-must-be-maximal",
-      "description": "In self-deprecating virtue reveal patterns, push the paradox to its logical extreme—'less is more' becomes 'none is best'",
-      "learned_from": "Test 14: 'best meetings are ones that never happen' won over 'shortest meeting' because the paradox is maximal",
-      "bad_example": "I'm a terrible facilitator. The best meeting is the shortest meeting.",
-      "why_bad": "'Shortest' is incremental improvement, not a true paradox",
-      "good_example": "I'm a chronic canceller. The best meetings are the ones that never happen.",
-      "why_good": "Maximal paradox: best = zero. Mirrors Raymond's 'best code is no code at all'"
+      "name": "natural-flow-over-structural-transplant",
+      "description": "When adapting a pattern, prioritize natural flow over mechanically copying structure. 'This is not a vice but a virtue' works for Raymond but sounds forced elsewhere.",
+      "learned_from": "Test 14: forced flip language rejected; natural middle sentence (concrete test) + punchy ending won",
+      "bad_example": "I'm a chronic canceller. Which means that when I see a recurring meeting, I want to delete it. This is not a vice but a virtue.",
+      "why_bad": "'This is not a vice but a virtue' is awkward transplant—sounds like you're reading a template",
+      "good_example": "I'm a chronic canceller. If a recurring meeting can't justify itself in one sentence, I delete it. The best meetings are the ones that never happen.",
+      "why_good": "Middle sentence adds concrete test; ending delivers the insight without announcing the flip"
     }
   ]
 }
