@@ -915,6 +915,34 @@
         "position": "middle-essay explanation",
         "bestFor": "Sustaining energy in explanatory sections by giving abstract concepts persistent character"
       }
+    },
+    {
+      "id": 50,
+      "author": "Paul Ford",
+      "source": "What is Code? (Bloomberg)",
+      "passage": "It takes a good mathematician to be a computer scientist, but a middling one to be an effective programmer. Until you start dealing with millions of people on a network or you need to blur or sharpen a million photos quickly, you can just use the work of other people. When it gets real—that's when you break out the computer science.",
+      "feedback": "Accept - mapping must be sharp: mathematician→computer scientist vs middling→effective programmer",
+      "essaySection": "BODY",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [18, 29, 12],
+        "cadence": "medium-LONG-short",
+        "beat": "Surprising permission → elaborated boundary → punchy reversal"
+      },
+      "structure": {
+        "template": "It takes a good [high credential] to be a [elite role], but a middling one to be an effective [practical role]. Until you start [scale condition], you can just [shortcut]. When it gets real—that's when you [bring in the elite skill].",
+        "slots": ["high credential", "elite role", "practical role", "scale condition", "shortcut", "elite skill"],
+        "technique": "Permission-granting deflation with clear boundary"
+      },
+      "emotionalWeight": {
+        "dryVersion": "You don't need advanced skills for most practical work; only scale demands rigor.",
+        "technique": "The word 'middling' does the work—unexpected honesty that relieves reader anxiety"
+      },
+      "usage": {
+        "position": "middle-essay explanation",
+        "bestFor": "Lowering barriers while maintaining respect for expertise; the mapping must be sharp (elite vs practical)"
+      },
+      "caution": "Mapping must be sharp and parallel - the contrast between credentials needs to be crisp"
     }
   ],
   "rejected": [
