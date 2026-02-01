@@ -2582,6 +2582,26 @@
           }
         ],
         "usage": "End essays in reader's head, not on page"
+      },
+      "embodied_emotional_detail": {
+        "description": "Emotional details that don't just illustrate the idea but embody it — the detail IS the argument made concrete",
+        "core_insight": "The most powerful emotional details do double duty: they create feeling AND prove the thesis simultaneously. The detail should be the idea in miniature.",
+        "example": {
+          "passage": "After my mother died, I wished I'd spent more time with her. I lived as if she'd always be there. And in her typical quiet way she didn't remind me.",
+          "source": "Life is Short",
+          "essay_idea": "We wait for something to scream at us that we're running out of time, but nothing does.",
+          "why_it_works": "Her 'quiet way' IS the essay's argument. She didn't scream. She didn't remind him. The detail embodies the mechanism of loss the essay describes — we lose things quietly, without warning.",
+          "double_duty": {
+            "emotional_weight": "Reveals their relationship. Relatable character detail (others have quiet people in their lives). Specific and tender.",
+            "proves_thesis": "Her quietness is exactly the problem the essay identifies. The detail isn't decoration — it's evidence."
+          }
+        },
+        "contrast": {
+          "weaker_version": "'I wish I'd spent more time with her' — true, personal, but doesn't embody the idea. Just states regret.",
+          "why_weaker": "Generic regret could attach to any essay about loss. The 'quiet way' detail could ONLY work in an essay about how nothing screams at us to pay attention."
+        },
+        "test": "Ask: could this emotional detail work in any essay, or does it only work in THIS essay because it embodies THIS idea?",
+        "usage": "When grounding abstract arguments in personal experience — find the detail that IS the argument, not just an example of it"
       }
     },
     "structural_patterns": {
