@@ -1118,6 +1118,15 @@
       "why_won": "Connected pairs: job→skills (you can end access but can't take what I learned), research→imagination (you can pause progress but can't unknow what's possible)",
       "losers": ["AI governance versions (policy trying to govern what it's designed to govern - no defiance)", "creative rejection (rejection doesn't try to undo writing)", "model shutdown (no human inalienable)"],
       "principle_confirmed": "connected-pairs-for-defiance"
+    },
+    {
+      "test_id": 11,
+      "pattern": "Simler/Hanson #29 (institutional metaphor with setup)",
+      "topic": "AI strategy",
+      "winner": "Most AI strategies serve two masters: the future and the present. The future gets the vision. The present gets the budget. The strategy deck is not the architecture. It's the rendering—a beautiful image of a building no one has agreed to fund.",
+      "why_won": "Setup exposes dual purpose, then metaphor (architecture vs rendering) deflates with unexpected domain (real estate). Rendering = beautiful but unfunded.",
+      "losers": ["alibi version (too cliché)", "press conference (expected)", "postcard (wrong timing—postcards are retrospective, roadmaps are prospective)"],
+      "principle_confirmed": "metaphor-timing-must-match"
     }
   ],
   "generationPrinciples": [
