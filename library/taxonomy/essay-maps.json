@@ -1947,6 +1947,18 @@
           "pattern": "topic_sentence_restatement",
           "examples": ["Topic: 'Dogs are loyal.' Next sentence: 'The loyalty of dogs is well-known.'"],
           "repair": "Delete the restatement. Move to evidence or elaboration."
+        },
+        {
+          "pattern": "telling_reader_what_they_think",
+          "examples": ["Most people treat X as...", "You already know...", "Everyone knows...", "You've probably noticed..."],
+          "why_it_fails": "Presumptuous and hollow. Either wrong (reader doesn't think that) or patronizing (reader knows you're setting up a point). Has a distinctly AI quality.",
+          "repair": "Start with your own experience or the substance itself. Don't ventriloquize the reader."
+        },
+        {
+          "pattern": "forced_drama",
+          "examples": ["The math is brutal.", "The truth is harsh.", "The reality is stark.", "The implications are staggering."],
+          "why_it_fails": "Tells the reader how to feel instead of letting the content create the feeling. Drama must be earned by what precedes it, not asserted.",
+          "repair": "Delete the dramatic frame. Let the substance land on its own. If it doesn't hit without the frame, the substance is weak."
         }
       ],
       "permitted_exceptions": [
