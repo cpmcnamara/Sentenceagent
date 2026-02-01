@@ -2305,6 +2305,56 @@
             "Throat-clearing before getting to the point"
           ],
           "repair": "Cut ruthlessly. If a sentence can be removed without loss, remove it."
+        },
+        {
+          "name": "development_depth",
+          "question": "Is this section developed enough to EARN its claims?",
+          "failure_signals": [
+            "Section makes claims without enough evidence to support them",
+            "Section follows structure but feels thin—correctly shaped but empty",
+            "Section could be expanded with concrete detail but chooses abstraction",
+            "Reader would need to take claims on faith rather than being shown",
+            "Section is the right LENGTH but lacks the right DENSITY of substance"
+          ],
+          "development_tests": {
+            "evidence_per_claim": "Does every major claim have at least one concrete example?",
+            "mechanism_not_just_assertion": "Does the section explain HOW, not just assert THAT?",
+            "specificity_test": "Could the section be made more specific? Numbers instead of 'many'? Names instead of 'people'? Quotes instead of summaries?",
+            "earned_conclusion": "Does the section's conclusion follow from what preceded it, or does it leap to an unearned claim?"
+          },
+          "repair": "Identify where the section asks readers to believe without showing. Add evidence, mechanism, specificity. If you can't add depth, the claim may be unsupportable."
+        },
+        {
+          "name": "thesis_evidence_alignment",
+          "question": "Does the evidence in this section actually prove what you're claiming?",
+          "failure_signals": [
+            "Evidence is related to the thesis but doesn't directly prove it",
+            "Evidence proves something ADJACENT to the claim but not the claim itself",
+            "Evidence would support a DIFFERENT thesis just as well",
+            "The thesis is more ambitious than the evidence supports"
+          ],
+          "alignment_tests": {
+            "direct_support": "If I showed only this evidence to a reader, would they conclude what I'm claiming?",
+            "alternative_thesis": "Could this evidence equally support a different thesis? If so, my argument isn't tight.",
+            "scope_match": "Am I claiming 'all X' but proving 'some X'? Am I claiming 'this causes that' but proving 'this correlates with that'?"
+          },
+          "repair": "Either narrow the thesis to match what the evidence proves, or add evidence that proves the full thesis."
+        },
+        {
+          "name": "craft_technique_presence",
+          "question": "Does this section use the specific craft techniques the pattern requires?",
+          "applies_to": "Sections with craft_notes or technique requirements in the pattern",
+          "failure_signals": [
+            "Section follows structural outline but ignores craft_notes",
+            "Techniques are mentioned in pattern but absent from execution",
+            "Section does what pattern SAYS but not what pattern SHOWS"
+          ],
+          "method": "For each craft technique in the pattern's craft_notes, verify it appears in the section.",
+          "examples": {
+            "orwell_diagnostic": "Are category names physical? Is parody source external? Are there multiple degraded images?",
+            "orwell_narrative": "Is opening compressed? Is internal conflict ugly? Is action extended? Is final admission vain?"
+          },
+          "repair": "Review craft_notes for this pattern. Identify missing techniques. Add them or acknowledge why they don't apply."
         }
       ]
     },
@@ -2396,6 +2446,28 @@
           "tolerance": "Now tighten. Every section must serve the whole."
         },
         {
+          "stage": "development_pass",
+          "focus": "Verify claims are earned, not just made",
+          "coherence_checks": ["section_coherence.development_depth", "section_coherence.thesis_evidence_alignment"],
+          "questions": [
+            "Does each section have enough evidence to support its claims?",
+            "Does the evidence actually prove what I'm claiming, not just touch on the topic?",
+            "Is the thesis matched by what the essay actually demonstrates?"
+          ],
+          "tolerance": "No unearned claims. If evidence doesn't prove the thesis, either add evidence or narrow thesis."
+        },
+        {
+          "stage": "craft_technique_pass",
+          "focus": "Verify pattern-specific craft moves are present",
+          "coherence_checks": ["section_coherence.craft_technique_presence", "pattern_specific_coherence.[pattern_name]"],
+          "questions": [
+            "For Orwell diagnostic: Are categories physical? Is parody external? Are there multiple degraded images?",
+            "For Orwell narrative: Is opening compressed? Is conflict ugly? Is action extended? Is consequence witnessed long? Is final admission vain?",
+            "Does the essay use the TECHNIQUES, not just follow the OUTLINE?"
+          ],
+          "tolerance": "Structure without technique produces correct-but-dead essays. Technique is not optional."
+        },
+        {
           "stage": "third_pass",
           "focus": "Add substance where needed",
           "coherence_checks": ["section_coherence.substance_delivery", "essay_coherence.evidence_distribution"],
@@ -2418,7 +2490,9 @@
         "Cutting a section creates a new gap that needs bridging",
         "Adding substance to one section unbalances another",
         "A motif repair introduces a new motif that needs tracking",
-        "Rhythm changes reveal new dead weight"
+        "Rhythm changes reveal new dead weight",
+        "Development pass reveals claims not supported by evidence",
+        "Craft technique pass reveals missing techniques that require new content"
       ]
     },
 
@@ -2907,6 +2981,108 @@
           "question": "Do lessons draw on both domains?",
           "check": "Each lesson in LESSONS_FROM_ANALOGY should reference both the source and target domain.",
           "failure_pattern": "Lessons that could be made without the analogy."
+        }
+      },
+      "orwell_diagnostic_prescriptive": {
+        "description": "Coherence checks specific to the Politics and the English Language pattern",
+        "specimen_quality": {
+          "question": "Are specimens long enough and varied enough to be self-convicting?",
+          "checks": [
+            "Each specimen is at least 2-3 sentences (not fragments)",
+            "Specimens show DIFFERENT manifestations of the problem",
+            "Specimens are 'fairly representative' not cherry-picked extremes"
+          ],
+          "failure_pattern": "Short, similar specimens that require explanation rather than convicting themselves."
+        },
+        "category_physicality": {
+          "question": "Are category names physical, concrete, picturable?",
+          "test": "For each category name, ask: can I PICTURE this? 'Dying metaphors' (yes), 'Communication failures' (no).",
+          "failure_pattern": "Abstract category names that could apply to any domain."
+        },
+        "parody_devastation": {
+          "question": "Does the parody use an EXTERNAL beloved source?",
+          "checks": [
+            "Source is from OUTSIDE the essay's subject (Ecclesiastes, not the novel)",
+            "Source is beloved/canonical (reader already loves it)",
+            "Translation INTO bad style makes reader FEEL the loss"
+          ],
+          "failure_pattern": "Parody using internal material (translating within the subject) doesn't prove the style is the problem."
+        },
+        "mechanism_image_density": {
+          "question": "Does MECHANISM_ANALYSIS have multiple degraded physical images?",
+          "requirement": "At least 3-4 physical images that match the degradation being described (industrial, broken, mechanical, blocked).",
+          "failure_pattern": "Abstract mechanism explanation with no physical grounding, or single borrowed image (henhouse)."
+        },
+        "political_specificity": {
+          "question": "Does POLITICAL_CONNECTION show graphic reality before clean euphemism?",
+          "structure": "Reality (graphic, concrete, picturable) → Language that hides it (clean, abstract)",
+          "requirement": "List at least 3-4 euphemisms that do this work in the domain.",
+          "failure_pattern": "Abstract political claims ('language obscures reality') without specific graphic examples."
+        },
+        "rule_compression": {
+          "question": "Is each rule memorable in one sentence?",
+          "test": "Could someone remember this rule without looking at the page? Max 20 words.",
+          "failure_pattern": "Rules that need explanatory paragraphs aren't rules yet—they're commentary."
+        },
+        "external_analogy": {
+          "question": "Does REVERSIBILITY_THESIS use an analogy from OUTSIDE the subject?",
+          "test": "Can you state the analogy without mentioning the essay's subject? (drinking/failure, not monstrous language/monsters)",
+          "failure_pattern": "Internal analogy (using your subject's own material) doesn't prove the pattern is general."
+        },
+        "self_implication_verifiable": {
+          "question": "Is SELF_IMPLICATION specific and checkable?",
+          "test": "Does the author point to specific failures in their own text that the reader can verify?",
+          "failure_pattern": "'I'm not perfect either' is hollow. 'I've used the word creature throughout' is verifiable."
+        }
+      },
+      "orwell_narrative_insight": {
+        "description": "Coherence checks specific to the Shooting an Elephant pattern",
+        "opening_compression": {
+          "question": "Does SITUATIONAL_CONTEXT compress place, position, and irony into 1-2 sentences?",
+          "benchmark": "Orwell: 'In Moulmein, in lower Burma, I was hated by large numbers of people — the only time in my life that I have been important enough for this to happen to me.'",
+          "failure_pattern": "Multiple paragraphs of setup before the ironic self-positioning arrives."
+        },
+        "ugliness_test": {
+          "question": "Does INTERNAL_CONFLICT_STATED admit a feeling you're NOT SUPPOSED TO HAVE?",
+          "test": "Would you be embarrassed if this admission were quoted at a job interview?",
+          "benchmark": "Orwell's bayonet admission: 'the greatest joy in the world would be to drive a bayonet into a Buddhist priest's guts.'",
+          "failure_pattern": "Sanctioned feelings ('I had mixed feelings', 'I was ambivalent') are not ugly. 'I was relieved when they suffered' is ugly."
+        },
+        "visceral_detail": {
+          "question": "Does RISING_ACTION include at least one moment of visceral physical description?",
+          "test": "Does the physical detail make the reader uncomfortable? Specificity creates visceral response, not gore.",
+          "benchmark": "The dead coolie's skinned back, teeth grinning with 'unendurable agony'.",
+          "parenthetical_technique": "Available: '(Never tell me, by the way, that X)' — breaking frame to insist on physical truth.",
+          "failure_pattern": "'He looked different' is summary. 'Flakes of skin fell from his neck onto his collar' is visceral."
+        },
+        "pressure_visibility": {
+          "question": "Is EXTERNAL_PRESSURE countable, visible, physical?",
+          "test": "Can you COUNT the pressure (two thousand wills)? Can you SEE it (faces, eyes, bodies)?",
+          "note": "Pressure can push toward action OR inaction—both valid. Key is visibility.",
+          "failure_pattern": "'I felt obligated' is abstract. 'Fourteen pairs of eyes' is visible."
+        },
+        "realization_emergence": {
+          "question": "Does THE_REALIZATION emerge from narrative pressure rather than being announced?",
+          "test": "Delete explicit connection to external text. Does the insight still work?",
+          "failure_pattern": "'I understood what X is actually about' ANNOUNCES rather than DISCOVERS."
+        },
+        "action_duration": {
+          "question": "Does THE_ACTION take PARAGRAPHS, not sentences?",
+          "benchmark": "Orwell's shooting: 4-5 paragraphs of extended, visceral detail.",
+          "minimum": "At least 3 paragraphs. Break action into micro-moments.",
+          "failure_pattern": "'I intervened' is summary. The reader must EXPERIENCE the action in real time."
+        },
+        "consequence_staying": {
+          "question": "Does CONSEQUENCE_WITNESSED stay with the consequence rather than cutting away?",
+          "benchmark": "Orwell watches the elephant die for half an hour.",
+          "requirement": "Multiple moments of observation, extended duration, physical detail of each encounter.",
+          "failure_pattern": "'I saw him once' is cutting away. The pattern requires DURATION."
+        },
+        "final_vanity": {
+          "question": "Is the FINAL_ADMISSION about appearance (vanity) rather than feeling (conscience)?",
+          "benchmark": "'solely to avoid looking a fool' — external judgment, no dignity.",
+          "hierarchy": "Appearance > feeling. 'Looking bad' is pettier than 'feeling bad'. Convenience > conscience. Laziness is worse than fear.",
+          "failure_pattern": "'I did it to avoid feeling like a coward' has too much dignity. Find the vainer version."
         }
       }
     },
