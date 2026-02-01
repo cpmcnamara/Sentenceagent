@@ -1403,5 +1403,287 @@
         "A New Kind of Science (2002) - core chapters"
       ]
     }
+  },
+  "coherence_agent": {
+    "description": "Multi-pass coherence checking system that ensures section-by-section flow and overall essay unity. Runs iteratively to catch patterns and eliminate dead weight.",
+    "philosophy": "Every word must advance the grand theme. No filler. No tangents that don't return. The essay should feel like a single sustained argument, not a collection of related paragraphs.",
+
+    "section_coherence": {
+      "description": "Checks run after completing each section",
+      "checks": [
+        {
+          "name": "backward_connection",
+          "question": "Does this section's opening explicitly connect to the previous section's closing?",
+          "failure_signals": [
+            "Section opens with entirely new topic",
+            "No callback to previous section's key term or idea",
+            "Reader would be confused about why we're here now"
+          ],
+          "repair": "Add transitional sentence that bridges. Use previous section's closing keyword in opening."
+        },
+        {
+          "name": "forward_momentum",
+          "question": "Does this section end in a way that makes the next section feel inevitable?",
+          "failure_signals": [
+            "Section ends on a resolved note when more is coming",
+            "No question raised, no tension created",
+            "Reader feels they could stop here"
+          ],
+          "repair": "End with implication, question, or tension that demands continuation."
+        },
+        {
+          "name": "grand_theme_service",
+          "question": "How does this section serve the essay's grand theme?",
+          "failure_signals": [
+            "Section could be removed without losing the argument",
+            "Topic is adjacent but not essential",
+            "Section is 'interesting' but not load-bearing"
+          ],
+          "repair": "Either make connection explicit or cut section entirely."
+        },
+        {
+          "name": "substance_delivery",
+          "question": "Does this section deliver the substance level promised by the essay map?",
+          "failure_signals": [
+            "Heavy section with no concrete examples",
+            "Heaviest section without mechanism/evidence",
+            "Light section that bloats with unnecessary detail"
+          ],
+          "repair": "Add substance (examples, evidence, mechanism) or cut filler to match required level."
+        },
+        {
+          "name": "dead_weight_scan",
+          "question": "Is every sentence advancing the section's purpose?",
+          "failure_signals": [
+            "Sentences that merely restate previous point",
+            "Qualifications that add nothing ('It's worth noting that...')",
+            "Adjectives/adverbs doing work that verbs should do",
+            "Throat-clearing before getting to the point"
+          ],
+          "repair": "Cut ruthlessly. If a sentence can be removed without loss, remove it."
+        }
+      ]
+    },
+
+    "essay_coherence": {
+      "description": "Checks run after completing full draft",
+      "passes": [
+        {
+          "pass_number": 1,
+          "name": "thematic_thread",
+          "question": "Can you trace a single argument from opening to close?",
+          "method": "Write one sentence per section that captures its contribution to the thesis. These sentences should form a coherent paragraph.",
+          "failure_signals": [
+            "Summary paragraph has logical gaps",
+            "Some sections don't contribute to summary",
+            "Thesis at end doesn't match thesis at start"
+          ],
+          "repair": "Identify the section that breaks the thread. Either rewrite to connect or remove."
+        },
+        {
+          "pass_number": 2,
+          "name": "motif_tracking",
+          "question": "What images, phrases, or concepts recur throughout?",
+          "method": "List every metaphor, key term, and image. Map where each appears.",
+          "success_pattern": "Key motifs appear in opening, middle, and close. Metaphors are extended, not just mentioned.",
+          "failure_signals": [
+            "Metaphor introduced then abandoned",
+            "Key term appears only once",
+            "No callbacks to opening in close"
+          ],
+          "repair": "Either develop the motif (use it again, extend it) or remove it entirely."
+        },
+        {
+          "pass_number": 3,
+          "name": "rhythm_and_pacing",
+          "question": "Does the essay breathe? Are there moments of acceleration and rest?",
+          "method": "Map sentence length and paragraph length across essay. Plot the 'energy curve'.",
+          "success_pattern": "Variation in pace. Heavy sections with long paragraphs, punchy sections with short. Building intensity toward key insights.",
+          "failure_signals": [
+            "Monotonous paragraph length throughout",
+            "All sections feel the same intensity",
+            "No acceleration toward climax"
+          ],
+          "repair": "Restructure sentence/paragraph lengths to create rhythm. Use cadence archetypes."
+        },
+        {
+          "pass_number": 4,
+          "name": "evidence_distribution",
+          "question": "Is evidence concentrated in the right places?",
+          "method": "Highlight every concrete example, number, quote, or case study. Check distribution.",
+          "success_pattern": "Evidence heavy in MECHANISM/HEAVIEST sections. Light sections stay light. Evidence supports claims, doesn't just decorate.",
+          "failure_signals": [
+            "Heavy sections without evidence",
+            "Evidence in wrong places (light sections)",
+            "Claims without support in critical sections"
+          ],
+          "repair": "Move evidence to where it's needed. Add evidence to unsupported claims in heavy sections."
+        },
+        {
+          "pass_number": 5,
+          "name": "word_elimination",
+          "question": "Which words can be cut without loss?",
+          "method": "Read each sentence. For each word, ask: does removing it change the meaning?",
+          "targets": [
+            "Adverbs (very, really, quite, somewhat)",
+            "Hedge words (perhaps, maybe, might, could)",
+            "Filler phrases (it is worth noting, it should be mentioned, the fact that)",
+            "Redundant adjectives (completely finished, very unique)",
+            "Weak verbs + adverb (ran quickly → sprinted)"
+          ],
+          "exception": "Hedges are appropriate when genuine uncertainty exists. Keep them for intellectual honesty, cut them for false modesty."
+        }
+      ]
+    },
+
+    "iteration_protocol": {
+      "description": "How to run multiple coherence passes",
+      "sequence": [
+        {
+          "stage": "first_draft",
+          "focus": "Get the structure right",
+          "coherence_checks": ["section_coherence.backward_connection", "section_coherence.forward_momentum"],
+          "tolerance": "Allow rough edges. Focus on architecture."
+        },
+        {
+          "stage": "second_pass",
+          "focus": "Ensure thematic unity",
+          "coherence_checks": ["essay_coherence.thematic_thread", "essay_coherence.motif_tracking"],
+          "tolerance": "Now tighten. Every section must serve the whole."
+        },
+        {
+          "stage": "third_pass",
+          "focus": "Add substance where needed",
+          "coherence_checks": ["section_coherence.substance_delivery", "essay_coherence.evidence_distribution"],
+          "tolerance": "Heavy sections must be heavy. Light sections must stay light."
+        },
+        {
+          "stage": "fourth_pass",
+          "focus": "Eliminate dead weight",
+          "coherence_checks": ["section_coherence.dead_weight_scan", "essay_coherence.word_elimination"],
+          "tolerance": "Ruthless cutting. If it doesn't earn its place, it goes."
+        },
+        {
+          "stage": "final_pass",
+          "focus": "Rhythm and flow",
+          "coherence_checks": ["essay_coherence.rhythm_and_pacing"],
+          "tolerance": "Fine-tune pacing. Ensure the essay breathes."
+        }
+      ],
+      "when_to_iterate_again": [
+        "Cutting a section creates a new gap that needs bridging",
+        "Adding substance to one section unbalances another",
+        "A motif repair introduces a new motif that needs tracking",
+        "Rhythm changes reveal new dead weight"
+      ]
+    },
+
+    "grand_theme_tests": {
+      "description": "Questions to verify every element serves the whole",
+      "tests": [
+        {
+          "name": "deletion_test",
+          "question": "If I delete this paragraph/section, does the essay still work?",
+          "interpretation": "If yes, consider cutting. If no, it's load-bearing—protect it."
+        },
+        {
+          "name": "stranger_test",
+          "question": "Would someone who knows nothing about the topic understand why this is here?",
+          "interpretation": "If they'd be confused about the connection, make it explicit."
+        },
+        {
+          "name": "ending_echo_test",
+          "question": "Does the ending feel like it completes something the opening started?",
+          "interpretation": "Reader should feel 'of course it ends here'—inevitable but not predictable."
+        },
+        {
+          "name": "single_sentence_test",
+          "question": "Can you summarize the essay in one sentence?",
+          "interpretation": "If you can't, the essay may be trying to do too much. If you can but sections don't fit the summary, those sections are candidates for cutting."
+        },
+        {
+          "name": "velocity_test",
+          "question": "At any point, would a reader want to skim?",
+          "interpretation": "If yes, that section is losing them. Either add substance (make it interesting) or cut (it's not earning its length)."
+        }
+      ]
+    },
+
+    "anti_filler_rules": {
+      "description": "Specific patterns that indicate word filler rather than substance",
+      "forbidden_patterns": [
+        {
+          "pattern": "throat_clearing",
+          "examples": ["In order to understand...", "Before we begin...", "It's important to note that...", "As we shall see..."],
+          "repair": "Delete and start with the actual point."
+        },
+        {
+          "pattern": "false_profundity",
+          "examples": ["At the end of the day...", "When all is said and done...", "In the grand scheme of things..."],
+          "repair": "Delete. These add nothing."
+        },
+        {
+          "pattern": "hedge_stacking",
+          "examples": ["It might perhaps be possible that...", "One could potentially argue that..."],
+          "repair": "Pick one hedge or none. State the claim."
+        },
+        {
+          "pattern": "empty_intensifiers",
+          "examples": ["very unique", "extremely important", "absolutely essential", "completely finished"],
+          "repair": "The base word is enough. Delete the intensifier."
+        },
+        {
+          "pattern": "unnecessary_attribution",
+          "examples": ["It is widely believed that...", "Many experts agree that...", "Studies have shown that..."],
+          "repair": "Either cite specifically or state directly. Vague attribution is weaker than direct claim."
+        },
+        {
+          "pattern": "question_then_immediate_answer",
+          "examples": ["What is the answer? The answer is...", "How do we solve this? We solve it by..."],
+          "repair": "Cut the question if answer immediately follows. Rhetorical questions need space."
+        },
+        {
+          "pattern": "topic_sentence_restatement",
+          "examples": ["Topic: 'Dogs are loyal.' Next sentence: 'The loyalty of dogs is well-known.'"],
+          "repair": "Delete the restatement. Move to evidence or elaboration."
+        }
+      ],
+      "permitted_exceptions": [
+        "Rhetorical repetition for emphasis (must be clearly intentional)",
+        "Summary sentences at end of long sections (earned restatement)",
+        "Hedges when genuine uncertainty exists (intellectual honesty)"
+      ]
+    },
+
+    "coherence_signals": {
+      "description": "Patterns that indicate good coherence",
+      "positive_signals": [
+        {
+          "signal": "callback_keywords",
+          "description": "Later sections explicitly use keywords from earlier sections",
+          "example": "If OPENING uses 'cathedral', MIDDLE should reference 'cathedral' again"
+        },
+        {
+          "signal": "question_answer_chains",
+          "description": "Questions raised in one section are answered in the next",
+          "example": "Section ends 'But how?' → Next section opens with mechanism"
+        },
+        {
+          "signal": "consequence_chains",
+          "description": "'If X, then Y' where Y becomes the subject of next section",
+          "example": "'If this is true, then we'd expect...' → Next section shows expectation"
+        },
+        {
+          "signal": "bookend_structure",
+          "description": "Closing returns to opening with new understanding",
+          "example": "Opening image reappears in close, now transformed by the argument"
+        },
+        {
+          "signal": "progressive_reveal",
+          "description": "Each section adds to a picture that only completes at the end",
+          "example": "Reader couldn't guess the ending from the opening, but ending feels inevitable"
+        }
+      ]
+    }
   }
 }
