@@ -292,8 +292,101 @@
         "Follow surprising threads rather than staying on track",
         "Meta-awareness without being annoying - you can reference the essay itself",
         "MECHANISM section is the heart - spend the most time here",
-        "Substance comes from historical examples, personal admissions, concrete numbers, and mechanism explanations"
+        "Substance comes from historical examples, personal admissions, concrete numbers, and mechanism explanations",
+        "Use colloquial language at emotional peaks - 'dumber' not 'less intelligent'",
+        "Convert abstractions to concrete calculations - '52 more Christmases' not 'limited time'"
       ],
+      "long_essay_techniques": {
+        "description": "Techniques for essays over 5000 words",
+        "numbered_skeleton": {
+          "description": "Use explicit numbering as structural spine for mega-essays",
+          "pattern": [
+            "The first step is to [X].",
+            "Once you've done that, the next step is to [Y].",
+            "The third step is to [Z]."
+          ],
+          "benefit": "Allows 8000+ words without losing the reader. Numbers create progress feeling.",
+          "example_essay": "How to Do Great Work (2023)"
+        },
+        "cascading_discovery": {
+          "description": "Each answer becomes the next question",
+          "pattern": "Instead of one question → one discovery, chain discoveries: answer leads to new question leads to deeper answer.",
+          "benefit": "Creates sense of progressive revelation across long essay."
+        },
+        "mechanism_clusters": {
+          "description": "Group related advice into clusters with internal logic",
+          "pattern": "Within large MECHANISM sections, create sub-topics that each follow their own mini-discovery.",
+          "benefit": "Breaks monolithic sections into digestible units."
+        }
+      },
+      "rhythm_techniques": {
+        "expansion_contraction": {
+          "description": "Build up with detail, then crush to short punch",
+          "examples": [
+            "Tim Cook doesn't send you a hand-written note after you buy a laptop. He can't. But you can.",
+            "[Extended reasoning about complexity]. Three words: [sharp point]."
+          ],
+          "use_when": "Landing key insights after extended examples"
+        },
+        "anaphora_cascade": {
+          "description": "Repeat opening phrase 2-4 times, then resolve",
+          "examples": [
+            "It's about being good at something that matters. It's about being good at something few people can be good at. It's about being the one who makes the breakthrough."
+          ],
+          "use_when": "Building emphasis at emotional peaks"
+        },
+        "triple_imperative": {
+          "description": "Three commands, each shorter than the last",
+          "examples": [
+            "Don't wait before saying what you need to say. Don't wait to tell someone you love them. Don't wait to apologize."
+          ],
+          "use_when": "Closing sections with actionable urgency"
+        },
+        "ten_word_hit": {
+          "description": "Core insight compressed to 10 words or fewer",
+          "examples": [
+            "The more labels you have for yourself, the dumber they make you."
+          ],
+          "use_when": "Crystallizing essay's key takeaway"
+        }
+      },
+      "emotional_weight_techniques": {
+        "concrete_calculation": {
+          "description": "Convert abstract concepts to specific numbers",
+          "examples": [
+            "Bad: 'Life is short'",
+            "Good: 'You only get 52 more Christmases with your parents'",
+            "Bad: 'Meetings waste time'",
+            "Good: 'A single meeting can blow a whole afternoon'"
+          ],
+          "mechanism": "Numbers make abstract undeniable. Can't argue with arithmetic."
+        },
+        "validation_hook": {
+          "description": "Validate reader's struggle before giving advice",
+          "examples": [
+            "Actually startups take off because the founders make them take off.",
+            "You're not failing - this is how it works."
+          ],
+          "placement": "Early in essay, before heavy advice sections"
+        },
+        "stakes_escalation": {
+          "description": "Increase stakes vocabulary across essay",
+          "pattern": [
+            "Early: 'This is interesting'",
+            "Middle: 'This was almost fatal'",
+            "Late: 'This is about your life'"
+          ],
+          "mechanism": "Reader invests more as essay invests more"
+        },
+        "direct_challenge_close": {
+          "description": "End with question reader must answer",
+          "examples": [
+            "Ask yourself: what are you waiting for?",
+            "Which one are you?"
+          ],
+          "mechanism": "Essay ends in reader's head, not on page"
+        }
+      },
       "failure_modes": [
         "Starting with conclusion disguised as question",
         "Fake wrong turns (you knew the answer all along)",
@@ -1528,6 +1621,88 @@
         "The Empirical Metamathematics of Euclid and Beyond (2020)",
         "A New Kind of Science (2002) - core chapters"
       ]
+    },
+    "pg_one_idea": {
+      "name": "PG One Idea",
+      "description": "Ultra-compact essay built around a SINGLE distinction or insight. Commits completely to one idea, follows ALL implications, ends when implications end. Typically 800-1500 words.",
+      "source": "Paul Graham essays (Keep Your Identity Small, Maker's Schedule Manager's Schedule)",
+      "sections": [
+        {
+          "name": "OBSERVATION",
+          "purpose": "State the phenomenon that prompted the insight",
+          "signals": ["I finally realized today why...", "One reason X...", "When I finished X, I kept thinking about Y..."],
+          "requirement": "Must be specific and concrete, not abstract musing",
+          "substance_level": "light",
+          "substance_type": "phenomenon_stated - what you noticed",
+          "transition_to_next": "Move immediately to the naming",
+          "length": "1-2 paragraphs"
+        },
+        {
+          "name": "THE_DISTINCTION",
+          "purpose": "Name the distinction/insight that explains the observation",
+          "signals": ["There are two types of...", "What X and Y have in common is...", "I think what's happening is..."],
+          "requirement": "The naming IS the essay. Everything else follows from this.",
+          "naming_requirement": "Give the distinction a memorable name. 'Maker's schedule vs manager's schedule' is the essay. Without the name, there is no essay.",
+          "substance_level": "medium",
+          "substance_type": ["category_definition - what the distinction is", "mechanism_brief - why it matters"],
+          "transition_to_next": "State the distinction, then immediately show consequences",
+          "length": "1-2 paragraphs"
+        },
+        {
+          "name": "IMPLICATIONS",
+          "purpose": "Follow the distinction to its logical conclusions",
+          "signals": ["This explains why...", "When you're operating on the X schedule...", "By definition they're..."],
+          "requirement": "Don't stop at the first implication. Follow until implications run out.",
+          "substance_level": "heavy",
+          "substance_type": [
+            "concrete_consequences - what the distinction predicts",
+            "explanation_power - what it explains",
+            "personal_example - from your own experience"
+          ],
+          "transition_to_next": "When implications are exhausted, close",
+          "length": "3-6 paragraphs - bulk of essay is here"
+        },
+        {
+          "name": "CLOSE",
+          "purpose": "Land with the core insight restated or its significance",
+          "signals": ["The best plan is to...", "So the answer is...", ""],
+          "requirement": "Must land hard. Often a single sentence.",
+          "final_sentence_patterns": [
+            "[Core insight in 10 words or fewer].",
+            "The best plan is to [action].",
+            "That's what [X] is really about."
+          ],
+          "substance_level": "light",
+          "substance_type": "insight_crystallized - the sharpest version",
+          "length": "1 paragraph, often 1-2 sentences"
+        }
+      ],
+      "key_principles": [
+        "ONE idea. Not two, not three. One.",
+        "The naming is everything - if you can't name it memorably, you don't have an essay",
+        "Follow ALL implications - don't leave threads unexplored",
+        "End when the idea is exhausted - no padding",
+        "Colloquial language preferred - 'dumber' not 'less intelligent'",
+        "Length comes from implications, not elaboration"
+      ],
+      "failure_modes": [
+        "Trying to cover more than one idea",
+        "Distinction without a memorable name",
+        "Stopping at first implication",
+        "Padding to reach arbitrary word count",
+        "Abstract language when concrete would work"
+      ],
+      "when_to_use": [
+        "You have ONE sharp insight",
+        "The insight can be named in a phrase",
+        "Following implications fills 800-1500 words naturally",
+        "You don't need extensive evidence - the insight is self-evident once named"
+      ],
+      "example_essays": [
+        "Keep Your Identity Small (2009)",
+        "Maker's Schedule, Manager's Schedule (2009)",
+        "Cities and Ambition (2008)"
+      ]
     }
   },
   "coherence_agent": {
@@ -1921,6 +2096,165 @@
       ]
     },
 
+    "emotional_arc_checks": {
+      "description": "Tests for emotional weight and placement, derived from Paul Graham essay analysis",
+      "philosophy": "Great essays have emotional architecture, not just logical architecture. Stakes must be established and escalated.",
+      "tests": [
+        {
+          "name": "emotional_beat_test",
+          "question": "Does the essay have identifiable emotional beats at opening, middle, and close?",
+          "expected_pattern": {
+            "opening": "Stakes established - why should the reader care?",
+            "middle": "Intensity peak - the difficult truth, the devastating example",
+            "close": "Resolution - comfort, challenge, or resonance"
+          },
+          "failure_signals": [
+            "Flat emotional tone throughout",
+            "Intensity peak at wrong location (opening or close instead of middle)",
+            "No stakes established - reader never learns why this matters",
+            "All emotion, no logic (opposite problem)"
+          ],
+          "repair": "Identify what's at stake for the reader and make it explicit early. Build intensity toward the middle. End with resonance."
+        },
+        {
+          "name": "stakes_escalation_test",
+          "question": "Do stakes increase across the essay?",
+          "method": "Identify stakes language in each third of essay. Compare intensity.",
+          "expected_pattern": [
+            "Early third: 'This is interesting' / 'This explains a pattern'",
+            "Middle third: 'This was almost fatal' / 'This is why X fails'",
+            "Final third: 'This is about your life' / 'This determines your future'"
+          ],
+          "failure_signals": [
+            "Stakes highest at opening, then decline",
+            "No stakes language anywhere",
+            "Stakes language but feels hollow (not earned by argument)"
+          ],
+          "repair": "Save strongest stakes language for later in essay. Build to it."
+        },
+        {
+          "name": "concrete_calculation_test",
+          "question": "Have abstract concepts been converted to specific numbers where possible?",
+          "method": "For any sentence containing 'time,' 'life,' 'cost,' 'impact,' 'money,' ask: can this be a number?",
+          "examples": {
+            "bad": ["Life is short", "Meetings waste time", "This has real costs"],
+            "good": ["You only get 52 more Christmases with your parents", "A single meeting can blow a whole afternoon", "This decision cost them $4M and 18 months"]
+          },
+          "mechanism": "Numbers make abstract undeniable. Can't argue with arithmetic.",
+          "repair": "Find the specific number. If it doesn't exist, find a proxy (instances, frequency, hours)."
+        },
+        {
+          "name": "validation_hook_test",
+          "question": "Does the essay validate the reader's struggle before giving advice?",
+          "applies_to": "Essays that give advice or prescriptions",
+          "good_patterns": [
+            "Actually startups take off because the founders make them take off.",
+            "You're not failing - this is how it works.",
+            "If you're struggling with this, it's because it's genuinely hard."
+          ],
+          "bad_patterns": [
+            "The answer is simple...",
+            "Just do X...",
+            "It's obvious that..."
+          ],
+          "mechanism": "Readers resist advice that implies they're stupid. Validation creates receptivity.",
+          "repair": "Add a sentence that acknowledges the difficulty before presenting the solution."
+        },
+        {
+          "name": "direct_challenge_close_test",
+          "question": "Does the essay end with a question the reader must answer?",
+          "good_patterns": [
+            "Ask yourself: what are you waiting for?",
+            "Which one are you?",
+            "The question is whether you can stay."
+          ],
+          "mechanism": "Essay ends in reader's head, not on page. Extends essay's effect.",
+          "note": "Not required for all essays, but particularly effective for PG-style prescriptive essays."
+        }
+      ]
+    },
+
+    "rhythm_variation_checks": {
+      "description": "Tests for prose rhythm and sentence variation, derived from Paul Graham essay analysis",
+      "philosophy": "Rhythm is meaning. Monotonous prose is forgettable prose. Variation creates emphasis.",
+      "tests": [
+        {
+          "name": "sentence_length_variation_test",
+          "question": "Does sentence length vary intentionally?",
+          "method": "Count words per sentence for a representative paragraph. Check for variation.",
+          "expected_pattern": "Mix of sentence lengths with SHORT sentences at emphasis points.",
+          "failure_signals": [
+            "All sentences roughly same length (15-20 words each)",
+            "No sentences under 10 words",
+            "Long buildups without short punches"
+          ],
+          "repair": "After long explanations, add short punch. 'But you can.' 'That's the mechanism.' 'Three words: [point].'"
+        },
+        {
+          "name": "expansion_contraction_test",
+          "question": "Are there 'expansion-contraction' moments?",
+          "pattern": "Long detailed explanation → short punchy conclusion",
+          "examples": [
+            "Tim Cook doesn't send you a hand-written note after you buy a laptop. He can't. But you can.",
+            "[Multiple sentences about why something is hard]. But it works.",
+            "[Extended analysis of a problem]. Three words: stay with it."
+          ],
+          "failure_signals": [
+            "All sections end with long sentences",
+            "No decisive conclusions",
+            "Expansion without contraction (just keeps building)"
+          ],
+          "repair": "Find your key insights. End their sections with the shortest possible statement."
+        },
+        {
+          "name": "parallel_structure_test",
+          "question": "Are parallel ideas expressed in parallel structure?",
+          "good_patterns": [
+            "It's about X. It's about Y. It's about Z.",
+            "Don't wait to X. Don't wait to Y. Don't wait to Z.",
+            "The first step is... The second step is... The third step is..."
+          ],
+          "mechanism": "Parallel structure creates rhythm and aids memory.",
+          "failure_signals": [
+            "List items with different grammatical structures",
+            "Similar ideas expressed with different sentence patterns"
+          ],
+          "repair": "Rewrite parallel ideas in parallel structure."
+        },
+        {
+          "name": "colloquial_peaks_test",
+          "question": "Is informal language used at emotional peaks?",
+          "pattern": "Formality should DROP at highest-stakes moments.",
+          "good_examples": [
+            "'the dumber they make you' (not 'the less intelligent')",
+            "'blow a whole afternoon' (not 'waste significant time')",
+            "'But you can.' (not 'However, you have the capability')"
+          ],
+          "mechanism": "Colloquial language at peaks creates intimacy and impact. The reader feels addressed directly.",
+          "failure_signals": [
+            "Formal language throughout (distance from reader)",
+            "Colloquial language throughout (no emphasis)",
+            "Formality increases at peaks (backwards)"
+          ],
+          "repair": "At your most important point, ask: can I say this more simply? More directly? Less formally?"
+        },
+        {
+          "name": "anaphora_test",
+          "question": "Are there intentional repetition patterns?",
+          "types": {
+            "anaphora_cascade": "Repeat opening phrase 2-4 times, then resolve. ('It's about X. It's about Y. It's about making the breakthrough.')",
+            "triple_imperative": "Three commands, each shorter than last. ('Don't wait to say it. Don't wait to do it. Don't wait.')"
+          },
+          "placement": "Use at emotional peaks, not throughout.",
+          "failure_signals": [
+            "No intentional repetition anywhere",
+            "Accidental repetition (same word too close, not for effect)"
+          ],
+          "repair": "Identify 1-2 peak moments. Add intentional repetition for emphasis."
+        }
+      ]
+    },
+
     "pattern_specific_coherence": {
       "description": "Coherence checks specific to each essay map pattern",
       "pg_discovery": {
@@ -2099,6 +2433,168 @@
         "Does the section serve the grand theme?",
         "Is the length appropriate?"
       ]
+    }
+  },
+  "strong_passages_library": {
+    "description": "Reference library of strong passages for rhythm, emotional weight, and technique. Use these as models when writing or revising.",
+    "source": "Extracted from Paul Graham essay analysis",
+    "rhythm_patterns": {
+      "expansion_contraction": {
+        "description": "Long buildup followed by short punch",
+        "examples": [
+          {
+            "passage": "Tim Cook doesn't send you a hand-written note after you buy a laptop. He can't. But you can.",
+            "source": "Do Things that Don't Scale",
+            "technique": "Extended negative example → contraction to possibility"
+          },
+          {
+            "passage": "[Extended reasoning about why meetings destroy productivity]. A single meeting can blow a whole afternoon.",
+            "source": "Maker's Schedule, Manager's Schedule",
+            "technique": "Reasoning → single punchy summary"
+          }
+        ],
+        "usage": "End key sections with the shortest possible statement of the insight"
+      },
+      "anaphora_cascade": {
+        "description": "Repeat opening phrase 2-4 times, then resolve",
+        "examples": [
+          {
+            "passage": "It's about being good at something that matters. It's about being good at something few people can be good at. It's about being the one who makes the breakthrough.",
+            "source": "How to Do Great Work",
+            "technique": "Three 'It's about' phrases, escalating specificity"
+          }
+        ],
+        "usage": "Build emphasis at emotional peaks"
+      },
+      "triple_imperative": {
+        "description": "Three commands, each shorter than the last",
+        "examples": [
+          {
+            "passage": "Don't wait before saying what you need to say. Don't wait to tell someone you love them. Don't wait to apologize.",
+            "source": "Life is Short",
+            "technique": "Three imperatives with decreasing length"
+          }
+        ],
+        "usage": "Close sections with urgent calls to action"
+      },
+      "ten_word_hit": {
+        "description": "Core insight compressed to 10 words or fewer",
+        "examples": [
+          {
+            "passage": "The more labels you have for yourself, the dumber they make you.",
+            "source": "Keep Your Identity Small",
+            "technique": "Maximum compression, colloquial word choice ('dumber')"
+          },
+          {
+            "passage": "Your curiosity never lies, and it knows more than you do.",
+            "source": "How to Do Great Work",
+            "technique": "Personification + compression"
+          }
+        ],
+        "usage": "Crystallize the essay's key takeaway"
+      }
+    },
+    "emotional_weight_patterns": {
+      "concrete_calculation": {
+        "description": "Convert abstractions to specific numbers",
+        "examples": [
+          {
+            "passage": "You only get 52 more Christmases with your parents.",
+            "source": "Life is Short",
+            "technique": "Mortality → specific number → emotional impact",
+            "contrast": "Compare to 'Life is short' - same idea, much weaker"
+          },
+          {
+            "passage": "A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in.",
+            "source": "Maker's Schedule, Manager's Schedule",
+            "technique": "Cost → specific outcome → mechanism"
+          }
+        ],
+        "usage": "When discussing time, money, impact - find the number"
+      },
+      "validation_hook": {
+        "description": "Validate reader struggle before advice",
+        "examples": [
+          {
+            "passage": "Actually startups take off because the founders make them take off. There may be a handful that just grew by themselves, but usually it takes some sort of push to get them going.",
+            "source": "Do Things that Don't Scale",
+            "technique": "Reframe reader's struggle as normal, not failure"
+          }
+        ],
+        "usage": "Early in prescriptive essays, before heavy advice"
+      },
+      "stakes_escalation": {
+        "description": "Vocabulary that increases stakes across essay",
+        "examples": [
+          {
+            "early": "This is interesting",
+            "middle": "This was almost fatal",
+            "late": "This is about your life"
+          }
+        ],
+        "usage": "Save strongest stakes language for later sections"
+      },
+      "direct_challenge_close": {
+        "description": "End with question reader must answer",
+        "examples": [
+          {
+            "passage": "Ask yourself: what are you waiting for? If the answer is 'nothing,' you're probably living right.",
+            "source": "Life is Short",
+            "technique": "Direct address + conditional = reader forced to answer"
+          },
+          {
+            "passage": "The question for founders, and for all of us who make consequential things, is whether we can stay.",
+            "source": "Founders and Monsters (Frankenstein analysis)",
+            "technique": "Universal expansion + challenge"
+          }
+        ],
+        "usage": "End essays in reader's head, not on page"
+      }
+    },
+    "structural_patterns": {
+      "numbered_skeleton": {
+        "description": "Explicit numbering for long essay structure",
+        "examples": [
+          {
+            "passage": "The first step is to decide what to work on... Once you've found something you're excessively interested in, the next step is to learn enough... The third step is to notice the gaps... Once you've found a gap, the next step is to ask good questions.",
+            "source": "How to Do Great Work",
+            "technique": "Numbers as progress markers across 8000 words"
+          }
+        ],
+        "usage": "For essays over 5000 words, use explicit numbering to maintain structure"
+      },
+      "distinction_naming": {
+        "description": "Give key distinctions memorable names",
+        "examples": [
+          {
+            "passage": "There are two types of schedule, which I'll call the manager's schedule and the maker's schedule.",
+            "source": "Maker's Schedule, Manager's Schedule",
+            "technique": "Naming creates the essay's architecture"
+          }
+        ],
+        "usage": "Name every key distinction. If you can't name it memorably, you don't have an essay."
+      }
+    },
+    "colloquial_peaks": {
+      "description": "Informal language at high-stakes moments",
+      "examples": [
+        {
+          "formal": "This renders them less capable of rational discourse",
+          "colloquial": "The more labels you have for yourself, the dumber they make you",
+          "source": "Keep Your Identity Small"
+        },
+        {
+          "formal": "It results in the suboptimal utilization of time",
+          "colloquial": "A single meeting can blow a whole afternoon",
+          "source": "Maker's Schedule, Manager's Schedule"
+        },
+        {
+          "formal": "However, you possess this capability",
+          "colloquial": "But you can.",
+          "source": "Do Things that Don't Scale"
+        }
+      ],
+      "usage": "Drop formality at peaks. Simple = strong."
     }
   }
 }
