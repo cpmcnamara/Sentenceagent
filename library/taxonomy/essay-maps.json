@@ -1727,6 +1727,7 @@
           "key_move": "The rebuttal often involves showing that the problem is reversible — that conscious action can work.",
           "substance_level": "medium",
           "length": "2-4 paragraphs",
+          "compression_target": "Orwell does this in 2 paragraphs max. Every word must count. If you're past 3 paragraphs, you're bloating. The entire problem-defeatist-rebuttal arc should feel compressed and punchy.",
           "example": "Orwell acknowledges 'language is in a bad way' but immediately attacks the assumption that 'we cannot by conscious action do anything about it.'"
         },
         {
@@ -1736,7 +1737,13 @@
           "requirement": "This is the argumentative hinge. Without it, the essay is just complaint.",
           "substance_level": "medium",
           "length": "1-2 paragraphs",
-          "key_insight": "Orwell's genius move: 'A man may take to drink because he feels himself to be a failure, and then fail all the more completely because he drinks.' This analogy makes the abstract concrete."
+          "key_insight": "Orwell's genius move: 'A man may take to drink because he feels himself to be a failure, and then fail all the more completely because he drinks.' This analogy makes the abstract concrete.",
+          "external_analogy_requirement": {
+            "principle": "The analogy MUST come from OUTSIDE your subject, not from within it",
+            "explanation": "Orwell writes about bad prose but uses drinking/failure as his analogy. If he'd said 'a man may write badly because he thinks sloppily, and then think more sloppily because he writes badly' — the reader would already believe that. The EXTERNAL analogy (drinking) proves the pattern exists beyond prose. It's general.",
+            "anti_pattern": "If your analogy uses your essay's own material ('monstrous language makes monsters'), you haven't proven generality. The reader might think: 'Maybe that's just true of monsters.' An external analogy proves: 'This pattern is everywhere.'",
+            "test": "Can you state your analogy WITHOUT mentioning your essay's subject? If not, it's internal, not external."
+          }
         },
         {
           "name": "SPECIMEN_EXHIBITION",
@@ -1746,7 +1753,12 @@
           "numbering_note": "Numbering is essential. Later you'll say 'Exhibit 3' or 'Professor Laski (1)' — this creates systematic feel.",
           "substance_level": "heavy",
           "length": "Variable — depends on specimens. Orwell uses 5 substantial quotes.",
-          "selection_criteria": "Choose specimens that are 'fairly representative' not 'especially bad.' Avoid strawmen."
+          "selection_criteria": "Choose specimens that are 'fairly representative' not 'especially bad.' Avoid strawmen.",
+          "specimen_quality_requirements": {
+            "length": "Each specimen should be long enough to be self-convicting. Short quotes need explanation; long passages convict themselves. Orwell's specimens are full paragraphs, not sentences.",
+            "attribution": "Name specific sources when possible. 'Professor Laski, writing in Freedom of Expression' is more damning than 'someone said'. Attribution adds weight and verifiability.",
+            "variety": "Specimens should show DIFFERENT manifestations of the problem. If all five specimens show the same failure in the same way, you have one example repeated, not five. Each should reveal a different angle or intensity."
+          }
         },
         {
           "name": "DIAGNOSTIC_CATEGORIES",
@@ -1761,7 +1773,23 @@
           },
           "substance_level": "heaviest",
           "length": "3-8 paragraphs per category depending on complexity",
-          "example_categories": ["Dying metaphors", "Operators (verbal false limbs)", "Pretentious diction", "Meaningless words"]
+          "example_categories": ["Dying metaphors", "Operators (verbal false limbs)", "Pretentious diction", "Meaningless words"],
+          "category_naming_enforcement": {
+            "principle": "Category names must be PHYSICAL, CONCRETE, PICTURABLE",
+            "test": "Can you PICTURE this name? 'Dying metaphors' — yes, you can picture something dying. 'Verbal false limbs' — yes, grotesque but visual. 'Response Patterns' — no, abstract, can't picture it.",
+            "anti_patterns": [
+              "Types of X (meta-label, not memorable)",
+              "X Patterns (abstract)",
+              "Category N (numbered without character)",
+              "Any name that could apply to any domain (Communication Failures, Error Types)"
+            ],
+            "good_examples": {
+              "dying_metaphors": "Physical (something dying), memorable",
+              "verbal_false_limbs": "Grotesque, medical, visceral — you can SEE the unnecessary appendage",
+              "pretentious_diction": "Direct accusation, puts the reader on notice"
+            },
+            "process": "If your first category name is abstract, spend 5 minutes finding the PHYSICAL version. 'Reflexive responses' → 'Verbal flinches'. 'Transferred agency' → 'Grammar of innocence'. The concrete name does work the definition can't."
+          }
         },
         {
           "name": "PARODY_DEMONSTRATION",
@@ -1771,7 +1799,17 @@
           "key_technique": "Use a respected source (Orwell uses Ecclesiastes). Translate it into the bad style. Analyze the differences.",
           "substance_level": "heavy",
           "length": "2-4 paragraphs",
-          "why_it_works": "Parody proves what description cannot. The reader SEES the problem rather than being told about it."
+          "why_it_works": "Parody proves what description cannot. The reader SEES the problem rather than being told about it.",
+          "external_source_requirement": {
+            "principle": "The source text must be EXTERNAL to your subject and BELOVED by your audience",
+            "explanation": "Orwell translates Ecclesiastes — not an example of bad prose from his own subject, but a universally revered text from OUTSIDE. The reader already loves Ecclesiastes before the essay. The translation INTO bad prose is devastating because the reader feels the loss personally.",
+            "anti_pattern": "Translating WITHIN your subject (e.g., from the novel's good prose to the novel's bad prose) proves only that THIS TEXT has this problem. It doesn't prove the STYLE is the problem. The Ecclesiastes move proves: this style can't achieve quality, regardless of subject.",
+            "source_selection": {
+              "good_sources": "Religious texts, canonical poems, founding documents, beloved speeches — anything your audience already reveres",
+              "why_beloved_matters": "The reader must feel the gap between original and parody as a LOSS. If they don't already love the original, the parody demonstrates nothing.",
+              "test": "If your parody source is from your own subject, you haven't achieved the Ecclesiastes move. Find something EXTERNAL."
+            }
+          }
         },
         {
           "name": "MECHANISM_ANALYSIS",
@@ -1780,7 +1818,19 @@
           "requirement": "Must be sympathetic to the failure mode. The mechanism should make the reader think 'I do this too.'",
           "substance_level": "heavy",
           "length": "2-4 paragraphs",
-          "key_insight": "Orwell: 'It is easier — even quicker, once you have the habit — to say In my opinion it is not an unjustifiable assumption that than to say I think.'"
+          "key_insight": "Orwell: 'It is easier — even quicker, once you have the habit — to say In my opinion it is not an unjustifiable assumption that than to say I think.'",
+          "image_density_requirement": {
+            "principle": "Multiple DEGRADED physical images, not one",
+            "orwell_examples": [
+              "'phrases tacked together like the sections of a prefabricated henhouse'",
+              "'an accumulation of stale phrases chokes him like tea leaves blocking a sink'",
+              "'like cavalry horses answering the bugle'",
+              "'has gone some distance toward turning himself into a machine'"
+            ],
+            "pattern": "Orwell uses 3-4 degraded physical images in this section. Industrial, broken, mechanical, blocked — the images MATCH the degradation being described.",
+            "anti_pattern": "Using Orwell's exact images (henhouse, tea leaves, bugle) is pastiche. Find your OWN degraded physical metaphors. If your mechanism section has zero physical images, or only one, the abstraction isn't grounded.",
+            "how_to_find_images": "Ask: what physical objects represent this failure? What breaks, clogs, rusts, jams? What mechanically fails in a way that mirrors the cognitive/linguistic failure?"
+          }
         },
         {
           "name": "POLITICAL_CONNECTION",
@@ -1789,7 +1839,14 @@
           "requirement": "The stakes must be REAL, not inflated. Connect to consequences that matter.",
           "substance_level": "heavy",
           "length": "3-6 paragraphs",
-          "example": "Orwell connects bad language to 'the defence of the indefensible' — political euphemism that enables atrocity."
+          "example": "Orwell connects bad language to 'the defence of the indefensible' — political euphemism that enables atrocity.",
+          "graphic_specificity": {
+            "principle": "Show the reality FIRST (graphic, concrete), then show the language that hides it",
+            "orwell_move": "'Defenseless villages are bombarded from the air, the inhabitants driven out into the countryside, the cattle machine-gunned, the huts set on fire with incendiary bullets: this is called pacification.' — The graphic list comes BEFORE the euphemism. The reader sees the reality, then sees the word that conceals it.",
+            "euphemism_list": "Compile a LIST of the terms that do this work in your domain. Orwell: 'pacification,' 'transfer of population,' 'rectification of frontiers,' 'elimination of unreliable elements.' What are YOUR domain's equivalent euphemisms? Name at least 3-4.",
+            "anti_pattern": "Abstract political claims without specific examples. 'Language is used to obscure political reality' is true but weak. 'Children are separated from their parents; this is called processing' is concrete and damning.",
+            "specificity_test": "Can the reader PICTURE what happens? If your political connection is abstract ('X leads to bad outcomes'), you haven't achieved Orwell's specificity. Show the bombed village, not 'negative consequences.'"
+          }
         },
         {
           "name": "SELF_IMPLICATION",
@@ -1815,7 +1872,13 @@
             "If it is possible to cut a word out, always cut it out.",
             "Never use the passive where you can use the active.",
             "Break any of these rules sooner than say anything barbarous."
-          ]
+          ],
+          "compression_requirement": {
+            "principle": "Each rule in one sentence, maximum 20 words",
+            "test": "Can someone REMEMBER this rule without looking at the page? If not, it's too long or too complex.",
+            "anti_pattern": "Rules that need explanatory paragraphs aren't rules yet — they're commentary. The rule itself must be memorizable.",
+            "orwell_note": "Notice that Orwell's rules are 7-15 words each. They fit on a sticky note. If yours don't, compress until they do."
+          }
         },
         {
           "name": "CLOSE",
@@ -1824,7 +1887,14 @@
           "requirement": "Must return to the political/stakes level, not just the technical. End with IMAGE, not abstraction.",
           "substance_level": "medium",
           "length": "2-3 paragraphs",
-          "closing_technique": "Orwell ends with 'dustbin where it belongs' — concrete, physical, memorable."
+          "closing_technique": "Orwell ends with 'dustbin where it belongs' — concrete, physical, memorable.",
+          "demonstrative_list": {
+            "principle": "The closing list should DEMONSTRATE, not just enumerate",
+            "orwell_move": "Orwell's final list ('some jackboot, Achilles' heel, hotbed, melting pot, acid test, veritable inferno, or other lump of verbal refuse') is ITSELF a collection of dying metaphors being thrown away. The list demonstrates the problem one last time.",
+            "requirement": "If your close includes a list, each item should be an EXAMPLE of the problem, not just a label for it. The list is a final specimen exhibition.",
+            "variety": "Orwell lists 7 items. A short list (2-3 items) undercuts the effect. The accumulation IS the point.",
+            "anti_pattern": "A closing list that names categories ('fear, prejudice, ignorance') rather than specimens ('monster, creature, alien, other') lacks the demonstrative power."
+          }
         }
       ],
       "key_principles": [
@@ -1935,7 +2005,13 @@
           "requirement": "Must establish your POSITION in the system. Not just observer — participant with role and stakes.",
           "substance_level": "medium",
           "length": "1-2 paragraphs",
-          "example": "Orwell: 'In Moulmein, in lower Burma, I was hated by large numbers of people — the only time in my life that I have been important enough for this to happen to me.'"
+          "example": "Orwell: 'In Moulmein, in lower Burma, I was hated by large numbers of people — the only time in my life that I have been important enough for this to happen to me.'",
+          "compression_requirement": {
+            "principle": "Orwell establishes place, position, and ironic self-awareness in ONE SENTENCE",
+            "the_one_sentence_open": "Place + your role + ironic self-observation. All in one sentence. 'In Moulmein, in lower Burma, I was hated by large numbers of people — the only time in my life that I have been important enough for this to happen to me.'",
+            "test": "If your opening context takes more than 2-3 sentences, you're being too explanatory. The irony should arrive FAST — in the opening line, not paragraphs later.",
+            "anti_pattern": "Spending a paragraph on location, another on your job, another on the circumstances. Compress. The reader doesn't need setup — they need your position and perspective immediately."
+          }
         },
         {
           "name": "INTERNAL_CONFLICT_STATED",
@@ -1945,7 +2021,17 @@
           "key_technique": "The 'with one part of my mind... with another part' structure shows genuine psychological division.",
           "substance_level": "heavy",
           "length": "1-2 paragraphs",
-          "why_it_matters": "Without stated ambivalence, the insight feels too clean. Reader needs to see your complicity."
+          "why_it_matters": "Without stated ambivalence, the insight feels too clean. Reader needs to see your complicity.",
+          "ugliness_requirement": {
+            "principle": "You must admit a feeling you're NOT SUPPOSED TO HAVE",
+            "the_bayonet_test": {
+              "orwell_example": "'With one part of my mind I thought of the British Raj as an unbreakable tyranny... with another part I thought that the greatest joy in the world would be to drive a bayonet into a Buddhist priest's guts.'",
+              "why_it_works": "This is shocking. Racist, violent, honest. Orwell admits the feeling he's not supposed to have. This is what separates the essay from propaganda — propaganda admits only the sanctioned feelings."
+            },
+            "test": "Would you be EMBARRASSED if this admission were quoted back to you at a job interview? If not, you haven't reached the ugly truth. Find your bayonet admission.",
+            "anti_pattern": "Sanctioned feelings don't count. 'I had mixed feelings' or 'I was ambivalent' or 'I felt conflicted about the situation' — these are clean. 'I was relieved when they suffered' or 'Part of me was glad' or 'I wanted to hurt them' — those are ugly.",
+            "how_to_find_it": "Ask: what feeling did I have that contradicts my stated values? What did I want that I'm ashamed to admit? What made me no better than the people I was judging?"
+          }
         },
         {
           "name": "INCIDENT_ANNOUNCED",
@@ -1964,7 +2050,15 @@
           "pacing": "Can be extended. Build slowly. Include irrelevant-seeming details that create reality.",
           "substance_level": "heavy",
           "length": "3-6 paragraphs",
-          "physical_detail_requirement": "Include at least one moment of visceral physical description. Orwell: the dead coolie, 'his face had scored a trench a foot deep.'"
+          "physical_detail_requirement": "Include at least one moment of visceral physical description. Orwell: the dead coolie, 'his face had scored a trench a foot deep.'",
+          "visceral_without_gore": {
+            "principle": "Visceral detail creates discomfort, not necessarily blood",
+            "orwell_coolie": "'He was lying on his belly with arms crucified and head sharply twisted to one side. His face was coated with mud, the eyes wide open, the teeth bared and grinning with an expression of unendurable agony. (Never tell me, by the way, that the dead look peaceful.)'",
+            "what_makes_it_work": "The SPECIFICITY creates visceral response. 'Arms crucified,' 'teeth bared and grinning,' 'expression of unendurable agony.' These are precise, uncomfortable observations, not summaries.",
+            "non_violent_contexts": "In a classroom, visceral detail is the observation that makes readers uncomfortable. Not 'he had a skin condition' but 'flakes of skin fell from his neck onto his collar when he turned his head.' Specificity creates the visceral response, not violence.",
+            "the_parenthetical_aside": "Orwell breaks narrative frame to insist on physical truth: '(Never tell me, by the way, that the dead look peaceful.)' This move is available in any context — the aside that corrects a comforting assumption.",
+            "anti_pattern": "'He looked different' or 'she seemed uncomfortable' — these are summaries, not visceral observations. The reader should SEE what you saw."
+          }
         },
         {
           "name": "EXTERNAL_PRESSURE",
@@ -1973,7 +2067,14 @@
           "requirement": "The pressure must be SPECIFIC and VISIBLE. Not just 'I felt obligated.' Show the crowd, the eyes, the expectation.",
           "substance_level": "medium",
           "length": "2-3 paragraphs",
-          "example": "Orwell: 'It was an immense crowd, two thousand at the least and growing every minute... I could feel their two thousand wills pressing me forward, irresistibly.'"
+          "example": "Orwell: 'It was an immense crowd, two thousand at the least and growing every minute... I could feel their two thousand wills pressing me forward, irresistibly.'",
+          "pressure_direction": {
+            "principle": "The crowd can push you TO act (Orwell) or NOT to act (inaction complicity)",
+            "both_valid": "Orwell is pushed TO shoot. But you can also be pushed NOT to intervene, NOT to speak up, NOT to act. Both are external pressure — both create complicity.",
+            "the_key_requirements": "Pressure must be VISIBLE (you can see it), COUNTABLE (numbers matter), PHYSICAL (bodies, eyes, presence). Not abstract obligation.",
+            "direction_matching": "The direction should match your complicity. If you're complicit in DOING something wrong, pressure pushes toward action. If you're complicit in NOT doing something right, pressure pushes toward inaction.",
+            "inaction_example": "The room's silence pressed me toward silence. Fourteen pairs of eyes, all of them looking anywhere but at the excluded person. The collective preference for not noticing was palpable."
+          }
         },
         {
           "name": "THE_REALIZATION",
@@ -1983,7 +2084,14 @@
           "placement": "Usually comes AFTER external pressure is established but BEFORE the action is taken.",
           "substance_level": "heavy",
           "length": "1-2 paragraphs",
-          "key_sentence_example": "'I perceived in this moment that when the white man turns tyrant it is his own freedom that he destroys.'"
+          "key_sentence_example": "'I perceived in this moment that when the white man turns tyrant it is his own freedom that he destroys.'",
+          "discovery_vs_announcement": {
+            "principle": "Self-contained realizations are stronger than referential ones",
+            "orwell_form": "Orwell's insight is about HIS SITUATION — what imperialism does to the colonizer. He doesn't say 'I understood what Marx meant.' The situation IS the evidence.",
+            "when_referencing_external_text": "If your essay is about an external text (literature, theory, event), you may connect to it, but the connection should feel DISCOVERED, not announced. Let the parallel emerge without telling the reader 'I understood what X is really about.'",
+            "anti_pattern": "'I understood what Frankenstein is actually about' ANNOUNCES the discovery. Better: describe your situation in terms that ECHO the text's terms. The reader should SEE the connection without being told.",
+            "test": "Delete the explicit connection to the external text. Does the insight still work? If so, the connection was unnecessary. If not, the insight isn't emerging from your narrative — it's being imported."
+          }
         },
         {
           "name": "INTERNAL_RESISTANCE",
@@ -2001,7 +2109,14 @@
           "pacing": "Slow down here. More detail than feels comfortable.",
           "substance_level": "heaviest",
           "length": "3-6 paragraphs",
-          "example": "Orwell's shooting sequence takes multiple paragraphs. Each shot. The elephant's slow collapse. The trunk 'reaching skyward like a tree.'"
+          "example": "Orwell's shooting sequence takes multiple paragraphs. Each shot. The elephant's slow collapse. The trunk 'reaching skyward like a tree.'",
+          "duration_requirement": {
+            "principle": "The action must be EXPERIENCED, not summarized",
+            "orwell_benchmark": "Orwell's shooting takes 4-5 paragraphs. If your action takes fewer than 3 paragraphs, you're rushing. The duration IS the moral experience — quick action feels dismissible.",
+            "slow_motion_technique": "Break the action into micro-moments. Not 'I called on him' but 'I said his name. Fourteen heads turned. He was silent for three seconds that felt like ten. The room held its breath. Then he spoke.'",
+            "anti_pattern": "'I intervened' is SUMMARY. The narrative must make the reader EXPERIENCE the intervention in real time, moment by moment.",
+            "discomfort_test": "If you want to skip past this section, if it feels uncomfortable to linger, that's the signal to EXTEND it. The desire to rush is the sign that duration is needed."
+          }
         },
         {
           "name": "CONSEQUENCE_WITNESSED",
@@ -2010,7 +2125,14 @@
           "requirement": "Don't cut away. Make the reader witness what you witnessed.",
           "substance_level": "heavy",
           "length": "2-4 paragraphs",
-          "key_insight": "The elephant takes half an hour to die. Orwell stays. This witnessing IS the moral position."
+          "key_insight": "The elephant takes half an hour to die. Orwell stays. This witnessing IS the moral position.",
+          "staying_power": {
+            "principle": "Orwell watches the elephant die for HALF AN HOUR. If your consequence is witnessed briefly, you've cut away.",
+            "duration_over_glimpse": "One glimpse then summary is the anti-pattern. 'I saw him once' is cutting away. The pattern requires DURATION — multiple moments, extended observation, return to the consequence.",
+            "reader_trap": "The consequence section should make the reader want to stop reading. The discomfort of prolonged witnessing IS the moral point. If the reader can skim this section, you haven't achieved it.",
+            "what_extended_witnessing_looks_like": "Orwell: 'He was dying, very slowly and in great agony... I waited a long time for him to die, but his breathing did not weaken... In the end I could not stand it any longer and went away.' Multiple returns to the suffering, the duration explicitly stated, the eventual departure as confession.",
+            "non_death_contexts": "In contexts without death, extended witnessing means: multiple sightings across time, specific physical details of each encounter, the pattern of consequence repeating and observed."
+          }
         },
         {
           "name": "AFTERMATH_AND_FINAL_ADMISSION",
@@ -2020,7 +2142,18 @@
           "final_line_technique": "Devastating honesty about your real reason. Orwell: 'I had done it solely to avoid looking a fool.'",
           "substance_level": "medium",
           "length": "2-3 paragraphs",
-          "anti_slop_note": "Do NOT end with a generalized lesson ('And that's why imperialism is bad'). End with specific, personal, uncomfortable admission."
+          "anti_slop_note": "Do NOT end with a generalized lesson ('And that's why imperialism is bad'). End with specific, personal, uncomfortable admission.",
+          "the_vanity_move": {
+            "principle": "Orwell's final admission is about how he APPEARED to others, not how he felt",
+            "looking_vs_feeling": "'Looking a fool' is about APPEARANCE — how others see him. It's vanity. 'Feeling like a coward' is about INTERNAL STATE — how he sees himself. It's conscience. The vainer version is pettier and more damning.",
+            "pettiness_requirement": "The reduction should be HUMILIATING. The final motive should make you look WORSE, not better. If your admission sounds like self-criticism (which has a kind of dignity), it's not reductive enough. 'Looking a fool' has no dignity.",
+            "hierarchy_of_reduction": {
+              "appearance_over_feeling": "'I did it so I wouldn't look bad' is more reductive than 'I did it so I wouldn't feel bad.' External judgment is pettier than internal.",
+              "convenience_over_conscience": "'I did it because it was easier' is pettier than 'I did it because I was afraid.' Laziness is worse than fear.",
+              "nothing_over_something": "'I did it for no good reason at all' is the most reductive — pure failure without even the excuse of wrong motivation."
+            },
+            "test": "Does your final admission make you sound worse than you need to? Would you prefer to explain it away? If not, find the pettier version."
+          }
         }
       ],
       "key_principles": [
