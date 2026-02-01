@@ -2526,16 +2526,35 @@
         },
         "usage": "When discussing loss, cost, or stakes—find something to count that's tied to the reader's identity, not just their resources"
       },
-      "validation_hook": {
-        "description": "Validate reader struggle before advice",
+      "validation_then_prescription": {
+        "description": "Full arc: validate struggle → prescribe action → prove with counterintuitive success example",
+        "structure": {
+          "step_1_validation": "Reframe reader's struggle as normal, not failure. ('Actually startups take off because founders make them take off.')",
+          "step_2_metaphor": "Optional but powerful: give a metaphor that makes the prescription feel inevitable. (Car crank before electric starters.)",
+          "step_3_prescription": "State the advice directly. ('You have to go out and get them.')",
+          "step_4_counterintuitive_example": "Prove with someone who SUCCEEDED and had every reason NOT to need this advice, but followed it anyway."
+        },
+        "counterintuitive_example_requirements": {
+          "must_have_succeeded": "The example must be a clear success case. This is load-bearing—if they failed, the example proves nothing.",
+          "must_be_exception": "They should have reasons NOT to need the advice (Stripe had 'a big pool of potential users' and solved 'an urgent problem').",
+          "must_have_done_it_anyway": "Despite not needing to, they followed the advice aggressively ('famous within YC for aggressive early user acquisition').",
+          "logic_chain": "Reader thinks: 'They succeeded → They didn't need to do this → They did it anyway → Therefore this must be essential → I have no excuse.'"
+        },
         "examples": [
           {
-            "passage": "Actually startups take off because the founders make them take off. There may be a handful that just grew by themselves, but usually it takes some sort of push to get them going.",
+            "passage": "Actually startups take off because the founders make them take off... Stripe is one of the most successful startups we've funded, and the problem they solved was an urgent one. If anyone could have sat back and waited for users, it was Stripe. But in fact they're famous within YC for aggressive early user acquisition... When anyone agreed to try Stripe they'd say 'Right then, give me your laptop' and set them up on the spot.",
             "source": "Do Things that Don't Scale",
-            "technique": "Reframe reader's struggle as normal, not failure"
+            "technique": "Validation → prescription → counterintuitive success example (Stripe)",
+            "why_it_works": "Stripe's success is established. Their reasons to skip hustling are stated. Their choice to hustle anyway is shown. Reader's escape hatch ('my situation is different') is closed."
           }
         ],
-        "usage": "Early in prescriptive essays, before heavy advice"
+        "failure_modes": [
+          "Example that failed (proves nothing about the advice)",
+          "Example that obviously needed the advice (no counterintuitive force)",
+          "Example without established success (reader doesn't trust the model)",
+          "Skipping straight to prescription without validation (reader feels lectured)"
+        ],
+        "usage": "In prescriptive essays when you need to close the reader's 'but my situation is different' escape hatch"
       },
       "stakes_escalation": {
         "description": "Vocabulary that increases stakes across essay",
