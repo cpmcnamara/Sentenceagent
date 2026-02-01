@@ -1984,11 +1984,13 @@
           "name": "WELLS_IDENTIFIED",
           "purpose": "Specific places to look for opportunities",
           "signals": ["Good places to look include...", "You'll often find X in...", "One fertile area is..."],
-          "requirement": "Must be specific domains or situations, not abstract categories.",
+          "requirement": "Must be specific domains or situations, not abstract categories. CRITICAL: Each well MUST include 'Why this works:' explanation—not just what the well is, but WHY it produces good results.",
           "substance_level": "heavy",
           "length": "4-6 paragraphs",
-          "substance_type": ["domain_examples - specific fields to explore", "why_each_works - reasoning for each well", "example_from_each - concrete illustration"],
-          "key_move": "PG lists: things that seem like toys, things that feel like hacks, areas that just became possible."
+          "substance_type": ["domain_examples - specific fields to explore", "why_each_works - reasoning for each well (REQUIRED)", "example_from_each - concrete illustration"],
+          "key_move": "PG lists: things that seem like toys, things that feel like hacks, areas that just became possible.",
+          "rhythm_guidance": "Heavy sections need sentence variety. Break long explanations with short punchy sentences. Don't let any paragraph exceed 4 sentences without a rhythm break.",
+          "common_failure": "Listing wells without explaining WHY they work. Each well needs causal reasoning, not just description."
         },
         {
           "name": "RECIPES",
@@ -2012,10 +2014,11 @@
           "name": "CLOSE_PRACTICAL",
           "purpose": "End with encouragement and the key takeaway",
           "signals": ["The main thing is...", "Start by...", "If you remember nothing else..."],
-          "requirement": "Close should be actionable, not just inspirational.",
+          "requirement": "Close should be actionable, not just inspirational. STRICT: Maximum 2 short paragraphs. If it's running longer, you're summarizing instead of closing.",
           "substance_level": "light",
-          "length": "1-2 paragraphs",
-          "test": "Does the close tell the reader what to do first?"
+          "length": "1-2 paragraphs (ENFORCED - 3+ paragraphs is a failure)",
+          "test": "Does the close tell the reader what to do FIRST? Not a list, not a summary—one specific action.",
+          "common_failure": "Closes that restate the essay's points instead of giving a single actionable takeaway. The close should add something new (a specific first step), not repeat what came before."
         }
       ],
       "key_principles": [
@@ -2032,6 +2035,12 @@
         "Inspirational close without concrete action",
         "Misconception stated unfairly as strawman"
       ],
+      "craft_notes": {
+        "section_opener_variety": "CRITICAL: Avoid repetitive section openers. 'How do you...', 'Where do you...', 'What should you...' in sequence feels mechanical. Vary structure: statement, question, imperative, observation.",
+        "rhythm_in_lists": "FILTER_CRITERIA, WELLS_IDENTIFIED, RECIPES, WARNING_SIGNS are all list-like. Break monotony by varying item lengths and using short punchy sentences between longer explanations.",
+        "personal_voice": "Even in prescriptive sections, include 'We...' or specific examples from experience. Pure prescription feels like a manual. PG always grounds in personal observation.",
+        "the_hook": "Opening negation ('The way to X is not to Y') is the hook. Don't bury it. First sentence should surprise."
+      },
       "when_to_use": [
         "Teaching a skill where common approach fails",
         "You understand WHY the common approach fails",
@@ -2113,11 +2122,13 @@
           "name": "EVIDENCE_STACKED",
           "purpose": "Pile up different types of evidence",
           "signals": ["And that's not all...", "Another piece of evidence...", "This explains why..."],
-          "requirement": "Evidence should come from multiple sources: personal experience, logic, external validation, examples.",
+          "requirement": "Evidence MUST come from at least 3 different source types. All personal experience is a failure. Mix required: personal + logical + external minimum.",
           "substance_level": "heavy",
           "length": "4-6 paragraphs",
-          "substance_type": ["personal_evidence - your own experience", "external_validation - what others say", "logical_argument - why it must be true", "competitive_outcome - who won and why"],
-          "key_move": "Don't just give one type of evidence. Stack different types so skeptics can't dismiss all of them."
+          "substance_type": ["personal_evidence - your own experience", "external_validation - what others say", "logical_argument - why it must be true from first principles", "competitive_outcome - who won and why"],
+          "key_move": "Don't just give one type of evidence. Stack different types so skeptics can't dismiss all of them.",
+          "common_failure": "All evidence comes from personal experience. This is easy to write but easy to dismiss ('that's just your situation'). MUST include logical evidence (first principles reasoning) and external evidence (what others observe) to be robust.",
+          "validation_check": "Count evidence types. If fewer than 3 distinct types, section fails."
         },
         {
           "name": "COMPETITIVE_FRAME",
