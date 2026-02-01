@@ -1,0 +1,90 @@
+{
+  "$schema": "./schema.json",
+  "name": "Essay Maps",
+  "version": "1.0.0",
+  "description": "Full essay architectures that capture how great essayists structure arguments",
+  "maps": {
+    "pg_discovery": {
+      "name": "PG Discovery",
+      "description": "Essay as thinking-out-loud. Starts with question, explores, discovers the question was wrong, finds better question, follows implications.",
+      "source": "Paul Graham essays (The Best Essay, How to Think for Yourself, etc.)",
+      "sections": [
+        {
+          "name": "QUESTION",
+          "purpose": "Open with genuine curiosity, not thesis",
+          "signals": ["I wondered why...", "What would it mean to...", "Despite its title..."],
+          "requirement": "Must be a real question you don't know the answer to yet"
+        },
+        {
+          "name": "FIRST_ATTEMPT",
+          "purpose": "The obvious answer, explored honestly",
+          "signals": ["The obvious answer is...", "You might think...", "It seems like..."],
+          "requirement": "Take the obvious answer seriously before rejecting it"
+        },
+        {
+          "name": "UNEXPECTED_CONSEQUENCE",
+          "purpose": "Following the obvious answer reveals something strange",
+          "signals": ["But that leads to...", "That may sound obvious, but it has unexpected consequences...", "One is that..."],
+          "requirement": "The strangeness must be genuinely surprising, not manufactured"
+        },
+        {
+          "name": "WRONG_TURN_ACKNOWLEDGED",
+          "purpose": "Admit you were on the wrong track",
+          "signals": ["I imagined when I started... But in fact the opposite seems true", "If that's true, then I started with the wrong question", "That can't be right because..."],
+          "requirement": "Genuine intellectual honesty - you changed your mind"
+        },
+        {
+          "name": "BETTER_QUESTION",
+          "purpose": "Reframe to the real question",
+          "signals": ["Perhaps what this shows is...", "Instead of asking X, I should have asked Y", "The real question is..."],
+          "requirement": "New question must be earned by the previous exploration"
+        },
+        {
+          "name": "MECHANISM",
+          "purpose": "Explain WHY - the machinery underneath",
+          "signals": ["Here's why...", "The way this works is...", "What happens is..."],
+          "requirement": "Not just what, but how and why it works that way"
+        },
+        {
+          "name": "IMPLICATIONS_FOLLOWED",
+          "purpose": "If this is true, what else must be true?",
+          "signals": ["If that's true, then...", "This suggests...", "Another consequence..."],
+          "requirement": "Follow at least one surprising implication to its end"
+        },
+        {
+          "name": "OBJECTION_ADDRESSED",
+          "purpose": "Steelman and answer the best counterargument",
+          "signals": ["You might think...", "It would be a mistake to...", "This doesn't mean..."],
+          "requirement": "Real objection, not strawman"
+        },
+        {
+          "name": "CLOSE",
+          "purpose": "Return to start with new understanding",
+          "signals": ["So the answer to the original question...", "This essay has been a kind of...", "I understand better now..."],
+          "requirement": "Must connect back to opening, showing what was learned"
+        }
+      ],
+      "key_principles": [
+        "Show thinking, not thoughts - the reader watches you figure it out",
+        "Be willing to discover you were wrong",
+        "Each section earns the next - transitions are logical necessity, not bridges",
+        "Concrete examples at key moments as proof, not decoration",
+        "Follow surprising threads rather than staying on track",
+        "Meta-awareness without being annoying - you can reference the essay itself"
+      ],
+      "failure_modes": [
+        "Starting with conclusion disguised as question",
+        "Fake wrong turns (you knew the answer all along)",
+        "Sections that could be rearranged (not earned)",
+        "Assertions without mechanism",
+        "Ignoring the real objection"
+      ],
+      "example_essays": [
+        "The Best Essay (March 2024)",
+        "How to Think for Yourself",
+        "How to Do Great Work",
+        "The Submarine"
+      ]
+    }
+  }
+}
