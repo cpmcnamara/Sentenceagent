@@ -288,6 +288,315 @@
         "How to Do Great Work",
         "The Submarine"
       ]
+    },
+    "amodei_systematic_analysis": {
+      "name": "Amodei Systematic Analysis",
+      "description": "Essay as comprehensive risk/opportunity mapping. Opens with cultural framing, states thesis upfront, then systematically works through categories with consistent internal structure. Each category has analysis + defenses. Closes by returning to opening frame with call to action.",
+      "source": "Dario Amodei essays (The Adolescence of Technology, Machines of Loving Grace)",
+      "sections": [
+        {
+          "name": "CULTURAL_FRAME",
+          "purpose": "Open with vivid scene from culture that embodies the stakes",
+          "signals": ["The movie...", "In [famous work]...", "There's a scene in..."],
+          "requirement": "Must be recognizable cultural touchstone that captures emotional core",
+          "substance_level": "medium",
+          "substance_type": ["scene_description - paint the moment vividly", "emotional_stakes - what the scene makes us feel"],
+          "transition_to_next": "Pivot from scene to thesis: 'This captures something real about...' OR 'The scene works because...'",
+          "recommended_patterns": {
+            "sentence_families": ["narrative_thread", "colon_reveal"],
+            "cadence_archetypes": ["slow_build - immerse reader in scene"]
+          },
+          "length": "2-4 paragraphs",
+          "key_move": "The scene must do double duty: emotionally engaging AND intellectually relevant"
+        },
+        {
+          "name": "THESIS_STATED",
+          "purpose": "Clearly state what you believe and what essay will argue",
+          "signals": ["I believe...", "My view is that...", "This essay will argue...", "The core claim is..."],
+          "requirement": "Unlike PG discovery, thesis is known upfront - be direct",
+          "substance_level": "light",
+          "substance_type": "thesis_declaration - clear statement of position",
+          "transition_to_next": "Announce the structure: 'There are [N] main categories...' OR 'I'll organize this around...'",
+          "recommended_patterns": {
+            "sentence_families": ["definition_is", "list_resolve"],
+            "cadence_archetypes": ["drumline - steady authoritative march"]
+          },
+          "length": "1-2 paragraphs"
+        },
+        {
+          "name": "CATEGORICAL_OVERVIEW",
+          "purpose": "Preview the categories you'll analyze",
+          "signals": ["I'll organize around five buckets...", "There are several distinct concerns...", "The main categories are..."],
+          "requirement": "Categories must be MECE (mutually exclusive, collectively exhaustive) or explain why not",
+          "substance_level": "light",
+          "substance_type": "category_names - just the labels, save depth for later",
+          "transition_to_next": "Transition to first category: 'Let's start with...' OR simply begin first section",
+          "recommended_patterns": {
+            "sentence_families": ["list_resolve", "definition_is"],
+            "cadence_archetypes": ["parallel_march - consistent structure for each preview"]
+          },
+          "length": "1-2 paragraphs"
+        },
+        {
+          "name": "CATEGORY_SECTION",
+          "purpose": "Deep dive into one category with consistent internal structure",
+          "repeatable": true,
+          "internal_structure": [
+            {
+              "name": "CATEGORY_HEADER",
+              "purpose": "Named section with evocative title",
+              "signals": ["1. Autonomy risks (\"I'm sorry, Dave\")", "Section title plus subtitle or quote"],
+              "requirement": "Title should be memorable - mix technical and cultural reference"
+            },
+            {
+              "name": "PROBLEM_STATEMENT",
+              "purpose": "State what the risk/concern actually is",
+              "signals": ["The core concern is...", "This risk manifests as...", "What we're worried about is..."],
+              "substance_level": "heavy",
+              "substance_type": [
+                "concrete_scenario - specific example of risk manifesting",
+                "mechanism_explained - how the risk actually works",
+                "spectrum_laid_out - show range from mild to severe"
+              ]
+            },
+            {
+              "name": "DETAILED_ANALYSIS",
+              "purpose": "Work through nuances, sub-cases, real-world implications",
+              "signals": ["There are several variants...", "The subtler version is...", "Even more concerning..."],
+              "substance_level": "heaviest",
+              "substance_type": [
+                "sub_categorization - break down into types",
+                "historical_precedent - has this happened before?",
+                "probability_assessment - how likely is each variant?",
+                "footnoted_evidence - citations, data, sources"
+              ]
+            },
+            {
+              "name": "DEFENSES",
+              "purpose": "What can be done to mitigate this category of risk",
+              "signals": ["Defenses:", "What can be done?", "Several factors work in our favor..."],
+              "requirement": "Must be concrete and actionable, not hand-wavy",
+              "substance_level": "heavy",
+              "substance_type": [
+                "policy_proposals - specific interventions",
+                "technical_solutions - what technology can help",
+                "institutional_mechanisms - what structures help",
+                "honest_limitations - where defenses are weak"
+              ]
+            }
+          ],
+          "transition_to_next": "Can be minimal - section headers do heavy lifting. Or: 'Moving to the next category...'",
+          "recommended_patterns": {
+            "sentence_families": ["conditional_snap", "concede_counterpunch", "list_resolve"],
+            "cadence_archetypes": ["wave - alternate explanation and evidence", "ladder - build logical chain"],
+            "paragraph_roles": ["definition", "elaboration", "evidence", "counterpunch"]
+          },
+          "length": "10-30 paragraphs per category depending on complexity"
+        },
+        {
+          "name": "SYNTHESIS",
+          "purpose": "What do the categories together reveal?",
+          "signals": ["Looking across these categories...", "What ties these together is...", "The common thread is..."],
+          "requirement": "Must add insight beyond sum of parts",
+          "substance_level": "medium",
+          "substance_type": [
+            "pattern_identified - what recurs across categories",
+            "tension_named - where categories conflict",
+            "priority_argued - which matters most and why"
+          ],
+          "transition_to_next": "Pivot to action: 'Given all this, what should we do?' OR return to opening frame",
+          "recommended_patterns": {
+            "sentence_families": ["colon_reveal", "definition_is"],
+            "cadence_archetypes": ["crescendo_snap - build to synthesis insight"]
+          },
+          "length": "2-5 paragraphs"
+        },
+        {
+          "name": "RETURN_TO_FRAME",
+          "purpose": "Callback to opening scene with new understanding",
+          "signals": ["Return to [opening]...", "The scene I opened with...", "Recall the moment when..."],
+          "requirement": "Must show how analysis has deepened understanding of opening",
+          "substance_level": "medium",
+          "substance_type": ["recontextualized_scene - same scene, new meaning", "emotional_callback - reconnect to stakes"],
+          "transition_to_next": "Flow into call to action",
+          "recommended_patterns": {
+            "sentence_families": ["bookend", "contrast_pair"],
+            "cadence_archetypes": ["bookend - mirror opening structure"]
+          },
+          "length": "1-2 paragraphs"
+        },
+        {
+          "name": "CALL_TO_ACTION",
+          "purpose": "Issue challenge to reader/society",
+          "signals": ["The question now is...", "What's needed is...", "We have a choice...", "Humanity's test is..."],
+          "requirement": "Must feel earned by the analysis - not generic uplift",
+          "substance_level": "medium",
+          "substance_type": [
+            "choice_framed - what are the options?",
+            "stakes_restated - what hangs in the balance?",
+            "agency_granted - reader can do something"
+          ],
+          "transition_to_next": null,
+          "recommended_patterns": {
+            "sentence_families": ["conditional_snap", "fragment_punch"],
+            "cadence_archetypes": ["crescendo_snap - build to final challenge", "punch_punch_land - short setups, landing close"]
+          },
+          "length": "2-4 paragraphs"
+        }
+      ],
+      "transition_patterns": {
+        "description": "Amodei uses explicit structure (numbered sections, headers) plus clear signposting",
+        "types": [
+          {
+            "name": "section_header",
+            "pattern": "Numbered section with title in quotes or parenthetical",
+            "example": "2. Misuse for destruction (\"A surprising and terrible empowerment\")"
+          },
+          {
+            "name": "defenses_pivot",
+            "pattern": "Shift from problem to solution with single word header",
+            "example": "Defenses:"
+          },
+          {
+            "name": "explicit_signpost",
+            "pattern": "Announce what comes next",
+            "example": "I'll organize my thoughts around five main buckets..."
+          },
+          {
+            "name": "scope_acknowledgment",
+            "pattern": "Note what you're not covering and why",
+            "example": "I won't discuss X in depth here, but it deserves mention..."
+          },
+          {
+            "name": "frame_callback",
+            "pattern": "Return to opening image/scene",
+            "example": "Return to the scene I opened with..."
+          }
+        ],
+        "anti_patterns": [
+          "Transitions that work against explicit structure",
+          "Surprise pivots in a systematic essay",
+          "Burying category boundaries"
+        ]
+      },
+      "substance_types": {
+        "description": "Amodei essays are evidence-heavy with policy focus",
+        "types": [
+          {
+            "name": "footnoted_evidence",
+            "description": "Citation-supported claims with sources",
+            "example": "The nuclear taboo has held for 80 years [footnote with sources]",
+            "when_to_use": "DETAILED_ANALYSIS - back up claims"
+          },
+          {
+            "name": "concrete_scenario",
+            "description": "Specific hypothetical that makes abstract risk concrete",
+            "example": "Imagine a model that can synthesize a pathogen from openly available research...",
+            "when_to_use": "PROBLEM_STATEMENT - make risk tangible"
+          },
+          {
+            "name": "spectrum_analysis",
+            "description": "Show range from mild to severe versions",
+            "example": "At the mild end... at the severe end...",
+            "when_to_use": "DETAILED_ANALYSIS - show scope"
+          },
+          {
+            "name": "policy_proposal",
+            "description": "Specific actionable intervention",
+            "example": "Requiring KYC for frontier model access...",
+            "when_to_use": "DEFENSES - be specific about solutions"
+          },
+          {
+            "name": "honest_limitation",
+            "description": "Acknowledge where your defenses are weak",
+            "example": "None of these defenses are perfect. The concern remains that...",
+            "when_to_use": "DEFENSES - build trust through honesty"
+          },
+          {
+            "name": "probability_estimate",
+            "description": "Explicit likelihood assessment",
+            "example": "I'd estimate a 10-20% chance that... a smaller but non-negligible chance that...",
+            "when_to_use": "DETAILED_ANALYSIS - quantify uncertainty"
+          },
+          {
+            "name": "historical_analogy",
+            "description": "Previous technology/situation that parallels current one",
+            "example": "The nuclear era offers lessons... The early days of the internet show...",
+            "when_to_use": "Any section - ground abstract in concrete precedent"
+          },
+          {
+            "name": "cultural_reference",
+            "description": "Movie, book, artwork that captures the concern",
+            "example": "HAL 9000... Skynet... Player Piano...",
+            "when_to_use": "CULTURAL_FRAME, CATEGORY_HEADER - make memorable"
+          }
+        ]
+      },
+      "pattern_library_integration": {
+        "description": "How to pull in sentence/paragraph patterns at each section",
+        "by_section": {
+          "CULTURAL_FRAME": {
+            "sentence_families": ["narrative_thread - for scene description", "colon_reveal - for emotional stakes"],
+            "cadence_archetypes": ["slow_build - immerse before pivoting"]
+          },
+          "THESIS_STATED": {
+            "sentence_families": ["definition_is - for clear declarations", "list_resolve - for previewing structure"],
+            "cadence_archetypes": ["drumline - authoritative steady rhythm"]
+          },
+          "PROBLEM_STATEMENT": {
+            "sentence_families": ["conditional_snap - if X then Y consequences", "accumulation - pile up examples"],
+            "use_heavily": "Make abstract risks concrete"
+          },
+          "DEFENSES": {
+            "sentence_families": ["list_resolve - enumerate solutions", "concede_counterpunch - acknowledge limits then counter"],
+            "paragraph_roles": ["definition", "elaboration", "concession", "counterpunch"]
+          },
+          "CALL_TO_ACTION": {
+            "sentence_families": ["conditional_snap - stakes framing", "fragment_punch - punchy close"],
+            "cadence_archetypes": ["crescendo_snap - build to final challenge"]
+          }
+        }
+      },
+      "key_principles": [
+        "Thesis upfront - this is advocacy, not exploration",
+        "Systematic coverage - MECE categories or explain why not",
+        "Consistent internal structure - each category follows same pattern",
+        "Evidence-heavy - footnotes, citations, specific numbers",
+        "Honest about limitations - acknowledge where defenses are weak",
+        "Cultural framing - use recognizable references to set stakes",
+        "Action-oriented close - don't just analyze, call for action",
+        "Balance doom and hope - risks are real but defenses exist"
+      ],
+      "failure_modes": [
+        "Categories that overlap or leave gaps",
+        "Defenses section that's generic or hand-wavy",
+        "Opening frame that doesn't connect to analysis",
+        "Call to action that feels unearned",
+        "All doom, no defenses (or vice versa)",
+        "Abstract risks without concrete scenarios",
+        "Missing the synthesis - just listing categories",
+        "Closing that doesn't return to opening frame"
+      ],
+      "when_to_use": [
+        "Complex multi-faceted topic requiring systematic treatment",
+        "Risk or opportunity analysis",
+        "Policy-oriented writing",
+        "When you have a thesis to argue (not discover)",
+        "Topics where categorization helps understanding",
+        "When you need to be comprehensive, not just insightful"
+      ],
+      "contrast_with_pg_discovery": {
+        "thesis": "PG discovers thesis through writing; Amodei states thesis upfront",
+        "structure": "PG follows implications organically; Amodei pre-plans categorical structure",
+        "reader_experience": "PG: 'watch me figure it out'; Amodei: 'let me systematically convince you'",
+        "evidence": "PG uses examples to illustrate; Amodei uses evidence to prove",
+        "tone": "PG is intimate/personal; Amodei is authoritative/comprehensive",
+        "best_for": "PG for intellectual exploration; Amodei for policy advocacy"
+      },
+      "example_essays": [
+        "The Adolescence of Technology (2025)",
+        "Machines of Loving Grace (2024)"
+      ]
     }
   }
 }
