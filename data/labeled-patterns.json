@@ -2417,6 +2417,18 @@
         "'If one fails, the others keep running' - too concrete, less interesting than abstract principle"
       ],
       "principle_learned": "abstract-ending-over-concrete-when-reframe-is-clear"
+    },
+    {
+      "test_id": 16,
+      "pattern": "Graham #78 (Actionable close with insight)",
+      "topic": "cooking / home kitchens",
+      "status": "complete",
+      "winner": "So if you want to cook better, remember this, because this is one of the reasons home cooks beat restaurants. Restaurants want to decrease variability because they need consistency across a thousand plates. But when you eliminate surprises, you lose the accidents that become signatures.",
+      "why_won": "Word echoes create cohesion: variability → consistency → eliminate surprises. Ending ('accidents that become signatures') is memorable and true.",
+      "losers": [
+        "'need the same dish a thousand times' - lost the variability/consistency vocabulary, broke the echo"
+      ],
+      "principle_learned": "vocabulary-echoes-create-cohesion"
     }
   ],
   "generationPrinciples": [
