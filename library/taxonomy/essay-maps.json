@@ -613,6 +613,795 @@
         "The Adolescence of Technology (2025)",
         "Machines of Loving Grace (2024)"
       ]
+    },
+    "pg_analogy_exploration": {
+      "name": "PG Analogy Exploration",
+      "description": "Essay built around a surprising comparison between two domains. Opens with observation that two things seem unrelated, reveals deep structural similarities, follows implications. Reader discovers that understanding one domain illuminates the other.",
+      "source": "Paul Graham essays (Hackers and Painters, Beating the Averages)",
+      "sections": [
+        {
+          "name": "SURPRISING_PAIRING",
+          "purpose": "Establish that you've moved between two worlds others see as unrelated",
+          "signals": ["When I finished X, I went to Y...", "A lot of people seemed surprised that...", "They seemed to think X and Y were very different..."],
+          "requirement": "Personal credibility in both domains; the pairing must seem genuinely unexpected",
+          "substance_level": "light",
+          "substance_type": "personal_credential - establish you know both worlds",
+          "transition_to_next": "State that conventional view is wrong: 'Both of these images are wrong.'",
+          "recommended_patterns": {
+            "sentence_families": ["contrast_pair", "reversal_but"],
+            "cadence_archetypes": ["setup_punch - convention then surprise"]
+          },
+          "length": "2-4 paragraphs"
+        },
+        {
+          "name": "CORE_SIMILARITY",
+          "purpose": "Name the deep structural similarity between the domains",
+          "signals": ["What X and Y have in common is...", "They're both...", "Along with [others in this category]..."],
+          "requirement": "The similarity must be non-obvious but, once stated, feel true",
+          "substance_level": "medium",
+          "substance_type": ["category_definition - what class do both belong to?", "shared_property - what do they both do?"],
+          "transition_to_next": "Having established similarity, complicate it: 'I've never liked the term...'",
+          "recommended_patterns": {
+            "sentence_families": ["definition_is", "list_resolve"],
+            "cadence_archetypes": ["drumline - steady assertion"]
+          },
+          "length": "1-2 paragraphs"
+        },
+        {
+          "name": "CONVENTIONAL_FRAME_CRITIQUE",
+          "purpose": "Show how the standard framing of one domain is broken",
+          "signals": ["The main reason I don't like it is...", "X is a grab bag of...", "At one end... in the middle... at the other extreme..."],
+          "requirement": "Must show that conventional categories obscure rather than illuminate",
+          "substance_level": "heavy",
+          "substance_type": [
+            "taxonomy_exposed - show the mess of current categories",
+            "concrete_examples - specific cases that don't fit",
+            "historical_accident - why things are the way they are"
+          ],
+          "transition_to_next": "Propose the better frame: 'Perhaps one day...' OR 'The other reason I don't like...'",
+          "recommended_patterns": {
+            "sentence_families": ["negation_pivot", "list_resolve"],
+            "cadence_archetypes": ["ladder - build evidence of brokenness"]
+          },
+          "length": "3-6 paragraphs"
+        },
+        {
+          "name": "LESSONS_FROM_ANALOGY",
+          "purpose": "Draw specific insights from comparing the two domains",
+          "signals": ["What can X teach us about Y?", "One thing we can learn...", "For example, I was taught in college that..."],
+          "requirement": "Insights must be concrete and actionable, not just 'they're similar'",
+          "substance_level": "heaviest",
+          "substance_type": [
+            "personal_anecdote - how you learned this lesson",
+            "counterintuitive_practice - what the analogy reveals you should do",
+            "historical_example - proof the insight works",
+            "wrong_approach_exposed - what happens when you don't follow it"
+          ],
+          "transition_to_next": "Can chain multiple lessons with 'Another example...' OR pivot to objection",
+          "recommended_patterns": {
+            "sentence_families": ["conditional_snap", "concede_counterpunch"],
+            "cadence_archetypes": ["wave - long example, short lesson, long example"]
+          },
+          "length": "8-15 paragraphs - this is the bulk of the essay"
+        },
+        {
+          "name": "INSTITUTIONAL_FAILURE",
+          "purpose": "Show how institutions get the domains wrong",
+          "signals": ["If universities and research labs...", "Unfortunately, most companies won't...", "I only discovered this myself..."],
+          "requirement": "Must identify specific institutional forces that create the problem",
+          "substance_level": "heavy",
+          "substance_type": [
+            "institutional_critique - who's failing and why",
+            "personal_experience - your encounter with the institution",
+            "structural_analysis - why the failure is systematic"
+          ],
+          "transition_to_next": "Move to solution or opportunity: 'So one way to...' OR 'The place to...'",
+          "recommended_patterns": {
+            "sentence_families": ["conditional_snap", "reversal_but"],
+            "cadence_archetypes": ["crescendo_snap - build to institutional critique"]
+          },
+          "length": "3-5 paragraphs"
+        },
+        {
+          "name": "WAY_FORWARD",
+          "purpose": "What to do given these insights",
+          "signals": ["So one way to...", "The answer, I think, is...", "This is what X is all about..."],
+          "requirement": "Must be practical, not just theoretical",
+          "substance_level": "medium",
+          "substance_type": [
+            "practical_advice - what you should do",
+            "reframing - how to see your situation differently",
+            "vindication - proof this approach works"
+          ],
+          "transition_to_next": "Can add complications or move to close",
+          "recommended_patterns": {
+            "sentence_families": ["colon_reveal", "conditional_snap"],
+            "cadence_archetypes": ["punch_punch_land"]
+          },
+          "length": "2-4 paragraphs"
+        },
+        {
+          "name": "CLOSE_WITH_STAKES",
+          "purpose": "Why this matters beyond the practical",
+          "signals": ["What we can say with some confidence is...", "Over and over we see the same pattern...", "How cool X turns out to be will depend on..."],
+          "requirement": "Must elevate from practical to significant without grandiosity",
+          "substance_level": "medium",
+          "substance_type": ["historical_pattern - this has happened before", "open_question - what remains to be seen"],
+          "transition_to_next": null,
+          "recommended_patterns": {
+            "sentence_families": ["bookend", "conditional_snap"],
+            "cadence_archetypes": ["crescendo_snap - end on resonant note"]
+          },
+          "length": "2-3 paragraphs"
+        }
+      ],
+      "transition_patterns": {
+        "description": "PG Analogy uses the analogy itself as transition infrastructure",
+        "types": [
+          {
+            "name": "domain_switch",
+            "pattern": "Move from one domain to the other",
+            "example": "Because painters leave a trail of work behind them..."
+          },
+          {
+            "name": "lesson_extraction",
+            "pattern": "Name what the comparison teaches",
+            "example": "Here's a case where we can learn from painting."
+          },
+          {
+            "name": "personal_discovery",
+            "pattern": "Use your own realization as bridge",
+            "example": "Now I realize I was mistaken."
+          },
+          {
+            "name": "institutional_pivot",
+            "pattern": "Move from insight to systemic problem",
+            "example": "If universities and research labs keep hackers from doing..."
+          }
+        ],
+        "anti_patterns": [
+          "Forced analogies that don't hold up",
+          "Staying too long in one domain",
+          "Making the comparison but not extracting lessons"
+        ]
+      },
+      "substance_types": {
+        "description": "Analogy essays thrive on concrete details from both domains",
+        "types": [
+          {
+            "name": "cross_domain_example",
+            "description": "Show same pattern in both domains",
+            "example": "Paintings usually begin with a sketch... I think hacking should work this way too.",
+            "when_to_use": "LESSONS_FROM_ANALOGY - prove the similarity is real"
+          },
+          {
+            "name": "personal_wrong_turn",
+            "description": "Admit you used to believe the wrong thing",
+            "example": "For a long time I felt bad about this, just as I once felt bad that I didn't hold my pencil the way they taught me.",
+            "when_to_use": "LESSONS_FROM_ANALOGY - build trust through honesty"
+          },
+          {
+            "name": "institutional_quote",
+            "description": "Let institutions indict themselves",
+            "example": "Programs should be written for people to read, and only incidentally for machines to execute.",
+            "when_to_use": "WAY_FORWARD - borrow authority"
+          },
+          {
+            "name": "maker_solidarity",
+            "description": "Reference other makers who share the pattern",
+            "example": "Benjamin Franklin learned to write by summarizing... Raymond Chandler did the same thing...",
+            "when_to_use": "LESSONS_FROM_ANALOGY - broaden the pattern"
+          }
+        ]
+      },
+      "key_principles": [
+        "The analogy must reveal, not just compare",
+        "Both domains must be treated with equal respect and knowledge",
+        "Personal experience in both domains builds credibility",
+        "Lessons must be concrete and actionable",
+        "Institutional critique gives the essay stakes",
+        "The reader should see their own domain differently by the end"
+      ],
+      "failure_modes": [
+        "Analogy that's cute but doesn't hold up under pressure",
+        "Too abstract - no concrete details from either domain",
+        "One-sided - expert in one domain, tourist in the other",
+        "No lessons extracted - just 'they're similar!'",
+        "No institutional critique - stays at individual level",
+        "Preaching - the reader feels lectured, not enlightened"
+      ],
+      "when_to_use": [
+        "You have genuine experience in two domains others see as unrelated",
+        "You've noticed structural similarities others miss",
+        "The comparison yields actionable insights",
+        "There's an institutional failure to critique",
+        "You want to reframe how people see a field"
+      ],
+      "example_essays": [
+        "Hackers and Painters (2003)",
+        "Beating the Averages (2001)",
+        "Maker's Schedule, Manager's Schedule (2009)"
+      ]
+    },
+    "raymond_case_study": {
+      "name": "Raymond Case Study",
+      "description": "Essay built around a first-person case study that extracts numbered principles. Tells the story of a project while explicitly pulling out lessons as numbered aphorisms. Reader learns both the story and a reusable framework.",
+      "source": "Eric S. Raymond (The Cathedral and the Bazaar, Homesteading the Noosphere)",
+      "sections": [
+        {
+          "name": "PARADIGM_CHALLENGE",
+          "purpose": "State that conventional wisdom about something is wrong",
+          "signals": ["Linux is subversive.", "Who would have thought...", "Certainly not I."],
+          "requirement": "Must name the surprising phenomenon that challenges the paradigm",
+          "substance_level": "medium",
+          "substance_type": ["paradigm_named - what people believed", "counter_example - what disproved it"],
+          "transition_to_next": "Establish your credibility: 'By the time X swam onto my radar screen...'",
+          "recommended_patterns": {
+            "sentence_families": ["fragment_punch", "reversal_but"],
+            "cadence_archetypes": ["short_punch - open with declaration"]
+          },
+          "length": "1-3 paragraphs"
+        },
+        {
+          "name": "PERSONAL_CREDENTIAL",
+          "purpose": "Establish why you're qualified to analyze this",
+          "signals": ["I had already been involved in X for Y years...", "I was one of the first...", "I thought I knew how it was done."],
+          "requirement": "Must show both expertise AND that you were surprised",
+          "substance_level": "medium",
+          "substance_type": ["resume_points - what you'd done", "prior_beliefs - what you thought you knew"],
+          "transition_to_next": "Name what overturned your assumptions: 'X overturned much of what I thought I knew.'",
+          "recommended_patterns": {
+            "sentence_families": ["list_resolve", "reversal_but"],
+            "cadence_archetypes": ["drumline - list credentials"]
+          },
+          "length": "2-3 paragraphs"
+        },
+        {
+          "name": "CENTRAL_METAPHOR",
+          "purpose": "Introduce the framing metaphor for the essay",
+          "signals": ["I believed that... needed to be built like cathedrals...", "The X community seemed to resemble...", "No quiet, reverent... here—rather..."],
+          "requirement": "Metaphor must be vivid, memorable, and actually illuminate",
+          "substance_level": "medium",
+          "substance_type": ["metaphor_introduction - name both poles", "contrast_painted - make the difference visceral"],
+          "transition_to_next": "Signal the essay's method: 'Chance handed me a perfect way to test my theory...'",
+          "recommended_patterns": {
+            "sentence_families": ["contrast_pair", "colon_reveal"],
+            "cadence_archetypes": ["parallel_march - cathedral vs bazaar"]
+          },
+          "length": "2-4 paragraphs"
+        },
+        {
+          "name": "CASE_STUDY_NARRATIVE",
+          "purpose": "Tell the story of your project with embedded lessons",
+          "signals": ["This is the story of that project.", "The mail must get through.", "I'll use it to propose some aphorisms..."],
+          "requirement": "Story must be specific enough to be credible, general enough to yield principles",
+          "substance_level": "heaviest",
+          "substance_type": [
+            "chronological_narrative - what happened when",
+            "decision_points - choices you made",
+            "numbered_lessons - explicitly extracted principles",
+            "technical_details - enough to be credible"
+          ],
+          "internal_structure": [
+            {
+              "name": "STORY_BEAT",
+              "purpose": "A specific event or decision in the project",
+              "requirement": "Must be concrete and specific"
+            },
+            {
+              "name": "LESSON_EXTRACTION",
+              "purpose": "Pull out a numbered principle from the beat",
+              "signals": ["Lesson N:", "This suggests:", "Here's the aphorism:"],
+              "requirement": "Principle must be memorable and reusable"
+            }
+          ],
+          "transition_to_next": "Story naturally leads to theory: 'By mid-1996 I thought I was beginning to understand.'",
+          "recommended_patterns": {
+            "sentence_families": ["narrative_thread", "colon_reveal"],
+            "cadence_archetypes": ["wave - story beat, lesson, story beat, lesson"]
+          },
+          "length": "15-30 paragraphs - bulk of essay"
+        },
+        {
+          "name": "THEORETICAL_FRAMEWORK",
+          "purpose": "Generalize from case study to theory",
+          "signals": ["Given enough eyeballs, all bugs are shallow.", "I dub this...", "More formally..."],
+          "requirement": "Theory must emerge from story, not be imposed on it",
+          "substance_level": "heavy",
+          "substance_type": [
+            "named_law - give your principle a name",
+            "formal_statement - state it precisely",
+            "mechanism_explained - why it works"
+          ],
+          "transition_to_next": "Address objections or expand scope",
+          "recommended_patterns": {
+            "sentence_families": ["definition_is", "conditional_snap"],
+            "cadence_archetypes": ["crescendo_snap - build to named principle"]
+          },
+          "length": "3-6 paragraphs"
+        },
+        {
+          "name": "BROADER_IMPLICATIONS",
+          "purpose": "What does this mean beyond your case study?",
+          "signals": ["If I'm correct, they'll help you...", "The implications for the future of...", "This insight can be extended to..."],
+          "requirement": "Must be intellectually ambitious without losing grounding",
+          "substance_level": "medium",
+          "substance_type": [
+            "scope_expansion - where else does this apply?",
+            "prediction - what will happen if this is right?",
+            "call_to_action - what should we do?"
+          ],
+          "transition_to_next": null,
+          "recommended_patterns": {
+            "sentence_families": ["conditional_snap", "bookend"],
+            "cadence_archetypes": ["crescendo_snap - end on significance"]
+          },
+          "length": "2-4 paragraphs"
+        }
+      ],
+      "transition_patterns": {
+        "description": "Raymond uses numbered lessons as structural spine",
+        "types": [
+          {
+            "name": "lesson_marker",
+            "pattern": "Explicit numbered principle",
+            "example": "5. When you lose interest in a program, your last duty to it is to hand it off to a competent successor."
+          },
+          {
+            "name": "story_continuation",
+            "pattern": "Narrative momentum",
+            "example": "The next thing I needed was..."
+          },
+          {
+            "name": "theoretical_pivot",
+            "pattern": "Move from story to theory",
+            "example": "This suggested a deeper point..."
+          },
+          {
+            "name": "scope_expansion",
+            "pattern": "Broaden from specific to general",
+            "example": "If this is true for software, what about...?"
+          }
+        ],
+        "anti_patterns": [
+          "Lessons that feel forced or obvious",
+          "Story that wanders without extracting lessons",
+          "Theory disconnected from story",
+          "Too many lessons (diminishing returns)"
+        ]
+      },
+      "key_principles": [
+        "The story must be real and specific",
+        "Lessons must be numbered and memorable",
+        "Theory must emerge from story, not precede it",
+        "The metaphor does heavy organizational work",
+        "Personal credibility matters - you must have done the thing",
+        "The lessons should be reusable by others"
+      ],
+      "failure_modes": [
+        "Lessons that are obvious or trite",
+        "Story without generalizable lessons",
+        "Theory disconnected from evidence",
+        "Metaphor that doesn't hold up",
+        "Too much technical detail for general audience",
+        "Not enough technical detail for credibility"
+      ],
+      "when_to_use": [
+        "You've done a project that yielded surprising insights",
+        "You want to teach through story rather than abstract principles",
+        "The lessons are genuinely novel and reusable",
+        "You have a good central metaphor",
+        "You want readers to apply your insights to their own work"
+      ],
+      "example_essays": [
+        "The Cathedral and the Bazaar (1997)",
+        "Homesteading the Noosphere (1998)",
+        "The Magic Cauldron (1999)"
+      ]
+    },
+    "stephenson_cultural_excavation": {
+      "name": "Stephenson Cultural Excavation",
+      "description": "Essay as archaeological dig through culture. Uses technology as lens to examine deeper questions about society, consciousness, and meaning. Long, digressive, rich with extended metaphors and historical context. Reader emerges with new way of seeing familiar things.",
+      "source": "Neal Stephenson (In the Beginning was the Command Line, The Great Simoleon Caper)",
+      "sections": [
+        {
+          "name": "HISTORICAL_FRAMING",
+          "purpose": "Ground the topic in specific historical moment",
+          "signals": ["About twenty years ago...", "The business took off...", "Around the same time..."],
+          "requirement": "Must establish specific actors, dates, and context",
+          "substance_level": "heavy",
+          "substance_type": [
+            "named_actors - specific people who made decisions",
+            "origin_story - how we got here",
+            "weird_detail - thing that now seems strange"
+          ],
+          "transition_to_next": "Pivot to present implications: 'A person who went into a coma before... and woke up now...'",
+          "recommended_patterns": {
+            "sentence_families": ["narrative_thread", "contrast_pair"],
+            "cadence_archetypes": ["slow_build - immerse in era"]
+          },
+          "length": "3-6 paragraphs"
+        },
+        {
+          "name": "EXTENDED_METAPHOR_SETUP",
+          "purpose": "Introduce the controlling metaphor for the essay",
+          "signals": ["The analogy between X and Y is not half bad...", "Imagine a crossroads where...", "Let me run with it for a moment..."],
+          "requirement": "Metaphor must be elaborated in loving detail, not just named",
+          "substance_level": "heavy",
+          "substance_type": [
+            "metaphor_mapped - show each element's correspondence",
+            "vivid_detail - make the metaphor world real",
+            "self_awareness - acknowledge the metaphor's limits"
+          ],
+          "transition_to_next": "Apply metaphor to current situation",
+          "recommended_patterns": {
+            "sentence_families": ["list_resolve", "colon_reveal"],
+            "cadence_archetypes": ["parallel_march - map each element"]
+          },
+          "length": "4-8 paragraphs"
+        },
+        {
+          "name": "CULTURAL_ARCHAEOLOGY",
+          "purpose": "Dig through layers of cultural meaning",
+          "signals": ["What the hell is going on here?", "This is not such a bad thing in...", "The metaphor shear was especially brutal..."],
+          "requirement": "Must uncover assumptions people don't know they're making",
+          "substance_level": "heaviest",
+          "substance_type": [
+            "hidden_assumption_exposed - what everyone takes for granted",
+            "historical_precedent - this happened before",
+            "class_analysis - who benefits from current arrangement",
+            "personal_anecdote - your encounter with the phenomenon"
+          ],
+          "transition_to_next": "Sections can chain through multiple aspects of the phenomenon",
+          "recommended_patterns": {
+            "sentence_families": ["reversal_but", "concede_counterpunch"],
+            "cadence_archetypes": ["wave - excavation, insight, excavation, insight"]
+          },
+          "length": "20-40 paragraphs - this is where the essay lives"
+        },
+        {
+          "name": "PHILOSOPHICAL_DIGRESSION",
+          "purpose": "Step back to larger questions about meaning and society",
+          "signals": ["The word, in the end, is the only system of encoding thoughts...", "We want things to be easier...", "This is precisely the same as..."],
+          "requirement": "Must connect specific phenomenon to universal human concerns",
+          "substance_level": "heavy",
+          "substance_type": [
+            "universal_claim - what this says about humans",
+            "historical_sweep - pattern across centuries",
+            "self_implication - the author is part of this too"
+          ],
+          "transition_to_next": "Return to specific with new understanding",
+          "recommended_patterns": {
+            "sentence_families": ["definition_is", "conditional_snap"],
+            "cadence_archetypes": ["crescendo_snap - build to philosophical claim"]
+          },
+          "length": "4-8 paragraphs"
+        },
+        {
+          "name": "RESOLUTION_OR_IMPASSE",
+          "purpose": "Where does this leave us?",
+          "signals": ["The only real question is...", "In the end, there's just a fundamental tension...", "What would the engineer say?"],
+          "requirement": "Must be honest about what remains unresolved",
+          "substance_level": "medium",
+          "substance_type": [
+            "tension_named - what can't be resolved",
+            "choice_clarified - what you can decide",
+            "wisdom_offered - what the digging revealed"
+          ],
+          "transition_to_next": null,
+          "recommended_patterns": {
+            "sentence_families": ["conditional_snap", "fragment_punch"],
+            "cadence_archetypes": ["long_short_snap - extended reflection, punchy close"]
+          },
+          "length": "2-4 paragraphs"
+        }
+      ],
+      "transition_patterns": {
+        "description": "Stephenson uses associative flow rather than strict logic",
+        "types": [
+          {
+            "name": "cultural_riff",
+            "pattern": "One cultural observation triggers another",
+            "example": "This reminds one of... Speaking of which..."
+          },
+          {
+            "name": "technical_to_cultural",
+            "pattern": "Move from technical detail to cultural meaning",
+            "example": "This is not just a technical matter. It reflects..."
+          },
+          {
+            "name": "personal_intrusion",
+            "pattern": "Author inserts personal experience",
+            "example": "I myself had an experience that..."
+          },
+          {
+            "name": "digression_acknowledged",
+            "pattern": "Explicitly note the digression",
+            "example": "(Note: many readers... rest assured that I am actually positioning my pieces on the chessboard...)"
+          }
+        ],
+        "anti_patterns": [
+          "Digressions that never return",
+          "Cultural analysis without specific examples",
+          "Preaching without self-implication",
+          "Metaphors that collapse under pressure"
+        ]
+      },
+      "substance_types": {
+        "description": "Stephenson uses cultural artifacts as primary evidence",
+        "types": [
+          {
+            "name": "cultural_artifact",
+            "description": "Specific movie, book, product, or event as evidence",
+            "example": "When Ronald Reagan was a radio announcer, he used to call baseball games by reading the terse descriptions that trickled in over the telegraph wire...",
+            "when_to_use": "Throughout - ground abstractions in specifics"
+          },
+          {
+            "name": "personal_memory",
+            "description": "Specific autobiographical episode",
+            "example": "In order to connect this device (which was not a computer at all) to the Iowa State University mainframe across town...",
+            "when_to_use": "CULTURAL_ARCHAEOLOGY - build credibility"
+          },
+          {
+            "name": "class_observation",
+            "description": "Who benefits from the current arrangement",
+            "example": "Morlocks, who have the energy and intelligence to comprehend details, go out and master complex subjects...",
+            "when_to_use": "PHILOSOPHICAL_DIGRESSION - reveal power structures"
+          },
+          {
+            "name": "metaphor_extension",
+            "description": "Push the controlling metaphor further",
+            "example": "On the other side of the road are two competitors that have come along more recently...",
+            "when_to_use": "EXTENDED_METAPHOR_SETUP - reward readers who follow"
+          }
+        ]
+      },
+      "key_principles": [
+        "Technology is lens for culture, not the subject itself",
+        "Digressions are features, not bugs - but must return",
+        "Extended metaphors must be elaborated in loving detail",
+        "Self-awareness and humor prevent preachiness",
+        "Historical grounding prevents abstraction",
+        "The author must be implicated in the analysis"
+      ],
+      "failure_modes": [
+        "Digressions that don't illuminate",
+        "Preaching without self-implication",
+        "Metaphors that can't sustain weight",
+        "Cultural analysis without historical grounding",
+        "Too clever - prioritizing wit over insight",
+        "Too long without payoff"
+      ],
+      "when_to_use": [
+        "Technology reveals something about human nature",
+        "You have an extended metaphor that truly illuminates",
+        "The topic requires historical and cultural context",
+        "You're willing to digress and trust the reader to follow",
+        "There's no clean resolution - just clearer seeing"
+      ],
+      "example_essays": [
+        "In the Beginning was the Command Line (1999)",
+        "Mother Earth Mother Board (1996)",
+        "The Great Simoleon Caper (1995)"
+      ]
+    },
+    "wolfram_explanatory_build": {
+      "name": "Wolfram Explanatory Build",
+      "description": "Essay as systematic explanation building from simple to complex. Opens with 'how does X work?' and proceeds through layers of increasing detail. Heavy use of examples, diagrams, and interactive elements. Reader builds understanding layer by layer.",
+      "source": "Stephen Wolfram (What Is ChatGPT Doing, A New Kind of Science essays)",
+      "sections": [
+        {
+          "name": "CORE_QUESTION",
+          "purpose": "Ask the fundamental 'how does X work?' question",
+          "signals": ["How does it do it?", "Why does it work?", "My purpose here is to give a rough outline of...", "The first thing to explain is..."],
+          "requirement": "Question must be genuine - something readers want answered",
+          "substance_level": "light",
+          "substance_type": "question_framed - what we're trying to understand",
+          "transition_to_next": "Begin answering immediately: 'The first thing to explain is...'",
+          "recommended_patterns": {
+            "sentence_families": ["question_answer", "definition_is"],
+            "cadence_archetypes": ["short_setup - question then dive in"]
+          },
+          "length": "1-2 paragraphs"
+        },
+        {
+          "name": "SIMPLEST_VERSION",
+          "purpose": "Explain the basic mechanism in its simplest form",
+          "signals": ["At some level it's quite simple...", "The basic idea is...", "What X is always fundamentally trying to do is..."],
+          "requirement": "Must be genuinely simple - the foundation for everything else",
+          "substance_level": "medium",
+          "substance_type": [
+            "mechanism_stated - what it actually does",
+            "concrete_example - show don't tell",
+            "accessible_analogy - relate to familiar"
+          ],
+          "transition_to_next": "Complicate with specifics: 'But, OK, at each step...'",
+          "recommended_patterns": {
+            "sentence_families": ["definition_is", "colon_reveal"],
+            "cadence_archetypes": ["drumline - steady explanation"]
+          },
+          "length": "3-5 paragraphs"
+        },
+        {
+          "name": "WORKED_EXAMPLE",
+          "purpose": "Show the mechanism in action with specific case",
+          "signals": ["Let's say we've got...", "Here's what happens if...", "So, for example..."],
+          "requirement": "Example must be concrete enough to follow, simple enough to understand",
+          "substance_level": "heavy",
+          "substance_type": [
+            "step_by_step - walk through what happens",
+            "visual_evidence - show the output",
+            "variations - what happens if you change things"
+          ],
+          "transition_to_next": "Ask the next question: 'So where do the X come from?'",
+          "recommended_patterns": {
+            "sentence_families": ["conditional_snap", "list_resolve"],
+            "cadence_archetypes": ["ladder - build through steps"]
+          },
+          "length": "4-8 paragraphs, heavily illustrated"
+        },
+        {
+          "name": "UNDERLYING_MECHANISM",
+          "purpose": "Go one level deeper - what's underneath the surface?",
+          "signals": ["OK, so where do the X come from?", "Let's start with a simpler problem...", "The key is the notion of..."],
+          "requirement": "Must connect surface behavior to deeper structure",
+          "substance_level": "heaviest",
+          "substance_type": [
+            "simplified_model - easier version of the problem",
+            "technical_detail - actual mechanism",
+            "historical_context - how we got here",
+            "visual_explanation - show the structure"
+          ],
+          "transition_to_next": "Add the next layer: 'But this is where a key idea comes in...'",
+          "recommended_patterns": {
+            "sentence_families": ["definition_is", "conditional_snap"],
+            "cadence_archetypes": ["wave - explanation, example, explanation, example"]
+          },
+          "length": "10-20 paragraphs - bulk of essay"
+        },
+        {
+          "name": "KEY_INSIGHT",
+          "purpose": "Name the crucial conceptual leap",
+          "signals": ["The key is...", "The crucial point is that...", "And a key idea is..."],
+          "requirement": "Must be a genuine insight, not just restating the mechanism",
+          "substance_level": "heavy",
+          "substance_type": [
+            "concept_named - give the insight a name",
+            "why_it_matters - what it explains",
+            "surprising_implication - what follows"
+          ],
+          "transition_to_next": "Apply insight or address complications",
+          "recommended_patterns": {
+            "sentence_families": ["colon_reveal", "definition_is"],
+            "cadence_archetypes": ["crescendo_snap - build to insight"]
+          },
+          "length": "3-6 paragraphs"
+        },
+        {
+          "name": "COMPLICATIONS",
+          "purpose": "Address what makes this harder than it first seemed",
+          "signals": ["But there's a catch...", "In practice, it turns out that...", "The challenge is that..."],
+          "requirement": "Must deepen understanding, not just add caveats",
+          "substance_level": "heavy",
+          "substance_type": [
+            "difficulty_named - what's actually hard",
+            "solutions_explained - how we handle it",
+            "limits_acknowledged - what we still don't know"
+          ],
+          "transition_to_next": "Move to synthesis or broader implications",
+          "recommended_patterns": {
+            "sentence_families": ["concede_counterpunch", "conditional_snap"],
+            "cadence_archetypes": ["wave - complication, resolution, complication, resolution"]
+          },
+          "length": "5-10 paragraphs"
+        },
+        {
+          "name": "SYNTHESIS_AND_SIGNIFICANCE",
+          "purpose": "What have we learned and why does it matter?",
+          "signals": ["So what is X really doing?", "What we've seen is that...", "And the remarkable thing is that..."],
+          "requirement": "Must connect back to opening question and go beyond",
+          "substance_level": "medium",
+          "substance_type": [
+            "answer_synthesized - what we now understand",
+            "scientific_significance - what this tells us about the world",
+            "open_questions - what remains unknown"
+          ],
+          "transition_to_next": null,
+          "recommended_patterns": {
+            "sentence_families": ["bookend", "conditional_snap"],
+            "cadence_archetypes": ["crescendo_snap - end on significance"]
+          },
+          "length": "3-5 paragraphs"
+        }
+      ],
+      "transition_patterns": {
+        "description": "Wolfram uses explicit question-answer as spine",
+        "types": [
+          {
+            "name": "question_posed",
+            "pattern": "Ask what reader is now wondering",
+            "example": "OK, so where do those probabilities come from?"
+          },
+          {
+            "name": "simplification",
+            "pattern": "Step back to simpler case",
+            "example": "Let's start with a simpler problem."
+          },
+          {
+            "name": "complication",
+            "pattern": "Add real-world complexity",
+            "example": "But in practice, things are more complicated."
+          },
+          {
+            "name": "level_change",
+            "pattern": "Go deeper or pull back",
+            "example": "What's going on underneath all this?"
+          }
+        ],
+        "anti_patterns": [
+          "Jumping to complexity before establishing basics",
+          "Too many levels without concrete examples",
+          "Losing the thread of what question we're answering",
+          "Technical jargon without explanation"
+        ]
+      },
+      "substance_types": {
+        "description": "Wolfram uses visual examples as primary evidence",
+        "types": [
+          {
+            "name": "computed_example",
+            "description": "Actually run the thing and show results",
+            "example": "[image of neural net output]",
+            "when_to_use": "WORKED_EXAMPLE - prove claims with evidence"
+          },
+          {
+            "name": "simplified_model",
+            "description": "Toy version that shows core mechanism",
+            "example": "Consider a 'language' formed from sequences of ('s and )'s...",
+            "when_to_use": "UNDERLYING_MECHANISM - make complex accessible"
+          },
+          {
+            "name": "historical_context",
+            "description": "How we got to current understanding",
+            "example": "Invented—in a form remarkably close to their use today—in the 1940s...",
+            "when_to_use": "UNDERLYING_MECHANISM - ground in history"
+          },
+          {
+            "name": "code_snippet",
+            "description": "Actual runnable code",
+            "example": "[Wolfram Language code]",
+            "when_to_use": "WORKED_EXAMPLE - make reproducible"
+          }
+        ]
+      },
+      "key_principles": [
+        "Start simple, add complexity layer by layer",
+        "Always ground in concrete examples",
+        "Ask the reader's questions before they do",
+        "Show don't just tell - use visuals",
+        "Be honest about what's not understood",
+        "Connect to larger scientific significance"
+      ],
+      "failure_modes": [
+        "Starting too complex",
+        "Too much abstraction without examples",
+        "Jargon without explanation",
+        "Losing the thread of the central question",
+        "Examples that are too simplified to be useful",
+        "Missing the 'so what?' - why does this matter"
+      ],
+      "when_to_use": [
+        "Explaining how a complex system works",
+        "Topic can be understood through progressive complexity",
+        "You can show concrete examples of the mechanism",
+        "Reader genuinely wants to understand, not just know",
+        "The explanation yields genuine insights"
+      ],
+      "example_essays": [
+        "What Is ChatGPT Doing … and Why Does It Work? (2023)",
+        "The Empirical Metamathematics of Euclid and Beyond (2020)",
+        "A New Kind of Science (2002) - core chapters"
+      ]
     }
   }
 }
