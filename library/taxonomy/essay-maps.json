@@ -2496,21 +2496,35 @@
     },
     "emotional_weight_patterns": {
       "concrete_calculation": {
-        "description": "Convert abstractions to specific numbers",
+        "description": "Convert abstractions to specific numbers that count something tied to identity",
+        "core_insight": "The number alone doesn't create impact—what the number COUNTS does. '52 more Christmases with your parents' works because it counts something tied to the reader's identity and memory. The loss isn't abstract mortality; it's the loss of a self that only exists in that relationship. Contrast with '33 cents a day' (charity commercial)—this counts your money, not your memories, so it feels manipulative rather than revelatory.",
+        "what_to_count": {
+          "identity_tied": "Experiences that define who the reader is (Christmases with parents, Saturday mornings with kids)",
+          "memory_evoking": "Things that call up specific emotional memories, often from childhood",
+          "relationship_bound": "Moments that only exist within a specific relationship",
+          "avoid": "Resources (money, time as currency) that feel external to the self"
+        },
         "examples": [
           {
             "passage": "You only get 52 more Christmases with your parents.",
             "source": "Life is Short",
-            "technique": "Mortality → specific number → emotional impact",
-            "contrast": "Compare to 'Life is short' - same idea, much weaker"
+            "technique": "Counts identity-tied memory (childhood Christmases). Loss of this = loss of self.",
+            "why_it_works": "'Christmases with your parents' evokes emotional memory tied to childhood. The loss isn't just time—it's the loss of who we are.",
+            "contrast": "Compare to 'Life is short' - same idea, but abstract rather than identity-tied"
           },
           {
             "passage": "A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in.",
             "source": "Maker's Schedule, Manager's Schedule",
-            "technique": "Cost → specific outcome → mechanism"
+            "technique": "Counts maker-identity time. For someone whose identity is 'maker,' this is identity-tied.",
+            "note": "Works because audience identifies as makers. For managers, this wouldn't land the same way."
           }
         ],
-        "usage": "When discussing time, money, impact - find the number"
+        "failure_mode": {
+          "pattern": "Counting external resources rather than identity-tied experiences",
+          "example": "'For just 33 cents a day...' counts money, not memory. Feels like manipulation because it guilts rather than reveals.",
+          "test": "Ask: does losing this thing feel like losing part of who the reader IS, or just losing something they HAVE?"
+        },
+        "usage": "When discussing loss, cost, or stakes—find something to count that's tied to the reader's identity, not just their resources"
       },
       "validation_hook": {
         "description": "Validate reader struggle before advice",
