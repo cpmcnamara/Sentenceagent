@@ -1581,6 +1581,475 @@
         ],
         "adaptation": "Powerful for repositioning—'The thing about AI governance isn't cost. It's trust. The process is better...'"
       }
+    },
+    {
+      "id": 69,
+      "author": "Paul Graham",
+      "source": "Hackers and Painters",
+      "passage": "When I finished grad school in computer science I went to art school to study painting. A lot of people seemed surprised that someone interested in computers would also be interested in painting. They seemed to think that hacking and painting were very different kinds of work—that hacking was cold, precise, and methodical, and that painting was the frenzied expression of some primal urge.",
+      "feedback": "Autobiographical surprise opener - personal fact that violates expectations, then names the misconception",
+      "essaySection": "OPENER",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [15, 16, 32],
+        "cadence": "medium-medium-LONG",
+        "beat": "Personal fact → others' surprise → elaborated misconception you'll dismantle"
+      },
+      "structure": {
+        "template": "When I [unexpected career move]. A lot of people seemed surprised that someone interested in [field A] would also be interested in [field B]. They seemed to think that [A] and [B] were very different kinds of work—that [A] was [stereotype A], and that [B] was [stereotype B].",
+        "slots": ["unexpected career move", "field A", "field B", "stereotype A", "stereotype B"],
+        "technique": "Personal surprise → others' reaction → stereotypes you'll dismantle"
+      },
+      "emotionalWeight": {
+        "dryVersion": "I studied both computer science and painting, which share more than people think.",
+        "technique": "The autobiographical opening creates authority; naming the misconception sets up the argument"
+      },
+      "usage": {
+        "position": "essay opener",
+        "bestFor": "Opening an essay that bridges two supposedly-different domains"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Start with personal fact that violates category expectations",
+          "Name others' surprise explicitly",
+          "Articulate the false dichotomy you'll dismantle",
+          "Use em-dash to elaborate the stereotypes"
+        ],
+        "adaptation": "Works for any 'I bridge two worlds' positioning—'When I left McKinsey to join a startup...'"
+      }
+    },
+    {
+      "id": 70,
+      "author": "Eric S. Raymond",
+      "source": "The Cathedral and the Bazaar",
+      "passage": "Linux overturned much of what I thought I knew. I had been preaching the Unix gospel of small tools, rapid prototyping and evolutionary programming for years. But I also believed there was a certain critical complexity above which a more centralized, a priori approach was required.",
+      "feedback": "Worldview-shattered opener - states that your beliefs were overturned, then shows what you used to believe",
+      "essaySection": "OPENER",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [10, 17, 22],
+        "cadence": "short-medium-LONG",
+        "beat": "Disruption claim → prior credentials → the limiting belief that was shattered"
+      },
+      "structure": {
+        "template": "[Subject] overturned much of what I thought I knew. I had been [credentialing activity] for years. But I also believed [limiting belief you'll show was wrong].",
+        "slots": ["subject", "credentialing activity", "limiting belief"],
+        "technique": "Disruption hook → establish credentials → confess the belief that will be disproved"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Linux changed my understanding of software development at scale.",
+        "technique": "The 'overturned what I thought I knew' creates high stakes—reader expects transformation"
+      },
+      "usage": {
+        "position": "essay opener",
+        "bestFor": "Opening a 'here's what I learned' narrative essay"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Name the thing that overturned your beliefs",
+          "Establish your prior credentials ('I had been...for years')",
+          "State the limiting belief with 'But I also believed'"
+        ],
+        "adaptation": "Strong for thought leadership—'Working with GPT-4 overturned much of what I thought I knew about automation...'"
+      }
+    },
+    {
+      "id": 71,
+      "author": "Stephen Wolfram",
+      "source": "What Is ChatGPT Doing... and Why Does It Work?",
+      "passage": "ChatGPT is an impressive piece of technology. But how does it work? The short answer is: we don't know for certain. Even the people who built it don't fully understand why it works as well as it does. But we can make progress on understanding what it's doing and why.",
+      "feedback": "Mystery-embrace opener - acknowledges impressive result, admits uncertainty, promises partial understanding",
+      "essaySection": "OPENER",
+      "rhythm": {
+        "sentenceCount": 5,
+        "wordCounts": [7, 5, 7, 14, 14],
+        "cadence": "short-SHORT-short-medium-medium",
+        "beat": "Praise → question → humble admission → even-experts caveat → promise of progress"
+      },
+      "structure": {
+        "template": "[Subject] is [impressive quality]. But how does it work? The short answer is: we don't know for certain. Even the people who [created it] don't fully understand [mystery]. But we can make progress on understanding [what we'll explore].",
+        "slots": ["subject", "impressive quality", "created it", "mystery", "what we'll explore"],
+        "technique": "Acknowledge impressiveness → question → humble admission → promise progress"
+      },
+      "emotionalWeight": {
+        "dryVersion": "We'll explore how ChatGPT works even though it's not fully understood.",
+        "technique": "The 'even the people who built it' admission creates intellectual honesty and raises stakes"
+      },
+      "usage": {
+        "position": "essay opener for technical explainer",
+        "bestFor": "Opening a piece about something genuinely mysterious or cutting-edge"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Acknowledge the impressive result briefly",
+          "Ask the direct 'how does it work' question",
+          "Admit uncertainty honestly",
+          "Invoke experts' uncertainty for credibility",
+          "Promise progress rather than complete answers"
+        ],
+        "adaptation": "Perfect for honest technical communication—don't overclaim understanding"
+      }
+    },
+    {
+      "id": 72,
+      "author": "Paul Graham",
+      "source": "Hackers and Painters",
+      "passage": "Of course, it's not just that schools train hackers badly. Universities teach courses on software engineering. But this is not the same thing as teaching people how to write good code. Software engineering is a discipline that is more concerned with software development as a social process than as an individual act of creation.",
+      "feedback": "Concession-then-distinction - grants the obvious objection, then draws a crucial distinction",
+      "essaySection": "CONCESSION",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [10, 7, 13, 23],
+        "cadence": "short-SHORT-medium-LONG",
+        "beat": "Concession → evidence for objection → 'not the same thing' pivot → distinction elaborated"
+      },
+      "structure": {
+        "template": "Of course, it's not just that [your claim]. [Counter-evidence acknowledgment]. But this is not the same thing as [what you actually mean]. [Distinction] is [definition that shows the difference].",
+        "slots": ["your claim", "counter-evidence acknowledgment", "what you actually mean", "distinction", "definition that shows the difference"],
+        "technique": "'Of course' concession → acknowledge objection → 'not the same thing' → elaborated distinction"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Universities teach software engineering, which is different from teaching good coding.",
+        "technique": "'Of course' disarms the objector; the distinction shows you've thought more carefully than them"
+      },
+      "usage": {
+        "position": "responding to obvious objection mid-essay",
+        "bestFor": "Handling 'but what about X?' objections by drawing a distinction"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Open with 'Of course' to acknowledge the objection",
+          "State the counter-evidence briefly",
+          "Pivot with 'But this is not the same thing as'",
+          "Define the distinction in detail"
+        ],
+        "adaptation": "Essential for consulting—'Of course, companies have AI strategies. But this is not the same thing as...'"
+      }
+    },
+    {
+      "id": 73,
+      "author": "Eric S. Raymond",
+      "source": "The Cathedral and the Bazaar",
+      "passage": "This might seem to contradict the open-source gospel of keeping code simple. But it doesn't, really, because what's being distributed isn't a monolithic product but a toolkit, a library, a set of interconnected services. Complexity is managed by modularization.",
+      "feedback": "Contradiction-dissolve - names the apparent contradiction, then shows why it's not actually one",
+      "essaySection": "CONCESSION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [12, 23, 5],
+        "cadence": "medium-LONG-SHORT",
+        "beat": "Name contradiction → dissolve with reframing → punchy principle"
+      },
+      "structure": {
+        "template": "This might seem to contradict [established principle]. But it doesn't, really, because what's being [action] isn't [assumed frame] but [reframed understanding]. [Short principle that resolves it].",
+        "slots": ["established principle", "action", "assumed frame", "reframed understanding", "short principle"],
+        "technique": "Name contradiction → 'But it doesn't, really' → reframe → principle"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Open-source complexity is managed through modularization, not simplicity.",
+        "technique": "The 'really' in 'doesn't, really' signals confident dismissal of the surface contradiction"
+      },
+      "usage": {
+        "position": "handling apparent inconsistency in your argument",
+        "bestFor": "When your current point seems to conflict with something you or others have said"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Name the contradiction explicitly: 'This might seem to contradict'",
+          "Dismiss with 'But it doesn't, really'",
+          "Reframe with 'what's being X isn't Y but Z'",
+          "End with short principle"
+        ],
+        "adaptation": "Use when critics might say 'but you also said X'—preempt and dissolve"
+      }
+    },
+    {
+      "id": 74,
+      "author": "Stephen Wolfram",
+      "source": "What Is ChatGPT Doing... and Why Does It Work?",
+      "passage": "What do I mean by 'reasonable'? I mean that, given all the words so far, the next word is one that a human would consider to be a sensible continuation of the text. Not necessarily the 'right' word—because there isn't always a single right word—but a word that fits.",
+      "feedback": "Self-interrupting definition - asks 'what do I mean by X?', answers, then qualifies",
+      "essaySection": "DEFINITION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [6, 26, 18],
+        "cadence": "SHORT-LONG-medium",
+        "beat": "Self-question → definition → qualification with caveat"
+      },
+      "structure": {
+        "template": "What do I mean by '[term]'? I mean that [definition]. Not necessarily [the obvious interpretation]—because [reason it's not that simple]—but [more nuanced version].",
+        "slots": ["term", "definition", "the obvious interpretation", "reason it's not that simple", "more nuanced version"],
+        "technique": "Self-question → definition → 'Not necessarily' qualification → nuanced restatement"
+      },
+      "emotionalWeight": {
+        "dryVersion": "A reasonable next word is one that fits the context, not necessarily the only correct one.",
+        "technique": "The self-question creates a micro-pause; the qualification shows intellectual precision"
+      },
+      "usage": {
+        "position": "when introducing or clarifying a key term",
+        "bestFor": "Defining terms that might be misunderstood or oversimplified"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Ask 'What do I mean by X?'",
+          "Give the definition directly",
+          "Qualify with 'Not necessarily [obvious interpretation]'",
+          "Explain why in em-dash parenthetical",
+          "Restate more precisely"
+        ],
+        "adaptation": "Use when a word might be misread—'What do I mean by \"governance\"? I mean...'"
+      }
+    },
+    {
+      "id": 75,
+      "author": "Paul Graham",
+      "source": "Hackers and Painters",
+      "passage": "The word 'hacker' has two senses. The first is the original meaning: someone who programs enthusiastically, or who enjoys programming rather than just theorizing about it. The second, more recent sense is the one that gets into newspapers: someone who breaks into computers.",
+      "feedback": "Dual-meaning disambiguation - names that a word has two senses, defines each, notes which dominates",
+      "essaySection": "DEFINITION",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [7, 22, 20],
+        "cadence": "SHORT-LONG-LONG",
+        "beat": "Claim two senses → define original → define corrupted version with context"
+      },
+      "structure": {
+        "template": "The word '[term]' has two senses. The first is [original/preferred meaning]: [definition]. The second, more [qualifier] sense is [context where it appears]: [definition].",
+        "slots": ["term", "original/preferred meaning", "definition 1", "qualifier", "context where it appears", "definition 2"],
+        "technique": "Claim duality → define preferred sense → define problematic sense with context"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Hacker means enthusiastic programmer, but the media uses it to mean criminal.",
+        "technique": "The structure privileges the first meaning and frames the second as corruption"
+      },
+      "usage": {
+        "position": "establishing terminology near essay start",
+        "bestFor": "Reclaiming a word that has been corrupted or misused"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "State 'The word X has two senses'",
+          "Define the first (preferred) sense with 'The first is'",
+          "Define the second with 'The second, more [recent/common/corrupted]'",
+          "Note where the second sense appears ('gets into newspapers')"
+        ],
+        "adaptation": "Use when reclaiming terminology—'The word \"disruption\" has two senses...'"
+      }
+    },
+    {
+      "id": 76,
+      "author": "Eric S. Raymond",
+      "source": "The Cathedral and the Bazaar",
+      "passage": "1. Every good work of software starts with a developer scratching a personal itch.\n\n2. Good programmers know what to write. Great ones know what to rewrite (and reuse).\n\n3. Plan to throw one away; you will, anyhow.\n\n4. If you have the right attitude, interesting problems will find you.",
+      "feedback": "Enumerated wisdom stack - numbered principles that accumulate authority through repetition",
+      "essaySection": "EVIDENCE",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [14, 13, 9, 12],
+        "cadence": "medium-medium-short-medium",
+        "beat": "Principle → principle → principle → principle (parallel structure builds momentum)"
+      },
+      "structure": {
+        "template": "1. [Principle about starting].\n\n2. [Principle about quality levels].\n\n3. [Principle about iteration].\n\n4. [Principle about mindset].",
+        "slots": ["principle about starting", "principle about quality levels", "principle about iteration", "principle about mindset"],
+        "technique": "Numbered list with varied but related principles—each standalone but cumulative"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Here are some software development principles.",
+        "technique": "The numbering creates quotability and shareability; readers remember 'Rule 3' or 'Lesson 7'"
+      },
+      "usage": {
+        "position": "accumulating insights throughout essay",
+        "bestFor": "Building a memorable framework of principles"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Use numbered format for quotability",
+          "Make each principle standalone but thematically related",
+          "Vary the structure slightly across principles",
+          "Include at least one that's counterintuitive ('Plan to throw one away')"
+        ],
+        "adaptation": "Classic for thought leadership—create your own 'Laws' or 'Principles' that get attributed to you"
+      }
+    },
+    {
+      "id": 77,
+      "author": "Stephen Wolfram",
+      "source": "What Is ChatGPT Doing... and Why Does It Work?",
+      "passage": "And it turns out that there's a general procedure for doing this, called gradient descent. Imagine rolling a ball down a hilly landscape. The ball will naturally roll to the lowest point it can reach. Gradient descent works the same way, except in a space where the 'height' is a measure of how wrong our predictions are.",
+      "feedback": "Abstract-to-physical analogy - explains technical concept via physical intuition",
+      "essaySection": "EVIDENCE",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [14, 9, 11, 24],
+        "cadence": "medium-short-short-LONG",
+        "beat": "'It turns out' intro → physical setup → physical behavior → mapping to abstract"
+      },
+      "structure": {
+        "template": "And it turns out that there's a [general procedure] for doing this, called [technical term]. Imagine [physical scenario]. [Physical behavior]. [Technical term] works the same way, except [how the abstraction maps to the physical intuition].",
+        "slots": ["general procedure", "technical term", "physical scenario", "physical behavior", "how the abstraction maps"],
+        "technique": "'It turns out' → name the thing → physical analogy → 'works the same way, except' mapping"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Gradient descent is an optimization procedure for minimizing error.",
+        "technique": "The physical analogy (ball rolling downhill) makes the abstract graspable"
+      },
+      "usage": {
+        "position": "explaining technical concepts to non-specialists",
+        "bestFor": "Making abstract procedures intuitive through physical analogy"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Introduce with 'And it turns out there's a procedure'",
+          "Name the technical term",
+          "Use 'Imagine' to set up physical analogy",
+          "Describe physical behavior in one sentence",
+          "Map back with 'works the same way, except'"
+        ],
+        "adaptation": "Essential for technical communication—always have a physical intuition for abstract concepts"
+      }
+    },
+    {
+      "id": 78,
+      "author": "Paul Graham",
+      "source": "Hackers and Painters",
+      "passage": "So if you want to make money at some point, remember this, because this is one of the reasons startups win. Big companies want to decrease the standard deviation of design outcomes because they want to avoid disasters. But when you damp oscillations, you lose the high points as well as the low.",
+      "feedback": "Actionable close with insight - 'So if you want X, remember Y' + the compressed insight",
+      "essaySection": "CLOSER",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [16, 17, 16],
+        "cadence": "medium-medium-medium",
+        "beat": "'So if you want' hook → big company behavior → compressed principle"
+      },
+      "structure": {
+        "template": "So if you want to [goal], remember this, because this is one of the reasons [underdogs] win. [Incumbents] want to [risk-averse behavior] because they want to [avoid downside]. But when you [risk-averse action], you lose [upside] as well as [downside].",
+        "slots": ["goal", "underdogs", "incumbents", "risk-averse behavior", "avoid downside", "risk-averse action", "upside", "downside"],
+        "technique": "'So if you want' → 'remember this' → explain incumbent behavior → reveal the tradeoff"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Big companies' risk aversion creates opportunities for startups.",
+        "technique": "The 'if you want X' makes reader feel like they're receiving actionable intelligence"
+      },
+      "usage": {
+        "position": "closing a section or essay with actionable insight",
+        "bestFor": "Making abstract observations feel immediately applicable"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Open with 'So if you want to [goal]'",
+          "Use 'remember this' to flag importance",
+          "Explain why incumbents behave as they do",
+          "Reveal the hidden tradeoff they're making"
+        ],
+        "adaptation": "Perfect for consulting—'So if you want to innovate, remember this...'"
+      }
+    },
+    {
+      "id": 79,
+      "author": "Neal Stephenson",
+      "source": "In the Beginning was the Command Line",
+      "passage": "The upshot is that millions of people got accustomed to using GUIs in one form or another. They were not accustomed to needing to know what they were doing. The big question now becomes: are they going to wake up and realize what they've given up?",
+      "feedback": "Stakes-raising close - summarizes the situation, then ends with an open question about the future",
+      "essaySection": "CLOSER",
+      "rhythm": {
+        "sentenceCount": 3,
+        "wordCounts": [15, 11, 16],
+        "cadence": "medium-short-medium",
+        "beat": "'The upshot' summary → ironic observation → 'the big question' future hook"
+      },
+      "structure": {
+        "template": "The upshot is that [summary of situation]. They were not accustomed to [what they lost without realizing]. The big question now becomes: [open question about whether they'll recognize it]?",
+        "slots": ["summary of situation", "what they lost without realizing", "open question"],
+        "technique": "'The upshot' → ironic loss observation → 'The big question' open ending"
+      },
+      "emotionalWeight": {
+        "dryVersion": "GUI adoption came at the cost of understanding, and it's unclear if people will notice.",
+        "technique": "The open question leaves the reader to answer—creates ongoing engagement after essay ends"
+      },
+      "usage": {
+        "position": "closing essay or major section",
+        "bestFor": "Ending with provocation rather than resolution"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Summarize with 'The upshot is that'",
+          "Name the ironic loss (what they gave up unknowingly)",
+          "Pose 'The big question now becomes'"
+        ],
+        "adaptation": "Strong for essays where you don't want to prescribe—let the reader decide"
+      }
+    },
+    {
+      "id": 80,
+      "author": "Eric S. Raymond",
+      "source": "The Cathedral and the Bazaar",
+      "passage": "I'm a lazy programmer. Which means that when I write code, I want to write as little of it as possible. This is not a vice but a virtue. The best code is no code at all.",
+      "feedback": "Self-deprecating virtue reveal - confesses apparent vice, then flips it to virtue",
+      "essaySection": "HUMOR",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [5, 14, 8, 7],
+        "cadence": "SHORT-medium-short-SHORT",
+        "beat": "Confession → elaboration → flip → punchy principle"
+      },
+      "structure": {
+        "template": "I'm a [apparent vice]. Which means that when I [activity], I want to [lazy-seeming behavior]. This is not a vice but a virtue. The best [output] is [minimal output].",
+        "slots": ["apparent vice", "activity", "lazy-seeming behavior", "output", "minimal output"],
+        "technique": "Confess vice → explain behavior → 'not vice but virtue' flip → pithy principle"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Minimizing code is good because less code means fewer bugs.",
+        "technique": "The self-deprecation disarms; the flip creates surprise and memorability"
+      },
+      "usage": {
+        "position": "establishing ethos while making a point",
+        "bestFor": "Making counterintuitive points through self-deprecating humor"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Confess an apparent vice in first person",
+          "Explain what it means in practice",
+          "Flip with 'This is not a vice but a virtue'",
+          "End with pithy principle"
+        ],
+        "adaptation": "Works for any 'what looks like laziness is actually wisdom' argument"
+      }
+    },
+    {
+      "id": 81,
+      "author": "Neal Stephenson",
+      "source": "In the Beginning was the Command Line",
+      "passage": "Imagine a crossroads where four competing auto dealerships are situated. One of them (Microsoft) is much, much bigger than the others. It started out years ago selling three-speed bicycles, these were not perfect but they worked, and when they broke you could easily fix them. Then they started selling sedans, which were less reliable than bicycles but got you there faster.",
+      "feedback": "Extended absurdist mapping - sustains an absurd analogy with specific mapped details",
+      "essaySection": "HUMOR",
+      "rhythm": {
+        "sentenceCount": 4,
+        "wordCounts": [11, 17, 28, 21],
+        "cadence": "short-medium-LONG-LONG",
+        "beat": "Scene setup → scale claim with mapping → origin with mapping → evolution with mapping"
+      },
+      "structure": {
+        "template": "Imagine [scene]. One of them ([real entity]) is [scale]. It started out [time] [selling/doing] [humble origin mapped], these were [quality assessment], and [redeeming quality]. Then they started [evolution mapped], which were [tradeoff].",
+        "slots": ["scene", "real entity", "scale", "time", "humble origin mapped", "quality assessment", "redeeming quality", "evolution mapped", "tradeoff"],
+        "technique": "Scene invitation → parenthetical mappings → sustained analogy with real history"
+      },
+      "emotionalWeight": {
+        "dryVersion": "Microsoft started with DOS, which was simple, then moved to Windows, which was less reliable.",
+        "technique": "The absurdity (bicycles!) makes the critique memorable and shareable"
+      },
+      "usage": {
+        "position": "making a critical point through humorous analogy",
+        "bestFor": "Critiquing powerful entities through sustained absurdist metaphor"
+      },
+      "reproducibility": {
+        "key_moves": [
+          "Open with 'Imagine [scene]'",
+          "Use parentheticals to anchor real entities",
+          "Sustain the metaphor through multiple evolution steps",
+          "Map real history to absurd but parallel elements"
+        ],
+        "adaptation": "Use for critique—the humor makes it palatable while the mapping makes it stick"
+      }
     }
   ],
   "rejected": [
