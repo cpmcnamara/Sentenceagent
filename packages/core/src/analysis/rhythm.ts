@@ -42,9 +42,23 @@ export function estimateSyllables(word: string): number {
   const vowelGroups = cleaned.match(/[aeiouy]+/gi) || [];
   let syllables = vowelGroups.length;
 
-  // Apply adjustments
-  if (/[^laeiouy]e$/i.test(cleaned)) syllables--;
+  // Apply adjustments for silent e
+  if (/[^laeiouy]e$/i.test(cleaned)) {
+    // Check if the word body (minus final Ce) has a multi-letter vowel group
+    // If so, the -e is likely pronounced (as in "create" = cre-ate, not "made")
+    const body = cleaned.slice(0, -2); // Remove final consonant+e
+    const bodyVowelGroups = body.match(/[aeiouy]+/gi) || [];
+    const hasMultiLetterVowelGroup = bodyVowelGroups.some(g => g.length > 1);
+
+    if (!hasMultiLetterVowelGroup) {
+      syllables--;
+    }
+  }
+
+  // Handle -ed endings that don't add syllable
   if (/[^aeiou]ed$/i.test(cleaned) && syllables > 1) syllables--;
+
+  // Handle -le endings that add syllable
   if (/[^aeiouy]le$/i.test(cleaned)) syllables++;
 
   return Math.max(1, syllables);

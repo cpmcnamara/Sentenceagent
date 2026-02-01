@@ -20,7 +20,7 @@ describe('Syllable Estimation', () => {
   it('should estimate syllables for simple words', () => {
     expect(estimateSyllables('cat')).toBe(1);
     expect(estimateSyllables('hello')).toBe(2);
-    expect(estimateSyllables('beautiful')).toBe(4);
+    expect(estimateSyllables('beautiful')).toBe(3); // beau-ti-ful
     expect(estimateSyllables('communication')).toBe(5);
   });
 

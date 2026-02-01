@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+### Fixed
+
+- **Syllable Estimation Bug** - Fixed silent-e detection being too aggressive for words ending in "-ate", "-ite", "-ote", "-ute" (e.g., "create" was incorrectly counted as 1 syllable instead of 2). The fix checks if the word body contains a multi-letter vowel group before applying the silent-e subtraction.
+
 ## [1.0.0] - 2024-01-31
 
 ### Added
