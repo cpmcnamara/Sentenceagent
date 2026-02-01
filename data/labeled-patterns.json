@@ -2442,6 +2442,32 @@
         "'told no' - punchier but loses the structural match with 'told they were special'"
       ],
       "principle_confirmed": "parallel-structure-requires-matching-grammar"
+    },
+    {
+      "test_id": 18,
+      "pattern": "New: Dissection-as-discovery opener",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "I set out to build a machine that could think. But the deeper I got into the mechanics—why context breaks, why tone vanishes, why meaning slips between tokens—the more I was studying humans, not machines.",
+      "why_won": "The insight comes from the ACT of building/dissecting, not from the AI as mirror. Triple rhythm in the em-dash clause (context/tone/meaning). Clean flip at end (humans, not machines).",
+      "losers": [
+        "'What I built instead was a mirror' - wrong framing, makes AI the subject not the process",
+        "'every limitation wasn't a flaw' - defensive, about AI not humanity",
+        "'realized I was studying' - 'realized' adds nothing, weakens direct statement"
+      ],
+      "principle_learned": "process-reveals-more-than-product"
+    },
+    {
+      "test_id": 19,
+      "pattern": "New: Concrete-gap-to-human-depth",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "Take context. We feed a model a conversation and expect it to know what matters. But 'what matters' isn't in the words—it's in the history between the speakers, the room they're standing in, the thing neither of them will say. The model sees text. We see everything around it.",
+      "why_won": "Opens with imperative ('Take context'). Concrete examples build (history, room, unsaid thing). Final contrast is clean and devastating (text vs everything).",
+      "losers": [
+        "'Start with sarcasm' version - good but less universal than context"
+      ],
+      "principle_learned": "end-contrast-should-be-asymmetric"
     }
   ],
   "generationPrinciples": [
