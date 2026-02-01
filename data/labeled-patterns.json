@@ -2494,6 +2494,19 @@
         "'can't fine-tune your way to heartbreak' - too clever, loses the gravitas"
       ],
       "principle_learned": "gravitas-over-cleverness-for-emotional-points"
+    },
+    {
+      "test_id": 22,
+      "pattern": "New: Meta-pivot-against-expectation",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "This is usually where the essay turns pessimistic about AI. But I went the other direction. The more I saw what the machine couldn't do, the more astonished I became at what we do without noticing.",
+      "why_won": "Meta-acknowledgment ('usually where the essay turns') creates trust. 'Pessimistic about AI' more specific than 'dark'. 'Astonished' has more weight than 'amazed'.",
+      "losers": [
+        "'iceberg' metaphor version - overloaded, too convoluted",
+        "'dark'/'amazed'/'without thinking' - less specific, less weight"
+      ],
+      "principle_learned": "specific-words-carry-more-weight"
     }
   ],
   "generationPrinciples": [
