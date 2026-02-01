@@ -2429,6 +2429,19 @@
         "'need the same dish a thousand times' - lost the variability/consistency vocabulary, broke the echo"
       ],
       "principle_learned": "vocabulary-echoes-create-cohesion"
+    },
+    {
+      "test_id": 17,
+      "pattern": "Stephenson #79 (Stakes-raising close)",
+      "topic": "parenting / education",
+      "status": "complete",
+      "winner": "The upshot is that a generation of kids got used to being told they were special. They were not used to being told they were wrong. The big question now becomes: will they learn to hear criticism, or will they just stop listening?",
+      "why_won": "Clean parallel structure ('told they were X' / 'told they were Y'). Final question has substantive noun ('criticism') not pronoun ('it').",
+      "losers": [
+        "'optimized for safety / not optimizing for resilience' - less parallel, more abstract",
+        "'told no' - punchier but loses the structural match with 'told they were special'"
+      ],
+      "principle_confirmed": "parallel-structure-requires-matching-grammar"
     }
   ],
   "generationPrinciples": [
