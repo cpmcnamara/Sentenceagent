@@ -3985,6 +3985,275 @@
       }
     }
   },
+  "interview_essay_process": {
+    "description": "Universal process for generating essays through human interview when AI-generated content is insufficient. Works with any essay architecture.",
+
+    "when_to_use": [
+      "AI-generated drafts feel generic or 'obviously AI'",
+      "Essay requires real experiences, specific examples, or authentic voice",
+      "User has domain expertise that can't be fabricated",
+      "Previous revision attempts haven't fixed the core authenticity problem"
+    ],
+
+    "process_phases": {
+      "phase_1_brief_intake": {
+        "description": "User provides essay brief",
+        "user_provides": [
+          "Thesis or central argument",
+          "High-level concepts to cover",
+          "Target audience",
+          "Any specific examples or experiences they want to include"
+        ],
+        "agent_does": [
+          "Select appropriate essay architecture based on content fit",
+          "Identify which sections will need heavy substance",
+          "Note any obvious gaps between brief and architecture requirements"
+        ]
+      },
+
+      "phase_2_draft_generation": {
+        "description": "Generate initial draft following architecture",
+        "agent_does": [
+          "Generate complete draft filling all sections",
+          "Use best available content from brief",
+          "Mark sections where content is fabricated or generic"
+        ],
+        "output": "v0_draft with section markers"
+      },
+
+      "phase_3_validation": {
+        "description": "Validate draft against architecture requirements section by section",
+        "for_each_section_check": {
+          "purpose_achievement": "Does this section do what the architecture says it should?",
+          "substance_level": "Is it as heavy/light as the architecture requires?",
+          "specificity": "Concrete details or generic claims?",
+          "authenticity": "Does it sound human or AI-generated?",
+          "architecture_signals": "Does it use the recommended signals/moves?"
+        },
+        "output": "List of weak sections with specific failure modes"
+      },
+
+      "phase_4_gap_analysis": {
+        "description": "For each weak section, identify what TYPE of material is missing",
+        "gap_types": [
+          "missing_scene: Needs concrete occasion/place/time/dialogue",
+          "missing_person: Needs specific character with details and actions",
+          "missing_project: Needs specific work with constraints and outcomes",
+          "missing_emotion: Needs embodied feeling that IS the argument",
+          "missing_analogy: Needs comparison from another domain",
+          "missing_objection: Needs real pushback actually received",
+          "missing_surprise: Needs unexpected observation or reversal",
+          "missing_cost: Needs acknowledgment of tradeoff/failure/mistake",
+          "missing_discomfort: Needs awkward truth that's hard to say"
+        ],
+        "output": "Gap list mapped to sections"
+      },
+
+      "phase_5_question_generation": {
+        "description": "Generate targeted interview questions for each gap",
+        "question_design_principles": [
+          "Ask for specific moments, not patterns",
+          "Ask for verbatim quotes, not summaries",
+          "Ask for sensory details that stuck",
+          "Ask for emotions at the time vs. understanding now",
+          "Ask for what went wrong, not just what worked",
+          "Ask for what's uncomfortable to admit",
+          "Ask for what surprised them"
+        ],
+        "output": "Prioritized question list with section mapping"
+      },
+
+      "phase_6_interview": {
+        "description": "Ask questions and collect answers",
+        "agent_does": [
+          "Ask questions in priority order",
+          "Listen for vivid details, specific names, real consequences",
+          "Ask follow-ups to go deeper on promising material",
+          "Note which answers provide substance for which sections"
+        ],
+        "follow_up_triggers": [
+          "Answer mentions a person without describing them",
+          "Answer mentions a project without explaining outcome",
+          "Answer gives conclusion without the discovery moment",
+          "Answer is clean and logical (real experience is messier)"
+        ]
+      },
+
+      "phase_7_second_gap_check": {
+        "description": "With new material, identify remaining gaps",
+        "agent_does": [
+          "Map interview answers to sections",
+          "Identify sections still lacking required substance",
+          "Generate targeted follow-up questions for remaining gaps"
+        ],
+        "repeat_until": "All heavy sections have specific, authentic material"
+      },
+
+      "phase_8_final_draft": {
+        "description": "Integrate all material into final essay",
+        "agent_does": [
+          "Rewrite essay incorporating interview material",
+          "Ensure passage patterns emerge naturally from material (not bolted on)",
+          "Validate against architecture one more time",
+          "Confirm voice consistency throughout"
+        ],
+        "output": "Final draft for user review"
+      }
+    },
+
+    "universal_weakness_indicators": {
+      "description": "Signs that a section sounds AI-generated regardless of architecture",
+      "indicators": [
+        {
+          "name": "generic_examples",
+          "description": "'A Fortune 100 company' vs. specific company/person",
+          "fix": "Ask for the actual company, person, or project"
+        },
+        {
+          "name": "round_numbers",
+          "description": "'thirty minutes' vs. 'maybe twenty-five minutes, I lost track'",
+          "fix": "Ask what they actually remember about duration/quantity"
+        },
+        {
+          "name": "labeled_structure",
+          "description": "'First... Second... Third...' or 'Personal evidence:'",
+          "fix": "Remove labels, let structure emerge from content"
+        },
+        {
+          "name": "assertions_without_scenes",
+          "description": "Telling not showing - claims without moments",
+          "fix": "Ask for the specific moment that taught them this"
+        },
+        {
+          "name": "missing_sensory_detail",
+          "description": "No physical/emotional texture",
+          "fix": "Ask what they saw, heard, felt in their body"
+        },
+        {
+          "name": "imposed_frameworks",
+          "description": "Categories feel academic rather than discovered",
+          "fix": "Ask when they first noticed the pattern, who embodied it"
+        },
+        {
+          "name": "too_clean_logic",
+          "description": "Perfect reasoning without mess or contradiction",
+          "fix": "Ask what they got wrong first, what still confuses them"
+        },
+        {
+          "name": "no_cost_acknowledged",
+          "description": "All upside, no tradeoffs",
+          "fix": "Ask what the downside is, what they gave up"
+        },
+        {
+          "name": "no_surprise",
+          "description": "Nothing unexpected or counterintuitive",
+          "fix": "Ask what surprised them, what they didn't expect"
+        },
+        {
+          "name": "uniform_voice",
+          "description": "Same tone throughout without texture",
+          "fix": "Incorporate actual quotes, moments of doubt, humor if natural"
+        }
+      ]
+    },
+
+    "universal_substance_types": {
+      "description": "Types of material that can fill gaps in any architecture",
+      "types": [
+        {
+          "name": "concrete_scene",
+          "description": "Place, time, dialogue, sensory details",
+          "question_template": "Take me to the moment this happened. Where were you? Who was there? What did they say?"
+        },
+        {
+          "name": "specific_person",
+          "description": "Name (or pseudonym), distinctive detail, what they did",
+          "question_template": "Tell me about [person]. What do you remember about them? What did they do that stuck with you?"
+        },
+        {
+          "name": "specific_project",
+          "description": "Client/context, key constraint, what happened",
+          "question_template": "Walk me through that project. What was the constraint that mattered most? What happened when [X]?"
+        },
+        {
+          "name": "embodied_emotion",
+          "description": "Feeling that IS the argument, not just illustrates it",
+          "question_template": "What did you feel in that moment? Not what you thought—what you felt in your body."
+        },
+        {
+          "name": "analogy_from_elsewhere",
+          "description": "Something outside the domain that works the same way",
+          "question_template": "What else works like this? A sport, a craft, a relationship—something outside [domain] where you see the same dynamic?"
+        },
+        {
+          "name": "real_objection",
+          "description": "Pushback actually received, from a specific person",
+          "question_template": "Who pushed back on this? What exactly did they say? Did they have a point?"
+        },
+        {
+          "name": "surprise_or_reversal",
+          "description": "Something that contradicted expectations",
+          "question_template": "What surprised you? What did you believe before that turned out to be wrong?"
+        },
+        {
+          "name": "cost_or_failure",
+          "description": "What was lost, sacrificed, or didn't work",
+          "question_template": "What did this cost you? What didn't work? What would you do differently?"
+        },
+        {
+          "name": "uncomfortable_truth",
+          "description": "What's awkward to admit, contradicts the narrative",
+          "question_template": "What's true about this that's uncomfortable to say? What might make you look bad?"
+        }
+      ]
+    },
+
+    "section_to_substance_mapping": {
+      "description": "Common section types and what substance they typically need",
+      "mappings": {
+        "opening_setup_sections": ["concrete_scene", "specific_person"],
+        "conventional_wisdom_rejected": ["specific_project", "cost_or_failure"],
+        "reframe_premise_sections": ["surprise_or_reversal", "specific_person"],
+        "mechanism_sections": ["analogy_from_elsewhere", "specific_project", "embodied_emotion"],
+        "contrast_comparison_sections": ["specific_person", "specific_project"],
+        "actionable_advice_sections": ["specific_person", "cost_or_failure"],
+        "objection_sections": ["real_objection", "uncomfortable_truth"],
+        "closing_sections": ["surprise_or_reversal", "uncomfortable_truth"]
+      }
+    },
+
+    "question_depth_escalation": {
+      "description": "How to go deeper when initial answers are still generic",
+      "levels": [
+        {
+          "level": 1,
+          "trigger": "Initial question",
+          "example": "Tell me about a hire that went wrong."
+        },
+        {
+          "level": 2,
+          "trigger": "Answer lacks specificity",
+          "example": "What was the first sign something was off? What did they do in week one?"
+        },
+        {
+          "level": 3,
+          "trigger": "Answer still abstract",
+          "example": "What did they actually say? Can you remember the words?"
+        },
+        {
+          "level": 4,
+          "trigger": "Need emotional truth",
+          "example": "When you knew it wasn't working—not when you admitted it, when you KNEW—what did that feel like?"
+        },
+        {
+          "level": 5,
+          "trigger": "Need uncomfortable admission",
+          "example": "What part of this was your fault? What did you miss that you should have seen?"
+        }
+      ]
+    }
+  },
+
   "cross_pattern_guidance": {
     "description": "Improvements that apply across all essay map patterns, derived from testing patterns against actual essays.",
     "transition_explicitness": {
