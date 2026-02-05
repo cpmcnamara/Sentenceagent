@@ -1,0 +1,73 @@
+SITUATION_SETUP
+
+Take me to the moment this started. Who asked you to build this practice? Where were you—an office, a call, a hallway conversation? What did they actually say? And what did you think you knew about AI teams that turned out to be completely wrong within the first few months?
+
+
+EXPECTED_ADVICE_REJECTED
+
+Tell me about a hire that hurt. Not one that "didn't work out"—one where you were confident, maybe went to bat for them, and then watched it fall apart. What was the project? What did they do (or not do) that made you realize it wasn't going to work? What was the moment you knew—in your gut, before you could say it out loud?
+
+
+REFRAMING_PREMISE
+
+The essay says you stopped looking for "people who know AI" and started looking for "people who can learn while building." But when did that actually flip? Was there a specific person who broke your old model—someone who shouldn't have worked but did, or someone who should have worked but didn't? What did they do that made you think "I've been looking for the wrong thing"?
+
+
+MECHANISM_REVEALED (Part 1)
+
+The candidate who asked about data quality—is she real? If so: What was her name (or a pseudonym)? What specifically did she ask that made you take notice? What happened with her six months later—did she actually deliver? What did she build or fix?
+
+
+MECHANISM_REVEALED (Part 2)
+
+What outside AI/consulting works the same way? Is there a sport, a craft, a type of relationship where you see this same dynamic—where the people who care about the boring parts outperform the people who care about the exciting parts?
+
+
+CONTRAST: Curiosity vs. Credentials
+
+Who's the person who proved this to you? Someone with great curiosity and mediocre credentials who delivered, or someone with great credentials and no curiosity who failed?
+
+
+CONTRAST: Constraints vs. Problems
+
+What's a real project where constraints were ignored? What was the constraint, who ignored it, what happened?
+
+
+CONTRAST: Boring vs. Shiny
+
+What's a project where the boring work saved it, or where chasing shiny killed it?
+
+
+CONTRAST: Learning vs. Knowing
+
+You say engineers adapt better than strategists. Who's the strategist who struggled? Who's the engineer who thrived? What specifically did they do differently?
+
+
+ACTIONABLE_ADVICE (Part 1)
+
+"Three of my best hires came straight from undergrad"—who's one of them? What was their background? What did they do in their first project that surprised you?
+
+
+ACTIONABLE_ADVICE (Part 2)
+
+"I lost two excellent people to boredom"—who were they? What were they working on that bored them? When they told you they were leaving, what did they actually say? And be honest: was it your fault? Were the projects actually boring, or did you mismanage something?
+
+
+ACTIONABLE_ADVICE (Part 3)
+
+What's the downside of hiring graduates over experienced people? What can't they do? What have you lost by this approach?
+
+
+OBJECTION_ANTICIPATED
+
+Who's actually pushed back on this approach—to your face? A client, a colleague, a senior partner? What exactly did they say? And here's the hard part: were they at least partially right? What's the strongest version of their objection?
+
+
+CLOSE_WITH_GIFT (Part 1)
+
+What do you know now about building AI teams that still surprises you? Not the advice—something that goes beyond the advice. Something you didn't expect.
+
+
+CLOSE_WITH_GIFT (Part 2)
+
+What's true about this that's uncomfortable to say? Something that might make you look bad, or that contradicts the narrative, or that your clients wouldn't want to hear?
