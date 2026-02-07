@@ -1,0 +1,27 @@
+ROUND 2: FOCUSED FOLLOW-UP QUESTIONS
+(5 questions to fill remaining gaps in draft v1)
+
+
+GAP 1: ORIGIN SCENE (for SITUATION_SETUP)
+
+The draft uses the "four-eyed monster" and the industrial origins, but there's no actual scene. Take me to the moment someone decided this team should exist. Was it a conversation with a partner? A client request that revealed a gap? A hallway realization? Who said what? Where were you standing or sitting?
+
+
+GAP 2: A HIRE THAT HURT (for EXPECTED_ADVICE_REJECTED)
+
+You wrote honestly that you've been "horribly wrong" about hiring. But I need one story. Not a pattern—a person. Someone you were confident about, maybe went to bat for, and then watched it fall apart. What was the project? What did they do (or not do) that made you realize it wasn't working? You don't need to name them—but I need the specifics of what happened.
+
+
+GAP 3: ANALOGY FROM OUTSIDE (for MECHANISM_REVEALED)
+
+The architecture requires an analogy from another domain—a sport, craft, or relationship where you see the same dynamic: where the people who see boundaries outperform the people who just have enthusiasm. What comes to mind? Could be anything: music, cooking, parenting, chess, carpentry. Where else have you seen this pattern?
+
+
+GAP 4: CONSOLIDATE OR DIFFERENTIATE THE ENGINEER STORY
+
+The engineer who was "lowest ranked" appears twice in the draft—once in MECHANISM_REVEALED (the 1-2 slide challenge) and again in LEARNING VS KNOWING. Are these the same person or different people? If the same, I'll consolidate. If different, I need distinguishing details for the second one.
+
+
+GAP 5: WHAT DOES THE UNIFYING PLATFORM ACTUALLY LOOK LIKE? (for ACTIONABLE_ADVICE)
+
+You wrote about needing "unifying platforms" and moving away from "slide deck as an offering." This is strong conceptually but abstract. What does this actually look like in practice? Is it a piece of software? A shared methodology? A recurring internal project? Give me one concrete example of what the "vine connecting the branches" actually is.
