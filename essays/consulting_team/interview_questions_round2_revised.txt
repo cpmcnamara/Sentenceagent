@@ -1,0 +1,22 @@
+REVISED ROUND 2: FOCUSED QUESTIONS
+(4 questions targeting specific remaining gaps in draft v2)
+
+
+GAP 1: ORIGIN SCENE (for SITUATION_SETUP)
+
+The four-eyed monster metaphor is now strong, but there's still no scene showing where this actually began. I don't need a dramatic origin story—just a real moment. Was it a conversation where someone said "we need an AI practice"? A client engagement that revealed a gap no existing team could fill? A realization you had on a flight or in a meeting? Give me the setting, who was there, and what was said or realized. Even a small, unremarkable moment works—sometimes those are more honest than dramatic ones.
+
+
+GAP 2: A HIRE THAT HURT (for EXPECTED_ADVICE_REJECTED)
+
+You wrote that your intuitive hiring guesses have been "horribly wrong" but also "wonderfully right." The essay would be stronger with one concrete example of the wrong. Not to dwell on failure, but to ground the admission. This could be brief: who was the person (role, not name), what made you confident about them, and what happened that made you realize it wasn't working? The more specific the better—a particular meeting, a deliverable that revealed the gap, a moment when you knew.
+
+
+GAP 3: ANALOGY FROM OUTSIDE AI/CONSULTING (for MECHANISM_REVEALED or CONTRAST_SERIES)
+
+The essay is rich with metaphors (four-eyed monster, atoms forming organism, rainforest of specialists), but the architecture specifically calls for an analogy from a different domain—a sport, craft, or relationship where you see the same pattern. Where else have you seen boundary-thinking beat enthusiasm? Where else do the people who care about the boring structural parts outperform the people who chase the exciting visible parts? Could be music, cooking, carpentry, parenting, sports, medicine—anything outside consulting/tech.
+
+
+GAP 4: WHAT DOES THE UNIFYING PLATFORM ACTUALLY LOOK LIKE? (for ACTIONABLE_ADVICE)
+
+You've improved this section—the "vine connecting branches" is strong, and the progression from industrial AI to data governance to your current approach is clear. But I still can't picture what someone at your firm actually opens on their laptop when they're working on this platform. Is it a piece of software? A shared repository? A recurring project structure? A set of reusable components? One concrete example would make the abstract concept tangible. What's something a junior consultant and a senior consultant both touch when they're working on the same engagement?
