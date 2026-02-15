@@ -2390,6 +2390,149 @@
       "why_won": "Abstract framing (structured data, taxonomies, explicit rules) is more universally applicable than specific product (GPT-4) or process (staged rollouts). The 'gospel' religious language adds weight.",
       "losers": ["B: Too specific to customer service use case", "C: Risk/speed framing less evocative than logic/complexity framing"],
       "principle_confirmed": "abstract-framing-over-specific-examples"
+    },
+    {
+      "test_id": 14,
+      "pattern": "Raymond #80 (Self-deprecating virtue reveal)",
+      "topic": "meetings / organizational communication",
+      "status": "complete",
+      "winner": "I'm a chronic canceller. If a recurring meeting can't justify itself in one sentence, I delete it. The best meetings are the ones that never happen.",
+      "why_won": "Natural flow without forced flip. Middle sentence adds concrete test (justify in one sentence). Ending lands the maximal paradox.",
+      "losers": [
+        "'Which means... this is not a vice but a virtue' - forced/awkward transplant of original structure",
+        "'I've learned to trust that instinct' - awkward and forced",
+        "'I cancel meetings for a living' - doesn't sound natural"
+      ],
+      "principle_learned": "natural-flow-over-structural-transplant"
+    },
+    {
+      "test_id": 15,
+      "pattern": "Raymond #73 (Contradiction-dissolve)",
+      "topic": "AI adoption / enterprise strategy",
+      "status": "complete",
+      "winner": "This might seem to contradict the principle of starting small. But it doesn't, really, because what we're deploying isn't one big bet but twenty small ones. Complexity is managed by separation.",
+      "why_won": "Concrete reframe (one big bet vs twenty small ones) + abstract principle ending (complexity/separation) creates intrigue without over-explaining.",
+      "losers": [
+        "'learning velocity / faster you fail' - cliché",
+        "'If one fails, the others keep running' - too concrete, less interesting than abstract principle"
+      ],
+      "principle_learned": "abstract-ending-over-concrete-when-reframe-is-clear"
+    },
+    {
+      "test_id": 16,
+      "pattern": "Graham #78 (Actionable close with insight)",
+      "topic": "cooking / home kitchens",
+      "status": "complete",
+      "winner": "So if you want to cook better, remember this, because this is one of the reasons home cooks beat restaurants. Restaurants want to decrease variability because they need consistency across a thousand plates. But when you eliminate surprises, you lose the accidents that become signatures.",
+      "why_won": "Word echoes create cohesion: variability → consistency → eliminate surprises. Ending ('accidents that become signatures') is memorable and true.",
+      "losers": [
+        "'need the same dish a thousand times' - lost the variability/consistency vocabulary, broke the echo"
+      ],
+      "principle_learned": "vocabulary-echoes-create-cohesion"
+    },
+    {
+      "test_id": 17,
+      "pattern": "Stephenson #79 (Stakes-raising close)",
+      "topic": "parenting / education",
+      "status": "complete",
+      "winner": "The upshot is that a generation of kids got used to being told they were special. They were not used to being told they were wrong. The big question now becomes: will they learn to hear criticism, or will they just stop listening?",
+      "why_won": "Clean parallel structure ('told they were X' / 'told they were Y'). Final question has substantive noun ('criticism') not pronoun ('it').",
+      "losers": [
+        "'optimized for safety / not optimizing for resilience' - less parallel, more abstract",
+        "'told no' - punchier but loses the structural match with 'told they were special'"
+      ],
+      "principle_confirmed": "parallel-structure-requires-matching-grammar"
+    },
+    {
+      "test_id": 18,
+      "pattern": "New: Dissection-as-discovery opener",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "I set out to build a machine that could think. But the deeper I got into the mechanics—why context breaks, why tone vanishes, why meaning slips between tokens—the more I was studying humans, not machines.",
+      "why_won": "The insight comes from the ACT of building/dissecting, not from the AI as mirror. Triple rhythm in the em-dash clause (context/tone/meaning). Clean flip at end (humans, not machines).",
+      "losers": [
+        "'What I built instead was a mirror' - wrong framing, makes AI the subject not the process",
+        "'every limitation wasn't a flaw' - defensive, about AI not humanity",
+        "'realized I was studying' - 'realized' adds nothing, weakens direct statement"
+      ],
+      "principle_learned": "process-reveals-more-than-product"
+    },
+    {
+      "test_id": 19,
+      "pattern": "New: Concrete-gap-to-human-depth",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "Take context. We feed a model a conversation and expect it to know what matters. But 'what matters' isn't in the words—it's in the history between the speakers, the room they're standing in, the thing neither of them will say. The model sees text. We see everything around it.",
+      "why_won": "Opens with imperative ('Take context'). Concrete examples build (history, room, unsaid thing). Final contrast is clean and devastating (text vs everything).",
+      "losers": [
+        "'Start with sarcasm' version - good but less universal than context"
+      ],
+      "principle_learned": "end-contrast-should-be-asymmetric"
+    },
+    {
+      "test_id": 20,
+      "pattern": "New: Technical-list-to-human-pivot",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "You can expand the context window. You can add retrieval. You can fine-tune on millions of conversations. And you'll get closer. But you won't close the gap, because the gap isn't technical. It's experiential.",
+      "why_won": "'You can' repetition builds momentum before pivot. Lands on human term ('experiential') not technical. Second person keeps reader in frame.",
+      "losers": [
+        "'I tried to fix this... added more data' - too AI-oriented, gets lost in technical weeds",
+        "Cutting 'You can' repetition - loses the building rhythm before the pivot"
+      ],
+      "principle_learned": "repetition-builds-before-pivot"
+    },
+    {
+      "test_id": 21,
+      "pattern": "New: Embodiment-as-meaning",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "The model has no body. No childhood. No memory of being hurt by someone it trusted. It processes words, but it has never felt the weight of them. That weight is what meaning is made of.",
+      "why_won": "Builds from physical (body) to temporal (childhood) to emotional (being hurt). 'Weight' metaphor connects processing to feeling. Final sentence lands the thesis.",
+      "losers": [
+        "'Never waited for a text... edge cases / whole case' - ending tries too hard, sounds forced",
+        "'can't fine-tune your way to heartbreak' - too clever, loses the gravitas"
+      ],
+      "principle_learned": "gravitas-over-cleverness-for-emotional-points"
+    },
+    {
+      "test_id": 22,
+      "pattern": "New: Meta-pivot-against-expectation",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "This is usually where the essay turns pessimistic about AI. But I went the other direction. The more I saw what the machine couldn't do, the more astonished I became at what we do without noticing.",
+      "why_won": "Meta-acknowledgment ('usually where the essay turns') creates trust. 'Pessimistic about AI' more specific than 'dark'. 'Astonished' has more weight than 'amazed'.",
+      "losers": [
+        "'iceberg' metaphor version - overloaded, too convoluted",
+        "'dark'/'amazed'/'without thinking' - less specific, less weight"
+      ],
+      "principle_learned": "specific-words-carry-more-weight"
+    },
+    {
+      "test_id": 23,
+      "pattern": "New: Sustained-unpack-to-revelation",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "Think about your last difficult conversation. You tracked tone, adjusted for history, weighed what wasn't said, predicted reactions, revised in real-time—all while appearing to just listen. We are miracles pretending to be mundane.",
+      "why_won": "One sustained thought, not multiple clever lines. 'Difficult' more evocative than 'real'. List builds to 'all while appearing to just listen' before landing the kicker.",
+      "losers": [
+        "'read between the lines / sat in silence / been the subtext' - three separate ideas, not cohesive",
+        "'real conversation' - less specific than 'difficult conversation'"
+      ],
+      "principle_learned": "one-sustained-thought-beats-multiple-clever-lines"
+    },
+    {
+      "test_id": 24,
+      "pattern": "New: Resolution-with-callback-close",
+      "topic": "AI / humanity essay",
+      "status": "complete",
+      "winner": "I still build AI systems. I'm better at it now—partly because I stopped expecting them to be human. They're tools, extraordinary ones, and they'll keep getting better. But they taught me something no benchmark will ever measure: how remarkable it is to be the thing they're trying to imitate.",
+      "why_won": "Resolves the narrative (still building, but wiser). 'No benchmark will ever measure' ties back to technical world. 'The thing they're trying to imitate' callbacks to Frankenstein theme. 'Human' and 'imitate' are precise.",
+      "losers": [
+        "'gaps are outlines' - too abstract for a close, doesn't resolve",
+        "'us' / 'become' - too casual, implies AI agency that doesn't fit"
+      ],
+      "principle_learned": "close-must-resolve-and-callback"
     }
   ],
   "generationPrinciples": [
@@ -2486,6 +2629,15 @@
       "why_bad": "'Designed to prove a point' is vague—doesn't reveal uncomfortable motive",
       "good_example": "We've learned that culture fit interviews predict nothing. But we've also learned something harder to admit: that we keep doing them because rejecting someone for 'fit' feels kinder than rejecting them for competence.",
       "why_good": "Reveals the uncomfortable motive: we use 'fit' as a kindness shield to avoid saying 'not good enough'"
+    },
+    {
+      "name": "natural-flow-over-structural-transplant",
+      "description": "When adapting a pattern, prioritize natural flow over mechanically copying structure. 'This is not a vice but a virtue' works for Raymond but sounds forced elsewhere.",
+      "learned_from": "Test 14: forced flip language rejected; natural middle sentence (concrete test) + punchy ending won",
+      "bad_example": "I'm a chronic canceller. Which means that when I see a recurring meeting, I want to delete it. This is not a vice but a virtue.",
+      "why_bad": "'This is not a vice but a virtue' is awkward transplant—sounds like you're reading a template",
+      "good_example": "I'm a chronic canceller. If a recurring meeting can't justify itself in one sentence, I delete it. The best meetings are the ones that never happen.",
+      "why_good": "Middle sentence adds concrete test; ending delivers the insight without announcing the flip"
     }
   ]
 }

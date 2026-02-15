@@ -1,0 +1,22 @@
+ROUND 3: FOCUSED QUESTIONS
+(4 questions to bring draft v3 to final quality)
+
+
+GAP 1: BRIDGE FROM BOUNDARY-THINKING TO AIRPORT EXAMPLE (for REFRAMING → MECHANISM transition)
+
+The jump from "boundary-thinking" in REFRAMING_PREMISE to the airport analogy in MECHANISM_REVEALED feels slightly abrupt. One sentence of bridge would help. Can you tell me: when did you first realize that the airport/bottleneck way of seeing problems was the same skill as what made certain consultants effective? Was there a specific moment where you saw someone thinking this way about an AI problem and thought "that's what good looks like"?
+
+
+GAP 2: WHAT DOES "PAINFULLY CLEAR ACCOUNTABILITIES" LOOK LIKE? (for ACTIONABLE_ADVICE)
+
+You mention needing "painfully clear accountabilities" and "a map of who owns which part of the work." This is strong conceptually but still abstract. Can you give one small example? What does this map actually look like on a real engagement—is it a document, a diagram, a recurring meeting where you review it? What's a case where the accountability was unclear and things broke down, versus a case where it was clear and things worked?
+
+
+GAP 3: MAKE THE CLOSE HIT HARDER (for CLOSE_WITH_GIFT)
+
+The Horowitz "Struggle" quote lands well, and the return to the four-eyed monster is satisfying. But the final line—"structured enough to keep getting better anyway"—feels slightly soft for an ending. PG essays often close with a line that sticks in your head, something unexpected or paradoxical. Is there something you know now about building AI teams that would surprise your past self? Or something that feels contradictory—a truth that seems to argue against itself but is still true?
+
+
+GAP 4: THE 200,000 DOCUMENTS (OPTIONAL BUT COULD BE POWERFUL)
+
+The origin story mentions 200,000 documents, but this detail doesn't get used after it's introduced. Is there something about the scale—the sheer weight of accumulated knowledge in an enterprise—that you could return to later? Maybe in the CLOSE, to bring the essay full circle? What did it feel like to face that mess for the first time? And what did it feel like when the approach you built actually started working?
